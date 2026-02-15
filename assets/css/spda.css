@@ -1,0 +1,124 @@
+/* =========================================================
+   SPDA + CIDADE — CSS EXCLUSIVO DAS PÁGINAS DE SERVIÇO
+   ========================================================= */
+
+body.spda-page{
+  --preto:#111;
+  --cinza:#6b7280;
+  --borda:#e5e7eb;
+  --bg:#ffffff;
+  --card:#f9fafb;
+  --max:1100px;
+
+  background:var(--bg);
+  color:var(--preto);
+  font-family:Arial, Helvetica, sans-serif;
+  line-height:1.7;
+}
+
+
+/* ===== ESPAÇO DO MENU FIXO ===== */
+
+body.spda-page .header-space{
+  height:120px;
+}
+
+
+/* ===== CONTAINER ===== */
+
+body.spda-page .container{
+  max-width:var(--max);
+  margin:auto;
+  padding:40px 20px;
+}
+
+
+/* ===== TÍTULOS ===== */
+
+body.spda-page h1{
+  font-size:42px;
+  margin-bottom:20px;
+  line-height:1.2;
+}
+
+body.spda-page h2{
+  font-size:26px;
+  margin-top:40px;
+  margin-bottom:15px;
+}
+
+
+/* ===== TEXTOS ===== */
+
+body.spda-page p{
+  color:var(--cinza);
+  font-size:16px;
+}
+
+
+/* ===== CARD ===== */
+
+body.spda-page .card{
+  background:var(--card);
+  border:1px solid var(--borda);
+  border-radius:12px;
+  padding:25px;
+  box-shadow:none;
+}
+
+
+/* ===== CTA ===== */
+
+body.spda-page .cta{
+  border:1px solid var(--borda);
+  border-radius:12px;
+  padding:25px;
+  margin:30px 0;
+  background:var(--card);
+}
+
+
+/* ===== BOTÕES ===== */
+
+body.spda-page .cta a{
+  display:inline-block;
+  margin-top:15px;
+  margin-right:10px;
+  padding:12px 18px;
+  border-radius:8px;
+  text-decoration:none;
+  font-weight:bold;
+  border:1px solid var(--preto);
+  color:var(--preto);
+}
+
+body.spda-page .cta a:hover{
+  background:var(--preto);
+  color:#fff;
+}
+
+
+/* ===== GRID (FUTURO) ===== */
+
+body.spda-page .grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:25px;
+}
+
+@media(max-width:900px){
+  body.spda-page .grid{
+    grid-template-columns:1fr;
+  }
+}
+
+
+/* ===== RESPONSIVO ===== */
+
+@media(max-width:768px){
+
+  body.spda-page h1{
+    font-size:32px;
+  }
+
+}
