@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cini Engenharia - Engenharia Elétrica - Engenharia de Segurança do Trabalho - Treinamentos</title>
+
+  <!-- CSS GLOBAL -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+  <!-- ===== MENU DINÂMICO ===== -->
+<div id="menu"></div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  fetch("/menu.html")
+    .then(response => {
+      if (!response.ok) {
+        throw new Error("Erro ao carregar menu.html");
+      }
+      return response.text();
+    })
+    .then(data => {
+      document.getElementById("menu").innerHTML = data;
+    })
+    .catch(error => {
+      console.error("Erro no menu:", error);
+    });
+});
+</script>
+<!-- ===== FIM MENU DINÂMICO ===== -->
+
+  <!-- BANNER -->
+  <section class="home-hero">
+    <div class="banner">
+      <img src="assets/images/cini-engenharia-home.jpg" alt="Cini Engenharia">
+    </div>
+  </section>
+
+  <!-- INTRO -->
+  <section class="intro">
+    <h1>
+      Engenharia Elétrica<br>
+      Engenharia de Segurança do Trabalho<br>
+      Treinamentos de Capacitações
+    </h1>
+
+    <div class="divider"></div>
+
+    <p>
+      Empresa especializada em Engenharia Elétrica, Engenharia de Segurança do Trabalho e Treinamentos de Capacitações,
+      oferecendo soluções completas para empresas.
+      <br><br>
+      Nossos serviços garantem segurança, eficiência e conformidade com as normas técnicas.
+      <br><br>
+      Atendemos clientes que buscam excelência em engenharia, segurança no trabalho e treinamentos especializados.
+    </p>
+  </section>
+
+  <!-- SERVIÇOS -->
+  <section class="services">
+    <h2 class="title">Nossos Serviços</h2>
+
+    <div class="cards">
+      <article class="card">
+        <h3>Engenharia<br>Elétrica</h3>
+        <p>Serviços oferecidos de Engenharia Elétrica.</p>
+      </article>
+
+      <article class="card">
+        <h3>Engenharia de<br>Segurança do Trabalho</h3>
+        <p>Serviços oferecidos de Engenharia de Segurança do Trabalho.</p>
+      </article>
+
+      <article class="card">
+        <h3>Treinamentos<br>de Capacitações</h3>
+        <p>Serviços oferecidos de Treinamentos de Capacitações.</p>
+      </article>
+    </div>
+  </section>
+
+  <footer>
+    https://www.ciniengenharia.com.br
+  </footer>
+
+</body>
+</html>

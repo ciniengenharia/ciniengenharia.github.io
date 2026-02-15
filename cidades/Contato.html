@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Contato — Cini Engenharia</title>
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+
+<!-- ===== MENU DINÂMICO ===== -->
+<div id="menu"></div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  fetch("/menu.html")
+    .then(response => {
+      if (!response.ok) {
+        throw new Error("Erro ao carregar menu.html");
+      }
+      return response.text();
+    })
+    .then(data => {
+      document.getElementById("menu").innerHTML = data;
+    })
+    .catch(error => {
+      console.error("Erro no menu:", error);
+    });
+});
+</script>
+<!-- ===== FIM MENU DINÂMICO ===== -->
+
+
+
+<!-- ===== CONTEÚDO CONTATO ===== -->
+<div class="contato-wrapper">
+  <div class="contato-card">
+
+    <h1>Contatos</h1>
+
+    <div class="contato-grid">
+
+      <!-- TELEFONES -->
+      <div class="contato-bloco">
+        <h2>Telefone / WhatsApp</h2>
+
+        <div class="contato-item">
+          <img src="../assets/images/whatsapp.png" alt="WhatsApp">
+          <a href="https://wa.me/5551999613451">(51) 99961-3451</a>
+        </div>
+
+        <div class="contato-item">
+          <img src="../assets/images/whatsapp.png" alt="WhatsApp">
+          <a href="https://wa.me/5554999475010">(54) 99947-5010</a>
+        </div>
+      </div>
+
+      <!-- EMAIL -->
+      <div class="contato-bloco">
+        <h2>E-mail</h2>
+
+<div class="contato-item">
+  <a href="mailto:contato@ciniengenharia.com.br">
+    contato@ciniengenharia.com.br
+  </a>
+</div>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- ===== FIM CONTEÚDO ===== -->
+
+</body>
+</html>
