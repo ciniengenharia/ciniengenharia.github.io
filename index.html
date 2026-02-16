@@ -3,35 +3,44 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <title>Cini Engenharia - Engenharia Elétrica - Engenharia de Segurança do Trabalho - Treinamentos</title>
+
+  <!-- CSS DO MENU -->
+  <link rel="stylesheet" href="assets/css/menu.css">
+  <link rel="stylesheet" href="assets/css/menu-offset.css">
 
   <!-- CSS GLOBAL -->
   <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- CSS EXCLUSIVO DA HOME -->
+  <link rel="stylesheet" href="assets/css/home.css">
 </head>
 
-<body>
+<body class="home">
 
   <!-- ===== MENU DINÂMICO ===== -->
-<div id="menu"></div>
+  <div id="menu"></div>
 
-<script>
-document.addEventListener("DOMContentLoaded", function() {
-  fetch("/menu.html")
-    .then(response => {
-      if (!response.ok) {
-        throw new Error("Erro ao carregar menu.html");
-      }
-      return response.text();
-    })
-    .then(data => {
-      document.getElementById("menu").innerHTML = data;
-    })
-    .catch(error => {
-      console.error("Erro no menu:", error);
-    });
-});
-</script>
-<!-- ===== FIM MENU DINÂMICO ===== -->
+  <script>
+  document.addEventListener("DOMContentLoaded", function() {
+    fetch("/menu.html")
+      .then(response => {
+        if (!response.ok) {
+          throw new Error("Erro ao carregar menu.html");
+        }
+        return response.text();
+      })
+      .then(data => {
+        document.getElementById("menu").innerHTML = data;
+      })
+      .catch(error => {
+        console.error("Erro no menu:", error);
+      });
+  });
+  </script>
+  <!-- ===== FIM MENU DINÂMICO ===== -->
+
 
   <!-- BANNER -->
   <section class="home-hero">
@@ -40,8 +49,10 @@ document.addEventListener("DOMContentLoaded", function() {
     </div>
   </section>
 
+
   <!-- INTRO -->
   <section class="intro">
+
     <h1>
       Engenharia Elétrica<br>
       Engenharia de Segurança do Trabalho<br>
@@ -58,13 +69,17 @@ document.addEventListener("DOMContentLoaded", function() {
       <br><br>
       Atendemos clientes que buscam excelência em engenharia, segurança no trabalho e treinamentos especializados.
     </p>
+
   </section>
+
 
   <!-- SERVIÇOS -->
   <section class="services">
+
     <h2 class="title">Nossos Serviços</h2>
 
     <div class="cards">
+
       <article class="card">
         <h3>Engenharia<br>Elétrica</h3>
         <p>Serviços oferecidos de Engenharia Elétrica.</p>
@@ -79,8 +94,11 @@ document.addEventListener("DOMContentLoaded", function() {
         <h3>Treinamentos<br>de Capacitações</h3>
         <p>Serviços oferecidos de Treinamentos de Capacitações.</p>
       </article>
+
     </div>
+
   </section>
+
 
   <footer>
     https://www.ciniengenharia.com.br

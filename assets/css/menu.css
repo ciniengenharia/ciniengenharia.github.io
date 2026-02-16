@@ -1,0 +1,74 @@
+/* =========================================================
+   MENU — VISUAL
+   ========================================================= */
+
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #f8f8f8;
+  border-bottom: 1px solid #ddd;
+  z-index: 1000;
+}
+
+.menu-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 12px 24px;
+
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+/* LOGO */
+
+.menu-logo {
+  margin-right: 40px;
+}
+
+.menu-logo img {
+  height: 70px;
+  width: auto;
+  display: block;
+}
+
+/* LINKS */
+
+.menu-links {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+/* SEPARADOR ENTRE LINKS */
+
+.menu-links a + a {
+  border-left: 1px solid #ccc;
+  padding-left: 28px;
+}
+
+/* LINK PADRÃO */
+
+.menu-links a {
+  font-size: 18px;
+  color: #111;
+  text-decoration: none;
+  padding: 10px 16px;
+  transition: all 0.2s ease;
+}
+
+/* LINK ATIVO */
+
+.menu-links a.active {
+  background: #e50914;
+  color: white;
+  border-radius: 4px;
+}
+
+/* HOVER */
+
+.menu-links a:hover {
+  color: #e50914;
+}
