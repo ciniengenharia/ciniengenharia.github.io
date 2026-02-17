@@ -6,72 +6,93 @@
 
 body.contato {
   margin: 0;
-  background: #f5f5f5;
+  background: #f4f6f9;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* CENTRALIZA NA TELA */
+/* ÁREA TOTAL */
 body.contato .contato-wrapper {
   min-height: calc(100vh - 90px);
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 40px 20px;
+  padding: 60px 20px;
 }
 
 /* CARD */
 body.contato .contato-card {
   background: #ffffff;
-  padding: 40px;
-  border-radius: 12px;
-  max-width: 700px;
+  padding: 50px 60px;
+  border-radius: 14px;
+  max-width: 900px;
   width: 100%;
-  box-shadow: 0 0 25px rgba(0,0,0,0.08);
+  box-shadow: 0 20px 60px rgba(0,0,0,0.08);
+  text-align: center;
 }
 
 /* TÍTULO */
 body.contato h1 {
-  margin-top: 0;
-  margin-bottom: 30px;
-  text-align: center;
+  font-size: 32px;
+  margin-bottom: 40px;
+  color: #1a1a1a;
 }
 
 /* GRID */
 body.contato .contato-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 40px;
+  gap: 60px;
+  text-align: left;
 }
 
 /* BLOCO */
 body.contato .contato-bloco h2 {
-  margin-bottom: 15px;
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #333;
 }
 
 /* ITEM */
 body.contato .contato-item {
   display: flex;
   align-items: center;
-  gap: 12px;
-  margin-bottom: 15px;
+  gap: 14px;
+  margin-bottom: 18px;
 }
 
 /* ÍCONE */
 body.contato .contato-item img {
-  width: 28px;
-  height: 28px;
+  width: 32px;
+  height: 32px;
 }
 
 /* LINK */
 body.contato .contato-item a {
   text-decoration: none;
+  font-size: 18px;
   color: #0a58ca;
-  font-weight: 500;
+  font-weight: 600;
+  transition: 0.2s;
 }
 
-/* MOBILE */
+body.contato .contato-item a:hover {
+  color: #084298;
+}
+
+/* RESPONSIVO */
 @media (max-width: 768px) {
+
+  body.contato .contato-card {
+    padding: 35px 25px;
+  }
+
   body.contato .contato-grid {
     grid-template-columns: 1fr;
+    gap: 40px;
   }
+
+  body.contato h1 {
+    font-size: 26px;
+  }
+
 }
