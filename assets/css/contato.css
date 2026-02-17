@@ -1,15 +1,21 @@
+/* ===============================
+   CONTATO — CSS ISOLADO
+   funciona apenas com:
+   <body class="contato">
+================================= */
+
 body.contato {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   background: #eef2f6;
 }
 
-/* FAIXA SUPERIOR */
+/* FAIXA SUPERIOR (RESPIRO DO MENU) */
 body.contato .contato-wrapper {
   padding: 100px 20px 80px;
 }
 
-/* CONTAINER */
+/* CARD PRINCIPAL */
 body.contato .contato-card {
   max-width: 1100px;
   margin: auto;
@@ -19,17 +25,18 @@ body.contato .contato-card {
   box-shadow: 0 30px 80px rgba(0,0,0,0.15);
 }
 
-/* HEADER DO BLOCO */
+/* HEADER AZUL */
 body.contato .contato-card h1 {
-  background: #0d6efd;
+  background: linear-gradient(135deg, #0d6efd, #0a58ca);
   color: #fff;
   margin: 0;
   padding: 35px;
   font-size: 34px;
   letter-spacing: 1px;
+  text-align: center;
 }
 
-/* ÁREA INTERNA */
+/* GRID DAS COLUNAS */
 body.contato .contato-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -37,10 +44,13 @@ body.contato .contato-grid {
 
 /* COLUNAS */
 body.contato .contato-bloco {
-  padding: 50px;
+  padding: 60px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-/* DIVISÃO VISUAL */
+/* LINHA DIVISÓRIA */
 body.contato .contato-bloco:first-child {
   border-right: 1px solid #e5e5e5;
 }
@@ -50,41 +60,42 @@ body.contato .contato-bloco h2 {
   margin-top: 0;
   font-size: 20px;
   color: #444;
+  text-align: center;
 }
 
-/* ITEM */
+/* ITENS */
 body.contato .contato-item {
   display: flex;
   align-items: center;
   gap: 18px;
   margin-top: 25px;
+  justify-content: center;
 }
 
-/* ÍCONE */
+/* ÍCONES */
 body.contato .contato-item img {
   width: 40px;
+  height: 40px;
 }
 
-/* TELEFONE */
+/* LINKS TELEFONE E EMAIL */
 body.contato .contato-item a {
   font-size: 22px;
   font-weight: bold;
   text-decoration: none;
   color: #0d6efd;
-  transition: 0.2s;
+  transition: 0.25s;
 }
 
 body.contato .contato-item a:hover {
   color: #084298;
+  transform: scale(1.05);
 }
 
-/* EMAIL CENTRALIZADO */
+/* BLOCO EMAIL CENTRALIZADO PERFEITO */
 body.contato .contato-bloco:last-child {
+  align-items: center;
   text-align: center;
-}
-
-body.contato .contato-bloco:last-child a {
-  font-size: 20px;
 }
 
 /* RESPONSIVO */
@@ -97,6 +108,18 @@ body.contato .contato-bloco:last-child a {
   body.contato .contato-bloco:first-child {
     border-right: none;
     border-bottom: 1px solid #e5e5e5;
+  }
+
+  body.contato .contato-bloco {
+    padding: 40px 25px;
+  }
+
+  body.contato .contato-card h1 {
+    font-size: 26px;
+  }
+
+  body.contato .contato-item a {
+    font-size: 20px;
   }
 
 }
