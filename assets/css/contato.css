@@ -1,68 +1,54 @@
-/* ===============================
-   CONTATO — CSS ISOLADO
-   funciona apenas com:
-   <body class="contato">
-================================= */
-
 body.contato {
   margin: 0;
-  background: linear-gradient(180deg, #f4f6f9 0%, #e9edf2 100%);
   font-family: Arial, Helvetica, sans-serif;
+  background: #eef2f6;
 }
 
-/* ÁREA TOTAL */
+/* FAIXA SUPERIOR */
 body.contato .contato-wrapper {
-  min-height: calc(100vh - 90px);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 80px 20px;
+  padding: 100px 20px 80px;
 }
 
-/* CARD PRINCIPAL */
+/* CONTAINER */
 body.contato .contato-card {
+  max-width: 1100px;
+  margin: auto;
   background: #ffffff;
-  padding: 60px 70px;
-  border-radius: 18px;
-  max-width: 1000px;
-  width: 100%;
-  box-shadow: 0 25px 70px rgba(0,0,0,0.12);
-  text-align: center;
-  position: relative;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 30px 80px rgba(0,0,0,0.15);
 }
 
-/* LINHA SUPERIOR ESTILO ENGENHARIA */
-body.contato .contato-card::top {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 6px;
-  width: 100%;
+/* HEADER DO BLOCO */
+body.contato .contato-card h1 {
   background: #0d6efd;
-  border-radius: 18px 18px 0 0;
-}
-
-/* TÍTULO */
-body.contato h1 {
-  font-size: 36px;
-  margin-bottom: 50px;
-  color: #1a1a1a;
+  color: #fff;
+  margin: 0;
+  padding: 35px;
+  font-size: 34px;
   letter-spacing: 1px;
 }
 
-/* GRID */
+/* ÁREA INTERNA */
 body.contato .contato-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 80px;
-  align-items: start;
 }
 
-/* SUBTÍTULOS */
+/* COLUNAS */
+body.contato .contato-bloco {
+  padding: 50px;
+}
+
+/* DIVISÃO VISUAL */
+body.contato .contato-bloco:first-child {
+  border-right: 1px solid #e5e5e5;
+}
+
+/* TÍTULOS */
 body.contato .contato-bloco h2 {
+  margin-top: 0;
   font-size: 20px;
-  margin-bottom: 25px;
   color: #444;
 }
 
@@ -70,28 +56,26 @@ body.contato .contato-bloco h2 {
 body.contato .contato-item {
   display: flex;
   align-items: center;
-  gap: 16px;
-  margin-bottom: 20px;
+  gap: 18px;
+  margin-top: 25px;
 }
 
 /* ÍCONE */
 body.contato .contato-item img {
-  width: 36px;
-  height: 36px;
+  width: 40px;
 }
 
-/* TELEFONE EM DESTAQUE */
+/* TELEFONE */
 body.contato .contato-item a {
-  text-decoration: none;
-  font-size: 20px;
-  color: #0d6efd;
+  font-size: 22px;
   font-weight: bold;
-  transition: 0.25s;
+  text-decoration: none;
+  color: #0d6efd;
+  transition: 0.2s;
 }
 
 body.contato .contato-item a:hover {
   color: #084298;
-  transform: translateX(5px);
 }
 
 /* EMAIL CENTRALIZADO */
@@ -99,21 +83,20 @@ body.contato .contato-bloco:last-child {
   text-align: center;
 }
 
-/* RESPONSIVO */
-@media (max-width: 768px) {
+body.contato .contato-bloco:last-child a {
+  font-size: 20px;
+}
 
-  body.contato .contato-card {
-    padding: 40px 25px;
-  }
+/* RESPONSIVO */
+@media (max-width: 900px) {
 
   body.contato .contato-grid {
     grid-template-columns: 1fr;
-    gap: 50px;
   }
 
-  body.contato h1 {
-    font-size: 28px;
+  body.contato .contato-bloco:first-child {
+    border-right: none;
+    border-bottom: 1px solid #e5e5e5;
   }
 
 }
-
