@@ -6,17 +6,26 @@ body.home .home-hero {
   margin-top: 80px;
 }
 
+/* ===============================
+   BANNER — FAIXA
+================================ */
+
 body.home .banner {
   width: 100%;
+  height: 300px; /* altura da faixa */
+  overflow: hidden;
 }
 
 body.home .banner img {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
   display: block;
 }
 
-/* INTRO */
+/* ===============================
+   INTRO
+================================ */
 
 body.home .intro {
   max-width: 900px;
@@ -33,18 +42,24 @@ body.home .divider {
   width: 80px;
   height: 4px;
   margin: 20px auto;
+  background: #000;
 }
 
-/* SERVIÇOS */
+/* ===============================
+   SERVIÇOS
+================================ */
 
 body.home .services {
   padding: 60px 20px;
+  background: #f7f7f7;
 }
 
 body.home .services .title {
   text-align: center;
   margin-bottom: 40px;
 }
+
+/* GRID DE CARDS */
 
 body.home .cards {
   display: flex;
@@ -53,8 +68,36 @@ body.home .cards {
   flex-wrap: wrap;
 }
 
+/* CARD INDIVIDUAL */
+
 body.home .card {
   width: 280px;
   padding: 30px 20px;
   text-align: center;
+
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+}
+
+/* HOVER */
+
+body.home .card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+/* TÍTULO DO CARD */
+
+body.home .card h3 {
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+/* TEXTO DO CARD */
+
+body.home .card p {
+  font-size: 15px;
+  line-height: 1.6;
 }
