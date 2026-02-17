@@ -25,16 +25,17 @@ body.contato .contato-card {
   box-shadow: 0 30px 80px rgba(0,0,0,0.15);
 }
 
-/* HEADER AZUL */
+/* HEADER VERMELHO */
 body.contato .contato-card h1 {
-  background: linear-gradient(135deg, #0d6efd, #0a58ca);
+  background: #c40000; /* vermelho */
   color: #fff;
   margin: 0;
-  padding: 35px;
-  font-size: 34px;
+  padding: 18px; /* altura da faixa (menor) */
+  font-size: 28px;
   letter-spacing: 1px;
   text-align: center;
 }
+
 
 /* GRID DAS COLUNAS */
 body.contato .contato-grid {
@@ -83,12 +84,12 @@ body.contato .contato-item a {
   font-size: 22px;
   font-weight: bold;
   text-decoration: none;
-  color: #0d6efd;
+  color: #111; /* PRETO */
   transition: 0.25s;
 }
 
 body.contato .contato-item a:hover {
-  color: #084298;
+  color: #c40000; /* vermelho no hover (opcional) */
   transform: scale(1.05);
 }
 

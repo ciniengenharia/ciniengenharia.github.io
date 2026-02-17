@@ -145,8 +145,23 @@ body.engenharia .servico p{
   text-align: center;
 }
 
-/* ===== HERO FULL (SEM COLUNA DE IMAGEM) ===== */
+/* ===== HERO TOPO — AJUSTE FINAL ===== */
 
-body.engenharia .hero-full .hero-text{
-  width: 100%;
+body.engenharia .hero-topo{
+  align-items: center;
 }
+
+body.engenharia .hero-topo .hero-text{
+  width: 50%;
+}
+
+body.engenharia .hero-topo .hero-image{
+  width: 50%;
+}
+
+body.engenharia .hero-topo .hero-text h1{
+  font-size: clamp(42px, 3vw, 56px);
+  white-space: nowrap;
+}
+
+
