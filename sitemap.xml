@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- HOME -->
+  <url>
+    <loc>https://ciniengenharia.com.br/</loc>
+  </url>
+
+  <!-- CONTATO -->
+  <url>
+    <loc>https://ciniengenharia.com.br/contato/</loc>
+  </url>
+
+  <!-- SERVIÇOS — ENGENHEIRO ELETRICISTA (BASE + CIDADES) -->
+  <url>
+    <loc>https://ciniengenharia.com.br/servicos/engenheiro-eletricista/</loc>
+  </url>
+
+  <url>
+    <loc>https://ciniengenharia.com.br/servicos/engenheiro-eletricista-bento-goncalves/</loc>
+  </url>
+
+  <url>
+    <loc>https://ciniengenharia.com.br/servicos/engenheiro-eletricista-canoas/</loc>
+  </url>
+
+  <url>
+    <loc>https://ciniengenharia.com.br/servicos/engenheiro-eletricista-carlos-barbosa/</loc>
+  </url>
+
+  <url>
+    <loc>https://ciniengenharia.com.br/servicos/engenheiro-eletricista-caxias-do-sul/</loc>
+  </url>
+
+  <url>
+    <loc>https://ciniengenharia.com.br/servicos/engenheiro-eletricista-garibaldi/</loc>
+  </url>
+
+  <url>
+    <loc>https://ciniengenharia.com.br/servicos/engenheiro-eletricista-gravatai/</loc>
+  </url>
+
+  <url>
+    <loc>https://ciniengenharia.com.br/servicos/engenheiro-eletricista-lajeado/</loc>
+  </url>
+
+  <url>
+    <loc>https://ciniengenharia.com.br/servicos/engenheiro-eletricista-novo-hamburgo/</loc>
+  </url>
+
+  <url>
+    <loc>https://ciniengenharia.com.br/servicos/engenheiro-eletricista-porto-alegre/</loc>
+  </url>
+
+  <url>
+    <loc>https://ciniengenharia.com.br/servicos/engenheiro-eletricista-sao-leopoldo/</loc>
+  </url>
+
+</urlset>
