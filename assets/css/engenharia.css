@@ -167,3 +167,21 @@ body.engenharia .hero-topo .hero-text h1{
 }
 
 
+
+
+/* ===== FAQ — ISOLADO ===== */
+
+body.engenharia .faq{
+  max-width: 1400px;
+  margin: 40px auto;
+  padding: 60px;
+  background: #fff;
+  border-radius: 20px;
+  box-sizing: border-box;
+}
+
+/* garante que não herde layout em 50% de flex/grid */
+body.engenharia .faq,
+body.engenharia .faq *{
+  width: 100%;
+}
