@@ -5,9 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Serviços | Cini Engenharia</title>
 
+  <link rel="stylesheet" href="/assets/css/menu.css">
+
   <style>
-    /* ===== Base ===== */
     *{ box-sizing: border-box; }
+
     body{
       margin: 0;
       font-family: Arial, Helvetica, sans-serif;
@@ -32,7 +34,6 @@
       line-height: 1.5;
     }
 
-    /* ===== Seções ===== */
     .service-section{
       background: #fff;
       border-radius: 16px;
@@ -52,7 +53,6 @@
       line-height: 1.5;
     }
 
-    /* ===== Grid de boxes ===== */
     .services-grid{
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -62,13 +62,13 @@
     @media (max-width: 980px){
       .services-grid{ grid-template-columns: repeat(2, 1fr); }
     }
+
     @media (max-width: 620px){
       .services-grid{ grid-template-columns: 1fr; }
       .service-section{ padding: 20px; }
       .page-title{ font-size: 26px; }
     }
 
-    /* ===== Card ===== */
     .service-card{
       display: block;
       text-decoration: none;
@@ -79,6 +79,7 @@
       border: 1px solid #e8e8ee;
       transition: transform .15s ease, box-shadow .15s ease;
     }
+
     .service-card:hover{
       transform: translateY(-2px);
       box-shadow: 0 12px 26px rgba(0,0,0,0.10);
@@ -108,7 +109,7 @@
       color: #555;
       line-height: 1.35;
     }
-</style>
+  </style>
 </head>
 
 <body class="engenharia">
@@ -116,14 +117,16 @@
   <div id="menu"></div>
 
   <script>
-  document.addEventListener("DOMContentLoaded", function() {
-    fetch("/menu.html")
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById("menu").innerHTML = data;
-      });
-  });
+    document.addEventListener("DOMContentLoaded", function() {
+      fetch("/menu.html")
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById("menu").innerHTML = data;
+        });
+    });
   </script>
+
+  <div style="height:110px;"></div>
 
   <main class="container">
 
@@ -133,15 +136,16 @@
     </p>
 
     <!-- ===== SERVIÇOS DE ENGENHARIA ELÉTRICA ===== -->
-    <section class="service-section" aria-labelledby="servicos-eletrica">
-      <h2 class="section-title" id="servicos-eletrica">Serviços de engenharia elétrica</h2>
+    <section class="service-section">
+      <h2 class="section-title">Serviços de engenharia elétrica</h2>
       <p class="section-desc">
         Projetos, inspeções e documentos técnicos para adequação e confiabilidade das instalações.
       </p>
 
       <div class="services-grid">
+
         <a class="service-card" href="#">
-          <img class="service-img" src="assets/images/servicos/projetos-eletricos.jpg" alt="Projetos elétricos" loading="lazy">
+          <img class="service-img" src="/assets/images/servicos/projetos-eletricos.jpg" alt="Projetos elétricos">
           <div class="service-body">
             <h3 class="service-title">Projetos elétricos industriais</h3>
             <p class="service-mini">Memorial, diagramas, especificações e ART.</p>
@@ -149,105 +153,17 @@
         </a>
 
         <a class="service-card" href="#">
-          <img class="service-img" src="assets/images/servicos/nr10-laudo.jpg" alt="Laudo NR-10" loading="lazy">
+          <img class="service-img" src="/assets/images/servicos/nr10-laudo.jpg" alt="Laudo NR-10">
           <div class="service-body">
             <h3 class="service-title">Laudo de NR-10</h3>
             <p class="service-mini">Avaliação técnica e recomendações de adequação.</p>
           </div>
         </a>
 
-        <a class="service-card" href="#">
-          <img class="service-img" src="assets/images/servicos/pie-nr10.jpg" alt="Prontuário das instalações elétricas" loading="lazy">
-          <div class="service-body">
-            <h3 class="service-title">Prontuário das Instalações Elétricas (PIE) – NR-10</h3>
-            <p class="service-mini">Organização documental e rastreabilidade.</p>
-          </div>
-        </a>
-
-        <a class="service-card" href="#">
-          <img class="service-img" src="assets/images/servicos/spda.jpg" alt="SPDA" loading="lazy">
-          <div class="service-body">
-            <h3 class="service-title">Projeto e inspeção de SPDA</h3>
-            <p class="service-mini">NBR 5419, medições e relatório técnico.</p>
-          </div>
-        </a>
-
-        <a class="service-card" href="#">
-          <img class="service-img" src="assets/images/servicos/termografia.jpg" alt="Termografia elétrica" loading="lazy">
-          <div class="service-body">
-            <h3 class="service-title">Termografia elétrica</h3>
-            <p class="service-mini">Detecção de aquecimentos e falhas potenciais.</p>
-          </div>
-        </a>
-
-        <a class="service-card" href="#">
-          <img class="service-img" src="assets/images/servicos/laudo-subestacao.jpg" alt="Subestação" loading="lazy">
-          <div class="service-body">
-            <h3 class="service-title">Inspeção de subestação / cabine primária</h3>
-            <p class="service-mini">Verificação de condições, segurança e operação.</p>
-          </div>
-        </a>
-      </div>
-    </section>
-
-    <!-- ===== SERVIÇOS DE ENGENHARIA DE SEGURANÇA DO TRABALHO ===== -->
-    <section class="service-section" aria-labelledby="servicos-seguranca">
-      <h2 class="section-title" id="servicos-seguranca">Serviços de engenharia de segurança do trabalho</h2>
-      <p class="section-desc">
-        Adequações e documentos técnicos para reduzir riscos, atender normas e proteger pessoas e operação.
-      </p>
-
-      <div class="services-grid">
-        <a class="service-card" href="#">
-          <img class="service-img" src="assets/images/servicos/analise-riscos-nr12.jpg" alt="Análise de riscos NR-12" loading="lazy">
-          <div class="service-body">
-            <h3 class="service-title">Análise de riscos NR-12</h3>
-            <p class="service-mini">Identificação de perigos e medidas de controle.</p>
-          </div>
-        </a>
-
-        <a class="service-card" href="#">
-          <img class="service-img" src="assets/images/servicos/inventario-nr12.jpg" alt="Inventário de máquinas NR-12" loading="lazy">
-          <div class="service-body">
-            <h3 class="service-title">Inventário de máquinas NR-12</h3>
-            <p class="service-mini">Levantamento técnico e documentação por equipamento.</p>
-          </div>
-        </a>
-
-        <a class="service-card" href="#">
-          <img class="service-img" src="assets/images/servicos/laudo-conformidade-nr12.jpg" alt="Laudo de conformidade NR-12" loading="lazy">
-          <div class="service-body">
-            <h3 class="service-title">Laudo de conformidade NR-12</h3>
-            <p class="service-mini">Verificação de requisitos e plano de adequações.</p>
-          </div>
-        </a>
-
-        <a class="service-card" href="#">
-          <img class="service-img" src="assets/images/servicos/consultoria-seguranca.jpg" alt="Consultoria em segurança do trabalho" loading="lazy">
-          <div class="service-body">
-            <h3 class="service-title">Consultoria em engenharia de segurança</h3>
-            <p class="service-mini">Acompanhamento técnico e suporte estratégico.</p>
-          </div>
-        </a>
-
-        <a class="service-card" href="#">
-          <img class="service-img" src="assets/images/servicos/adequacoes.jpg" alt="Adequações de segurança" loading="lazy">
-          <div class="service-body">
-            <h3 class="service-title">Plano de adequações e priorização</h3>
-            <p class="service-mini">O que fazer primeiro, custo e impacto no risco.</p>
-          </div>
-        </a>
-
-        <a class="service-card" href="#">
-          <img class="service-img" src="assets/images/servicos/treinamentos.jpg" alt="Treinamentos e capacitações" loading="lazy">
-          <div class="service-body">
-            <h3 class="service-title">Treinamentos e capacitações</h3>
-            <p class="service-mini">Conteúdo técnico conforme a necessidade da empresa.</p>
-          </div>
-        </a>
       </div>
     </section>
 
   </main>
+
 </body>
 </html>
