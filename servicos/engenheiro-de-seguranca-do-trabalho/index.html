@@ -22,7 +22,7 @@
 
 <script>
 document.addEventListener("DOMContentLoaded", function() {
-  fetch("/menu.html")
+  fetch("../../menu.html")
     .then(response => response.text())
     .then(data => {
       document.getElementById("menu").innerHTML = data;
@@ -32,33 +32,39 @@ document.addEventListener("DOMContentLoaded", function() {
 <!-- ===== FIM MENU ===== -->
 
 
-<!-- ===== HERO ===== -->
-<section class="hero hero-topo">
+<!-- ===== APRESENTAÇÃO DO ENGENHEIRO ===== -->
 
-  <div class="hero-text">
-    <h1>
-  <span>Engenheiro de Segurança</span><br>
-  <span>do Trabalho</span>
+<section class="hero">
+
+<div class="hero-text">
+
+<h1>
+<span class="linha1">Engenheiro de segurança do trabalho</span>
 </h1>
 
-    <p>
-    Engenheiro Dario Cini, responsabilidade técnica, elaboração de laudos, análise de riscos e consultoria em engenharia de segurança do trabalho para empresas e indústrias.
-    </p>
+<p>
+  <strong>Engenheiro de segurança do trabalho — Dario Cini (CREA-RS 211450)</strong><br>
+  Análises de risco, laudos técnicos e programas de segurança com ART para empresas e indústrias.<br><br>
 
-    <p>
-    <strong>CREA-RS 211.450</strong><br>
+  <span data-nosnippet>
     Telefone: (54) 99947-5010<br>
     E-mail: contato@ciniengenharia.com.br
-    </p>
-  </div>
+  </span>
+</p>
 
-  <div class="hero-image">
-    <img src="../../assets/images/engenheiro-de-seguranca-do-trabalho.jpg"
-         alt="Dario Cini engenheiro de segurança do trabalho">
-  </div>
+
+</div>
+
+<div class="hero-image">
+<img src="../../assets/images/engenheiro-de-seguranca-do-trabalho-bento-goncalves.jpg"
+     alt="Engenheiro de segurança do trabalho Bento Gonçalves — Dario Cini"
+     title="Engenheiro de segurança do trabalho Bento Gonçalves">
+
+</div>
 
 </section>
-<!-- ===== FIM HERO ===== -->
+
+<!-- ===== FIM APRESENTAÇÃO DO ENGENHEIRO ===== -->
 
 
 <!-- ===== SERVIÇOS ===== -->

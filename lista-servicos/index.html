@@ -1,239 +1,133 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Serviços | Cini Engenharia</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="/assets/css/menu.css">
+<title>Engenheiro eletricista com ART, laudos e projetos elétricos | Cini Engenharia</title>
 
-  <style>
-    *{ box-sizing: border-box; }
+<meta name="description" content="Engenheiro eletricista com emissão de ART, elaboração de laudos técnicos, projetos elétricos, SPDA, aterramento e consultoria especializada para empresas e indústrias.">
 
-    body{
-      margin:0;
-      font-family: Arial, Helvetica, sans-serif;
-      background:#f5f6f8;
-      color:#111;
-    }
+<link rel="canonical" href="https://www.ciniengenharia.com.br/servicos/engenheiro-eletricista/">
 
-    .container{
-      max-width:1200px;
-      margin:0 auto;
-      padding:40px 16px;
-    }
+<link rel="stylesheet" href="../assets/css/menu.css">
+<link rel="stylesheet" href="../assets/css/engenharia.css">
 
-    .page-title{ font-size:32px; margin-bottom:8px; }
-
-    .page-subtitle{
-      margin-bottom:28px;
-      color:#444;
-      line-height:1.5;
-    }
-
-    .service-section{
-      background:#fff;
-      border-radius:16px;
-      padding:28px;
-      margin:22px 0;
-      box-shadow:0 10px 25px rgba(0,0,0,0.06);
-    }
-
-    .section-title{ font-size:24px; margin-bottom:6px; }
-    .section-desc{ margin-bottom:18px; color:#444; }
-
-    .services-grid{
-      display:grid;
-      grid-template-columns:repeat(3,1fr);
-      gap:16px;
-    }
-
-    @media (max-width:980px){
-      .services-grid{ grid-template-columns:repeat(2,1fr); }
-    }
-
-    @media (max-width:620px){
-      .services-grid{ grid-template-columns:1fr; }
-    }
-
-    .service-card{
-      display:block;
-      text-decoration:none;
-      color:inherit;
-      border-radius:14px;
-      overflow:hidden;
-      background:#fff;
-      border:1px solid #e8e8ee;
-      transition:.15s;
-    }
-
-    .service-card:hover{
-      transform:translateY(-2px);
-      box-shadow:0 12px 26px rgba(0,0,0,0.10);
-    }
-
-    .service-img{
-      width:100%;
-      height:170px;
-      object-fit:cover;
-    }
-
-    .service-body{ padding:14px; }
-
-    .service-title{ font-size:16px; margin:0; }
-
-    .service-mini{
-      margin-top:8px;
-      font-size:13px;
-      color:#555;
-    }
-  </style>
 </head>
 
 <body class="engenharia">
 
-<!-- MENU -->
+<!-- ===== MENU ===== -->
 <div id="menu"></div>
 
 <script>
 document.addEventListener("DOMContentLoaded", function() {
-  fetch("/menu.html")
-    .then(r => r.text())
-    .then(d => document.getElementById("menu").innerHTML = d);
+  fetch("../menu.html")
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("menu").innerHTML = data;
+    });
 });
 </script>
+<!-- ===== FIM MENU ===== -->
 
-<div style="height:110px;"></div>
+<!-- ===== SERVIÇOS ===== -->
+<section class="servicos">
 
-<main class="container">
+  <h2>Serviços oferecidos de engenharia elétrica</h2>
 
-<h1 class="page-title">Serviços</h1>
-<p class="page-subtitle">
-Engenharia elétrica e engenharia de segurança do trabalho com foco em conformidade, documentação e soluções técnicas para empresas e indústrias.
-</p>
+  <div class="servicos-grid">
 
-<!-- ================= ELÉTRICA ================= -->
-<section class="service-section">
+    <div class="servico">
+      <img src="../assets/images/projeto-spda.jpg" alt="Projeto de SPDA">
+      <p>Projeto de SPDA</p>
+    </div>
 
-<h2 class="section-title">Serviços de engenharia elétrica</h2>
-<p class="section-desc">
-Projetos, inspeções e documentos técnicos para adequação e confiabilidade das instalações.
-</p>
+    <div class="servico">
+      <img src="../assets/images/laudo-spda.jpg" alt="Laudo de SPDA">
+      <p>Laudo de SPDA</p>
+    </div>
 
-<div class="services-grid">
+    <div class="servico">
+      <img src="../assets/images/projeto-eletrico-industrial.jpg" alt="Projeto elétrico industrial">
+      <p>Projeto Elétrico Industrial</p>
+    </div>
 
-<a class="service-card" href="#">
-<img class="service-img" src="/assets/images/servicos/projetos-eletricos.jpg">
-<div class="service-body">
-<h3 class="service-title">Projetos elétricos industriais</h3>
-<p class="service-mini">Memorial, diagramas, especificações e ART.</p>
-</div>
-</a>
+    <div class="servico">
+      <img src="../assets/images/projeto-subestacao.jpg" alt="Projeto de subestação">
+      <p>Projeto Subestação</p>
+    </div>
 
-<a class="service-card" href="#">
-<img class="service-img" src="/assets/images/servicos/nr10-laudo.jpg">
-<div class="service-body">
-<h3 class="service-title">Laudo de NR-10</h3>
-<p class="service-mini">Avaliação técnica e recomendações de adequação.</p>
-</div>
-</a>
+    <div class="servico">
+      <img src="../assets/images/calculo-atpv.jpg" alt="Cálculo de ATPV">
+      <p>Cálculo de ATPV</p>
+    </div>
 
-<a class="service-card" href="#">
-<img class="service-img" src="/assets/images/servicos/pie-nr10.jpg">
-<div class="service-body">
-<h3 class="service-title">Prontuário das Instalações Elétricas (PIE) – NR-10</h3>
-<p class="service-mini">Organização documental e rastreabilidade.</p>
-</div>
-</a>
+    <div class="servico">
+      <img src="../assets/images/laudo-aterramento-eletrico.jpg" alt="Laudo de aterramento elétrico">
+      <p>Laudo de Aterramento</p>
+    </div>
 
-<a class="service-card" href="#">
-<img class="service-img" src="/assets/images/servicos/spda.jpg">
-<div class="service-body">
-<h3 class="service-title">Projeto e inspeção de SPDA</h3>
-<p class="service-mini">NBR 5419, medições e relatório técnico.</p>
-</div>
-</a>
+    <div class="servico">
+      <img src="../assets/images/termografia-eletrica.jpg" alt="Termografia elétrica">
+      <p>Termografia</p>
+    </div>
 
-<a class="service-card" href="#">
-<img class="service-img" src="/assets/images/servicos/termografia.jpg">
-<div class="service-body">
-<h3 class="service-title">Termografia elétrica</h3>
-<p class="service-mini">Detecção de aquecimentos e falhas potenciais.</p>
-</div>
-</a>
+    <div class="servico">
+      <img src="../assets/images/consultoria-engenharia-eletrica.jpg" alt="Consultoria em engenharia elétrica">
+      <p>Consultoria em Engenharia Elétrica</p>
+    </div>
 
-<a class="service-card" href="#">
-<img class="service-img" src="/assets/images/servicos/laudo-subestacao.jpg">
-<div class="service-body">
-<h3 class="service-title">Inspeção de subestação / cabine primária</h3>
-<p class="service-mini">Verificação de condições, segurança e operação.</p>
-</div>
-</a>
+  </div>
 
-</div>
+</section>
+<!-- ===== FIM SERVIÇOS ===== -->
+
+<!-- ===== SERVIÇOS ===== -->
+
+<section class="servicos">
+
+  <h2>Serviços oferecidos de engenharia de segurança do trabalho</h2>
+
+  <div class="servicos-grid">
+
+    <div class="servico">
+      <img src="../assets/images/engenheiro-de-seguranca-do-trabalho-analise-de-riscos-nr12.jpg" alt="Análise de riscos">
+      <p>Análise de riscos NR12</p>
+    </div>
+
+    <div class="servico">
+      <img src="../assets/images/engenheiro-de-seguranca-do-trabalho-consultoria.jpg" alt="Consultoria em engenharia de segurança">
+      <p>Consultoria engenharia de segurança</p>
+    </div>
+
+    <div class="servico">
+      <img src="../assets/images/engenheiro-de-seguranca-do-trabalho-inventario-de-maquinas.jpg" alt="Inventário de máquinas NR12">
+      <p>Inventário de máquinas NR12</p>
+    </div>
+
+    <div class="servico">
+      <img src="../assets/images/engenheiro-de-seguranca-do-trabalho-laudo-de-conformidade-nr12.jpg" alt="Laudo de conformidade NR12">
+      <p>Laudo de conformidade NR12</p>
+    </div>
+
+    <div class="servico">
+      <img src="../assets/images/engenheiro-de-seguranca-do-trabalho-laudo-nr10.jpg" alt="Laudo de NR10">
+      <p>Laudo de NR10</p>
+    </div>
+
+    <div class="servico">
+      <img src="../assets/images/engenheiro-de-seguranca-do-trabalho-prontuario-das-instalacoes-eletricas-nr10.jpg" alt="Prontuário das instalações elétricas NR10">
+      <p>Prontuário das instalações elétricas NR10</p>
+    </div>
+
+    
+  </div>
+
 </section>
 
-<!-- ================= SEGURANÇA ================= -->
-<section class="service-section">
+<!-- ===== FIM SERVIÇOS ===== -->
 
-<h2 class="section-title">Serviços de engenharia de segurança do trabalho</h2>
-<p class="section-desc">
-Adequações e documentos técnicos para reduzir riscos, atender normas e proteger pessoas e operação.
-</p>
 
-<div class="services-grid">
-
-<a class="service-card" href="#">
-<img class="service-img" src="/assets/images/servicos/analise-riscos-nr12.jpg">
-<div class="service-body">
-<h3 class="service-title">Análise de riscos NR-12</h3>
-<p class="service-mini">Identificação de perigos e medidas de controle.</p>
-</div>
-</a>
-
-<a class="service-card" href="#">
-<img class="service-img" src="/assets/images/servicos/inventario-nr12.jpg">
-<div class="service-body">
-<h3 class="service-title">Inventário de máquinas NR-12</h3>
-<p class="service-mini">Levantamento técnico e documentação por equipamento.</p>
-</div>
-</a>
-
-<a class="service-card" href="#">
-<img class="service-img" src="/assets/images/servicos/laudo-conformidade-nr12.jpg">
-<div class="service-body">
-<h3 class="service-title">Laudo de conformidade NR-12</h3>
-<p class="service-mini">Verificação de requisitos e plano de adequações.</p>
-</div>
-</a>
-
-<a class="service-card" href="#">
-<img class="service-img" src="/assets/images/servicos/consultoria-seguranca.jpg">
-<div class="service-body">
-<h3 class="service-title">Consultoria em engenharia de segurança</h3>
-<p class="service-mini">Acompanhamento técnico e suporte estratégico.</p>
-</div>
-</a>
-
-<a class="service-card" href="#">
-<img class="service-img" src="/assets/images/servicos/adequacoes.jpg">
-<div class="service-body">
-<h3 class="service-title">Plano de adequações e priorização</h3>
-<p class="service-mini">O que fazer primeiro, custo e impacto no risco.</p>
-</div>
-</a>
-
-<a class="service-card" href="#">
-<img class="service-img" src="/assets/images/servicos/treinamentos.jpg">
-<div class="service-body">
-<h3 class="service-title">Treinamentos e capacitações</h3>
-<p class="service-mini">Conteúdo técnico conforme a necessidade da empresa.</p>
-</div>
-</a>
-
-</div>
-</section>
-
-</main>
 </body>
 </html>
