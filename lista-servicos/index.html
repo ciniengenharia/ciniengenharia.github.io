@@ -108,10 +108,23 @@
       color: #555;
       line-height: 1.35;
     }
-  </style>
+</style>
 </head>
 
-<body>
+<body class="engenharia">
+
+  <div id="menu"></div>
+
+  <script>
+  document.addEventListener("DOMContentLoaded", function() {
+    fetch("/menu.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("menu").innerHTML = data;
+      });
+  });
+  </script>
+
   <main class="container">
 
     <h1 class="page-title">Serviços</h1>
