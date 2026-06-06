@@ -185,3 +185,46 @@ body.engenharia .faq,
 body.engenharia .faq *{
   width: 100%;
 }
+
+/* ===== SEÇÃO LARGURA TOTAL ===== */
+body.engenharia .secao-full {
+  max-width: 1400px;
+  margin: 40px auto;
+  padding: 60px;
+  background: #fff;
+  border-radius: 20px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+body.engenharia .secao-full .hero-text {
+  width: 100%;
+}
+
+
+/* ===== CIDADES ATENDIDAS — DISCRETO ===== */
+body.engenharia .cidades-atendidas {
+  max-width: 1400px;
+  margin: 20px auto 40px auto;
+  padding: 0 60px;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 12px;
+}
+
+body.engenharia .cidades-atendidas a {
+  font-size: 13px;
+  color: #999;
+  text-decoration: none;
+}
+
+body.engenharia .cidades-atendidas a:hover {
+  color: #555;
+}
+
+body.engenharia .cidades-atendidas span {
+  font-size: 13px;
+  color: #ccc;
+}
