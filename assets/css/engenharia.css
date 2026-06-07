@@ -201,6 +201,11 @@ body.engenharia .secao-full .hero-text {
   width: 100%;
 }
 
+body.engenharia .secao-full .hero-text a {
+  margin: 0 8px;
+  line-height: 2;
+}
+
 
 /* ===== CIDADES ATENDIDAS — DISCRETO ===== */
 body.engenharia .cidades-atendidas {
