@@ -9,25 +9,35 @@
       </a>
     </div>
 
+    <!-- BOTÃO HAMBURGUER -->
+    <button class="menu-toggle" aria-label="Abrir menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
     <!-- LINKS -->
     <div class="menu-links">
-
       <a href="/">Página inicial</a>
-
-      <a href="/servicos/engenheiro-eletricista/">
-        Eng. eletricista
-      </a>
-
-      <a href="/servicos/engenheiro-de-seguranca-do-trabalho/">
-        Eng. segurança do trabalho
-      </a>
-
+      <a href="/servicos/engenheiro-eletricista/">Eng. eletricista</a>
+      <a href="/servicos/engenheiro-de-seguranca-do-trabalho/">Eng. segurança do trabalho</a>
       <a href="/lista-servicos/">Serviços</a>
-
       <a href="/contato/">Contato</a>
-
     </div>
 
   </div>
 </nav>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const toggle = document.querySelector(".menu-toggle");
+  const links = document.querySelector(".menu-links");
+  if (toggle && links) {
+    toggle.addEventListener("click", function() {
+      links.classList.toggle("open");
+      toggle.classList.toggle("open");
+    });
+  }
+});
+</script>
 <!-- ===== FIM MENU ===== -->

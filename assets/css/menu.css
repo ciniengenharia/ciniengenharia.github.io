@@ -72,3 +72,79 @@
 .menu-links a:hover {
   color: #e50914;
 }
+
+
+/* ===== HAMBURGUER ===== */
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  margin-left: auto;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 26px;
+  height: 2px;
+  background: #111;
+  transition: all 0.3s ease;
+}
+
+.menu-toggle.open span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.menu-toggle.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle.open span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* ===== RESPONSIVO ===== */
+
+@media (max-width: 768px) {
+
+  .menu-container {
+    flex-wrap: wrap;
+    gap: 0;
+    padding: 12px 16px;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  .menu-links {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    padding: 12px 0;
+    gap: 0;
+  }
+
+  .menu-links.open {
+    display: flex;
+  }
+
+  .menu-links a {
+    width: 100%;
+    padding: 12px 8px;
+    font-size: 16px;
+    border-left: none;
+  }
+
+  .menu-links a + a {
+    border-left: none;
+    padding-left: 8px;
+    border-top: 1px solid #eee;
+  }
+}
