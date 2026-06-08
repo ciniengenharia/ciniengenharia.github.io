@@ -29,15 +29,23 @@
 </nav>
 
 <script>
-document.addEventListener("DOMContentLoaded", function() {
-  const toggle = document.querySelector(".menu-toggle");
-  const links = document.querySelector(".menu-links");
-  if (toggle && links) {
-    toggle.addEventListener("click", function() {
-      links.classList.toggle("open");
-      toggle.classList.toggle("open");
-    });
+(function() {
+  function initMenu() {
+    const toggle = document.querySelector(".menu-toggle");
+    const links = document.querySelector(".menu-links");
+    if (toggle && links) {
+      toggle.addEventListener("click", function() {
+        links.classList.toggle("open");
+        toggle.classList.toggle("open");
+      });
+    }
   }
-});
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", initMenu);
+  } else {
+    initMenu();
+  }
+})();
 </script>
 <!-- ===== FIM MENU ===== -->
