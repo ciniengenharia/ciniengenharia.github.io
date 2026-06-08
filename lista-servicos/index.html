@@ -4,11 +4,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Engenheiro eletricista com ART, laudos e projetos elétricos | Cini Engenharia</title>
+<title>Serviços de Engenharia Elétrica e Segurança do Trabalho | Cini Engenharia</title>
 
-<meta name="description" content="Engenheiro eletricista com emissão de ART, elaboração de laudos técnicos, projetos elétricos, SPDA, aterramento e consultoria especializada para empresas e indústrias.">
+<meta name="description" content="Conheça todos os serviços oferecidos pela Cini Engenharia: projetos elétricos, laudos, SPDA, aterramento, análise de riscos NR12, inventário de máquinas e consultoria com ART.">
 
-<link rel="canonical" href="https://www.ciniengenharia.com.br/servicos/engenheiro-eletricista/">
+<link rel="canonical" href="https://www.ciniengenharia.com.br/lista-servicos/">
 
 <link rel="stylesheet" href="../assets/css/menu.css">
 <link rel="stylesheet" href="../assets/css/engenharia.css">
@@ -22,10 +22,27 @@
 
 <script>
 document.addEventListener("DOMContentLoaded", function() {
-  fetch("../menu.html")
-    .then(response => response.text())
+  fetch("/menu.html")
+    .then(response => {
+      if (!response.ok) {
+        throw new Error("Erro ao carregar menu.html");
+      }
+      return response.text();
+    })
     .then(data => {
       document.getElementById("menu").innerHTML = data;
+
+      const toggle = document.querySelector(".menu-toggle");
+      const links = document.querySelector(".menu-links");
+      if (toggle && links) {
+        toggle.addEventListener("click", function() {
+          links.classList.toggle("open");
+          toggle.classList.toggle("open");
+        });
+      }
+    })
+    .catch(error => {
+      console.error("Erro no menu:", error);
     });
 });
 </script>

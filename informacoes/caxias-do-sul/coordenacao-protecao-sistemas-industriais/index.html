@@ -123,6 +123,15 @@ document.addEventListener("DOMContentLoaded", function() {
     })
     .then(data => {
       document.getElementById("menu").innerHTML = data;
+
+      const toggle = document.querySelector(".menu-toggle");
+      const links = document.querySelector(".menu-links");
+      if (toggle && links) {
+        toggle.addEventListener("click", function() {
+          links.classList.toggle("open");
+          toggle.classList.toggle("open");
+        });
+      }
     })
     .catch(error => {
       console.error("Erro no menu:", error);
@@ -235,13 +244,13 @@ A coordenação de proteção em sistemas industriais é um estudo técnico que 
             </li>
 
             <li>
-                <a href="/informacoes/caxias-do-sul/corrente-curto-circuito-presumida-baixa-tensao/">
+                <a href="/informacoes/caxias-do-sul/estudos-de-curto-circuito-em-instalacoes-industriais/">
                     Estudos de curto-circuito em instalações industriais
                 </a>
             </li>
 
             <li>
-                <a href="/informacoes/caxias-do-sul/criterios-para-limitacao-de-queda-de-tensao/">
+                <a href="/informacoes/caxias-do-sul/corrente-de-curto-circuito-presumida-em-baixa-tensao/">
                     Corrente de curto-circuito presumida em baixa tensão
                 </a>
             </li>

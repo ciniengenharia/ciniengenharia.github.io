@@ -168,6 +168,15 @@ document.addEventListener("DOMContentLoaded", function() {
     })
     .then(data => {
       document.getElementById("menu").innerHTML = data;
+
+      const toggle = document.querySelector(".menu-toggle");
+      const links = document.querySelector(".menu-links");
+      if (toggle && links) {
+        toggle.addEventListener("click", function() {
+          links.classList.toggle("open");
+          toggle.classList.toggle("open");
+        });
+      }
     })
     .catch(error => {
       console.error("Erro no menu:", error);
@@ -175,6 +184,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 </script>
 <!-- ===== FIM MENU DINÂMICO ===== -->
+
 
 <!-- ===== APRESENTAÇÃO DO ENGENHEIRO ===== -->
 

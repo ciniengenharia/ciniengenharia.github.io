@@ -44,12 +44,12 @@
         "url":"https://www.ciniengenharia.com.br/servicos/curso-nr12/",
         "name":"Curso NR12 presencial para empresas com certificado",
         "isPartOf":{"@id":"https://www.ciniengenharia.com.br/#website"},
-        "about":{"@id":"https://www.ciniengenharia.com.br/#organization"},
+        "about":{"@id":"https://www.ciniengenharia.com.br/#localbusiness"},
         "inLanguage":"pt-BR"
       },
       {
         "@type":["Organization","ProfessionalService"],
-        "@id":"https://www.ciniengenharia.com.br/#organization",
+        "@id":"https://www.ciniengenharia.com.br/#localbusiness",
         "name":"Cini Engenharia",
         "legalName":"Cini Engenharia",
         "url":"https://www.ciniengenharia.com.br/",
@@ -73,7 +73,7 @@
         "@id":"https://www.ciniengenharia.com.br/servicos/curso-nr12/#service",
         "name":"Curso NR12 presencial para empresas com certificado",
         "serviceType":"Treinamento NR12 presencial in company",
-        "provider":{"@id":"https://www.ciniengenharia.com.br/#organization"},
+        "provider":{"@id":"https://www.ciniengenharia.com.br/#localbusiness"},
         "areaServed":{"@type":"Country","name":"Brasil"},
         "audience":{
           "@type":"Audience",
@@ -128,6 +128,39 @@
 </head>
 
 <body class="engenharia">
+
+<body class="engenharia">
+
+<!-- ===== MENU DINÂMICO ===== -->
+<div id="menu"></div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  fetch("/menu.html")
+    .then(response => {
+      if (!response.ok) {
+        throw new Error("Erro ao carregar menu.html");
+      }
+      return response.text();
+    })
+    .then(data => {
+      document.getElementById("menu").innerHTML = data;
+
+      const toggle = document.querySelector(".menu-toggle");
+      const links = document.querySelector(".menu-links");
+      if (toggle && links) {
+        toggle.addEventListener("click", function() {
+          links.classList.toggle("open");
+          toggle.classList.toggle("open");
+        });
+      }
+    })
+    .catch(error => {
+      console.error("Erro no menu:", error);
+    });
+});
+</script>
+<!-- ===== FIM MENU DINÂMICO ===== -->
 
 <!-- ===== CURSO NR12 ===== -->
 

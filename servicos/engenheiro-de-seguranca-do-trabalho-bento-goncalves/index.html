@@ -136,6 +136,37 @@
 
 <body class="engenharia">
 
+<!-- ===== MENU DINÂMICO ===== -->
+<div id="menu"></div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  fetch("/menu.html")
+    .then(response => {
+      if (!response.ok) {
+        throw new Error("Erro ao carregar menu.html");
+      }
+      return response.text();
+    })
+    .then(data => {
+      document.getElementById("menu").innerHTML = data;
+
+      const toggle = document.querySelector(".menu-toggle");
+      const links = document.querySelector(".menu-links");
+      if (toggle && links) {
+        toggle.addEventListener("click", function() {
+          links.classList.toggle("open");
+          toggle.classList.toggle("open");
+        });
+      }
+    })
+    .catch(error => {
+      console.error("Erro no menu:", error);
+    });
+});
+</script>
+<!-- ===== FIM MENU DINÂMICO ===== -->
+
 <!-- ===== APRESENTAÇÃO DO ENGENHEIRO ===== -->
 
 <section class="hero">
