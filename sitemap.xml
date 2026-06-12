@@ -56,6 +56,18 @@
     <loc>https://www.ciniengenharia.com.br/servicos/engenheiro-eletricista-sao-leopoldo/</loc>
   </url>
 
+  <url>
+    <loc>https://www.ciniengenharia.com.br/servicos/engenheiro-eletricista-farroupilha/</loc>
+  </url>
+
+  <url>
+    <loc>https://www.ciniengenharia.com.br/servicos/engenheiro-eletricista-cachoeirinha/</loc>
+  </url>
+
+  <url>
+    <loc>https://www.ciniengenharia.com.br/servicos/engenheiro-eletricista-montenegro/</loc>
+  </url>
+
 <!-- ENGENHEIRO DE SEGURANÇA DO TRABALHO (BASE + CIDADES) -->
   <url>
     <loc>https://www.ciniengenharia.com.br/servicos/engenheiro-de-seguranca-do-trabalho/</loc>
@@ -71,6 +83,9 @@
   <url><loc>https://www.ciniengenharia.com.br/servicos/engenheiro-de-seguranca-do-trabalho-novo-hamburgo/</loc></url>
   <url><loc>https://www.ciniengenharia.com.br/servicos/engenheiro-de-seguranca-do-trabalho-porto-alegre/</loc></url>
   <url><loc>https://www.ciniengenharia.com.br/servicos/engenheiro-de-seguranca-do-trabalho-sao-leopoldo/</loc></url>
+  <url><loc>https://www.ciniengenharia.com.br/servicos/engenheiro-de-seguranca-do-trabalho-farroupilha/</loc></url>
+  <url><loc>https://www.ciniengenharia.com.br/servicos/engenheiro-de-seguranca-do-trabalho-cachoeirinha/</loc></url>
+  <url><loc>https://www.ciniengenharia.com.br/servicos/engenheiro-de-seguranca-do-trabalho-montenegro/</loc></url>
 
   <!-- CURSO NR12 -->
   <url>
