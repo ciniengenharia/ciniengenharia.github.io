@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="description" content="Critérios para especificação de relés térmicos em instalações elétricas industriais. Conceitos, parâmetros de ajuste e aplicações para proteção de motores em Cachoeirinha.">
+
+<link rel="canonical" href="https://www.ciniengenharia.com.br/informacoes/cachoeirinha/criterios-para-especificacao-de-reles-termicos/">
+
+<link rel="icon" type="image/png" href="../../../assets/images/favicon.png">
+
+<link rel="stylesheet" href="../../../assets/css/menu.css">
+<link rel="stylesheet" href="../../../assets/css/artigos.css">
+
+<title>Critérios para Especificação de Relés Térmicos | Cini Engenharia</title>
+
+<!-- ===== Open Graph para redes sociais ===== -->
+
+<meta property="og:title" content="Critérios para Especificação de Relés Térmicos | Cini Engenharia">
+
+<meta property="og:description" content="Critérios para especificação de relés térmicos em instalações elétricas industriais. Conceitos, parâmetros de ajuste e aplicações para proteção de motores em Cachoeirinha.">
+
+<meta property="og:image" content="https://www.ciniengenharia.com.br/assets/images/engenheiro-eletricista-cachoeirinha.jpg">
+
+<meta property="og:url" content="https://www.ciniengenharia.com.br/informacoes/cachoeirinha/criterios-para-especificacao-de-reles-termicos/">
+
+<meta property="og:type" content="article">
+
+<!-- ===== JSON-LD ===== -->
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+
+    {
+      "@type": "WebSite",
+      "@id": "https://www.ciniengenharia.com.br/#website",
+      "url": "https://www.ciniengenharia.com.br/",
+      "name": "Cini Engenharia",
+      "inLanguage": "pt-BR"
+    },
+
+    {
+      "@type": "WebPage",
+      "@id": "https://www.ciniengenharia.com.br/informacoes/cachoeirinha/criterios-para-especificacao-de-reles-termicos/#webpage",
+      "url": "https://www.ciniengenharia.com.br/informacoes/cachoeirinha/criterios-para-especificacao-de-reles-termicos/",
+      "name": "Critérios para Especificação de Relés Térmicos",
+      "isPartOf": {
+        "@id": "https://www.ciniengenharia.com.br/#website"
+      },
+      "about": {
+        "@id": "https://www.ciniengenharia.com.br/#localbusiness"
+      },
+      "inLanguage": "pt-BR"
+    },
+
+    {
+      "@type": ["LocalBusiness", "ProfessionalService", "Electrician"],
+      "@id": "https://www.ciniengenharia.com.br/#localbusiness",
+      "name": "Cini Engenharia",
+      "legalName": "Cini Engenharia",
+      "taxID": "25.268.313/0001-56",
+      "url": "https://www.ciniengenharia.com.br/",
+      "email": "contato@ciniengenharia.com.br",
+      "telephone": "+55-51-99961-3451",
+      "priceRange": "$$",
+
+      "founder": {
+        "@type": "Person",
+        "name": "Dario Cini",
+        "jobTitle": "Engenheiro Eletricista",
+        "sameAs": [
+          "https://www.linkedin.com/in/dario-cini-38a3303a1/"
+        ]
+      },
+
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "contactType": "comercial",
+          "telephone": "+55-51-99961-3451",
+          "email": "contato@ciniengenharia.com.br",
+          "availableLanguage": ["pt-BR"]
+        }
+      ],
+
+      "serviceType": [
+        "Projeto elétrico industrial",
+        "Projeto de subestação",
+        "Laudo de aterramento",
+        "Laudo das instalações elétricas",
+        "Termografia elétrica",
+        "Consultoria em engenharia elétrica",
+        "NR-10",
+        "NR-12"
+      ]
+    }
+
+  ]
+}
+</script>
+
+</head>
+
+
+<body class="artigos">
+
+<!-- ===== MENU DINÂMICO ===== -->
+<div id="menu"></div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  fetch("/menu.html")
+    .then(response => {
+      if (!response.ok) {
+        throw new Error("Erro ao carregar menu.html");
+      }
+      return response.text();
+    })
+    .then(data => {
+      document.getElementById("menu").innerHTML = data;
+
+      const toggle = document.querySelector(".menu-toggle");
+      const links = document.querySelector(".menu-links");
+      if (toggle && links) {
+        toggle.addEventListener("click", function() {
+          links.classList.toggle("open");
+          toggle.classList.toggle("open");
+        });
+      }
+    })
+    .catch(error => {
+      console.error("Erro no menu:", error);
+    });
+});
+</script>
+<!-- ===== FIM MENU DINÂMICO ===== -->
+
+
+<!-- ===== ARTIGO TÉCNICO ===== -->
+
+<section class="artigo-tecnico">
+
+<h1>Critérios para Especificação de Relés Térmicos</h1>
+
+<p>
+O relé térmico é o dispositivo de proteção responsável por detectar condições de sobrecarga em motores elétricos e interromper o circuito de comando antes que o aquecimento excessivo cause danos ao isolamento dos enrolamentos. Seu princípio de funcionamento baseia-se na deflexão de lâminas bimetálicas aquecidas pela corrente do motor: quando a corrente supera o valor de ajuste por tempo suficiente para indicar uma condição de sobrecarga, as lâminas atingem o deslocamento necessário para acionar o mecanismo de disparo e abrir o contato que desliga o contator do circuito principal.
+</p>
+
+<p>
+Em instalações industriais em Cachoeirinha, onde motores elétricos estão presentes em compressores, bombas, transportadores, misturadores e máquinas de processo, a proteção térmica corretamente especificada é a principal linha de defesa contra queima de motores por sobrecarga. Um relé mal ajustado — com corrente de ajuste acima da corrente nominal do motor — permite que o equipamento opere em sobrecarga por tempo suficiente para degradar o isolamento, reduzindo a vida útil do motor ou causando sua queima.
+</p>
+
+<h2>Faixa de ajuste e corrente nominal do motor</h2>
+
+<p>
+O relé térmico deve ser selecionado de forma que a corrente nominal do motor esteja dentro da faixa de ajuste do dispositivo. A maioria dos fabricantes oferece relés com faixas de ajuste sobrepostas — por exemplo, 4 a 6 A, 5,5 a 8 A, 7 a 10 A — de modo que o projetista possa escolher o modelo cuja faixa central corresponda à corrente nominal do motor. O ajuste deve ser feito exatamente na corrente nominal indicada na placa de identificação do motor, sem folgas para cima, pois qualquer valor acima da corrente nominal reduz a eficácia da proteção.
+</p>
+
+<p>
+Quando o motor opera com fator de serviço superior a 1,0 — condição indicada na placa do equipamento que autoriza operação contínua acima da potência nominal por períodos prolongados — o ajuste do relé térmico pode ser feito na corrente correspondente ao produto da corrente nominal pelo fator de serviço, desde que o fabricante do motor assim autorize. Para motores com fator de serviço 1,0, o ajuste deve ser estritamente na corrente nominal.
+</p>
+
+<h2>Compensação de temperatura ambiente</h2>
+
+<p>
+Os relés térmicos de lâmina bimetálica são dispositivos sensíveis à temperatura ambiente, pois a deflexão da lâmina depende não apenas do aquecimento gerado pela corrente, mas também da temperatura do ambiente em que o relé está instalado. Em ambientes com temperatura superior à temperatura de referência de calibração do dispositivo — geralmente 20 °C ou 40 °C conforme o fabricante — o relé tende a disparar com correntes inferiores ao valor de ajuste, oferecendo proteção mais conservadora.
+</p>
+
+<p>
+Em instalações industriais em Cachoeirinha com painéis elétricos instalados em ambientes quentes, como salas de máquinas, cabines próximas a fornos ou painéis expostos à radiação solar direta, a temperatura interna do painel pode se elevar significativamente acima da temperatura ambiente externa. Nesses casos, é necessário verificar se o relé possui compensação automática de temperatura ou aplicar os fatores de correção fornecidos pelo fabricante para garantir que o ajuste nominal corresponda à proteção efetiva do motor.
+</p>
+
+<h2>Proteção contra falta de fase</h2>
+
+<p>
+A falta de fase — a abertura de um dos três condutores de alimentação de um motor trifásico — é uma das causas mais frequentes de queima de motores em instalações industriais. Com apenas duas fases alimentando o motor, as correntes nas fases remanescentes aumentam significativamente, e o motor passa a operar com aquecimento excessivo mesmo que a carga mecânica não tenha se alterado. O tempo até a queima do isolamento pode ser muito curto dependendo da carga e do porte do motor.
+</p>
+
+<p>
+Os relés térmicos modernos para aplicações trifásicas possuem proteção contra falta de fase incorporada, que detecta o desequilíbrio de correntes entre as três fases e dispara em tempo mais curto do que o disparo por sobrecarga simétrica. Ao especificar um relé térmico para motores trifásicos em Cachoeirinha, a presença dessa função deve ser verificada e exigida, pois relés mais simples sem essa proteção deixam o motor desprotegido diante de uma das faltas mais comuns e destrutivas em instalações industriais.
+</p>
+
+<h2>Classe de disparo</h2>
+
+<p>
+A classe de disparo do relé térmico define o tempo máximo de atuação do dispositivo quando submetido a uma corrente de 7,2 vezes a corrente de ajuste a partir do estado frio. As classes mais utilizadas em aplicações industriais são a classe 10 e a classe 20, com tempos de disparo de até 10 e 20 segundos respectivamente nessa condição. A escolha da classe correta está diretamente relacionada ao perfil de partida do motor.
+</p>
+
+<p>
+Motores com partida direta e carga de baixo momento de inércia, como pequenas bombas centrífugas e ventiladores, geralmente são adequadamente protegidos por relés de classe 10. Motores com partida mais longa — como compressores de pistão, moinhos e equipamentos com elevada inércia mecânica — exigem relés de classe 20 ou superior para evitar disparos intempestivos durante a partida, quando a corrente elevada se prolonga por mais tempo sem caracterizar uma condição de defeito.
+</p>
+
+<h2>Modo de reset e integração ao circuito de comando</h2>
+
+<p>
+Após um disparo por sobrecarga, o relé térmico pode ser configurado para reset manual ou reset automático. O reset manual exige a intervenção de um operador para rearmar o dispositivo, o que obriga a identificação da causa da sobrecarga antes do religamento do motor. O reset automático permite que o relé rearme sozinho após o resfriamento das lâminas bimetálicas, religando o motor sem intervenção humana.
+</p>
+
+<p>
+Em instalações industriais, o reset manual é a configuração recomendada na grande maioria das aplicações, pois evita que o motor seja religado automaticamente após um disparo sem que a causa da sobrecarga tenha sido investigada e corrigida. O religamento repetido de um motor em sobrecarga agrava progressivamente o dano ao isolamento e pode levar à queima irreversível do equipamento. O contato auxiliar de sinalização do relé térmico deve ser integrado ao circuito de alarme ou supervisão do painel para que a equipe de manutenção seja notificada imediatamente após um disparo.
+</p>
+
+<h2>Conclusão</h2>
+
+<p>
+A especificação correta do relé térmico envolve a definição da faixa de ajuste compatível com a corrente nominal do motor, a verificação da compensação de temperatura ambiente, a exigência de proteção contra falta de fase, a escolha da classe de disparo adequada ao perfil de partida da carga e a definição do modo de reset compatível com a filosofia operacional da instalação. Em Cachoeirinha, onde a continuidade dos processos industriais depende diretamente da disponibilidade dos motores elétricos, investir na correta especificação da proteção térmica é uma das medidas de maior retorno na redução de falhas e custos de manutenção.
+</p>
+
+</section>
+
+
+<!-- ===== FIM ARTIGO TÉCNICO ===== -->
+
+
+<!-- ===== CONTEÚDOS RELACIONADOS ===== -->
+
+<section class="hero">
+
+    <div class="hero-text">
+
+        <h2>Conteúdos relacionados</h2>
+
+        <ul>
+
+            <li>
+                <a href="/servicos/engenheiro-eletricista-cachoeirinha/">
+                    Engenheiro eletricista em Cachoeirinha
+                </a>
+            </li>
+
+            <li>
+                <a href="/informacoes/cachoeirinha/criterios-para-escolha-de-isolacao-de-cabos/">
+                    Critérios para escolha de isolação de cabos
+                </a>
+            </li>
+
+            <li>
+                <a href="/informacoes/cachoeirinha/criterios-para-especificacao-de-cabos-industriais/">
+                    Critérios para especificação de cabos industriais
+                </a>
+            </li>
+
+        </ul>
+
+    </div>
+
+</section>
+
+<!-- ===== FIM CONTEÚDOS RELACIONADOS ===== -->
+
+
+<!-- ===== REGIÕES DE ATENDIMENTO DE ENGENHARIA ELÉTRICA CACHOEIRINHA ===== -->
+
+<section class="area-atendimento">
+
+    <!-- TÍTULO DA SEÇÃO -->
+
+    <h2>Regiões de atendimento de engenharia elétrica em Cachoeirinha</h2>
+
+    <!-- TEXTO INTRODUTÓRIO -->
+
+    <p class="intro">
+        O atendimento de engenharia elétrica em Cachoeirinha abrange empresas,
+        indústrias, condomínios, edificações comerciais e empreendimentos
+        residenciais.
+    </p>
+
+    <!-- GRID DE REGIÕES -->
+
+    <div class="regioes-grid">
+
+        <!-- REGIÃO CENTRAL -->
+
+        <div class="regiao-card">
+
+            <h3>Região Central</h3>
+
+            <p>
+                Centro, Parque da Matriz, Vila Cachoeirinha,
+                Vila Vista Alegre e Jardim Betânia.
+            </p>
+
+        </div>
+
+        <!-- ZONA INDUSTRIAL -->
+
+        <div class="regiao-card">
+
+            <h3>Zona Industrial</h3>
+
+            <p>
+                Distrito Industrial, Parque Granja Esperança,
+                Vila Jardim América e entorno da Av. das Indústrias.
+            </p>
+
+        </div>
+
+        <!-- ZONA NORTE -->
+
+        <div class="regiao-card">
+
+            <h3>Zona Norte</h3>
+
+            <p>
+                Nova Cachoeirinha, Jardim do Bosque,
+                Vila Bom Princípio e Vila Veranópolis.
+            </p>
+
+        </div>
+
+        <!-- ZONA SUL -->
+
+        <div class="regiao-card">
+
+            <h3>Zona Sul</h3>
+
+            <p>
+                Granja Esperança, Vila Parque Brasília,
+                Vila Regina e Central Parque.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ===== FIM REGIÕES DE ATENDIMENTO DE ENGENHARIA ELÉTRICA CACHOEIRINHA ===== -->
+
+</body>
+</html>
