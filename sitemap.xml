@@ -115,62 +115,50 @@
     <loc>https://www.ciniengenharia.com.br/informacoes/porto-alegre/projeto-eletrico/criterios-para-substituicao-de-alimentadores-existentes/</loc>
   </url>
 
-  <!-- ARTIGOS — CAXIAS DO SUL -->
+<!-- ARTIGOS — CAXIAS DO SUL (ENGENHEIRO ELETRICISTA) -->
   <url>
-    <loc>https://www.ciniengenharia.com.br/informacoes/caxias-do-sul/influencia-da-queda-de-tensao-no-desempenho-de-motores/</loc>
+    <loc>https://www.ciniengenharia.com.br/informacoes/caxias-do-sul/projeto-eletrico/influencia-da-queda-de-tensao-no-desempenho-de-motores/</loc>
+  </url>
+  <url>
+    <loc>https://www.ciniengenharia.com.br/informacoes/caxias-do-sul/projeto-eletrico/criterios-para-limitacao-de-queda-de-tensao/</loc>
+  </url>
+  <url>
+    <loc>https://www.ciniengenharia.com.br/informacoes/caxias-do-sul/projeto-eletrico/estudos-de-curto-circuito-em-instalacoes-industriais/</loc>
+  </url>
+  <url>
+    <loc>https://www.ciniengenharia.com.br/informacoes/caxias-do-sul/projeto-eletrico/corrente-curto-circuito-presumida-baixa-tensao/</loc>
+  </url>
+  <url>
+    <loc>https://www.ciniengenharia.com.br/informacoes/caxias-do-sul/projeto-eletrico/influencia-impedancia-concessionaria-estudos-eletricos/</loc>
+  </url>
+  <url>
+    <loc>https://www.ciniengenharia.com.br/informacoes/caxias-do-sul/projeto-eletrico/coordenacao-protecao-sistemas-industriais/</loc>
+  </url>
+  <url>
+    <loc>https://www.ciniengenharia.com.br/informacoes/caxias-do-sul/projeto-eletrico/seletividade-disjuntores-baixa-tensao/</loc>
   </url>
 
+<!-- ARTIGOS — BENTO GONÇALVES (ENGENHEIRO ELETRICISTA) -->
   <url>
-    <loc>https://www.ciniengenharia.com.br/informacoes/caxias-do-sul/criterios-para-limitacao-de-queda-de-tensao/</loc>
+    <loc>https://www.ciniengenharia.com.br/informacoes/bento-goncalves/projeto-eletrico/analise-de-disponibilidade-de-sistemas-eletricos/</loc>
   </url>
-
   <url>
-    <loc>https://www.ciniengenharia.com.br/informacoes/caxias-do-sul/estudos-de-curto-circuito-em-instalacoes-industriais/</loc>
+    <loc>https://www.ciniengenharia.com.br/informacoes/bento-goncalves/projeto-eletrico/confiabilidade-aplicada-a-sistemas-eletricos-industriais/</loc>
   </url>
-
   <url>
-    <loc>https://www.ciniengenharia.com.br/informacoes/caxias-do-sul/corrente-curto-circuito-presumida-baixa-tensao/</loc>
+    <loc>https://www.ciniengenharia.com.br/informacoes/bento-goncalves/projeto-eletrico/coordenacao-entre-fusiveis-e-disjuntores/</loc>
   </url>
-
   <url>
-    <loc>https://www.ciniengenharia.com.br/informacoes/caxias-do-sul/influencia-impedancia-concessionaria-estudos-eletricos/</loc>
+    <loc>https://www.ciniengenharia.com.br/informacoes/bento-goncalves/projeto-eletrico/criterios-para-alimentacao-de-cargas-criticas/</loc>
   </url>
-
   <url>
-    <loc>https://www.ciniengenharia.com.br/informacoes/caxias-do-sul/coordenacao-protecao-sistemas-industriais/</loc>
+    <loc>https://www.ciniengenharia.com.br/informacoes/bento-goncalves/projeto-eletrico/criterios-para-especificacao-de-dispositivos-de-protecao/</loc>
   </url>
-
   <url>
-    <loc>https://www.ciniengenharia.com.br/informacoes/caxias-do-sul/seletividade-disjuntores-baixa-tensao/</loc>
+    <loc>https://www.ciniengenharia.com.br/informacoes/bento-goncalves/projeto-eletrico/criterios-para-redundancia-eletrica/</loc>
   </url>
-
-<!-- ARTIGOS — BENTO GONÇALVES -->
   <url>
-    <loc>https://www.ciniengenharia.com.br/informacoes/bento-goncalves/analise-de-disponibilidade-de-sistemas-eletricos/</loc>
-  </url>
-
-  <url>
-    <loc>https://www.ciniengenharia.com.br/informacoes/bento-goncalves/confiabilidade-aplicada-a-sistemas-eletricos-industriais/</loc>
-  </url>
-
-  <url>
-    <loc>https://www.ciniengenharia.com.br/informacoes/bento-goncalves/coordenacao-entre-fusiveis-e-disjuntores/</loc>
-  </url>
-
-  <url>
-    <loc>https://www.ciniengenharia.com.br/informacoes/bento-goncalves/criterios-para-alimentacao-de-cargas-criticas/</loc>
-  </url>
-
-  <url>
-    <loc>https://www.ciniengenharia.com.br/informacoes/bento-goncalves/criterios-para-especificacao-de-dispositivos-de-protecao/</loc>
-  </url>
-
-  <url>
-    <loc>https://www.ciniengenharia.com.br/informacoes/bento-goncalves/criterios-para-redundancia-eletrica/</loc>
-  </url>
-
-  <url>
-    <loc>https://www.ciniengenharia.com.br/informacoes/bento-goncalves/seletividade-parcial-versus-seletividade-total/</loc>
+    <loc>https://www.ciniengenharia.com.br/informacoes/bento-goncalves/projeto-eletrico/seletividade-parcial-versus-seletividade-total/</loc>
   </url>
 
 <!-- ARTIGOS — NOVO HAMBURGO (ENGENHEIRO ELETRICISTA) -->
@@ -196,99 +184,99 @@
     <loc>https://www.ciniengenharia.com.br/informacoes/novo-hamburgo/projeto-eletrico/setorizacao-eletrica-em-instalacoes-industriais/</loc>
   </url>
 
-<!-- ARTIGOS — CARLOS BARBOSA -->
+<!-- ARTIGOS — CARLOS BARBOSA (ENGENHEIRO ELETRICISTA) -->
   <url>
-    <loc>https://www.ciniengenharia.com.br/informacoes/carlos-barbosa/analise-de-fator-de-carga/</loc>
+    <loc>https://www.ciniengenharia.com.br/informacoes/carlos-barbosa/projeto-eletrico/analise-de-fator-de-carga/</loc>
   </url>
   <url>
-    <loc>https://www.ciniengenharia.com.br/informacoes/carlos-barbosa/analise-de-fator-de-simultaneidade/</loc>
+    <loc>https://www.ciniengenharia.com.br/informacoes/carlos-barbosa/projeto-eletrico/analise-de-fator-de-simultaneidade/</loc>
   </url>
   <url>
-    <loc>https://www.ciniengenharia.com.br/informacoes/carlos-barbosa/criterios-para-definicao-de-demanda-maxima/</loc>
+    <loc>https://www.ciniengenharia.com.br/informacoes/carlos-barbosa/projeto-eletrico/criterios-para-definicao-de-demanda-maxima/</loc>
   </url>
   <url>
-    <loc>https://www.ciniengenharia.com.br/informacoes/carlos-barbosa/estudos-de-eficiencia-em-projetos-eletricos/</loc>
+    <loc>https://www.ciniengenharia.com.br/informacoes/carlos-barbosa/projeto-eletrico/estudos-de-eficiencia-em-projetos-eletricos/</loc>
   </url>
   <url>
-    <loc>https://www.ciniengenharia.com.br/informacoes/carlos-barbosa/sistemas-de-alimentacao-para-cargas-intermitentes/</loc>
-  </url>
-
-
-<!-- ARTIGOS — FARROUPILHA -->
-  <url>
-    <loc>https://www.ciniengenharia.com.br/informacoes/farroupilha/criterios-para-especificacao-de-materiais-eletricos/</loc>
-  </url>
-  <url>
-    <loc>https://www.ciniengenharia.com.br/informacoes/farroupilha/diagramas-de-comando-e-potencia/</loc>
-  </url>
-  <url>
-    <loc>https://www.ciniengenharia.com.br/informacoes/farroupilha/diagramas-funcionais-em-projetos-industriais/</loc>
-  </url>
-  <url>
-    <loc>https://www.ciniengenharia.com.br/informacoes/farroupilha/memorial-de-calculo-em-projetos-eletricos/</loc>
-  </url>
-  <url>
-    <loc>https://www.ciniengenharia.com.br/informacoes/farroupilha/memorial-descritivo-de-instalacoes-eletricas/</loc>
+    <loc>https://www.ciniengenharia.com.br/informacoes/carlos-barbosa/projeto-eletrico/sistemas-de-alimentacao-para-cargas-intermitentes/</loc>
   </url>
 
 
-<!-- ARTIGOS — GARIBALDI -->
+<!-- ARTIGOS — FARROUPILHA (ENGENHEIRO ELETRICISTA) -->
   <url>
-    <loc>https://www.ciniengenharia.com.br/informacoes/garibaldi/compatibilizacao-disciplinas-engenharia/</loc>
+    <loc>https://www.ciniengenharia.com.br/informacoes/farroupilha/projeto-eletrico/criterios-para-especificacao-de-materiais-eletricos/</loc>
   </url>
   <url>
-    <loc>https://www.ciniengenharia.com.br/informacoes/garibaldi/criterios-elaboracao-diagramas-trifilares/</loc>
+    <loc>https://www.ciniengenharia.com.br/informacoes/farroupilha/projeto-eletrico/diagramas-de-comando-e-potencia/</loc>
   </url>
   <url>
-    <loc>https://www.ciniengenharia.com.br/informacoes/garibaldi/criterios-elaboracao-diagramas-unifilares/</loc>
+    <loc>https://www.ciniengenharia.com.br/informacoes/farroupilha/projeto-eletrico/diagramas-funcionais-em-projetos-industriais/</loc>
   </url>
   <url>
-    <loc>https://www.ciniengenharia.com.br/informacoes/garibaldi/principais-falhas-projetos-industriais/</loc>
+    <loc>https://www.ciniengenharia.com.br/informacoes/farroupilha/projeto-eletrico/memorial-de-calculo-em-projetos-eletricos/</loc>
   </url>
   <url>
-    <loc>https://www.ciniengenharia.com.br/informacoes/garibaldi/revisao-tecnica-projetos-eletricos/</loc>
-  </url>
-
-
-<!-- ARTIGOS — GRAVATAÍ -->
-  <url>
-    <loc>https://www.ciniengenharia.com.br/informacoes/gravatai/criterios-para-especificacao-de-barramentos/</loc>
-  </url>
-  <url>
-    <loc>https://www.ciniengenharia.com.br/informacoes/gravatai/criterios-para-especificacao-de-dps/</loc>
-  </url>
-  <url>
-    <loc>https://www.ciniengenharia.com.br/informacoes/gravatai/criterios-para-especificacao-de-motores/</loc>
-  </url>
-  <url>
-    <loc>https://www.ciniengenharia.com.br/informacoes/gravatai/criterios-para-especificacao-de-quadros-eletricos/</loc>
-  </url>
-  <url>
-    <loc>https://www.ciniengenharia.com.br/informacoes/gravatai/criterios-para-especificacao-de-transformadores/</loc>
+    <loc>https://www.ciniengenharia.com.br/informacoes/farroupilha/projeto-eletrico/memorial-descritivo-de-instalacoes-eletricas/</loc>
   </url>
 
 
-<!-- ARTIGOS — LAJEADO -->
+<!-- ARTIGOS — GARIBALDI (ENGENHEIRO ELETRICISTA) -->
   <url>
-    <loc>https://www.ciniengenharia.com.br/informacoes/lajeado/avaliacao-tecnica-de-instalacoes-existentes/</loc>
+    <loc>https://www.ciniengenharia.com.br/informacoes/garibaldi/projeto-eletrico/compatibilizacao-disciplinas-engenharia/</loc>
   </url>
   <url>
-    <loc>https://www.ciniengenharia.com.br/informacoes/lajeado/criterios-para-modernizacao-de-sistemas-eletricos/</loc>
+    <loc>https://www.ciniengenharia.com.br/informacoes/garibaldi/projeto-eletrico/criterios-elaboracao-diagramas-trifilares/</loc>
   </url>
   <url>
-    <loc>https://www.ciniengenharia.com.br/informacoes/lajeado/criterios-para-reserva-de-capacidade-futura/</loc>
+    <loc>https://www.ciniengenharia.com.br/informacoes/garibaldi/projeto-eletrico/criterios-elaboracao-diagramas-unifilares/</loc>
   </url>
   <url>
-    <loc>https://www.ciniengenharia.com.br/informacoes/lajeado/diagnostico-de-sobrecarga-em-instalacoes-industriais/</loc>
+    <loc>https://www.ciniengenharia.com.br/informacoes/garibaldi/projeto-eletrico/principais-falhas-projetos-industriais/</loc>
   </url>
   <url>
-    <loc>https://www.ciniengenharia.com.br/informacoes/lajeado/estudos-de-expansao-eletrica-industrial/</loc>
+    <loc>https://www.ciniengenharia.com.br/informacoes/garibaldi/projeto-eletrico/revisao-tecnica-projetos-eletricos/</loc>
+  </url>
+
+
+<!-- ARTIGOS — GRAVATAÍ (ENGENHEIRO ELETRICISTA) -->
+  <url>
+    <loc>https://www.ciniengenharia.com.br/informacoes/gravatai/projeto-eletrico/criterios-para-especificacao-de-barramentos/</loc>
   </url>
   <url>
-    <loc>https://www.ciniengenharia.com.br/informacoes/lajeado/integracao-de-novas-maquinas-em-instalacoes-existentes/</loc>
+    <loc>https://www.ciniengenharia.com.br/informacoes/gravatai/projeto-eletrico/criterios-para-especificacao-de-dps/</loc>
   </url>
   <url>
-    <loc>https://www.ciniengenharia.com.br/informacoes/lajeado/potencia-instalada-versus-potencia-demandada/</loc>
+    <loc>https://www.ciniengenharia.com.br/informacoes/gravatai/projeto-eletrico/criterios-para-especificacao-de-motores/</loc>
+  </url>
+  <url>
+    <loc>https://www.ciniengenharia.com.br/informacoes/gravatai/projeto-eletrico/criterios-para-especificacao-de-quadros-eletricos/</loc>
+  </url>
+  <url>
+    <loc>https://www.ciniengenharia.com.br/informacoes/gravatai/projeto-eletrico/criterios-para-especificacao-de-transformadores/</loc>
+  </url>
+
+
+<!-- ARTIGOS — LAJEADO (ENGENHEIRO ELETRICISTA) -->
+  <url>
+    <loc>https://www.ciniengenharia.com.br/informacoes/lajeado/projeto-eletrico/avaliacao-tecnica-de-instalacoes-existentes/</loc>
+  </url>
+  <url>
+    <loc>https://www.ciniengenharia.com.br/informacoes/lajeado/projeto-eletrico/criterios-para-modernizacao-de-sistemas-eletricos/</loc>
+  </url>
+  <url>
+    <loc>https://www.ciniengenharia.com.br/informacoes/lajeado/projeto-eletrico/criterios-para-reserva-de-capacidade-futura/</loc>
+  </url>
+  <url>
+    <loc>https://www.ciniengenharia.com.br/informacoes/lajeado/projeto-eletrico/diagnostico-de-sobrecarga-em-instalacoes-industriais/</loc>
+  </url>
+  <url>
+    <loc>https://www.ciniengenharia.com.br/informacoes/lajeado/projeto-eletrico/estudos-de-expansao-eletrica-industrial/</loc>
+  </url>
+  <url>
+    <loc>https://www.ciniengenharia.com.br/informacoes/lajeado/projeto-eletrico/integracao-de-novas-maquinas-em-instalacoes-existentes/</loc>
+  </url>
+  <url>
+    <loc>https://www.ciniengenharia.com.br/informacoes/lajeado/projeto-eletrico/potencia-instalada-versus-potencia-demandada/</loc>
   </url>
 
 
@@ -315,38 +303,38 @@
     <loc>https://www.ciniengenharia.com.br/informacoes/montenegro/projeto-eletrico/sistemas-de-alimentacao-para-cargas-continuas/</loc>
   </url>
 
-<!-- ARTIGOS — CACHOEIRINHA -->
+<!-- ARTIGOS — CACHOEIRINHA (ENGENHEIRO ELETRICISTA) -->
   <url>
-    <loc>https://www.ciniengenharia.com.br/informacoes/cachoeirinha/criterios-para-escolha-de-isolacao-de-cabos/</loc>
+    <loc>https://www.ciniengenharia.com.br/informacoes/cachoeirinha/projeto-eletrico/criterios-para-escolha-de-isolacao-de-cabos/</loc>
   </url>
   <url>
-    <loc>https://www.ciniengenharia.com.br/informacoes/cachoeirinha/criterios-para-especificacao-de-cabos-industriais/</loc>
+    <loc>https://www.ciniengenharia.com.br/informacoes/cachoeirinha/projeto-eletrico/criterios-para-especificacao-de-cabos-industriais/</loc>
   </url>
   <url>
-    <loc>https://www.ciniengenharia.com.br/informacoes/cachoeirinha/criterios-para-especificacao-de-contatores/</loc>
+    <loc>https://www.ciniengenharia.com.br/informacoes/cachoeirinha/projeto-eletrico/criterios-para-especificacao-de-contatores/</loc>
   </url>
   <url>
-    <loc>https://www.ciniengenharia.com.br/informacoes/cachoeirinha/criterios-para-especificacao-de-dr/</loc>
+    <loc>https://www.ciniengenharia.com.br/informacoes/cachoeirinha/projeto-eletrico/criterios-para-especificacao-de-dr/</loc>
   </url>
   <url>
-    <loc>https://www.ciniengenharia.com.br/informacoes/cachoeirinha/criterios-para-especificacao-de-reles-termicos/</loc>
+    <loc>https://www.ciniengenharia.com.br/informacoes/cachoeirinha/projeto-eletrico/criterios-para-especificacao-de-reles-termicos/</loc>
   </url>
 
-<!-- ARTIGOS — CANOAS -->
+<!-- ARTIGOS — CANOAS (ENGENHEIRO ELETRICISTA) -->
   <url>
-    <loc>https://www.ciniengenharia.com.br/informacoes/canoas/criterios-para-instalacao-de-cabos-em-eletrocalhas/</loc>
+    <loc>https://www.ciniengenharia.com.br/informacoes/canoas/projeto-eletrico/criterios-para-instalacao-de-cabos-em-eletrocalhas/</loc>
   </url>
   <url>
-    <loc>https://www.ciniengenharia.com.br/informacoes/canoas/criterios-para-instalacao-de-cabos-subterraneos/</loc>
+    <loc>https://www.ciniengenharia.com.br/informacoes/canoas/projeto-eletrico/criterios-para-instalacao-de-cabos-subterraneos/</loc>
   </url>
   <url>
-    <loc>https://www.ciniengenharia.com.br/informacoes/canoas/dimensionamento-de-infraestrutura-eletrica-industrial/</loc>
+    <loc>https://www.ciniengenharia.com.br/informacoes/canoas/projeto-eletrico/dimensionamento-de-infraestrutura-eletrica-industrial/</loc>
   </url>
   <url>
-    <loc>https://www.ciniengenharia.com.br/informacoes/canoas/criterios-para-ocupacao-de-eletrocalhas/</loc>
+    <loc>https://www.ciniengenharia.com.br/informacoes/canoas/projeto-eletrico/criterios-para-ocupacao-de-eletrocalhas/</loc>
   </url>
   <url>
-    <loc>https://www.ciniengenharia.com.br/informacoes/canoas/criterios-para-ocupacao-de-eletrodutos/</loc>
+    <loc>https://www.ciniengenharia.com.br/informacoes/canoas/projeto-eletrico/criterios-para-ocupacao-de-eletrodutos/</loc>
   </url>
 
 <!-- ARTIGOS — SÃO LEOPOLDO (ENGENHEIRO ELETRICISTA) -->
@@ -369,99 +357,99 @@
 
 <!-- ARTIGOS — BENTO GONÇALVES (ENGENHEIRO DE SEGURANÇA DO TRABALHO) -->
   <url>
-    <loc>https://www.ciniengenharia.com.br/informacoes/bento-goncalves/nr-10-atualizada-2026-guia-completo/</loc>
+    <loc>https://www.ciniengenharia.com.br/informacoes/bento-goncalves/nr10/nr-10-atualizada-2026-guia-completo/</loc>
   </url>
   <url>
-    <loc>https://www.ciniengenharia.com.br/informacoes/bento-goncalves/o-que-e-a-nr-10-e-para-que-serve/</loc>
+    <loc>https://www.ciniengenharia.com.br/informacoes/bento-goncalves/nr10/o-que-e-a-nr-10-e-para-que-serve/</loc>
   </url>
   <url>
-    <loc>https://www.ciniengenharia.com.br/informacoes/bento-goncalves/portaria-mte-737-2026-o-que-ela-determina/</loc>
+    <loc>https://www.ciniengenharia.com.br/informacoes/bento-goncalves/nr10/portaria-mte-737-2026-o-que-ela-determina/</loc>
   </url>
   <url>
-    <loc>https://www.ciniengenharia.com.br/informacoes/bento-goncalves/quando-a-nova-nr-10-entra-em-vigor/</loc>
+    <loc>https://www.ciniengenharia.com.br/informacoes/bento-goncalves/nr10/quando-a-nova-nr-10-entra-em-vigor/</loc>
   </url>
   <url>
-    <loc>https://www.ciniengenharia.com.br/informacoes/bento-goncalves/a-quais-empresas-a-nr-10-se-aplica/</loc>
+    <loc>https://www.ciniengenharia.com.br/informacoes/bento-goncalves/nr10/a-quais-empresas-a-nr-10-se-aplica/</loc>
   </url>
   <url>
-    <loc>https://www.ciniengenharia.com.br/informacoes/bento-goncalves/o-que-muda-na-nr-10-em-2026/</loc>
+    <loc>https://www.ciniengenharia.com.br/informacoes/bento-goncalves/nr10/o-que-muda-na-nr-10-em-2026/</loc>
   </url>
   <url>
-    <loc>https://www.ciniengenharia.com.br/informacoes/bento-goncalves/nr-10-e-nr-1-como-as-duas-normas-se-integram-no-gro/</loc>
+    <loc>https://www.ciniengenharia.com.br/informacoes/bento-goncalves/nr10/nr-10-e-nr-1-como-as-duas-normas-se-integram-no-gro/</loc>
   </url>
 
 <!-- ARTIGOS — CAXIAS DO SUL (ENGENHEIRO DE SEGURANÇA DO TRABALHO) -->
   <url>
-    <loc>https://www.ciniengenharia.com.br/informacoes/caxias-do-sul/nr-10-se-aplica-a-instalacoes-de-extrabaixa-tensao/</loc>
+    <loc>https://www.ciniengenharia.com.br/informacoes/caxias-do-sul/nr10/nr-10-se-aplica-a-instalacoes-de-extrabaixa-tensao/</loc>
   </url>
   <url>
-    <loc>https://www.ciniengenharia.com.br/informacoes/caxias-do-sul/portarias-revogadas-pela-nova-nr-10/</loc>
+    <loc>https://www.ciniengenharia.com.br/informacoes/caxias-do-sul/nr10/portarias-revogadas-pela-nova-nr-10/</loc>
   </url>
   <url>
-    <loc>https://www.ciniengenharia.com.br/informacoes/caxias-do-sul/o-que-e-o-sistema-eletrico-de-potencia-sep/</loc>
+    <loc>https://www.ciniengenharia.com.br/informacoes/caxias-do-sul/nr10/o-que-e-o-sistema-eletrico-de-potencia-sep/</loc>
   </url>
   <url>
-    <loc>https://www.ciniengenharia.com.br/informacoes/caxias-do-sul/o-que-e-o-sistema-eletrico-de-consumo-sec/</loc>
+    <loc>https://www.ciniengenharia.com.br/informacoes/caxias-do-sul/nr10/o-que-e-o-sistema-eletrico-de-consumo-sec/</loc>
   </url>
   <url>
-    <loc>https://www.ciniengenharia.com.br/informacoes/caxias-do-sul/nr-10-em-corrente-continua/</loc>
+    <loc>https://www.ciniengenharia.com.br/informacoes/caxias-do-sul/nr10/nr-10-em-corrente-continua/</loc>
   </url>
   <url>
-    <loc>https://www.ciniengenharia.com.br/informacoes/caxias-do-sul/trabalhador-qualificado-plh-e-trabalhador-capacitado/</loc>
+    <loc>https://www.ciniengenharia.com.br/informacoes/caxias-do-sul/nr10/trabalhador-qualificado-plh-e-trabalhador-capacitado/</loc>
   </url>
   <url>
-    <loc>https://www.ciniengenharia.com.br/informacoes/caxias-do-sul/o-que-e-trabalhador-autorizado-na-nr-10/</loc>
+    <loc>https://www.ciniengenharia.com.br/informacoes/caxias-do-sul/nr10/o-que-e-trabalhador-autorizado-na-nr-10/</loc>
   </url>
 
 <!-- ARTIGOS — CARLOS BARBOSA (ENGENHEIRO DE SEGURANÇA DO TRABALHO) -->
   <url>
-    <loc>https://www.ciniengenharia.com.br/informacoes/carlos-barbosa/profissional-legalmente-habilitado-plh-responsabilidades-na-nova-nr-10/</loc>
+    <loc>https://www.ciniengenharia.com.br/informacoes/carlos-barbosa/nr10/profissional-legalmente-habilitado-plh-responsabilidades-na-nova-nr-10/</loc>
   </url>
   <url>
-    <loc>https://www.ciniengenharia.com.br/informacoes/carlos-barbosa/plano-de-aprendizagem-na-nr-10/</loc>
+    <loc>https://www.ciniengenharia.com.br/informacoes/carlos-barbosa/nr10/plano-de-aprendizagem-na-nr-10/</loc>
   </url>
   <url>
-    <loc>https://www.ciniengenharia.com.br/informacoes/carlos-barbosa/como-a-capacitacao-nr-10-funciona-na-pratica/</loc>
+    <loc>https://www.ciniengenharia.com.br/informacoes/carlos-barbosa/nr10/como-a-capacitacao-nr-10-funciona-na-pratica/</loc>
   </url>
   <url>
-    <loc>https://www.ciniengenharia.com.br/informacoes/carlos-barbosa/supervisao-de-equipe-em-servicos-eletricos/</loc>
+    <loc>https://www.ciniengenharia.com.br/informacoes/carlos-barbosa/nr10/supervisao-de-equipe-em-servicos-eletricos/</loc>
   </url>
   <url>
-    <loc>https://www.ciniengenharia.com.br/informacoes/carlos-barbosa/adornos-pessoais-e-indumentaria-na-nr-10/</loc>
+    <loc>https://www.ciniengenharia.com.br/informacoes/carlos-barbosa/nr10/adornos-pessoais-e-indumentaria-na-nr-10/</loc>
   </url>
 
 <!-- ARTIGOS — GARIBALDI (ENGENHEIRO DE SEGURANÇA DO TRABALHO) -->
   <url>
-    <loc>https://www.ciniengenharia.com.br/informacoes/garibaldi/exame-medico-ocupacional-na-nr-10/</loc>
+    <loc>https://www.ciniengenharia.com.br/informacoes/garibaldi/nr10/exame-medico-ocupacional-na-nr-10/</loc>
   </url>
   <url>
-    <loc>https://www.ciniengenharia.com.br/informacoes/garibaldi/capacitacao-nr-10-vale-para-outra-empresa/</loc>
+    <loc>https://www.ciniengenharia.com.br/informacoes/garibaldi/nr10/capacitacao-nr-10-vale-para-outra-empresa/</loc>
   </url>
   <url>
-    <loc>https://www.ciniengenharia.com.br/informacoes/garibaldi/pessoa-nao-advertida-na-nr-10/</loc>
+    <loc>https://www.ciniengenharia.com.br/informacoes/garibaldi/nr10/pessoa-nao-advertida-na-nr-10/</loc>
   </url>
   <url>
-    <loc>https://www.ciniengenharia.com.br/informacoes/garibaldi/treinamento-basico-nr-10/</loc>
+    <loc>https://www.ciniengenharia.com.br/informacoes/garibaldi/nr10/treinamento-basico-nr-10/</loc>
   </url>
   <url>
-    <loc>https://www.ciniengenharia.com.br/informacoes/garibaldi/treinamento-complementar-do-sep/</loc>
+    <loc>https://www.ciniengenharia.com.br/informacoes/garibaldi/nr10/treinamento-complementar-do-sep/</loc>
   </url>
 
 <!-- ARTIGOS — FARROUPILHA (ENGENHEIRO DE SEGURANÇA DO TRABALHO) -->
   <url>
-    <loc>https://www.ciniengenharia.com.br/informacoes/farroupilha/treinamento-de-media-e-alta-tensao-no-sec/</loc>
+    <loc>https://www.ciniengenharia.com.br/informacoes/farroupilha/nr10/treinamento-de-media-e-alta-tensao-no-sec/</loc>
   </url>
   <url>
-    <loc>https://www.ciniengenharia.com.br/informacoes/farroupilha/treinamento-para-area-classificada-na-nr-10/</loc>
+    <loc>https://www.ciniengenharia.com.br/informacoes/farroupilha/nr10/treinamento-para-area-classificada-na-nr-10/</loc>
   </url>
   <url>
-    <loc>https://www.ciniengenharia.com.br/informacoes/farroupilha/treinamento-especifico-e-pontual-profissionais-estrangeiros/</loc>
+    <loc>https://www.ciniengenharia.com.br/informacoes/farroupilha/nr10/treinamento-especifico-e-pontual-profissionais-estrangeiros/</loc>
   </url>
   <url>
-    <loc>https://www.ciniengenharia.com.br/informacoes/farroupilha/treinamento-de-compartilhamento-de-infraestrutura-do-sep/</loc>
+    <loc>https://www.ciniengenharia.com.br/informacoes/farroupilha/nr10/treinamento-de-compartilhamento-de-infraestrutura-do-sep/</loc>
   </url>
   <url>
-    <loc>https://www.ciniengenharia.com.br/informacoes/farroupilha/treinamento-periodico-bienal-nr-10/</loc>
+    <loc>https://www.ciniengenharia.com.br/informacoes/farroupilha/nr10/treinamento-periodico-bienal-nr-10/</loc>
   </url>
 
 <!-- ARTIGOS — PORTO ALEGRE (ENGENHEIRO DE SEGURANÇA DO TRABALHO) -->
@@ -489,70 +477,70 @@
 
 <!-- ARTIGOS — CACHOEIRINHA (ENGENHEIRO DE SEGURANÇA DO TRABALHO) -->
   <url>
-    <loc>https://www.ciniengenharia.com.br/informacoes/cachoeirinha/epi-para-arco-eletrico-em-corrente-continua/</loc>
+    <loc>https://www.ciniengenharia.com.br/informacoes/cachoeirinha/nr10/epi-para-arco-eletrico-em-corrente-continua/</loc>
   </url>
   <url>
-    <loc>https://www.ciniengenharia.com.br/informacoes/cachoeirinha/quem-esta-dispensado-de-usar-epi-para-arco-eletrico/</loc>
+    <loc>https://www.ciniengenharia.com.br/informacoes/cachoeirinha/nr10/quem-esta-dispensado-de-usar-epi-para-arco-eletrico/</loc>
   </url>
   <url>
-    <loc>https://www.ciniengenharia.com.br/informacoes/cachoeirinha/vestimentas-de-trabalho-na-nr-10/</loc>
+    <loc>https://www.ciniengenharia.com.br/informacoes/cachoeirinha/nr10/vestimentas-de-trabalho-na-nr-10/</loc>
   </url>
   <url>
-    <loc>https://www.ciniengenharia.com.br/informacoes/cachoeirinha/ensaios-dieletricos-na-nr-10/</loc>
+    <loc>https://www.ciniengenharia.com.br/informacoes/cachoeirinha/nr10/ensaios-dieletricos-na-nr-10/</loc>
   </url>
   <url>
-    <loc>https://www.ciniengenharia.com.br/informacoes/cachoeirinha/luvas-isolantes-na-nr-10/</loc>
+    <loc>https://www.ciniengenharia.com.br/informacoes/cachoeirinha/nr10/luvas-isolantes-na-nr-10/</loc>
   </url>
 
 <!-- ARTIGOS — CANOAS (ENGENHEIRO DE SEGURANÇA DO TRABALHO) -->
   <url>
-    <loc>https://www.ciniengenharia.com.br/informacoes/canoas/o-que-e-atpv-e-ebt-no-epi-para-arco-eletrico/</loc>
+    <loc>https://www.ciniengenharia.com.br/informacoes/canoas/nr10/o-que-e-atpv-e-ebt-no-epi-para-arco-eletrico/</loc>
   </url>
   <url>
-    <loc>https://www.ciniengenharia.com.br/informacoes/canoas/medidas-de-protecao-coletiva-na-nr-10/</loc>
+    <loc>https://www.ciniengenharia.com.br/informacoes/canoas/nr10/medidas-de-protecao-coletiva-na-nr-10/</loc>
   </url>
   <url>
-    <loc>https://www.ciniengenharia.com.br/informacoes/canoas/protecao-basica-vs-protecao-supletiva-na-nr-10/</loc>
+    <loc>https://www.ciniengenharia.com.br/informacoes/canoas/nr10/protecao-basica-vs-protecao-supletiva-na-nr-10/</loc>
   </url>
   <url>
-    <loc>https://www.ciniengenharia.com.br/informacoes/canoas/ddr-de-alta-sensibilidade-onde-e-obrigatorio-pela-nova-nr-10/</loc>
+    <loc>https://www.ciniengenharia.com.br/informacoes/canoas/nr10/ddr-de-alta-sensibilidade-onde-e-obrigatorio-pela-nova-nr-10/</loc>
   </url>
   <url>
-    <loc>https://www.ciniengenharia.com.br/informacoes/canoas/quando-o-ddr-nao-e-obrigatorio-excecoes-na-nr-10/</loc>
+    <loc>https://www.ciniengenharia.com.br/informacoes/canoas/nr10/quando-o-ddr-nao-e-obrigatorio-excecoes-na-nr-10/</loc>
   </url>
 
 <!-- ARTIGOS — GRAVATAÍ (ENGENHEIRO DE SEGURANÇA DO TRABALHO) -->
   <url>
-    <loc>https://www.ciniengenharia.com.br/informacoes/gravatai/protecao-contra-arco-eletrico-o-que-a-nr-10-exige-nas-instalacoes/</loc>
+    <loc>https://www.ciniengenharia.com.br/informacoes/gravatai/nr10/protecao-contra-arco-eletrico-o-que-a-nr-10-exige-nas-instalacoes/</loc>
   </url>
   <url>
-    <loc>https://www.ciniengenharia.com.br/informacoes/gravatai/choque-eletrico-e-arco-eletrico-como-identificar-e-avaliar-cada-risco/</loc>
+    <loc>https://www.ciniengenharia.com.br/informacoes/gravatai/nr10/choque-eletrico-e-arco-eletrico-como-identificar-e-avaliar-cada-risco/</loc>
   </url>
   <url>
-    <loc>https://www.ciniengenharia.com.br/informacoes/gravatai/o-que-sao-riscos-adicionais-na-nr-10-e-como-controla-los/</loc>
+    <loc>https://www.ciniengenharia.com.br/informacoes/gravatai/nr10/o-que-sao-riscos-adicionais-na-nr-10-e-como-controla-los/</loc>
   </url>
   <url>
-    <loc>https://www.ciniengenharia.com.br/informacoes/gravatai/hierarquia-de-medidas-de-prevencao-na-nr-10/</loc>
+    <loc>https://www.ciniengenharia.com.br/informacoes/gravatai/nr10/hierarquia-de-medidas-de-prevencao-na-nr-10/</loc>
   </url>
   <url>
-    <loc>https://www.ciniengenharia.com.br/informacoes/gravatai/equipotencializacao-o-que-e-e-por-que-a-nr-10-exige/</loc>
+    <loc>https://www.ciniengenharia.com.br/informacoes/gravatai/nr10/equipotencializacao-o-que-e-e-por-que-a-nr-10-exige/</loc>
   </url>
 
 <!-- ARTIGOS — LAJEADO (ENGENHEIRO DE SEGURANÇA DO TRABALHO) -->
   <url>
-    <loc>https://www.ciniengenharia.com.br/informacoes/lajeado/isolacao-das-partes-vivas-como-a-nr-10-exige-a-protecao-basica/</loc>
+    <loc>https://www.ciniengenharia.com.br/informacoes/lajeado/nr10/isolacao-das-partes-vivas-como-a-nr-10-exige-a-protecao-basica/</loc>
   </url>
   <url>
-    <loc>https://www.ciniengenharia.com.br/informacoes/lajeado/seccionamento-automatico-da-alimentacao-o-que-e-e-quando-aplicar-na-nr-10/</loc>
+    <loc>https://www.ciniengenharia.com.br/informacoes/lajeado/nr10/seccionamento-automatico-da-alimentacao-o-que-e-e-quando-aplicar-na-nr-10/</loc>
   </url>
   <url>
-    <loc>https://www.ciniengenharia.com.br/informacoes/lajeado/desenergizacao-na-nr-10-as-7-etapas-obrigatorias-antes-de-qualquer-servico/</loc>
+    <loc>https://www.ciniengenharia.com.br/informacoes/lajeado/nr10/desenergizacao-na-nr-10-as-7-etapas-obrigatorias-antes-de-qualquer-servico/</loc>
   </url>
   <url>
-    <loc>https://www.ciniengenharia.com.br/informacoes/lajeado/reenergizacao-na-nr-10-o-passo-a-passo-correto-apos-o-servico/</loc>
+    <loc>https://www.ciniengenharia.com.br/informacoes/lajeado/nr10/reenergizacao-na-nr-10-o-passo-a-passo-correto-apos-o-servico/</loc>
   </url>
   <url>
-    <loc>https://www.ciniengenharia.com.br/informacoes/lajeado/trabalho-em-instalacoes-energizadas-quando-a-nr-10-permite-e-quais-as-exigencias/</loc>
+    <loc>https://www.ciniengenharia.com.br/informacoes/lajeado/nr10/trabalho-em-instalacoes-energizadas-quando-a-nr-10-permite-e-quais-as-exigencias/</loc>
   </url>
 
 <!-- ARTIGOS — SÃO LEOPOLDO (ENGENHEIRO DE SEGURANÇA DO TRABALHO) -->
