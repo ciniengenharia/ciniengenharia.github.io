@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!--
+=========================================================================
+  ANTES DE PUBLICAR — CHECKLIST
+=========================================================================
+  1. NORMAS — confira contra os textos que você tem:
+     - ABNT NBR 5410, item 7.3.2 — ensaio de continuidade dos condutores
+       de proteção, incluindo equipotencializações principal e suplementares.
+       Recomenda fonte com tensão em vazio de 4 V a 24 V (CC ou CA) e
+       corrente de ensaio de no mínimo 0,2 A.
+     - ABNT NBR 5410, item 7.3.5 — assume que a continuidade já foi
+       verificada (7.3.2) antes de avaliar equipotencialização e
+       seccionamento automático. Ou seja, continuidade é pré-requisito.
+     - ABNT NBR 5419-3 — verifica a eficácia do SPDA por continuidade
+       elétrica (edição vigente dispensa a resistência como critério).
+  2. INSTRUMENTO — se você usa micro-ohmímetro / miliohmímetro específico,
+     cite o modelo. Nesta página, o instrumento é argumento de credibilidade.
+  3. PRAZOS, PREÇO, ENDEREÇO no JSON-LD e IMAGENS: pendentes.
+  4. LINKS INTERNOS: esta página passa a ser o destino real dos cards
+     "Laudo de Continuidade Elétrica" das 13 cidades. Troque naqueles
+     cards o href de /laudo-aterramento/ para /laudo-continuidade-eletrica/.
+=========================================================================
+-->
+
+<meta name="description" content="Laudo de continuidade elétrica com ensaio dos condutores de proteção (NBR 5410) e das descidas do SPDA (NBR 5419-3), com medição, registro e ART no CREA. Dario Cini — CREA-RS 211.450.">
+
+<link rel="canonical" href="https://www.ciniengenharia.com.br/servicos-engenharia-eletrica/laudo-continuidade-eletrica/">
+
+<link rel="icon" type="image/png" href="../../assets/images/favicon.png">
+
+<link rel="stylesheet" href="../../assets/css/menu.css">
+<link rel="stylesheet" href="../../assets/css/engenharia.css">
+
+<title>Laudo de Continuidade Elétrica — NBR 5410 e SPDA | Cini Engenharia</title>
+
+<!-- ===== Open Graph ===== -->
+<meta property="og:title" content="Laudo de Continuidade Elétrica — NBR 5410 e SPDA | Cini Engenharia">
+<meta property="og:description" content="Ensaio de continuidade dos condutores de proteção e das descidas do SPDA, com medição, registro e ART registrada no CREA.">
+<meta property="og:image" content="https://www.ciniengenharia.com.br/assets/images/laudo-continuidade-eletrica.jpg">
+<meta property="og:url" content="https://www.ciniengenharia.com.br/servicos-engenharia-eletrica/laudo-continuidade-eletrica/">
+<meta property="og:type" content="website">
+
+<!-- ===== JSON-LD ===== -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://www.ciniengenharia.com.br/#website",
+      "url": "https://www.ciniengenharia.com.br/",
+      "name": "Cini Engenharia",
+      "inLanguage": "pt-BR"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.ciniengenharia.com.br/servicos-engenharia-eletrica/laudo-continuidade-eletrica/#webpage",
+      "url": "https://www.ciniengenharia.com.br/servicos-engenharia-eletrica/laudo-continuidade-eletrica/",
+      "name": "Laudo de Continuidade Elétrica",
+      "isPartOf": { "@id": "https://www.ciniengenharia.com.br/#website" },
+      "about": { "@id": "https://www.ciniengenharia.com.br/servicos-engenharia-eletrica/laudo-continuidade-eletrica/#service" },
+      "inLanguage": "pt-BR"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://www.ciniengenharia.com.br/servicos-engenharia-eletrica/laudo-continuidade-eletrica/#breadcrumb",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Início", "item": "https://www.ciniengenharia.com.br/" },
+        { "@type": "ListItem", "position": 2, "name": "Engenheiro eletricista", "item": "https://www.ciniengenharia.com.br/servicos/engenheiro-eletricista/" },
+        { "@type": "ListItem", "position": 3, "name": "Laudo de continuidade elétrica" }
+      ]
+    },
+    {
+      "@type": "Service",
+      "@id": "https://www.ciniengenharia.com.br/servicos-engenharia-eletrica/laudo-continuidade-eletrica/#service",
+      "name": "Laudo de continuidade elétrica",
+      "alternateName": ["Ensaio de continuidade", "Teste de continuidade do condutor de proteção", "Continuidade do SPDA"],
+      "serviceType": "Ensaio e laudo de continuidade elétrica de condutores de proteção e SPDA",
+      "description": "Ensaio de continuidade dos condutores de proteção e das equipotencializações conforme ABNT NBR 5410 (7.3.2) e verificação da continuidade das descidas do SPDA conforme ABNT NBR 5419-3, com medição, registro dos valores, plano de ação e ART registrada no CREA.",
+      "provider": { "@id": "https://www.ciniengenharia.com.br/#localbusiness" },
+      "areaServed": [
+        { "@type": "City", "name": "Caxias do Sul", "containedInPlace": { "@type": "AdministrativeArea", "name": "Serra Gaúcha" }, "address": { "@type": "PostalAddress", "addressRegion": "RS", "addressCountry": "BR" } },
+        { "@type": "City", "name": "Bento Gonçalves", "containedInPlace": { "@type": "AdministrativeArea", "name": "Serra Gaúcha" }, "address": { "@type": "PostalAddress", "addressRegion": "RS", "addressCountry": "BR" } },
+        { "@type": "City", "name": "Farroupilha", "containedInPlace": { "@type": "AdministrativeArea", "name": "Serra Gaúcha" }, "address": { "@type": "PostalAddress", "addressRegion": "RS", "addressCountry": "BR" } },
+        { "@type": "City", "name": "Garibaldi", "containedInPlace": { "@type": "AdministrativeArea", "name": "Serra Gaúcha" }, "address": { "@type": "PostalAddress", "addressRegion": "RS", "addressCountry": "BR" } },
+        { "@type": "City", "name": "Carlos Barbosa", "containedInPlace": { "@type": "AdministrativeArea", "name": "Serra Gaúcha" }, "address": { "@type": "PostalAddress", "addressRegion": "RS", "addressCountry": "BR" } },
+        { "@type": "City", "name": "Guaporé", "containedInPlace": { "@type": "AdministrativeArea", "name": "Serra Gaúcha" }, "address": { "@type": "PostalAddress", "addressRegion": "RS", "addressCountry": "BR" } },
+        { "@type": "City", "name": "Lajeado", "containedInPlace": { "@type": "AdministrativeArea", "name": "Vale do Taquari" }, "address": { "@type": "PostalAddress", "addressRegion": "RS", "addressCountry": "BR" } },
+        { "@type": "City", "name": "Montenegro", "containedInPlace": { "@type": "AdministrativeArea", "name": "Vale do Caí" }, "address": { "@type": "PostalAddress", "addressRegion": "RS", "addressCountry": "BR" } },
+        { "@type": "City", "name": "Novo Hamburgo", "containedInPlace": { "@type": "AdministrativeArea", "name": "Vale dos Sinos" }, "address": { "@type": "PostalAddress", "addressRegion": "RS", "addressCountry": "BR" } },
+        { "@type": "City", "name": "São Leopoldo", "containedInPlace": { "@type": "AdministrativeArea", "name": "Vale dos Sinos" }, "address": { "@type": "PostalAddress", "addressRegion": "RS", "addressCountry": "BR" } },
+        { "@type": "City", "name": "Porto Alegre", "containedInPlace": { "@type": "AdministrativeArea", "name": "Grande Porto Alegre" }, "address": { "@type": "PostalAddress", "addressRegion": "RS", "addressCountry": "BR" } },
+        { "@type": "City", "name": "Canoas", "containedInPlace": { "@type": "AdministrativeArea", "name": "Grande Porto Alegre" }, "address": { "@type": "PostalAddress", "addressRegion": "RS", "addressCountry": "BR" } },
+        { "@type": "City", "name": "Cachoeirinha", "containedInPlace": { "@type": "AdministrativeArea", "name": "Grande Porto Alegre" }, "address": { "@type": "PostalAddress", "addressRegion": "RS", "addressCountry": "BR" } },
+        { "@type": "City", "name": "Gravataí", "containedInPlace": { "@type": "AdministrativeArea", "name": "Grande Porto Alegre" }, "address": { "@type": "PostalAddress", "addressRegion": "RS", "addressCountry": "BR" } }
+      ]
+    },
+    {
+      "@type": ["ProfessionalService", "Electrician"],
+      "@id": "https://www.ciniengenharia.com.br/#localbusiness",
+      "name": "Cini Engenharia",
+      "legalName": "Cini Engenharia",
+      "taxID": "25.268.313/0001-56",
+      "url": "https://www.ciniengenharia.com.br/",
+      "image": "https://www.ciniengenharia.com.br/assets/images/laudo-continuidade-eletrica.jpg",
+      "email": "contato@ciniengenharia.com.br",
+      "priceRange": "$$",
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "telephone": "+55-54-99947-5010",
+          "contactType": "customer service",
+          "areaServed": ["Serra Gaúcha"],
+          "availableLanguage": "Portuguese"
+        },
+        {
+          "@type": "ContactPoint",
+          "telephone": "+55-51-99961-3451",
+          "contactType": "customer service",
+          "areaServed": ["Vale do Taquari", "Vale do Caí", "Vale dos Sinos", "Grande Porto Alegre"],
+          "availableLanguage": "Portuguese"
+        }
+      ],
+      "areaServed": [
+        { "@type": "AdministrativeArea", "name": "Serra Gaúcha" },
+        { "@type": "AdministrativeArea", "name": "Vale do Taquari" },
+        { "@type": "AdministrativeArea", "name": "Vale do Caí" },
+        { "@type": "AdministrativeArea", "name": "Vale dos Sinos" },
+        { "@type": "AdministrativeArea", "name": "Grande Porto Alegre" }
+      ],
+      "founder": {
+        "@type": "Person",
+        "name": "Dario Cini",
+        "jobTitle": "Engenheiro Eletricista",
+        "sameAs": ["https://www.linkedin.com/in/dario-cini-38a3303a1/"]
+      },
+      "sameAs": ["https://www.linkedin.com/in/dario-cini-38a3303a1/"]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.ciniengenharia.com.br/servicos-engenharia-eletrica/laudo-continuidade-eletrica/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "O que é o ensaio de continuidade elétrica?",
+          "acceptedAnswer": { "@type": "Answer", "text": "É a verificação de que existe um caminho elétrico íntegro e de baixa resistência ao longo dos condutores de proteção, das equipotencializações e das descidas do SPDA. Na prática, confirma que, se houver uma falta, a corrente terá por onde escoar até o aterramento. Um condutor rompido, uma conexão frouxa ou uma emenda corroída interrompem esse caminho — e o ensaio é o que revela isso, mesmo quando nada aparece a olho nu." }
+        },
+        {
+          "@type": "Question",
+          "name": "Qual norma exige o ensaio de continuidade?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Dois contextos principais. Nas instalações de baixa tensão, a ABNT NBR 5410, no item 7.3.2, exige o ensaio de continuidade dos condutores de proteção, incluindo as equipotencializações principal e suplementares. No sistema de proteção contra descargas atmosféricas, a ABNT NBR 5419-3 verifica a eficácia do SPDA justamente pela continuidade elétrica. São finalidades diferentes, com o mesmo princípio de ensaio." }
+        },
+        {
+          "@type": "Question",
+          "name": "Qual a diferença entre continuidade e resistência de aterramento?",
+          "acceptedAnswer": { "@type": "Answer", "text": "São medições diferentes que respondem a perguntas diferentes. A continuidade verifica se o caminho de proteção está íntegro e conectado, de ponta a ponta — é uma medição de resistência muito baixa, em miliohms, ao longo de condutores e conexões. A resistência de aterramento mede a dificuldade de escoamento da corrente para o solo. Um sistema pode ter ótima resistência de aterramento e, ainda assim, ter um condutor de proteção rompido no meio do caminho, que só o ensaio de continuidade encontra." }
+        },
+        {
+          "@type": "Question",
+          "name": "A continuidade precisa ser verificada antes de outros ensaios?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Sim. A própria NBR 5410 assume, ao tratar da verificação da equipotencialização e do seccionamento automático da alimentação, que a continuidade dos condutores de proteção já tenha sido confirmada. Ou seja, é um pré-requisito: não faz sentido avaliar se a proteção vai atuar sem antes garantir que o caminho de terra está íntegro. Por isso o ensaio de continuidade costuma ser o primeiro da sequência." }
+        },
+        {
+          "@type": "Question",
+          "name": "Preciso desligar a instalação para o ensaio?",
+          "acceptedAnswer": { "@type": "Answer", "text": "O ensaio de continuidade é feito com o trecho ensaiado desenergizado, porque se mede a resistência do próprio condutor, não a tensão de operação. Isso normalmente é resolvido com desligamentos pontuais e combinados, sem parar a instalação inteira, seguindo os procedimentos de segurança da NR-10. O planejamento do ensaio já considera o menor impacto possível na operação." }
+        },
+        {
+          "@type": "Question",
+          "name": "E se um ponto reprovar no ensaio?",
+          "acceptedAnswer": { "@type": "Answer", "text": "O laudo localiza o trecho com problema, indica a provável causa — conexão frouxa, condutor rompido, emenda corroída, ligação desfeita em reforma — e o que precisa ser corrigido. Reprovar em continuidade é um achado importante, porque significa que um caminho de proteção que deveria existir está interrompido. Corrigido o ponto, uma reinspeção confirma a integridade." }
+        },
+        {
+          "@type": "Question",
+          "name": "O laudo sai com ART?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Sim. O ensaio e o laudo são conduzidos por engenheiro eletricista habilitado, com Anotação de Responsabilidade Técnica registrada no CREA. Relatório de medição sem responsável técnico não tem valor perante seguradora, auditoria ou fiscalização." }
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+<!-- ===== Estilos apenas dos componentes novos desta página ===== -->
+<style>
+  .spda-destaque{ border-left:4px solid currentColor; padding:1rem 1.25rem; margin:1.5rem 0; opacity:.95; }
+  .spda-etapas{ list-style:none; padding:0; margin:1.5rem 0; counter-reset:spda; }
+  .spda-etapas li{ counter-increment:spda; padding:.75rem 0 .75rem 3rem; position:relative; border-bottom:1px solid rgba(128,128,128,.25); }
+  .spda-etapas li:last-child{ border-bottom:none; }
+  .spda-etapas li::before{ content:counter(spda); position:absolute; left:0; top:.75rem; width:2rem; height:2rem; line-height:2rem; text-align:center; border-radius:50%; border:1px solid currentColor; font-size:.9rem; font-weight:700; }
+  .spda-cta{ margin:2rem 0; display:flex; flex-wrap:wrap; gap:.75rem; }
+  .spda-cta a{ display:inline-block; padding:.85rem 1.5rem; border:2px solid currentColor; border-radius:4px; text-decoration:none; font-weight:700; }
+  .spda-faq-item{ border-bottom:1px solid rgba(128,128,128,.25); padding:.5rem 0; }
+  .spda-faq-item summary{ cursor:pointer; font-weight:700; padding:.75rem 0; }
+  .spda-faq-item summary:focus-visible{ outline:2px solid currentColor; outline-offset:2px; }
+  .spda-faq-item p{ margin:0 0 1rem 0; }
+  .spda-cidades a{ display:inline-block; margin:.25rem .5rem .25rem 0; }
+  .spda-tabela{ width:100%; border-collapse:collapse; margin:1.5rem 0; }
+  .spda-tabela th, .spda-tabela td{ text-align:left; padding:.75rem .5rem; border-bottom:1px solid rgba(128,128,128,.3); vertical-align:top; }
+  .spda-tabela th{ font-weight:700; }
+  .spda-regioes{ list-style:none; padding:0; margin:1.25rem 0; }
+  .spda-regioes li{ padding:.75rem 0; border-bottom:1px solid rgba(128,128,128,.2); }
+  .spda-regioes li:last-child{ border-bottom:none; }
+  .spda-regioes small{ opacity:.7; font-weight:400; }
+  @media (prefers-reduced-motion: reduce){ *{ animation:none !important; transition:none !important; } }
+</style>
+
+</head>
+<body class="engenharia">
+
+<!-- ===== MENU DINÂMICO ===== -->
+<div id="menu"></div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  fetch("/menu.html")
+    .then(response => {
+      if (!response.ok) { throw new Error("Erro ao carregar menu.html"); }
+      return response.text();
+    })
+    .then(data => {
+      document.getElementById("menu").innerHTML = data;
+      const toggle = document.querySelector(".menu-toggle");
+      const links = document.querySelector(".menu-links");
+      if (toggle && links) {
+        toggle.addEventListener("click", function() {
+          links.classList.toggle("open");
+          toggle.classList.toggle("open");
+        });
+      }
+    })
+    .catch(error => { console.error("Erro no menu:", error); });
+});
+</script>
+<!-- ===== FIM MENU DINÂMICO ===== -->
+
+
+<!-- ===== ABERTURA ===== -->
+<section class="hero">
+
+  <div class="hero-text">
+
+    <h1>
+      <span class="linha1">Laudo de</span>
+      <span class="cidade">Continuidade Elétrica</span>
+    </h1>
+
+    <p>
+      <strong>Ensaio dos condutores de proteção conforme a ABNT NBR 5410 e das
+      descidas do SPDA conforme a ABNT NBR 5419-3, com ART registrada no CREA.</strong>
+    </p>
+
+    <p>
+      Um bom aterramento não serve de nada se o caminho até ele estiver
+      interrompido. O ensaio de continuidade é o que confirma que esse caminho
+      existe de ponta a ponta — que a corrente de falta ou a descarga atmosférica
+      têm por onde escoar. É uma verificação simples de descrever e decisiva na
+      hora do defeito.
+    </p>
+
+    <p>
+      Engenheiro eletricista <strong>Dario Cini — CREA-RS 211.450</strong><br>
+      Telefones:<br>
+      <strong>(54) 99947-5010</strong> — Serra Gaúcha<br>
+      <strong>(51) 99961-3451</strong> — Vales do Taquari, Caí e Sinos, Grande Porto Alegre<br>
+      E-mail: contato@ciniengenharia.com.br
+    </p>
+
+    <div class="spda-cta">
+      <a href="https://wa.me/5554999475010" target="_blank" rel="noopener">Solicitar ensaio</a>
+      <a href="#dois-contextos">Continuidade de quê?</a>
+    </div>
+
+  </div>
+
+  <div class="hero-image">
+    <!-- [PREENCHER] Foto real: ensaio de continuidade, micro-ohmímetro na conexão -->
+    <img src="../../assets/images/laudo-continuidade-eletrica.jpg"
+         alt="Ensaio de continuidade elétrica em condutor de proteção — Cini Engenharia"
+         title="Laudo de continuidade elétrica">
+  </div>
+
+</section>
+<!-- ===== FIM ABERTURA ===== -->
+
+
+<!-- ===== O QUE É ===== -->
+<section class="hero">
+
+  <div class="hero-text">
+
+    <h2>O que o ensaio verifica</h2>
+
+    <p>
+      Continuidade é a garantia de que existe um caminho elétrico íntegro e de
+      <strong>baixa resistência</strong> ao longo de todo o sistema de proteção —
+      dos condutores de terra, das ligações de equipotencialização e das descidas
+      do para-raios.
+    </p>
+
+    <p>
+      O ensaio mede a resistência desse caminho, tipicamente na casa dos miliohms.
+      Valor baixo significa caminho íntegro. Valor alto, ou circuito aberto,
+      denuncia o problema:
+    </p>
+
+    <ul>
+      <li>condutor de proteção rompido dentro de eletroduto</li>
+      <li>conexão frouxa ou mal apertada no barramento</li>
+      <li>emenda ou terminal corroído</li>
+      <li>ligação de equipotencialização desfeita em reforma e nunca refeita</li>
+      <li>descida de SPDA interrompida ou desconectada do aterramento</li>
+    </ul>
+
+    <div class="spda-destaque">
+      <p>
+        Nenhum desses defeitos aparece a olho nu, e nenhum deles impede a
+        instalação de funcionar no dia a dia. Eles só se manifestam no pior
+        momento possível — durante uma falta ou uma descarga atmosférica —, quando
+        já é tarde. O ensaio de continuidade é o que os encontra antes.
+      </p>
+    </div>
+
+  </div>
+
+  <div class="hero-image">
+    <img src="../../assets/images/laudo-continuidade-o-que-e.jpg"
+         alt="Verificação de continuidade do caminho de proteção">
+  </div>
+
+</section>
+<!-- ===== FIM O QUE É ===== -->
+
+
+<!-- ===== DOIS CONTEXTOS ===== -->
+<section class="hero" id="dois-contextos">
+
+  <div class="hero-text">
+
+    <h2>Duas normas exigem, por dois motivos</h2>
+
+    <p>
+      "Continuidade elétrica" aparece em dois contextos diferentes, e é comum uma
+      mesma edificação precisar dos dois:
+    </p>
+
+    <table class="spda-tabela">
+      <thead>
+        <tr>
+          <th scope="col">Contexto</th>
+          <th scope="col">O que se ensaia</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Instalação de baixa tensão</strong><br><small>NBR 5410, item 7.3.2</small></td>
+          <td>Continuidade dos condutores de proteção, incluindo as equipotencializações principal e suplementares. Garante que a proteção contra choque tenha um caminho de terra íntegro para atuar.</td>
+        </tr>
+        <tr>
+          <td><strong>SPDA (para-raios)</strong><br><small>NBR 5419-3</small></td>
+          <td>Continuidade das descidas e das ligações do sistema de proteção contra descargas atmosféricas. A edição vigente da norma verifica a eficácia do SPDA justamente por continuidade elétrica.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="spda-destaque">
+      <p>
+        <strong>A continuidade vem antes.</strong> A própria NBR 5410 assume, ao
+        tratar da verificação da equipotencialização e do seccionamento automático,
+        que a continuidade dos condutores de proteção já tenha sido confirmada.
+        Faz sentido: não há como avaliar se a proteção vai atuar sem antes garantir
+        que o caminho de terra está íntegro. Por isso este é, quase sempre, o
+        primeiro ensaio da sequência.
+      </p>
+    </div>
+
+  </div>
+
+  <div class="hero-image">
+    <img src="../../assets/images/laudo-continuidade-normas.jpg"
+         alt="NBR 5410 e NBR 5419-3 e o ensaio de continuidade">
+  </div>
+
+</section>
+<!-- ===== FIM DOIS CONTEXTOS ===== -->
+
+
+<!-- ===== COMO É FEITO ===== -->
+<section class="hero">
+
+  <div class="hero-text">
+
+    <h2>Como o ensaio é feito</h2>
+
+    <p>
+      A medição é feita com o trecho desenergizado, porque o que interessa é a
+      resistência do próprio condutor e das suas conexões, não a tensão de
+      operação. A NBR 5410 recomenda que o ensaio seja realizado com fonte
+      apresentando tensão em vazio entre 4 e 24 volts, em corrente contínua ou
+      alternada, e corrente de ensaio de no mínimo 0,2 A.
+    </p>
+
+    <h3>Ponto a ponto, não por amostragem</h3>
+    <p>
+      Cada caminho é verificado desde o ponto de conexão no equipamento ou na
+      tomada até o barramento de equipotencialização, e deste até o eletrodo de
+      aterramento. Verificação por amostragem não encontra o condutor rompido que
+      está justamente no trecho que não foi medido.
+    </p>
+
+    <h3>Cuidado com eletrônica sensível</h3>
+    <p>
+      Quando o circuito inclui dispositivos eletrônicos, o ensaio é conduzido de
+      forma a não danificá-los — medindo entre o terra e os demais condutores
+      interligados, conforme a norma orienta. É o tipo de detalhe que separa um
+      ensaio feito com critério de um feito no automático.
+    </p>
+
+    <h3>Registro dos valores</h3>
+    <p>
+      Cada ponto ensaiado entra no laudo com o valor medido e o instrumento
+      utilizado. Sem o registro por ponto, o laudo não permite conferir nada nem
+      comparar com um ensaio futuro.
+      <!-- [PREENCHER] Cite o micro-ohmímetro / miliohmímetro usado. -->
+    </p>
+
+  </div>
+
+  <div class="hero-image">
+    <img src="../../assets/images/laudo-continuidade-metodo.jpg"
+         alt="Método do ensaio de continuidade">
+  </div>
+
+</section>
+<!-- ===== FIM COMO É FEITO ===== -->
+
+
+<!-- ===== O QUE VOCÊ RECEBE ===== -->
+<section class="hero">
+
+  <div class="hero-text">
+
+    <h2>O que você recebe</h2>
+
+    <ul>
+      <li><strong>Relação dos pontos ensaiados</strong>, com o valor medido em cada um</li>
+      <li><strong>Identificação da norma aplicável</strong> a cada trecho — NBR 5410 ou NBR 5419-3</li>
+      <li><strong>Registro fotográfico</strong> dos pontos e das não conformidades</li>
+      <li><strong>Localização dos trechos reprovados</strong>, com a provável causa</li>
+      <li><strong>Plano de ação</strong> para correção</li>
+      <li><strong>Dados do instrumento</strong> utilizado no ensaio</li>
+      <li><strong>Parecer conclusivo e ART registrada no CREA</strong></li>
+    </ul>
+
+  </div>
+
+  <div class="hero-image">
+    <img src="../../assets/images/laudo-continuidade-entrega.jpg"
+         alt="Conteúdo do laudo de continuidade elétrica">
+  </div>
+
+</section>
+<!-- ===== FIM O QUE VOCÊ RECEBE ===== -->
+
+
+<!-- ===== QUANDO FAZER ===== -->
+<section class="hero">
+
+  <div class="hero-text">
+
+    <h2>Quando fazer</h2>
+
+    <ul>
+      <li><strong>Comissionamento</strong> de instalação nova, antes da entrega</li>
+      <li><strong>Após reforma ou ampliação</strong> — ligação de terra desfeita em obra é o achado mais comum</li>
+      <li><strong>Como parte do laudo do SPDA</strong>, para comprovar a eficácia das descidas</li>
+      <li><strong>Estruturação do prontuário da NR-10</strong>, que precisa da comprovação</li>
+      <li><strong>Exigência de seguradora ou auditoria</strong></li>
+      <li><strong>Investigação de choque ou de atuação indevida de DR</strong>, onde o caminho de terra é suspeito</li>
+    </ul>
+
+  </div>
+
+  <div class="hero-image">
+    <img src="../../assets/images/laudo-continuidade-quando.jpg"
+         alt="Quando fazer o ensaio de continuidade">
+  </div>
+
+</section>
+<!-- ===== FIM QUANDO FAZER ===== -->
+
+
+<!-- ===== QUEM ASSINA ===== -->
+<section class="hero">
+
+  <div class="hero-text">
+
+    <h2>Quem assina o laudo</h2>
+
+    <p>
+      <strong>Dario Cini</strong>, engenheiro eletricista formado pela Universidade
+      de Caxias do Sul, com mais de 10 anos de atuação em engenharia elétrica no
+      eixo entre a Serra Gaúcha e a Grande Porto Alegre.
+    </p>
+
+    <p>
+      <strong>CREA:</strong> RS 211.450 —
+      <a href="https://www.crea-rs.org.br/site/" target="_blank" rel="noopener noreferrer nofollow">
+        consulta pública no CREA-RS
+      </a>
+    </p>
+
+    <p>
+      <strong>Cini Engenharia</strong> — CNPJ 25.268.313/0001-56 —
+      <a href="https://solucoes.receita.fazenda.gov.br/servicos/cnpjreva/cnpjreva_solicitacao.asp"
+         target="_blank" rel="noopener noreferrer">Consultar CNPJ</a>
+    </p>
+
+    <p>
+      <strong>LinkedIn:</strong>
+      <a href="https://www.linkedin.com/in/dario-cini-38a3303a1/"
+         target="_blank" rel="noopener noreferrer">Dario Cini — Ver perfil</a>
+    </p>
+
+    <p>
+      Um ensaio de continuidade mal feito dá "aprovado" com o mesmo aparelho que o
+      bem feito. A diferença está em medir cada caminho, registrar cada valor e
+      saber o que aquele número significa. É isso que sai com a ART.
+    </p>
+
+  </div>
+
+  <div class="hero-image">
+    <img src="../../assets/images/engenheiro-eletricista-crea.jpg"
+         alt="Dario Cini — engenheiro eletricista CREA-RS 211.450">
+  </div>
+
+</section>
+<!-- ===== FIM QUEM ASSINA ===== -->
+
+
+<!-- ===== SERVIÇOS RELACIONADOS ===== -->
+<section class="secao-full">
+  <div class="hero-text">
+    <h2>Serviços relacionados</h2>
+    <p>
+      Todos os serviços e áreas de atendimento estão reunidos na página do
+      <a href="/servicos/engenheiro-eletricista/">engenheiro eletricista</a>.
+    </p>
+    <a href="/servicos-engenharia-eletrica/laudo-aterramento/">Laudo de aterramento</a>
+    <span>|</span>
+    <a href="/servicos-engenharia-eletrica/laudo-spda/">Laudo de SPDA</a>
+    <span>|</span>
+    <a href="/servicos-engenharia-eletrica/laudo-instalacoes-eletricas/">Laudo das instalações elétricas</a>
+    <span>|</span>
+    <a href="/servicos-engenharia-eletrica/projeto-spda/">Projeto de SPDA</a>
+    <span>|</span>
+    <a href="/servicos-engenharia-eletrica/termografia/">Termografia</a>
+  </div>
+</section>
+<!-- ===== FIM SERVIÇOS RELACIONADOS ===== -->
+
+
+<!-- ===== ÁREA DE ATENDIMENTO ===== -->
+<section class="secao-full">
+  <div class="hero-text spda-cidades">
+    <h2>Onde atendemos</h2>
+    <p>
+      Atendimento presencial no eixo entre a Serra Gaúcha e a Grande Porto
+      Alegre, acompanhando os vales do Taquari, do Caí e do Sinos.
+    </p>
+    <ul class="spda-regioes">
+      <li><strong>Serra Gaúcha</strong> <small>(DDD 54)</small><br>
+        <a href="/servicos/engenheiro-eletricista-caxias-do-sul/">Caxias do Sul</a> <span>|</span>
+        <a href="/servicos/engenheiro-eletricista-bento-goncalves/">Bento Gonçalves</a> <span>|</span>
+        <a href="/servicos/engenheiro-eletricista-farroupilha/">Farroupilha</a> <span>|</span>
+        <a href="/servicos/engenheiro-eletricista-garibaldi/">Garibaldi</a> <span>|</span>
+        <a href="/servicos/engenheiro-eletricista-carlos-barbosa/">Carlos Barbosa</a> <span>|</span>
+        Guaporé
+      </li>
+      <li><strong>Vale do Taquari</strong> <small>(DDD 51)</small><br>
+        <a href="/servicos/engenheiro-eletricista-lajeado/">Lajeado</a>
+      </li>
+      <li><strong>Vale do Caí</strong> <small>(DDD 51)</small><br>
+        <a href="/servicos/engenheiro-eletricista-montenegro/">Montenegro</a>
+      </li>
+      <li><strong>Vale dos Sinos</strong> <small>(DDD 51)</small><br>
+        <a href="/servicos/engenheiro-eletricista-novo-hamburgo/">Novo Hamburgo</a> <span>|</span>
+        <a href="/servicos/engenheiro-eletricista-sao-leopoldo/">São Leopoldo</a>
+      </li>
+      <li><strong>Grande Porto Alegre</strong> <small>(DDD 51)</small><br>
+        <a href="/servicos/engenheiro-eletricista-porto-alegre/">Porto Alegre</a> <span>|</span>
+        <a href="/servicos/engenheiro-eletricista-canoas/">Canoas</a> <span>|</span>
+        <a href="/servicos/engenheiro-eletricista-cachoeirinha/">Cachoeirinha</a> <span>|</span>
+        <a href="/servicos/engenheiro-eletricista-gravatai/">Gravataí</a>
+      </li>
+    </ul>
+  </div>
+</section>
+<!-- ===== FIM ÁREA DE ATENDIMENTO ===== -->
+
+
+<!-- ===== FAQ ===== -->
+<section class="faq">
+
+  <div class="hero-text">
+
+    <h2>Dúvidas frequentes sobre <strong>continuidade elétrica</strong></h2>
+
+    <details class="spda-faq-item">
+      <summary>O que é o ensaio de continuidade elétrica?</summary>
+      <p>
+        É a verificação de que existe um caminho elétrico íntegro e de baixa
+        resistência ao longo dos condutores de proteção, das equipotencializações e
+        das descidas do SPDA. Confirma que, se houver uma falta, a corrente terá por
+        onde escoar até o aterramento. Um condutor rompido, uma conexão frouxa ou
+        uma emenda corroída interrompem esse caminho — e o ensaio revela isso mesmo
+        quando nada aparece a olho nu.
+      </p>
+    </details>
+
+    <details class="spda-faq-item">
+      <summary>Qual norma exige o ensaio?</summary>
+      <p>
+        Nas instalações de baixa tensão, a NBR 5410, item 7.3.2, exige o ensaio de
+        continuidade dos condutores de proteção, incluindo as equipotencializações
+        principal e suplementares. No SPDA, a NBR 5419-3 verifica a eficácia do
+        sistema justamente pela continuidade elétrica. São finalidades diferentes,
+        com o mesmo princípio de ensaio.
+      </p>
+    </details>
+
+    <details class="spda-faq-item">
+      <summary>Qual a diferença entre continuidade e resistência de aterramento?</summary>
+      <p>
+        São medições diferentes. A continuidade verifica se o caminho de proteção
+        está íntegro e conectado, de ponta a ponta — uma resistência muito baixa, em
+        miliohms, ao longo de condutores e conexões. A resistência de aterramento
+        mede a dificuldade de escoamento da corrente para o solo. Um sistema pode ter
+        ótima resistência de aterramento e ainda ter um condutor de proteção rompido
+        no meio do caminho, que só o ensaio de continuidade encontra.
+      </p>
+    </details>
+
+    <details class="spda-faq-item">
+      <summary>A continuidade precisa ser verificada antes de outros ensaios?</summary>
+      <p>
+        Sim. A própria NBR 5410 assume, ao tratar da verificação da
+        equipotencialização e do seccionamento automático, que a continuidade dos
+        condutores de proteção já tenha sido confirmada. É um pré-requisito: não faz
+        sentido avaliar se a proteção vai atuar sem antes garantir que o caminho de
+        terra está íntegro.
+      </p>
+    </details>
+
+    <details class="spda-faq-item">
+      <summary>Preciso desligar a instalação para o ensaio?</summary>
+      <p>
+        O ensaio é feito com o trecho desenergizado, porque se mede a resistência do
+        próprio condutor, não a tensão de operação. Isso normalmente é resolvido com
+        desligamentos pontuais e combinados, sem parar a instalação inteira,
+        seguindo os procedimentos de segurança da NR-10.
+      </p>
+    </details>
+
+    <details class="spda-faq-item">
+      <summary>E se um ponto reprovar?</summary>
+      <p>
+        O laudo localiza o trecho com problema, indica a provável causa — conexão
+        frouxa, condutor rompido, emenda corroída, ligação desfeita em reforma — e o
+        que precisa ser corrigido. Reprovar em continuidade é um achado importante,
+        porque significa que um caminho de proteção que deveria existir está
+        interrompido. Corrigido o ponto, uma reinspeção confirma a integridade.
+      </p>
+    </details>
+
+    <details class="spda-faq-item">
+      <summary>O laudo sai com ART?</summary>
+      <p>
+        Sim. O ensaio e o laudo são conduzidos por engenheiro eletricista
+        habilitado, com Anotação de Responsabilidade Técnica registrada no CREA.
+        Relatório de medição sem responsável técnico não tem valor perante
+        seguradora, auditoria ou fiscalização.
+      </p>
+    </details>
+
+  </div>
+
+</section>
+<!-- ===== FIM FAQ ===== -->
+
+
+<!-- ===== CHAMADA FINAL ===== -->
+<section class="hero">
+  <div class="hero-text">
+    <h2>O caminho de terra da sua instalação está íntegro?</h2>
+    <p>
+      É a pergunta que só um ensaio responde — e que ninguém faz até acontecer um
+      choque, uma queima ou uma reprovação em auditoria. Nos diga o tipo de
+      instalação e a exigência que apareceu, e definimos o escopo do ensaio.
+    </p>
+    <div class="spda-cta">
+      <a href="https://wa.me/5554999475010" target="_blank" rel="noopener">Solicitar ensaio</a>
+      <a href="mailto:contato@ciniengenharia.com.br">Falar com o engenheiro</a>
+    </div>
+  </div>
+</section>
+<!-- ===== FIM CHAMADA FINAL ===== -->
+
+</body>
+</html>
