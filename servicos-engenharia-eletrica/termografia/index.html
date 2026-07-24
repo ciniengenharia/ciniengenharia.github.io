@@ -1,0 +1,1399 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!--
+=========================================================================
+  ANTES DE PUBLICAR — CHECKLIST
+=========================================================================
+  1. ATENÇÃO — o plano de trabalho da comissão de termografia da ABNT
+     previa CANCELAR E SUBSTITUIR as NBR 15572, 15763 e 15866 por um
+     texto-base consolidado ("Termografia infravermelha — Elétrica").
+     VERIFIQUE se a norma substituta já foi publicada e ajuste as citações.
+     Normas usadas nesta página:
+       - NBR 15572:2013 — Guia para inspeção de equipamentos elétricos e
+         mecânicos (responsabilidades do usuário final e do termografista)
+       - NBR 15763:2009 — Critérios de periodicidade em sistemas elétricos
+         de potência (6 meses recomendado, não ultrapassando 18)
+       - NBR 15866:2010 — Metodologia de avaliação de temperatura de
+         trabalho de equipamentos
+       - NBR 15718:2009 — Guia para verificação de termovisores
+       - NBR 15424:2006 — Terminologia
+       - NBR 16818 — Procedimento para inspeções e ensaios termográficos
+  2. QUALIFICAÇÃO: se você tem certificação de termografista (SNQC/ABENDI,
+     ITC, Infraspection), CITE o nível. Nesta página é credencial forte.
+     Se não tiver, remova a menção — não invente.
+  3. TERMOVISOR: cite marca, modelo, resolução do detector e data da
+     última calibração. Resolução é argumento técnico real.
+  4. PRAZOS, PREÇO, ENDEREÇO e IMAGENS: pendentes.
+=========================================================================
+-->
+
+<meta name="description" content="Termografia em painéis e instalações elétricas conforme ABNT NBR 15572 e 15763, com registro de carga, análise de severidade, plano de ação e ART no CREA. Dario Cini — CREA-RS 211.450.">
+
+<link rel="canonical" href="https://www.ciniengenharia.com.br/servicos-engenharia-eletrica/termografia/">
+
+<link rel="icon" type="image/png" href="../../assets/images/favicon.png">
+
+<link rel="stylesheet" href="../../assets/css/menu.css">
+<link rel="stylesheet" href="../../assets/css/engenharia.css">
+
+<title>Termografia em painéis elétricos — NBR 15572 e ART | Cini Engenharia</title>
+
+<!-- ===== Open Graph ===== -->
+<meta property="og:title" content="Termografia em painéis elétricos — NBR 15572 e ART | Cini Engenharia">
+<meta property="og:description" content="Inspeção termográfica de painéis e instalações elétricas, com registro de carga, critério de severidade e ART registrada no CREA.">
+<meta property="og:image" content="https://www.ciniengenharia.com.br/assets/images/termografia-eletrica.jpg">
+<meta property="og:url" content="https://www.ciniengenharia.com.br/servicos-engenharia-eletrica/termografia/">
+<meta property="og:type" content="website">
+
+<!-- ===== JSON-LD ===== -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://www.ciniengenharia.com.br/#website",
+      "url": "https://www.ciniengenharia.com.br/",
+      "name": "Cini Engenharia",
+      "inLanguage": "pt-BR"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.ciniengenharia.com.br/servicos-engenharia-eletrica/termografia/#webpage",
+      "url": "https://www.ciniengenharia.com.br/servicos-engenharia-eletrica/termografia/",
+      "name": "Termografia em painéis e instalações elétricas",
+      "isPartOf": {
+        "@id": "https://www.ciniengenharia.com.br/#website"
+      },
+      "about": {
+        "@id": "https://www.ciniengenharia.com.br/servicos-engenharia-eletrica/termografia/#service"
+      },
+      "inLanguage": "pt-BR"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://www.ciniengenharia.com.br/servicos-engenharia-eletrica/termografia/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Início",
+          "item": "https://www.ciniengenharia.com.br/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Engenheiro eletricista",
+          "item": "https://www.ciniengenharia.com.br/servicos/engenheiro-eletricista/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Termografia"
+        }
+      ]
+    },
+    {
+      "@type": "Service",
+      "@id": "https://www.ciniengenharia.com.br/servicos-engenharia-eletrica/termografia/#service",
+      "name": "Termografia em instalações elétricas",
+      "alternateName": [
+        "Inspeção termográfica",
+        "Laudo de termografia",
+        "Análise termográfica de painéis"
+      ],
+      "serviceType": "Inspeção termográfica de painéis e instalações elétricas",
+      "description": "Inspeção termográfica de painéis, quadros, subestações e instalações elétricas conforme ABNT NBR 15572, 15763 e 15866, com registro da carga no momento da medição, análise de severidade, plano de ação e ART registrada no CREA.",
+      "provider": {
+        "@id": "https://www.ciniengenharia.com.br/#localbusiness"
+      },
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Caxias do Sul",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Serra Gaúcha"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Bento Gonçalves",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Serra Gaúcha"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Farroupilha",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Serra Gaúcha"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Garibaldi",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Serra Gaúcha"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Carlos Barbosa",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Serra Gaúcha"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Guaporé",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Serra Gaúcha"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Lajeado",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Vale do Taquari"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Montenegro",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Vale do Caí"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Novo Hamburgo",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Vale dos Sinos"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "São Leopoldo",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Vale dos Sinos"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Porto Alegre",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Grande Porto Alegre"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Canoas",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Grande Porto Alegre"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Cachoeirinha",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Grande Porto Alegre"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Gravataí",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Grande Porto Alegre"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        }
+      ]
+    },
+    {
+      "@type": [
+        "ProfessionalService",
+        "Electrician"
+      ],
+      "@id": "https://www.ciniengenharia.com.br/#localbusiness",
+      "name": "Cini Engenharia",
+      "legalName": "Cini Engenharia",
+      "taxID": "25.268.313/0001-56",
+      "url": "https://www.ciniengenharia.com.br/",
+      "image": "https://www.ciniengenharia.com.br/assets/images/termografia-eletrica.jpg",
+      "email": "contato@ciniengenharia.com.br",
+      "telephone": "+55-51-99961-3451",
+      "priceRange": "$$",
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "telephone": "+55-54-99947-5010",
+          "contactType": "customer service",
+          "areaServed": [
+            "Serra Gaúcha"
+          ],
+          "availableLanguage": "Portuguese"
+        },
+        {
+          "@type": "ContactPoint",
+          "telephone": "+55-51-99961-3451",
+          "contactType": "customer service",
+          "areaServed": [
+            "Vale do Taquari",
+            "Vale do Caí",
+            "Vale dos Sinos",
+            "Grande Porto Alegre"
+          ],
+          "availableLanguage": "Portuguese"
+        }
+      ],
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Caxias do Sul",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Serra Gaúcha"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Bento Gonçalves",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Serra Gaúcha"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Farroupilha",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Serra Gaúcha"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Garibaldi",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Serra Gaúcha"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Carlos Barbosa",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Serra Gaúcha"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Guaporé",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Serra Gaúcha"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Lajeado",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Vale do Taquari"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Montenegro",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Vale do Caí"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Novo Hamburgo",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Vale dos Sinos"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "São Leopoldo",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Vale dos Sinos"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Porto Alegre",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Grande Porto Alegre"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Canoas",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Grande Porto Alegre"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Cachoeirinha",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Grande Porto Alegre"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Gravataí",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Grande Porto Alegre"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        }
+      ],
+      "founder": {
+        "@type": "Person",
+        "name": "Dario Cini",
+        "jobTitle": "Engenheiro Eletricista",
+        "sameAs": [
+          "https://www.linkedin.com/in/dario-cini-38a3303a1/"
+        ]
+      },
+      "sameAs": [
+        "https://www.linkedin.com/in/dario-cini-38a3303a1/"
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.ciniengenharia.com.br/servicos-engenharia-eletrica/termografia/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "De quanto em quanto tempo fazer a termografia?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A ABNT NBR 15763 recomenda intervalo de 6 meses para sistemas elétricos de potência, não devendo ultrapassar 18 meses quando houver impossibilidade de cumprir o período recomendado. A periodicidade dentro dessa faixa depende da criticidade do sistema para a produção e do histórico de ocorrências. Muita gente vende termografia anual por hábito comercial, não por critério normativo."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Preciso desligar a instalação para a termografia?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ao contrário: a instalação precisa estar energizada e, principalmente, sob carga. A termografia detecta aquecimento causado pela passagem de corrente. Sem corrente, o defeito não aquece e não aparece. É a única inspeção elétrica que exige a instalação em operação — e por isso não gera parada de produção."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Existe carga mínima para a inspeção ser válida?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sim, e esse é o ponto mais negligenciado da técnica. Inspeção feita com a instalação em carga baixa não revela defeitos que se manifestariam em regime normal. Por isso a carga no momento da medição precisa ser registrada no laudo, e a avaliação de temperatura considera essa condição. Laudo que não informa a carga do momento não permite julgar se o resultado significa alguma coisa."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Qualquer câmera térmica serve?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Não. Além da resolução do detector, que determina se um ponto pequeno será realmente visto, o instrumento precisa ter calibração válida e verificação periódica conforme a norma aplicável. E a câmera é apenas o começo: sem ajuste correto de emissividade e de temperatura aparente refletida, o número que aparece na tela não corresponde à temperatura real do componente."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "A seguradora aceita o laudo de termografia?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Em geral sim, desde que o laudo tenha ART registrada no CREA, identifique os equipamentos inspecionados, apresente termogramas com a imagem visual correspondente, registre as condições da medição — inclusive a carga — e traga parecer conclusivo com classificação de severidade. Relatório com fotos coloridas e sem esses elementos costuma ser recusado."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "O que a termografia não detecta?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Defeitos que não geram calor no momento da inspeção. Circuito desligado ou com carga muito baixa, componente interno blindado sem transferência de calor para a superfície visível, falha incipiente de isolação sem aquecimento e problemas mecânicos internos podem passar despercebidos. A termografia é uma técnica preditiva poderosa, não um exame completo da instalação — ela complementa inspeção visual, medições elétricas e manutenção preventiva."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "E se for encontrado um ponto quente?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "O laudo classifica a severidade da anomalia e indica o prazo de intervenção correspondente, de acompanhamento na próxima inspeção até correção imediata. Você recebe a localização exata, a temperatura medida, a temperatura de referência usada na comparação e a provável causa. Depois da correção, uma reinspeção do ponto confirma se o problema foi resolvido."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "É preciso abrir os painéis?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Para inspecionar conexões internas, sim — o infravermelho não atravessa a porta metálica. Abrir painel energizado é atividade com risco de arco elétrico e exige procedimento e vestimenta adequados. Uma alternativa que reduz esse risco de forma permanente é a instalação de janelas de inspeção infravermelha, que permitem a leitura com o painel fechado."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+<!-- ===== Estilos apenas dos componentes novos desta página ===== -->
+<style>
+  .spda-destaque{ border-left:4px solid currentColor; padding:1rem 1.25rem; margin:1.5rem 0; opacity:.95; }
+  .spda-etapas{ list-style:none; padding:0; margin:1.5rem 0; counter-reset:spda; }
+  .spda-etapas li{ counter-increment:spda; padding:.75rem 0 .75rem 3rem; position:relative; border-bottom:1px solid rgba(128,128,128,.25); }
+  .spda-etapas li:last-child{ border-bottom:none; }
+  .spda-etapas li::before{ content:counter(spda); position:absolute; left:0; top:.75rem; width:2rem; height:2rem; line-height:2rem; text-align:center; border-radius:50%; border:1px solid currentColor; font-size:.9rem; font-weight:700; }
+  .spda-cta{ margin:2rem 0; display:flex; flex-wrap:wrap; gap:.75rem; }
+  .spda-cta a{ display:inline-block; padding:.85rem 1.5rem; border:2px solid currentColor; border-radius:4px; text-decoration:none; font-weight:700; }
+  .spda-faq-item{ border-bottom:1px solid rgba(128,128,128,.25); padding:.5rem 0; }
+  .spda-faq-item summary{ cursor:pointer; font-weight:700; padding:.75rem 0; }
+  .spda-faq-item summary:focus-visible{ outline:2px solid currentColor; outline-offset:2px; }
+  .spda-faq-item p{ margin:0 0 1rem 0; }
+  .spda-cidades a{ display:inline-block; margin:.25rem .5rem .25rem 0; }
+  .spda-tabela{ width:100%; border-collapse:collapse; margin:1.5rem 0; }
+  .spda-tabela th, .spda-tabela td{ text-align:left; padding:.75rem .5rem; border-bottom:1px solid rgba(128,128,128,.3); vertical-align:top; }
+  .spda-tabela th{ font-weight:700; }
+  .spda-regioes{ list-style:none; padding:0; margin:1.25rem 0; }
+  .spda-regioes li{ padding:.75rem 0; border-bottom:1px solid rgba(128,128,128,.2); }
+  .spda-regioes li:last-child{ border-bottom:none; }
+  .spda-regioes small{ opacity:.7; font-weight:400; }
+  .spda-fones{ margin:1rem 0; }
+  .spda-fones div{ padding:.35rem 0; }
+  @media (prefers-reduced-motion: reduce){ *{ animation:none !important; transition:none !important; } }
+</style>
+
+</head>
+<body class="engenharia">
+
+<!-- ===== MENU DINÂMICO ===== -->
+<div id="menu"></div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  fetch("/menu.html")
+    .then(response => {
+      if (!response.ok) { throw new Error("Erro ao carregar menu.html"); }
+      return response.text();
+    })
+    .then(data => {
+      document.getElementById("menu").innerHTML = data;
+      const toggle = document.querySelector(".menu-toggle");
+      const links = document.querySelector(".menu-links");
+      if (toggle && links) {
+        toggle.addEventListener("click", function() {
+          links.classList.toggle("open");
+          toggle.classList.toggle("open");
+        });
+      }
+    })
+    .catch(error => { console.error("Erro no menu:", error); });
+});
+</script>
+<!-- ===== FIM MENU DINÂMICO ===== -->
+
+
+<!-- ===== ABERTURA ===== -->
+<section class="hero">
+
+  <div class="hero-text">
+
+    <h1>
+      <span class="linha1">Inspeção por</span>
+      <span class="cidade">Termografia</span>
+    </h1>
+
+    <p>
+      <strong>Painéis, quadros e subestações inspecionados com a instalação em
+      operação, conforme ABNT NBR 15572, e ART registrada no CREA.</strong>
+    </p>
+
+    <p>
+      É a única inspeção elétrica que <strong>não para a sua produção</strong> —
+      e a única que exige exatamente o contrário: a instalação precisa estar
+      energizada e sob carga. Conexão frouxa, desequilíbrio de fases e sobrecarga
+      aquecem antes de falhar. A termografia enxerga esse aviso.
+    </p>
+
+    <p>
+      Engenheiro eletricista <strong>Dario Cini — CREA-RS 211.450</strong><br>
+      Telefones:<br>
+      <strong>(54) 99947-5010</strong> — Serra Gaúcha<br>
+      <strong>(51) 99961-3451</strong> — Vales do Taquari, Caí e Sinos, Grande Porto Alegre<br>
+      E-mail: contato@ciniengenharia.com.br
+    </p>
+
+    <div class="spda-cta">
+      <a href="https://wa.me/5551999613451" target="_blank" rel="noopener">Agendar inspeção</a>
+      <a href="#carga">Por que a carga muda tudo</a>
+    </div>
+
+  </div>
+
+  <div class="hero-image">
+    <!-- [PREENCHER] Termograma real seu, com a foto visual ao lado -->
+    <img src="../../assets/images/termografia-eletrica.jpg"
+         alt="Inspeção termográfica em painel elétrico — Cini Engenharia"
+         title="Termografia em painéis elétricos">
+  </div>
+
+</section>
+<!-- ===== FIM ABERTURA ===== -->
+
+
+<!-- ===== CARGA ===== -->
+<section class="hero" id="carga">
+
+  <div class="hero-text">
+
+    <h2>A carga no momento da inspeção muda tudo</h2>
+
+    <p>
+      Esse é o ponto que separa uma inspeção termográfica válida de um passeio com
+      câmera. O calor que a termografia enxerga é gerado pela <strong>passagem de
+      corrente</strong>. Sem corrente suficiente, o defeito não aquece — e não
+      aparece.
+    </p>
+
+    <p>
+      Uma inspeção feita numa segunda-feira de manhã, com a fábrica em marcha
+      lenta, pode dar todos os painéis "normais" enquanto existe uma conexão
+      frouxa que vai render um incêndio no primeiro pico de produção. O laudo fica
+      bonito e não vale nada.
+    </p>
+
+    <div class="spda-destaque">
+      <p>
+        <strong>Por isso a carga é registrada em cada medição</strong>, e a
+        avaliação da temperatura considera essa condição, conforme a metodologia
+        da NBR 15866. Se um laudo de termografia não informa a corrente ou o
+        percentual de carga no momento da leitura, não há como julgar se o
+        resultado significa alguma coisa. É a primeira coisa que eu procuro quando
+        alguém me manda um laudo anterior para conferir.
+      </p>
+    </div>
+
+    <p>
+      Na prática, isso significa combinar a visita com a sua produção — inspecionar
+      no turno e no momento em que a instalação está realmente carregada, não no
+      horário mais cômodo para agendar.
+    </p>
+
+  </div>
+
+  <div class="hero-image">
+    <img src="../../assets/images/termografia-carga.jpg"
+         alt="Registro de carga na inspeção termográfica">
+  </div>
+
+</section>
+<!-- ===== FIM CARGA ===== -->
+
+
+<!-- ===== PERIODICIDADE ===== -->
+<section class="hero">
+
+  <div class="hero-text">
+
+    <h2>De quanto em quanto tempo</h2>
+
+    <p>
+      A <strong>ABNT NBR 15763</strong> recomenda intervalo de <strong>6
+      meses</strong> para sistemas elétricos de potência, <strong>não devendo
+      ultrapassar 18 meses</strong> quando houver impossibilidade de cumprir o
+      período recomendado.
+    </p>
+
+    <p>
+      Onde você cai dentro dessa faixa depende da criticidade do sistema para a
+      produção, do histórico de ocorrências e do ambiente — instalação em ambiente
+      agressivo, com poeira condutiva ou vibração, degrada conexão mais rápido.
+    </p>
+
+    <div class="spda-destaque">
+      <p>
+        Vale saber: <strong>"termografia anual" é hábito comercial, não critério
+        normativo.</strong> Muita empresa vende assim porque é o que cabe no
+        orçamento do cliente. A norma trabalha com 6 meses como recomendação. Se o
+        seu caso comportar o intervalo maior, tudo bem — mas isso precisa ser uma
+        decisão técnica registrada, não o padrão de quem vendeu.
+      </p>
+    </div>
+
+  </div>
+
+  <div class="hero-image">
+    <img src="../../assets/images/termografia-periodicidade.jpg"
+         alt="Periodicidade de inspeção termográfica">
+  </div>
+
+</section>
+<!-- ===== FIM PERIODICIDADE ===== -->
+
+
+<!-- ===== O QUE DETECTA ===== -->
+<section class="hero">
+
+  <div class="hero-text">
+
+    <h2>O que a inspeção detecta</h2>
+
+    <ul>
+      <li><strong>Conexões frouxas ou corroídas</strong> — a causa mais comum de incêndio de origem elétrica em painel</li>
+      <li><strong>Desequilíbrio entre fases</strong>, visível pela diferença de temperatura entre condutores do mesmo circuito</li>
+      <li><strong>Sobrecarga</strong> de circuitos, condutores e disjuntores</li>
+      <li><strong>Contatos deteriorados</strong> em contatores, chaves e disjuntores</li>
+      <li><strong>Emendas mal executadas</strong> e terminais subdimensionados</li>
+      <li><strong>Fusíveis e porta-fusíveis</strong> com contato degradado</li>
+      <li><strong>Transformadores</strong> com aquecimento anormal em buchas, conexões e sistema de refrigeração</li>
+      <li><strong>Bancos de capacitores</strong> com células em falha</li>
+      <li><strong>Motores e acionamentos</strong> com aquecimento anormal</li>
+    </ul>
+
+    <p>
+      A inspeção cobre desde a entrada de energia e a subestação até os quadros de
+      distribuição e os circuitos terminais críticos para a sua operação.
+    </p>
+
+  </div>
+
+  <div class="hero-image">
+    <img src="../../assets/images/termografia-deteccao.jpg"
+         alt="Anomalias detectadas por termografia">
+  </div>
+
+</section>
+<!-- ===== FIM O QUE DETECTA ===== -->
+
+
+<!-- ===== O QUE SEPARA ===== -->
+<section class="hero">
+
+  <div class="hero-text">
+
+    <h2>O que separa uma inspeção técnica de uma foto colorida</h2>
+
+    <h3>Emissividade ajustada por material</h3>
+    <p>
+      Cada superfície emite radiação infravermelha de forma diferente. Cobre
+      polido, barramento pintado, plástico e aço têm emissividades distintas — e o
+      mesmo ponto, com o parâmetro errado, resulta em temperaturas que diferem
+      dezenas de graus. Ajuste errado transforma anomalia em normalidade e
+      vice-versa.
+    </p>
+
+    <h3>Temperatura aparente refletida</h3>
+    <p>
+      Superfícies refletem o calor do ambiente e de outras fontes. Sem compensar
+      isso, o termovisor entrega o reflexo, não o componente. É a razão de tantos
+      "pontos quentes" que somem quando alguém mede de outro ângulo.
+    </p>
+
+    <h3>Comparação com referência, não só temperatura absoluta</h3>
+    <p>
+      A anomalia se caracteriza pela diferença em relação a um componente similar
+      operando nas mesmas condições — fase vizinha, circuito equivalente,
+      temperatura ambiente. O laudo registra a referência usada em cada comparação.
+    </p>
+
+    <h3>Classificação de severidade</h3>
+    <p>
+      Cada anomalia recebe um grau e um prazo de intervenção correspondente, do
+      acompanhamento na próxima inspeção até a correção imediata. Sem isso, você
+      recebe uma lista de pontos e nenhuma orientação sobre por onde começar.
+    </p>
+
+    <h3>Termovisor com calibração válida</h3>
+    <p>
+      Instrumento com calibração vigente e verificação periódica, conforme a norma
+      aplicável. A resolução do detector também importa: ela determina se um
+      terminal pequeno a três metros de distância vai ser realmente medido ou
+      apenas estimado por média com o que está em volta.
+      <!-- [PREENCHER] Cite marca, modelo, resolução e data da última calibração. -->
+    </p>
+
+    <h3>Termograma com imagem visual correspondente</h3>
+    <p>
+      Cada imagem térmica acompanhada da foto convencional do mesmo ponto. Sem
+      isso, ninguém consegue localizar depois o componente que precisa ser
+      corrigido — e o laudo vira decoração.
+    </p>
+
+  </div>
+
+  <div class="hero-image">
+    <img src="../../assets/images/termografia-metodo.jpg"
+         alt="Parâmetros técnicos da inspeção termográfica">
+  </div>
+
+</section>
+<!-- ===== FIM O QUE SEPARA ===== -->
+
+
+<!-- ===== SEGURANÇA / JANELAS ===== -->
+<section class="hero">
+
+  <div class="hero-text">
+
+    <h2>Abrir painel energizado é risco — e existe alternativa</h2>
+
+    <p>
+      O infravermelho não atravessa a porta metálica do painel. Para inspecionar
+      conexões internas, é preciso abrir — e abrir painel energizado é atividade
+      com risco de arco elétrico, que exige procedimento, vestimenta adequada e
+      profissional habilitado nos termos da NR-10.
+    </p>
+
+    <p>
+      Uma solução que resolve isso de forma permanente são as <strong>janelas de
+      inspeção infravermelha</strong>: visores instalados na porta do painel que
+      permitem a leitura com ele fechado. O investimento é pontual e elimina a
+      exposição em toda inspeção futura — além de reduzir bastante o tempo de cada
+      visita.
+    </p>
+
+    <div class="spda-destaque">
+      <p>
+        Se a sua equipe abre painel energizado para qualquer finalidade, vale
+        verificar se a vestimenta usada é compatível com a energia incidente
+        daquele ponto. É um cálculo, não uma escolha de catálogo.
+        <br>
+        <a href="/servicos-engenharia-eletrica/calculo-atpv/">Entenda o cálculo de ATPV</a>
+      </p>
+    </div>
+
+  </div>
+
+  <div class="hero-image">
+    <img src="../../assets/images/termografia-janelas.jpg"
+         alt="Janela de inspeção infravermelha em painel elétrico">
+  </div>
+
+</section>
+<!-- ===== FIM SEGURANÇA / JANELAS ===== -->
+
+
+<!-- ===== O QUE VOCÊ RECEBE ===== -->
+<section class="hero">
+
+  <div class="hero-text">
+
+    <h2>O que você recebe</h2>
+
+    <ul>
+      <li><strong>Termograma e foto visual</strong> de cada ponto inspecionado</li>
+      <li><strong>Temperatura medida</strong>, temperatura de referência e diferença apurada</li>
+      <li><strong>Condições da medição</strong> — carga, temperatura ambiente, distância, emissividade adotada</li>
+      <li><strong>Classificação de severidade</strong> e prazo de intervenção de cada anomalia</li>
+      <li><strong>Provável causa</strong> e ação corretiva recomendada</li>
+      <li><strong>Localização precisa</strong> do componente, para que a manutenção não perca tempo procurando</li>
+      <li><strong>Comparativo com a inspeção anterior</strong>, quando existir histórico</li>
+      <li><strong>Dados do termovisor</strong> e da calibração</li>
+      <li><strong>Parecer conclusivo e ART registrada no CREA</strong></li>
+    </ul>
+
+    <p>
+      O comparativo histórico é o que transforma termografia de despesa recorrente
+      em ferramenta de gestão: uma conexão que sobe dois graus por semestre está
+      contando uma história que uma inspeção isolada não mostra.
+    </p>
+
+  </div>
+
+  <div class="hero-image">
+    <img src="../../assets/images/termografia-entrega.jpg"
+         alt="Conteúdo do laudo de termografia">
+  </div>
+
+</section>
+<!-- ===== FIM O QUE VOCÊ RECEBE ===== -->
+
+
+<!-- ===== LIMITES ===== -->
+<section class="hero">
+
+  <div class="hero-text">
+
+    <h2>O que a termografia não faz</h2>
+
+    <p>
+      Sendo direto, porque isso raramente é dito por quem vende o serviço: a
+      termografia não é exame completo da instalação. Ela não detecta:
+    </p>
+
+    <ul>
+      <li>defeitos em circuitos desligados ou com carga muito baixa no momento da inspeção</li>
+      <li>problemas internos que não transferem calor para uma superfície visível</li>
+      <li>falha incipiente de isolação que ainda não gera aquecimento</li>
+      <li>não conformidades documentais, de dimensionamento ou de projeto</li>
+    </ul>
+
+    <p>
+      Ela é uma técnica preditiva poderosa e de excelente custo-benefício, mas
+      complementa — não substitui — inspeção visual, medições elétricas e a
+      avaliação de conformidade da instalação.
+      <br>
+      <a href="/servicos-engenharia-eletrica/laudo-instalacoes-eletricas/">Ver laudo das instalações elétricas</a>
+    </p>
+
+  </div>
+
+  <div class="hero-image">
+    <img src="../../assets/images/termografia-limites.jpg"
+         alt="Limites da inspeção termográfica">
+  </div>
+
+</section>
+<!-- ===== FIM LIMITES ===== -->
+
+
+<!-- ===== PARA QUEM ===== -->
+<section class="servicos">
+
+  <h2>Para quem é</h2>
+
+  <div class="servicos-grid">
+
+    <div class="servico">
+      <img src="../../assets/images/termografia-industria.jpg" alt="Termografia industrial">
+      <p>Indústrias onde parada não programada custa mais que o programa preditivo</p>
+    </div>
+
+    <div class="servico">
+      <img src="../../assets/images/termografia-seguradora.jpg" alt="Termografia exigida por seguradora">
+      <p>Quem teve a inspeção exigida por seguradora na apólice</p>
+    </div>
+
+    <div class="servico">
+      <img src="../../assets/images/termografia-subestacao.jpg" alt="Termografia em subestação">
+      <p>Empresas com subestação própria e transformadores em operação contínua</p>
+    </div>
+
+    <div class="servico">
+      <img src="../../assets/images/termografia-logistica.jpg" alt="Termografia em centro logístico">
+      <p>Centros logísticos e câmaras frias, onde falha elétrica vira perda de carga</p>
+    </div>
+
+    <div class="servico">
+      <img src="../../assets/images/termografia-condominio.jpg" alt="Termografia em condomínio">
+      <p>Condomínios e edifícios comerciais com quadros antigos</p>
+    </div>
+
+    <div class="servico">
+      <img src="../../assets/images/termografia-preditiva.jpg" alt="Programa de manutenção preditiva">
+      <p>Quem está estruturando um programa de manutenção preditiva</p>
+    </div>
+
+  </div>
+
+</section>
+<!-- ===== FIM PARA QUEM ===== -->
+
+
+<!-- ===== COMO FUNCIONA ===== -->
+<section class="hero">
+
+  <div class="hero-text">
+
+    <h2>Como funciona</h2>
+
+    <ol class="spda-etapas">
+      <li>
+        <strong>Levantamento do que será inspecionado</strong><br>
+        Relação de painéis, quadros, subestação e equipamentos críticos, com o
+        regime de operação de cada um.
+      </li>
+      <li>
+        <strong>Proposta com escopo, prazo e valor</strong><br>
+        <!-- [PREENCHER] prazo para envio da proposta -->
+      </li>
+      <li>
+        <strong>Agendamento pela carga, não pela agenda</strong><br>
+        A visita é combinada para o turno e o momento em que a instalação está
+        efetivamente carregada.
+      </li>
+      <li>
+        <strong>Inspeção em campo</strong><br>
+        Com a instalação em operação, parâmetros ajustados por material e registro
+        das condições de cada medição.
+      </li>
+      <li>
+        <strong>Análise e classificação de severidade</strong><br>
+        Comparação com referências, definição do grau de cada anomalia e do prazo
+        de intervenção.
+      </li>
+      <li>
+        <strong>Laudo com ART</strong><br>
+        Termogramas, fotos visuais, plano de ação priorizado e recomendação de
+        periodicidade.
+        <!-- [PREENCHER] prazo de entrega após a visita -->
+      </li>
+      <li>
+        <strong>Reinspeção dos pontos corrigidos</strong><br>
+        Confirmação de que a correção resolveu — a etapa que quase ninguém entrega.
+        <!-- [PREENCHER] Informe se está inclusa ou é escopo à parte -->
+      </li>
+    </ol>
+
+  </div>
+
+  <div class="hero-image">
+    <img src="../../assets/images/termografia-processo.jpg"
+         alt="Etapas da inspeção termográfica">
+  </div>
+
+</section>
+<!-- ===== FIM COMO FUNCIONA ===== -->
+
+
+<!-- ===== PREÇO ===== -->
+<section class="hero">
+
+  <div class="hero-text">
+
+    <h2>O que faz o preço variar</h2>
+
+    <ul>
+      <li><strong>Número de painéis e pontos</strong> a inspecionar — o principal fator</li>
+      <li><strong>Necessidade de abertura de painéis</strong> e o tempo que isso consome</li>
+      <li><strong>Existência de janelas de inspeção</strong>, que reduzem bastante o tempo em campo</li>
+      <li><strong>Níveis de tensão</strong> envolvidos</li>
+      <li><strong>Horário da inspeção</strong> — turno noturno ou fim de semana, quando a carga exige</li>
+      <li><strong>Contrato recorrente ou visita avulsa</strong> — a recorrência costuma sair melhor por visita</li>
+      <li><strong>Deslocamento</strong>, conforme a cidade</li>
+    </ul>
+
+    <p>
+      Com a relação de painéis e o endereço, é possível fechar um valor sem visita
+      prévia.
+      <!-- [PREENCHER] Faixa de preço ou valor por ponto. Considere publicar o valor do contrato semestral — a recorrência é o melhor negócio desta página. -->
+    </p>
+
+  </div>
+
+  <div class="hero-image">
+    <img src="../../assets/images/termografia-orcamento.jpg"
+         alt="Orçamento de inspeção termográfica">
+  </div>
+
+</section>
+<!-- ===== FIM PREÇO ===== -->
+
+
+<!-- ===== QUEM ASSINA ===== -->
+<section class="hero">
+
+  <div class="hero-text">
+
+    <h2>Quem assina o laudo</h2>
+
+    <p>
+      <strong>Dario Cini</strong>, engenheiro eletricista formado pela Universidade
+      de Caxias do Sul, com mais de 10 anos de atuação em engenharia elétrica no eixo entre a
+      Serra Gaúcha e a Grande Porto Alegre.
+    </p>
+
+    <p>
+      <strong>CREA:</strong> RS 211.450 —
+      <a href="https://www.crea-rs.org.br/site/" target="_blank" rel="noopener noreferrer nofollow">
+        consulta pública no CREA-RS
+      </a>
+    </p>
+
+    <p>
+      <strong>Cini Engenharia</strong> — CNPJ 25.268.313/0001-56 —
+      <a href="https://solucoes.receita.fazenda.gov.br/servicos/cnpjreva/cnpjreva_solicitacao.asp"
+         target="_blank" rel="noopener noreferrer">Consultar CNPJ</a>
+    </p>
+
+    <p>
+      <strong>LinkedIn:</strong>
+      <a href="https://www.linkedin.com/in/dario-cini-38a3303a1/"
+         target="_blank" rel="noopener noreferrer">Dario Cini — Ver perfil</a>
+    </p>
+
+    <!-- [PREENCHER] Se você tem qualificação de termografista (SNQC/ABENDI, ITC, Infraspection), cite o nível AQUI. É credencial forte nesta página. Se não tiver, apague este comentário e não invente. -->
+
+    <p>
+      Câmera térmica qualquer um compra. O que o laudo entrega é a interpretação:
+      se aquele delta de temperatura, naquela carga, naquele componente, significa
+      manutenção na próxima parada ou desligamento hoje.
+    </p>
+
+  </div>
+
+  <div class="hero-image">
+    <img src="../../assets/images/engenheiro-eletricista-crea.jpg"
+         alt="Dario Cini — engenheiro eletricista CREA-RS 211.450">
+  </div>
+
+</section>
+<!-- ===== FIM QUEM ASSINA ===== -->
+
+
+<!-- ===== SERVIÇOS RELACIONADOS ===== -->
+<section class="secao-full">
+  <div class="hero-text">
+    <h2>Serviços relacionados</h2>
+    <p>
+      Todos os serviços e áreas de atendimento estão reunidos na página do
+      <a href="/servicos/engenheiro-eletricista/">engenheiro eletricista</a>.
+    </p>
+    <a href="/servicos-engenharia-eletrica/laudo-instalacoes-eletricas/">Laudo das instalações elétricas</a>
+    <span>|</span>
+    <a href="/servicos-engenharia-eletrica/calculo-atpv/">Cálculo de ATPV</a>
+    <span>|</span>
+    <a href="/servicos-engenharia-eletrica/projeto-subestacao/">Projeto de subestação</a>
+    <span>|</span>
+    <a href="/servicos-engenharia-eletrica/laudo-aterramento/">Laudo de aterramento</a>
+    <span>|</span>
+    <a href="/servicos-engenharia-eletrica/laudo-spda/">Laudo de SPDA</a>
+    <span>|</span>
+    <a href="/servicos-engenharia-eletrica/consultoria/">Consultoria</a>
+    <span>|</span>
+    <a href="/servicos-engenharia-eletrica/projeto-eletrico-industrial/">Projeto elétrico industrial</a>
+    <span>|</span>
+    <a href="/servicos-engenharia-eletrica/projeto-spda/">Projeto de SPDA</a>
+  </div>
+</section>
+<!-- ===== FIM SERVIÇOS RELACIONADOS ===== -->
+
+
+<!-- ===== ÁREA DE ATENDIMENTO ===== -->
+<section class="secao-full">
+  <div class="hero-text spda-cidades">
+    <h2>Onde atendemos</h2>
+    <p>
+      Atendimento presencial no eixo entre a Serra Gaúcha e a Grande Porto
+      Alegre, acompanhando os vales do Taquari, do Caí e do Sinos.
+    </p>
+    <ul class="spda-regioes">
+      <li><strong>Serra Gaúcha</strong> <small>(DDD 54)</small><br>
+        <a href="/servicos/engenheiro-eletricista-caxias-do-sul/">Caxias do Sul</a> <span>|</span>
+        <a href="/servicos/engenheiro-eletricista-bento-goncalves/">Bento Gonçalves</a> <span>|</span>
+        <a href="/servicos/engenheiro-eletricista-farroupilha/">Farroupilha</a> <span>|</span>
+        <a href="/servicos/engenheiro-eletricista-garibaldi/">Garibaldi</a> <span>|</span>
+        <a href="/servicos/engenheiro-eletricista-carlos-barbosa/">Carlos Barbosa</a> <span>|</span>
+        Guaporé
+      </li>
+      <li><strong>Vale do Taquari</strong> <small>(DDD 51)</small><br>
+        <a href="/servicos/engenheiro-eletricista-lajeado/">Lajeado</a>
+      </li>
+      <li><strong>Vale do Caí</strong> <small>(DDD 51)</small><br>
+        <a href="/servicos/engenheiro-eletricista-montenegro/">Montenegro</a>
+      </li>
+      <li><strong>Vale dos Sinos</strong> <small>(DDD 51)</small><br>
+        <a href="/servicos/engenheiro-eletricista-novo-hamburgo/">Novo Hamburgo</a> <span>|</span>
+        <a href="/servicos/engenheiro-eletricista-sao-leopoldo/">São Leopoldo</a>
+      </li>
+      <li><strong>Grande Porto Alegre</strong> <small>(DDD 51)</small><br>
+        <a href="/servicos/engenheiro-eletricista-porto-alegre/">Porto Alegre</a> <span>|</span>
+        <a href="/servicos/engenheiro-eletricista-canoas/">Canoas</a> <span>|</span>
+        <a href="/servicos/engenheiro-eletricista-cachoeirinha/">Cachoeirinha</a> <span>|</span>
+        <a href="/servicos/engenheiro-eletricista-gravatai/">Gravataí</a>
+      </li>
+    </ul>
+    <!-- [PREENCHER] Guaporé ainda não tem página. Ao criar, transforme em link. -->
+  </div>
+</section>
+<!-- ===== FIM ÁREA DE ATENDIMENTO ===== -->
+
+
+<!-- ===== FAQ ===== -->
+<section class="faq">
+
+  <div class="hero-text">
+
+    <h2>Dúvidas frequentes sobre <strong>termografia</strong></h2>
+
+    <details class="spda-faq-item">
+      <summary>De quanto em quanto tempo fazer a termografia?</summary>
+      <p>
+        A ABNT NBR 15763 recomenda intervalo de 6 meses para sistemas elétricos de
+        potência, não devendo ultrapassar 18 meses quando houver impossibilidade de
+        cumprir o período recomendado. Onde você cai dentro dessa faixa depende da
+        criticidade do sistema para a produção e do histórico de ocorrências. Muita
+        gente vende termografia anual por hábito comercial, não por critério
+        normativo.
+      </p>
+    </details>
+
+    <details class="spda-faq-item">
+      <summary>Preciso desligar a instalação?</summary>
+      <p>
+        Ao contrário: ela precisa estar energizada e, principalmente, sob carga. A
+        termografia detecta aquecimento causado pela passagem de corrente — sem
+        corrente, o defeito não aquece e não aparece. É a única inspeção elétrica
+        que exige a instalação em operação, e por isso não gera parada de produção.
+      </p>
+    </details>
+
+    <details class="spda-faq-item">
+      <summary>Existe carga mínima para a inspeção ser válida?</summary>
+      <p>
+        Sim, e é o ponto mais negligenciado da técnica. Inspeção feita com a
+        instalação em carga baixa não revela defeitos que se manifestariam em
+        regime normal. Por isso a carga no momento da medição precisa ser registrada
+        no laudo, e a avaliação de temperatura considera essa condição. Laudo que
+        não informa a carga do momento não permite julgar se o resultado significa
+        alguma coisa.
+      </p>
+    </details>
+
+    <details class="spda-faq-item">
+      <summary>Qualquer câmera térmica serve?</summary>
+      <p>
+        Não. Além da resolução do detector, que determina se um ponto pequeno será
+        realmente medido, o instrumento precisa ter calibração válida e verificação
+        periódica. E a câmera é só o começo: sem ajuste correto de emissividade e de
+        temperatura aparente refletida, o número na tela não corresponde à
+        temperatura real do componente.
+      </p>
+    </details>
+
+    <details class="spda-faq-item">
+      <summary>A seguradora aceita o laudo?</summary>
+      <p>
+        Em geral sim, desde que tenha ART registrada no CREA, identifique os
+        equipamentos inspecionados, apresente termogramas com a imagem visual
+        correspondente, registre as condições da medição — inclusive a carga — e
+        traga parecer conclusivo com classificação de severidade. Relatório com
+        fotos coloridas e sem esses elementos costuma ser recusado.
+      </p>
+    </details>
+
+    <details class="spda-faq-item">
+      <summary>O que a termografia não detecta?</summary>
+      <p>
+        Defeitos que não geram calor no momento da inspeção: circuito desligado ou
+        com carga muito baixa, componente interno que não transfere calor para a
+        superfície visível, falha incipiente de isolação e problemas de
+        dimensionamento ou documentais. É uma técnica preditiva poderosa, não um
+        exame completo da instalação — ela complementa inspeção visual, medições
+        elétricas e avaliação de conformidade.
+      </p>
+    </details>
+
+    <details class="spda-faq-item">
+      <summary>E se for encontrado um ponto quente?</summary>
+      <p>
+        O laudo classifica a severidade e indica o prazo de intervenção
+        correspondente, do acompanhamento na próxima inspeção até a correção
+        imediata. Você recebe a localização exata, a temperatura medida, a
+        referência usada na comparação e a provável causa. Depois da correção, uma
+        reinspeção do ponto confirma se o problema foi resolvido.
+      </p>
+    </details>
+
+    <details class="spda-faq-item">
+      <summary>É preciso abrir os painéis?</summary>
+      <p>
+        Para inspecionar conexões internas, sim — o infravermelho não atravessa a
+        porta metálica. Abrir painel energizado é atividade com risco de arco
+        elétrico e exige procedimento e vestimenta adequados. Uma alternativa que
+        reduz esse risco de forma permanente é a instalação de janelas de inspeção
+        infravermelha, que permitem a leitura com o painel fechado.
+      </p>
+    </details>
+
+    <details class="spda-faq-item">
+      <summary>Quanto tempo leva?</summary>
+      <p>
+        <!-- [PREENCHER] Prazo real. -->
+        Depende do número de painéis e da necessidade de abertura. A proposta traz
+        o prazo fechado para o seu caso.
+      </p>
+    </details>
+
+  </div>
+
+</section>
+<!-- ===== FIM FAQ ===== -->
+
+
+<!-- ===== CHAMADA FINAL ===== -->
+<section class="hero">
+  <div class="hero-text">
+    <h2>Tem laudo de termografia anterior?</h2>
+    <p>
+      Mande para uma conferência. A primeira coisa que eu procuro é se a carga do
+      momento da medição está registrada — se não estiver, o resultado não permite
+      concluir nada, e vale a pena saber disso antes da próxima renovação de
+      apólice.
+    </p>
+    <div class="spda-cta">
+      <a href="https://wa.me/5551999613451" target="_blank" rel="noopener">Agendar inspeção</a>
+      <a href="mailto:contato@ciniengenharia.com.br">Enviar laudo anterior</a>
+    </div>
+  </div>
+</section>
+<!-- ===== FIM CHAMADA FINAL ===== -->
+
+</body>
+</html>

@@ -1,0 +1,1444 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!--
+=========================================================================
+  ANTES DE PUBLICAR — CHECKLIST
+=========================================================================
+  1. ASCAREL / PCB: a seção é baseada na Lei nº 14.250/2021 e na Convenção
+     de Estocolmo — retirada de operação até dez/2025, eliminação até 2028,
+     inventário ao órgão ambiental com atualização bienal.
+     CONFIRME a data exata da próxima atualização do inventário antes de
+     publicar (fontes divergem entre 26/11/2024 e 26/11/2026 — a segunda
+     é a atualização bienal). Sistema: pcb.sinir.gov.br
+     ESCOPO: deixe claro que você faz a ENGENHARIA da substituição.
+     A destinação final é de empresa licenciada. Não prometa o que não faz.
+  2. CONCESSIONÁRIA: CEEE Equatorial ou RGE conforme o município.
+     Confirme qual atende cada cidade sua.
+  3. LIMITE DE CARGA para média tensão: confirme na norma da distribuidora.
+  4. MERCADO LIVRE: confirme a regra vigente de migração do Grupo A.
+  5. PRAZOS e PREÇO: preencha com dados reais.
+  6. ENDEREÇO no JSON-LD e IMAGENS ainda pendentes.
+=========================================================================
+-->
+
+<meta name="description" content="Projeto de subestação conforme ABNT NBR 14039, com transformador, proteção primária, malha de terra, aprovação na concessionária e ART no CREA. Dario Cini — CREA-RS 211.450.">
+
+<link rel="canonical" href="https://www.ciniengenharia.com.br/servicos-engenharia-eletrica/projeto-subestacao/">
+
+<link rel="icon" type="image/png" href="../../assets/images/favicon.png">
+
+<link rel="stylesheet" href="../../assets/css/menu.css">
+<link rel="stylesheet" href="../../assets/css/engenharia.css">
+
+<title>Projeto de Subestação — NBR 14039 e malha de terra | Cini Engenharia</title>
+
+<!-- ===== Open Graph ===== -->
+<meta property="og:title" content="Projeto de Subestação — NBR 14039 e malha de terra | Cini Engenharia">
+<meta property="og:description" content="Projeto de subestação em média tensão conforme NBR 14039, com malha de terra, proteção primária e aprovação na concessionária.">
+<meta property="og:image" content="https://www.ciniengenharia.com.br/assets/images/projeto-subestacao.jpg">
+<meta property="og:url" content="https://www.ciniengenharia.com.br/servicos-engenharia-eletrica/projeto-subestacao/">
+<meta property="og:type" content="website">
+
+<!-- ===== JSON-LD ===== -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://www.ciniengenharia.com.br/#website",
+      "url": "https://www.ciniengenharia.com.br/",
+      "name": "Cini Engenharia",
+      "inLanguage": "pt-BR"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.ciniengenharia.com.br/servicos-engenharia-eletrica/projeto-subestacao/#webpage",
+      "url": "https://www.ciniengenharia.com.br/servicos-engenharia-eletrica/projeto-subestacao/",
+      "name": "Projeto de Subestação",
+      "isPartOf": {
+        "@id": "https://www.ciniengenharia.com.br/#website"
+      },
+      "about": {
+        "@id": "https://www.ciniengenharia.com.br/servicos-engenharia-eletrica/projeto-subestacao/#service"
+      },
+      "inLanguage": "pt-BR"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://www.ciniengenharia.com.br/servicos-engenharia-eletrica/projeto-subestacao/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Início",
+          "item": "https://www.ciniengenharia.com.br/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Engenheiro eletricista",
+          "item": "https://www.ciniengenharia.com.br/servicos/engenheiro-eletricista/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Projeto de subestação"
+        }
+      ]
+    },
+    {
+      "@type": "Service",
+      "@id": "https://www.ciniengenharia.com.br/servicos-engenharia-eletrica/projeto-subestacao/#service",
+      "name": "Projeto de subestação",
+      "alternateName": [
+        "Projeto de subestação de média tensão",
+        "Projeto de cabine primária",
+        "Projeto de entrada em média tensão"
+      ],
+      "serviceType": "Projeto de subestação de média tensão conforme ABNT NBR 14039",
+      "description": "Projeto de subestação em média tensão conforme ABNT NBR 14039, com definição do arranjo, transformador, proteção primária, malha de terra, medição e aprovação junto à concessionária, com ART registrada no CREA.",
+      "provider": {
+        "@id": "https://www.ciniengenharia.com.br/#localbusiness"
+      },
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Caxias do Sul",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Serra Gaúcha"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Bento Gonçalves",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Serra Gaúcha"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Farroupilha",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Serra Gaúcha"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Garibaldi",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Serra Gaúcha"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Carlos Barbosa",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Serra Gaúcha"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Guaporé",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Serra Gaúcha"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Lajeado",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Vale do Taquari"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Montenegro",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Vale do Caí"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Novo Hamburgo",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Vale dos Sinos"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "São Leopoldo",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Vale dos Sinos"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Porto Alegre",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Grande Porto Alegre"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Canoas",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Grande Porto Alegre"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Cachoeirinha",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Grande Porto Alegre"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Gravataí",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Grande Porto Alegre"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        }
+      ]
+    },
+    {
+      "@type": [
+        "ProfessionalService",
+        "Electrician"
+      ],
+      "@id": "https://www.ciniengenharia.com.br/#localbusiness",
+      "name": "Cini Engenharia",
+      "legalName": "Cini Engenharia",
+      "taxID": "25.268.313/0001-56",
+      "url": "https://www.ciniengenharia.com.br/",
+      "image": "https://www.ciniengenharia.com.br/assets/images/projeto-subestacao.jpg",
+      "email": "contato@ciniengenharia.com.br",
+      "telephone": "+55-51-99961-3451",
+      "priceRange": "$$",
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "telephone": "+55-54-99947-5010",
+          "contactType": "customer service",
+          "areaServed": [
+            "Serra Gaúcha"
+          ],
+          "availableLanguage": "Portuguese"
+        },
+        {
+          "@type": "ContactPoint",
+          "telephone": "+55-51-99961-3451",
+          "contactType": "customer service",
+          "areaServed": [
+            "Vale do Taquari",
+            "Vale do Caí",
+            "Vale dos Sinos",
+            "Grande Porto Alegre"
+          ],
+          "availableLanguage": "Portuguese"
+        }
+      ],
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Caxias do Sul",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Serra Gaúcha"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Bento Gonçalves",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Serra Gaúcha"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Farroupilha",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Serra Gaúcha"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Garibaldi",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Serra Gaúcha"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Carlos Barbosa",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Serra Gaúcha"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Guaporé",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Serra Gaúcha"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Lajeado",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Vale do Taquari"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Montenegro",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Vale do Caí"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Novo Hamburgo",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Vale dos Sinos"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "São Leopoldo",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Vale dos Sinos"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Porto Alegre",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Grande Porto Alegre"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Canoas",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Grande Porto Alegre"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Cachoeirinha",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Grande Porto Alegre"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Gravataí",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Grande Porto Alegre"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        }
+      ],
+      "founder": {
+        "@type": "Person",
+        "name": "Dario Cini",
+        "jobTitle": "Engenheiro Eletricista",
+        "sameAs": [
+          "https://www.linkedin.com/in/dario-cini-38a3303a1/"
+        ]
+      },
+      "sameAs": [
+        "https://www.linkedin.com/in/dario-cini-38a3303a1/"
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.ciniengenharia.com.br/servicos-engenharia-eletrica/projeto-subestacao/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Quando preciso de subestação própria?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Quando a carga instalada ultrapassa o limite que a concessionária atende em baixa tensão. Acima desse patamar, definido na norma técnica da distribuidora, o fornecimento passa a ser em média tensão e a unidade consumidora precisa de subestação própria para rebaixar a tensão. Também é o caso de quem precisa de confiabilidade maior, de quem tem cargas com partida pesada ou de quem vai migrar para o mercado livre de energia."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Qual a diferença entre subestação abrigada, ao tempo e em poste?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A subestação em poste é a mais simples e econômica, adequada a potências menores, com transformador instalado na própria estrutura aérea. A subestação ao tempo fica ao ar livre, em área cercada e com acesso restrito, e comporta potências maiores com custo civil menor. A abrigada fica em alvenaria, protege os equipamentos das intempéries, facilita manutenção e é a opção usual em indústria de médio e grande porte. A escolha depende de potência, área disponível, ambiente e da norma técnica da distribuidora."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Transformador a óleo ou a seco?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "O transformador a óleo tem custo menor e melhor dissipação térmica, mas exige contenção de vazamento e cuidados de proteção contra incêndio. O a seco dispensa óleo, tem risco de incêndio menor e é indicado para instalação dentro de edificações ou em ambientes com restrição ambiental, com custo de aquisição maior. A definição entra no projeto junto com o arranjo físico e as exigências do local."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Como sei se meu transformador contém ascarel?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Pela placa de identificação e pela data de fabricação — equipamentos das décadas de 1930 a 1980 são os de maior risco — e, com certeza, apenas por análise laboratorial do óleo isolante. A Lei nº 14.250/2021 determinou a retirada de operação dos equipamentos contaminados até dezembro de 2025 e a eliminação definitiva até 2028, além de inventário ao órgão ambiental. Quem mantém equipamento contaminado em operação está sujeito a autuação."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Preciso refazer a malha de terra da subestação?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Depende do que o projeto original previu e do que existe hoje. A malha de terra de subestação não é dimensionada por um valor de resistência isolado: ela é verificada pelas tensões de passo e de toque que aparecem durante um defeito, calculadas a partir da resistividade do solo estratificada e da corrente de falta. Malha subdimensionada é risco de vida, não questão documental. Em subestação existente sem memorial de malha, a verificação é a primeira coisa a fazer."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quem aprova o projeto de subestação?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A concessionária de distribuição que atende o endereço — no Rio Grande do Sul, CEEE Equatorial ou RGE, conforme o município. Cada uma tem norma técnica própria de fornecimento em média tensão, com exigências específicas de arranjo, proteção, medição e acesso. O projeto é protocolado, analisado e, atendidas as exigências, recebe a aprovação que libera a execução e a energização."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Como se define a demanda contratada?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A partir do levantamento de cargas, do regime de operação e do fator de simultaneidade real da instalação. Demanda contratada acima do necessário gera pagamento por capacidade ociosa todo mês; abaixo do necessário gera cobrança por ultrapassagem. É uma definição de projeto com efeito direto e permanente na fatura, e vale revisá-la sempre que o perfil de consumo mudar."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "O que faz o preço do projeto variar?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Potência e tensão de fornecimento, tipo de subestação, número de transformadores, complexidade da proteção, necessidade de estudos de curto-circuito e seletividade, medição da resistividade do solo em campo, se a instalação é nova ou existente e se o acompanhamento junto à concessionária está incluído no escopo."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+<!-- ===== Estilos apenas dos componentes novos desta página ===== -->
+<style>
+  .spda-destaque{ border-left:4px solid currentColor; padding:1rem 1.25rem; margin:1.5rem 0; opacity:.95; }
+  .spda-etapas{ list-style:none; padding:0; margin:1.5rem 0; counter-reset:spda; }
+  .spda-etapas li{ counter-increment:spda; padding:.75rem 0 .75rem 3rem; position:relative; border-bottom:1px solid rgba(128,128,128,.25); }
+  .spda-etapas li:last-child{ border-bottom:none; }
+  .spda-etapas li::before{ content:counter(spda); position:absolute; left:0; top:.75rem; width:2rem; height:2rem; line-height:2rem; text-align:center; border-radius:50%; border:1px solid currentColor; font-size:.9rem; font-weight:700; }
+  .spda-cta{ margin:2rem 0; display:flex; flex-wrap:wrap; gap:.75rem; }
+  .spda-cta a{ display:inline-block; padding:.85rem 1.5rem; border:2px solid currentColor; border-radius:4px; text-decoration:none; font-weight:700; }
+  .spda-faq-item{ border-bottom:1px solid rgba(128,128,128,.25); padding:.5rem 0; }
+  .spda-faq-item summary{ cursor:pointer; font-weight:700; padding:.75rem 0; }
+  .spda-faq-item summary:focus-visible{ outline:2px solid currentColor; outline-offset:2px; }
+  .spda-faq-item p{ margin:0 0 1rem 0; }
+  .spda-cidades a{ display:inline-block; margin:.25rem .5rem .25rem 0; }
+  .spda-tabela{ width:100%; border-collapse:collapse; margin:1.5rem 0; }
+  .spda-tabela th, .spda-tabela td{ text-align:left; padding:.75rem .5rem; border-bottom:1px solid rgba(128,128,128,.3); vertical-align:top; }
+  .spda-tabela th{ font-weight:700; }
+  .spda-regioes{ list-style:none; padding:0; margin:1.25rem 0; }
+  .spda-regioes li{ padding:.75rem 0; border-bottom:1px solid rgba(128,128,128,.2); }
+  .spda-regioes li:last-child{ border-bottom:none; }
+  .spda-regioes small{ opacity:.7; font-weight:400; }
+  .spda-fones{ margin:1rem 0; }
+  .spda-fones div{ padding:.35rem 0; }
+  @media (prefers-reduced-motion: reduce){ *{ animation:none !important; transition:none !important; } }
+</style>
+
+</head>
+<body class="engenharia">
+
+<!-- ===== MENU DINÂMICO ===== -->
+<div id="menu"></div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  fetch("/menu.html")
+    .then(response => {
+      if (!response.ok) { throw new Error("Erro ao carregar menu.html"); }
+      return response.text();
+    })
+    .then(data => {
+      document.getElementById("menu").innerHTML = data;
+      const toggle = document.querySelector(".menu-toggle");
+      const links = document.querySelector(".menu-links");
+      if (toggle && links) {
+        toggle.addEventListener("click", function() {
+          links.classList.toggle("open");
+          toggle.classList.toggle("open");
+        });
+      }
+    })
+    .catch(error => { console.error("Erro no menu:", error); });
+});
+</script>
+<!-- ===== FIM MENU DINÂMICO ===== -->
+
+
+<!-- ===== ABERTURA ===== -->
+<section class="hero">
+
+  <div class="hero-text">
+
+    <h1>
+      <span class="linha1">Projeto de</span>
+      <span class="cidade">Subestação</span>
+    </h1>
+
+    <p>
+      <strong>Média tensão conforme ABNT NBR 14039, com malha de terra
+      dimensionada por cálculo e ART registrada no CREA.</strong>
+    </p>
+
+    <p>
+      A subestação é o ponto onde a sua instalação encontra a rede da
+      concessionária. É ela que define o limite de crescimento da fábrica, o
+      comportamento da proteção diante de um defeito e o valor que vai aparecer
+      na fatura todo mês pelas próximas duas décadas.
+    </p>
+
+    <p>
+      Engenheiro eletricista <strong>Dario Cini — CREA-RS 211.450</strong><br>
+      Telefones:<br>
+      <strong>(54) 99947-5010</strong> — Serra Gaúcha<br>
+      <strong>(51) 99961-3451</strong> — Vales do Taquari, Caí e Sinos, Grande Porto Alegre<br>
+      E-mail: contato@ciniengenharia.com.br
+    </p>
+
+    <div class="spda-cta">
+      <a href="https://wa.me/5551999613451" target="_blank" rel="noopener">Solicitar proposta</a>
+      <a href="#existente">Avaliar subestação existente</a>
+    </div>
+
+  </div>
+
+  <div class="hero-image">
+    <!-- [PREENCHER] Foto real de subestação sua -->
+    <img src="../../assets/images/projeto-subestacao.jpg"
+         alt="Projeto de subestação de média tensão conforme NBR 14039 — Cini Engenharia"
+         title="Projeto de subestação">
+  </div>
+
+</section>
+<!-- ===== FIM ABERTURA ===== -->
+
+
+<!-- ===== QUANDO PRECISA ===== -->
+<section class="hero">
+
+  <div class="hero-text">
+
+    <h2>Quando a subestação entra em cena</h2>
+
+    <ul>
+      <li><strong>Migração de baixa para média tensão</strong> — quando a carga instalada ultrapassa o limite atendido em BT pela distribuidora</li>
+      <li><strong>Nova unidade industrial</strong> que já nasce acima desse patamar</li>
+      <li><strong>Ampliação</strong> que exige transformador maior ou uma segunda subestação</li>
+      <li><strong>Subestação antiga</strong>, sem memorial, sem malha calculada ou com equipamento no fim da vida útil</li>
+      <li><strong>Transformador com suspeita de ascarel</strong>, cuja retirada de operação tem prazo legal vencido</li>
+      <li><strong>Não conformidade apontada em laudo</strong> ou em inspeção da concessionária</li>
+      <li><strong>Migração para o mercado livre de energia</strong>, que exige adequação de medição</li>
+    </ul>
+
+    <div class="spda-destaque">
+      <p>
+        <strong>A decisão entre baixa e média tensão vem antes do projeto.</strong>
+        Ela muda o custo de implantação, o prazo de obra, a estrutura tarifária e a
+        necessidade de área específica. É a primeira conta a fazer em qualquer
+        ampliação industrial — e a que mais gente descobre tarde.
+      </p>
+    </div>
+
+  </div>
+
+  <div class="hero-image">
+    <img src="../../assets/images/projeto-subestacao-quando.jpg"
+         alt="Quando a subestação de média tensão é necessária">
+  </div>
+
+</section>
+<!-- ===== FIM QUANDO PRECISA ===== -->
+
+
+<!-- ===== TIPOS ===== -->
+<section class="hero">
+
+  <div class="hero-text">
+
+    <h2>Tipos de subestação</h2>
+
+    <p>
+      A escolha depende de potência, área disponível, ambiente, restrições da
+      edificação e da norma técnica da distribuidora — não de preferência.
+    </p>
+
+    <table class="spda-tabela">
+      <thead>
+        <tr><th scope="col">Tipo</th><th scope="col">Quando faz sentido</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Em poste (aérea)</strong></td>
+          <td>Potências menores. Menor custo de implantação e de obra civil. Transformador na própria estrutura, com proteção por chave fusível.</td>
+        </tr>
+        <tr>
+          <td><strong>Ao tempo</strong></td>
+          <td>Ao ar livre, em área cercada com acesso restrito. Comporta potências maiores com custo civil reduzido. Exige atenção a corrosão e a delimitação de área.</td>
+        </tr>
+        <tr>
+          <td><strong>Abrigada em alvenaria</strong></td>
+          <td>Opção usual em indústria de médio e grande porte. Protege equipamentos, facilita manutenção e permite arranjo com cubículos. Exige ventilação, contenção de óleo e controle de acesso.</td>
+        </tr>
+        <tr>
+          <td><strong>Blindada ou compacta</strong></td>
+          <td>Cubículos metálicos ou unidade compacta. Menor área ocupada, montagem mais rápida e maior nível de segurança operacional, com custo de aquisição superior.</td>
+        </tr>
+      </tbody>
+    </table>
+
+  </div>
+
+  <div class="hero-image">
+    <img src="../../assets/images/projeto-subestacao-tipos.jpg"
+         alt="Tipos de subestação de média tensão">
+  </div>
+
+</section>
+<!-- ===== FIM TIPOS ===== -->
+
+
+<!-- ===== O QUE CONTEMPLA ===== -->
+<section class="hero">
+
+  <div class="hero-text">
+
+    <h2>O que o projeto contempla</h2>
+
+    <h3>Ponto de entrega e entrada em média tensão</h3>
+    <p>
+      Definição do ponto de conexão, ramal de entrada, poste ou estrutura de
+      derivação e enquadramento na norma técnica da distribuidora que atende o
+      endereço.
+    </p>
+
+    <h3>Proteção primária</h3>
+    <p>
+      Chave seccionadora, proteção geral, transformadores de instrumento e
+      ajustes de relé quando aplicável. Os ajustes não saem de tabela: dependem do
+      estudo de curto-circuito e da coordenação com a proteção da concessionária a
+      montante.
+    </p>
+
+    <h3>Transformação</h3>
+    <p>
+      Definição da potência a partir da demanda calculada, tipo construtivo — a
+      óleo ou a seco —, grupo de ligação, derivações e critérios de perdas.
+      Dimensionar transformador pela carga instalada, sem fator de demanda, é como
+      se paga caro por capacidade que nunca vai ser usada.
+    </p>
+
+    <h3>Malha de terra</h3>
+    <p>
+      Projeto dedicado, com medição de resistividade do solo, estratificação e
+      verificação das tensões de passo e de toque. Ver seção específica abaixo.
+    </p>
+
+    <h3>Proteção secundária e distribuição</h3>
+    <p>
+      Quadro geral de baixa tensão, proteção de saída, barramentos e interface com
+      a instalação existente, conforme a NBR 5410.
+    </p>
+
+    <h3>Arranjo físico, segurança e documentação</h3>
+    <p>
+      Layout, distâncias de segurança, ventilação, contenção de óleo, controle de
+      acesso, sinalização e proteção contra incêndio. Mais diagramas unifilares e
+      trifilares, memorial descritivo, memorial de cálculo e lista de materiais.
+    </p>
+
+  </div>
+
+  <div class="hero-image">
+    <img src="../../assets/images/projeto-subestacao-escopo.jpg"
+         alt="Escopo do projeto de subestação">
+  </div>
+
+</section>
+<!-- ===== FIM O QUE CONTEMPLA ===== -->
+
+
+<!-- ===== MALHA DE TERRA ===== -->
+<section class="hero">
+
+  <div class="hero-text">
+
+    <h2>Malha de terra: o item que mais se erra</h2>
+
+    <p>
+      Malha de terra de subestação não se resolve com um valor de resistência.
+      O que precisa ser verificado é se, durante um defeito à terra, as
+      <strong>tensões de passo e de toque</strong> a que uma pessoa fica exposta
+      permanecem abaixo dos limites suportáveis pelo corpo humano.
+    </p>
+
+    <p>Isso exige quatro coisas que raramente aparecem juntas:</p>
+
+    <ol class="spda-etapas">
+      <li>
+        <strong>Medição da resistividade do solo em campo</strong><br>
+        Levantamento pelo método de Wenner, em mais de uma direção, no local exato
+        da futura malha.
+      </li>
+      <li>
+        <strong>Estratificação do solo</strong><br>
+        Modelagem em camadas a partir das medições. Solo real não é homogêneo, e
+        adotar valor único distorce todo o cálculo seguinte.
+      </li>
+      <li>
+        <strong>Corrente de falta à terra</strong><br>
+        Obtida junto à concessionária ou do estudo de curto-circuito, com o tempo
+        de atuação da proteção — que é o que define por quanto tempo a tensão
+        perigosa existe.
+      </li>
+      <li>
+        <strong>Verificação das tensões de passo e de toque</strong><br>
+        Comparação dos valores calculados com os limites admissíveis. É esse
+        confronto que aprova ou reprova a malha.
+      </li>
+    </ol>
+
+    <div class="spda-destaque">
+      <p>
+        Uma malha aprovada por "deu menos de 10 ohms" pode estar perfeitamente
+        dentro desse número e ainda assim apresentar tensão de toque acima do
+        limite suportável. Resistência baixa não é sinônimo de malha segura — e
+        essa confusão é a origem da maioria dos memoriais frágeis que aparecem em
+        subestação existente.
+      </p>
+    </div>
+
+  </div>
+
+  <div class="hero-image">
+    <img src="../../assets/images/projeto-subestacao-malha-terra.jpg"
+         alt="Projeto de malha de terra de subestação">
+  </div>
+
+</section>
+<!-- ===== FIM MALHA DE TERRA ===== -->
+
+
+<!-- ===== ASCAREL ===== -->
+<section class="hero">
+
+  <div class="hero-text">
+
+    <h2>Transformador com ascarel: o prazo já venceu</h2>
+
+    <p>
+      Se a sua subestação tem transformador antigo, esse é um assunto com data
+      marcada — e a data ficou para trás.
+    </p>
+
+    <p>
+      Ao ratificar a Convenção de Estocolmo, o Brasil assumiu o compromisso de
+      retirar de uso os equipamentos contaminados por bifenilas policloradas —
+      as PCBs, conhecidas comercialmente como <strong>ascarel</strong> — e de
+      eliminá-los definitivamente. A <strong>Lei nº 14.250/2021</strong>
+      internalizou esses prazos: retirada de operação até <strong>dezembro de
+      2025</strong> e eliminação definitiva até <strong>2028</strong>. A lei também
+      obriga o detentor a inventariar os equipamentos junto ao órgão ambiental,
+      com atualização periódica.
+    </p>
+
+    <div class="spda-destaque">
+      <p>
+        <strong>O prazo de retirada de operação venceu.</strong> Quem ainda mantém
+        equipamento contaminado energizado está sujeito a autuação ambiental,
+        além do risco de contaminação em caso de vazamento — que gera passivo
+        muito mais caro que o próprio equipamento.
+      </p>
+    </div>
+
+    <h3>Como saber se o seu tem</h3>
+    <p>
+      A placa de identificação e a data de fabricação dão o primeiro indício —
+      equipamentos fabricados entre as décadas de 1930 e 1980 são os de maior
+      risco. Mas a confirmação só vem por <strong>análise laboratorial do óleo
+      isolante</strong>. Transformador antigo que já teve o óleo trocado também
+      pode estar contaminado por contato.
+    </p>
+
+    <h3>O que fazemos</h3>
+    <p>
+      Identificação dos equipamentos em risco, coleta e encaminhamento de amostra
+      para análise, e o <strong>projeto de engenharia da substituição</strong>:
+      dimensionamento do novo transformador, adequação do arranjo, da proteção e
+      da malha de terra, e planejamento da parada para troca com o menor impacto
+      possível na produção.
+    </p>
+
+    <p>
+      <em>A destinação final do equipamento contaminado é executada por empresa
+      ambientalmente licenciada para esse fim — indicamos o caminho, mas o serviço
+      de destinação não é nosso.</em>
+      <!-- [PREENCHER] Se você tiver parceiro licenciado, cite aqui. Honestidade de escopo constrói mais confiança que prometer tudo. -->
+    </p>
+
+  </div>
+
+  <div class="hero-image">
+    <img src="../../assets/images/projeto-subestacao-ascarel.jpg"
+         alt="Substituição de transformador com ascarel">
+  </div>
+
+</section>
+<!-- ===== FIM ASCAREL ===== -->
+
+
+<!-- ===== TARIFA E DEMANDA ===== -->
+<section class="hero">
+
+  <div class="hero-text">
+
+    <h2>A subestação define a sua conta de energia</h2>
+
+    <p>
+      Ao entrar em média tensão, a unidade passa a ser faturada com estrutura
+      diferente: além do consumo, passa a existir <strong>demanda
+      contratada</strong> — uma capacidade que se paga todo mês, seja ela usada ou
+      não.
+    </p>
+
+    <ul>
+      <li><strong>Demanda contratada acima do necessário</strong> — você paga por capacidade ociosa, mês após mês, por anos</li>
+      <li><strong>Demanda abaixo do necessário</strong> — cobrança adicional por ultrapassagem</li>
+      <li><strong>Enquadramento tarifário</strong> — a modalidade adequada depende do perfil de consumo ao longo do dia</li>
+      <li><strong>Fator de potência</strong> — abaixo do mínimo regulatório, gera cobrança de reativo excedente</li>
+      <li><strong>Mercado livre de energia</strong> — a migração exige adequação de medição e é decisão que passa pelo projeto</li>
+    </ul>
+
+    <div class="spda-destaque">
+      <p>
+        Essas definições são tomadas <strong>durante o projeto</strong> e
+        acompanham a instalação por décadas. Um levantamento de carga malfeito não
+        aparece como erro técnico — aparece como uma fatura mais cara todo mês,
+        sem que ninguém saiba de onde veio.
+      </p>
+      <!-- [PREENCHER] Confirme as regras vigentes de migração ao mercado livre para o Grupo A antes de publicar. -->
+    </div>
+
+  </div>
+
+  <div class="hero-image">
+    <img src="../../assets/images/projeto-subestacao-demanda.jpg"
+         alt="Demanda contratada e enquadramento tarifário">
+  </div>
+
+</section>
+<!-- ===== FIM TARIFA E DEMANDA ===== -->
+
+
+<!-- ===== SUBESTAÇÃO EXISTENTE ===== -->
+<section class="hero" id="existente">
+
+  <div class="hero-text">
+
+    <h2>Já tem subestação? Comece pela avaliação</h2>
+
+    <p>
+      Boa parte das subestações em operação na região foi construída há décadas e
+      cresceu por adaptação. Sinais de que vale uma avaliação técnica:
+    </p>
+
+    <ul>
+      <li>não existe memorial de cálculo da malha de terra, apenas o desenho</li>
+      <li>a malha foi aprovada por valor de resistência, sem verificação de tensões de passo e toque</li>
+      <li>os ajustes de proteção nunca foram revisados após ampliações</li>
+      <li>o transformador é anterior à década de 1990 e nunca teve o óleo analisado</li>
+      <li>a carga cresceu e ninguém verificou se o transformador ainda comporta</li>
+      <li>o projeto original não existe ou não corresponde ao que está instalado</li>
+      <li>não há delimitação de zona controlada nem documentação para a NR-10</li>
+    </ul>
+
+    <div class="spda-cta">
+      <a href="https://wa.me/5551999613451" target="_blank" rel="noopener">Solicitar avaliação</a>
+      <a href="mailto:contato@ciniengenharia.com.br">Enviar documentação existente</a>
+    </div>
+
+  </div>
+
+  <div class="hero-image">
+    <img src="../../assets/images/projeto-subestacao-existente.jpg"
+         alt="Avaliação de subestação existente">
+  </div>
+
+</section>
+<!-- ===== FIM SUBESTAÇÃO EXISTENTE ===== -->
+
+
+<!-- ===== PARA QUEM ===== -->
+<section class="servicos">
+
+  <h2>Para quem é</h2>
+
+  <div class="servicos-grid">
+
+    <div class="servico">
+      <img src="../../assets/images/projeto-subestacao-migracao.jpg" alt="Migração de baixa para média tensão">
+      <p>Indústrias que ultrapassaram o limite de atendimento em baixa tensão</p>
+    </div>
+
+    <div class="servico">
+      <img src="../../assets/images/projeto-subestacao-nova-planta.jpg" alt="Subestação para nova planta">
+      <p>Nova planta industrial ou centro logístico em construção</p>
+    </div>
+
+    <div class="servico">
+      <img src="../../assets/images/projeto-subestacao-ampliacao.jpg" alt="Ampliação de subestação">
+      <p>Quem precisa de transformador maior ou de uma segunda subestação</p>
+    </div>
+
+    <div class="servico">
+      <img src="../../assets/images/projeto-subestacao-antiga.jpg" alt="Modernização de subestação antiga">
+      <p>Subestações antigas, sem memorial ou com equipamento no fim da vida útil</p>
+    </div>
+
+    <div class="servico">
+      <img src="../../assets/images/projeto-subestacao-pcb.jpg" alt="Substituição de transformador com ascarel">
+      <p>Quem tem transformador com suspeita de ascarel e prazo legal vencido</p>
+    </div>
+
+    <div class="servico">
+      <img src="../../assets/images/projeto-subestacao-nr10.jpg" alt="Adequação de subestação à NR-10">
+      <p>Empresas adequando a subestação às exigências da NR-10</p>
+    </div>
+
+  </div>
+
+</section>
+<!-- ===== FIM PARA QUEM ===== -->
+
+
+<!-- ===== COMO FUNCIONA ===== -->
+<section class="hero">
+
+  <div class="hero-text">
+
+    <h2>Como funciona</h2>
+
+    <ol class="spda-etapas">
+      <li>
+        <strong>Levantamento de carga e definição de demanda</strong><br>
+        Relação de equipamentos, regime de operação e fator de simultaneidade real.
+        É daqui que sai a potência do transformador e a demanda a contratar.
+      </li>
+      <li>
+        <strong>Consulta de viabilidade à concessionária</strong><br>
+        Tensão de fornecimento disponível, ponto de conexão e condições de
+        atendimento no seu endereço.
+      </li>
+      <li>
+        <strong>Proposta com escopo, prazo e valor</strong><br>
+        <!-- [PREENCHER] prazo para envio da proposta -->
+      </li>
+      <li>
+        <strong>Medição de resistividade do solo</strong><br>
+        Em campo, no local da futura malha. Sem esse dado, o projeto de malha é
+        estimativa.
+      </li>
+      <li>
+        <strong>Anteprojeto e validação do arranjo</strong><br>
+        Tipo de subestação, implantação e definições principais, validados antes
+        do detalhamento.
+      </li>
+      <li>
+        <strong>Projeto executivo, malha e estudos</strong><br>
+        Diagramas, memoriais, malha calculada, curto-circuito e seletividade.
+      </li>
+      <li>
+        <strong>Protocolo e acompanhamento na concessionária</strong><br>
+        Até a aprovação e a liberação para execução.
+      </li>
+      <li>
+        <strong>Suporte na execução, comissionamento e as built</strong><br>
+        <!-- [PREENCHER] Defina o que está incluso e o que é escopo à parte -->
+      </li>
+    </ol>
+
+  </div>
+
+  <div class="hero-image">
+    <img src="../../assets/images/projeto-subestacao-processo.jpg"
+         alt="Etapas do projeto de subestação">
+  </div>
+
+</section>
+<!-- ===== FIM COMO FUNCIONA ===== -->
+
+
+<!-- ===== PREÇO ===== -->
+<section class="hero">
+
+  <div class="hero-text">
+
+    <h2>O que faz o preço variar</h2>
+
+    <ul>
+      <li><strong>Potência e tensão de fornecimento</strong></li>
+      <li><strong>Tipo de subestação</strong> — poste, ao tempo, abrigada ou blindada</li>
+      <li><strong>Número de transformadores</strong> e complexidade do arranjo</li>
+      <li><strong>Nível de proteção</strong> — chave fusível ou disjuntor com relé e ajustes</li>
+      <li><strong>Estudos incluídos</strong> — curto-circuito, seletividade, arco elétrico</li>
+      <li><strong>Medição de resistividade do solo</strong> em campo</li>
+      <li><strong>Instalação nova ou existente</strong> — a existente exige levantamento</li>
+      <li><strong>Acompanhamento na concessionária</strong>, se incluso</li>
+    </ul>
+
+    <p>
+      Com a relação de cargas, o endereço e a área disponível, é possível fechar
+      escopo e valor sem visita inicial.
+      <!-- [PREENCHER] Faixa de honorários ou critério de cálculo. -->
+    </p>
+
+  </div>
+
+  <div class="hero-image">
+    <img src="../../assets/images/projeto-subestacao-orcamento.jpg"
+         alt="Orçamento de projeto de subestação">
+  </div>
+
+</section>
+<!-- ===== FIM PREÇO ===== -->
+
+
+<!-- ===== QUEM ASSINA ===== -->
+<section class="hero">
+
+  <div class="hero-text">
+
+    <h2>Quem assina o projeto</h2>
+
+    <p>
+      <strong>Dario Cini</strong>, engenheiro eletricista formado pela Universidade
+      de Caxias do Sul, com mais de 10 anos de atuação em engenharia elétrica no eixo entre a
+      Serra Gaúcha e a Grande Porto Alegre.
+    </p>
+
+    <p>
+      <strong>CREA:</strong> RS 211.450 —
+      <a href="https://www.crea-rs.org.br/site/" target="_blank" rel="noopener noreferrer nofollow">
+        consulta pública no CREA-RS
+      </a>
+    </p>
+
+    <p>
+      <strong>Cini Engenharia</strong> — CNPJ 25.268.313/0001-56 —
+      <a href="https://solucoes.receita.fazenda.gov.br/servicos/cnpjreva/cnpjreva_solicitacao.asp"
+         target="_blank" rel="noopener noreferrer">Consultar CNPJ</a>
+    </p>
+
+    <p>
+      <strong>LinkedIn:</strong>
+      <a href="https://www.linkedin.com/in/dario-cini-38a3303a1/"
+         target="_blank" rel="noopener noreferrer">Dario Cini — Ver perfil</a>
+    </p>
+
+    <p>
+      Em subestação, o memorial de cálculo não é burocracia: é o que separa uma
+      malha que protege pessoas de uma que apenas existe. Cada dimensionamento sai
+      com o critério normativo que o sustenta.
+    </p>
+
+  </div>
+
+  <div class="hero-image">
+    <img src="../../assets/images/engenheiro-eletricista-crea.jpg"
+         alt="Dario Cini — engenheiro eletricista CREA-RS 211.450">
+  </div>
+
+</section>
+<!-- ===== FIM QUEM ASSINA ===== -->
+
+
+<!-- ===== SERVIÇOS RELACIONADOS ===== -->
+<section class="secao-full">
+  <div class="hero-text">
+    <h2>Serviços relacionados</h2>
+    <p>
+      Todos os serviços e áreas de atendimento estão reunidos na página do
+      <a href="/servicos/engenheiro-eletricista/">engenheiro eletricista</a>.
+    </p>
+    <a href="/servicos-engenharia-eletrica/projeto-eletrico-industrial/">Projeto elétrico industrial</a>
+    <span>|</span>
+    <a href="/servicos-engenharia-eletrica/calculo-atpv/">Cálculo de ATPV</a>
+    <span>|</span>
+    <a href="/servicos-engenharia-eletrica/laudo-aterramento/">Laudo de aterramento</a>
+    <span>|</span>
+    <a href="/servicos-engenharia-eletrica/termografia/">Termografia</a>
+    <span>|</span>
+    <a href="/servicos-engenharia-eletrica/projeto-spda/">Projeto de SPDA</a>
+    <span>|</span>
+    <a href="/servicos-engenharia-eletrica/consultoria/">Consultoria</a>
+    <span>|</span>
+    <a href="/servicos-engenharia-eletrica/laudo-instalacoes-eletricas/">Laudo das instalações elétricas</a>
+    <span>|</span>
+    <a href="/servicos-engenharia-eletrica/laudo-spda/">Laudo de SPDA</a>
+  </div>
+</section>
+<!-- ===== FIM SERVIÇOS RELACIONADOS ===== -->
+
+
+<!-- ===== ÁREA DE ATENDIMENTO ===== -->
+<section class="secao-full">
+  <div class="hero-text spda-cidades">
+    <h2>Onde atendemos</h2>
+    <p>
+      Atendimento presencial no eixo entre a Serra Gaúcha e a Grande Porto
+      Alegre, acompanhando os vales do Taquari, do Caí e do Sinos.
+    </p>
+    <ul class="spda-regioes">
+      <li><strong>Serra Gaúcha</strong> <small>(DDD 54)</small><br>
+        <a href="/servicos/engenheiro-eletricista-caxias-do-sul/">Caxias do Sul</a> <span>|</span>
+        <a href="/servicos/engenheiro-eletricista-bento-goncalves/">Bento Gonçalves</a> <span>|</span>
+        <a href="/servicos/engenheiro-eletricista-farroupilha/">Farroupilha</a> <span>|</span>
+        <a href="/servicos/engenheiro-eletricista-garibaldi/">Garibaldi</a> <span>|</span>
+        <a href="/servicos/engenheiro-eletricista-carlos-barbosa/">Carlos Barbosa</a> <span>|</span>
+        Guaporé
+      </li>
+      <li><strong>Vale do Taquari</strong> <small>(DDD 51)</small><br>
+        <a href="/servicos/engenheiro-eletricista-lajeado/">Lajeado</a>
+      </li>
+      <li><strong>Vale do Caí</strong> <small>(DDD 51)</small><br>
+        <a href="/servicos/engenheiro-eletricista-montenegro/">Montenegro</a>
+      </li>
+      <li><strong>Vale dos Sinos</strong> <small>(DDD 51)</small><br>
+        <a href="/servicos/engenheiro-eletricista-novo-hamburgo/">Novo Hamburgo</a> <span>|</span>
+        <a href="/servicos/engenheiro-eletricista-sao-leopoldo/">São Leopoldo</a>
+      </li>
+      <li><strong>Grande Porto Alegre</strong> <small>(DDD 51)</small><br>
+        <a href="/servicos/engenheiro-eletricista-porto-alegre/">Porto Alegre</a> <span>|</span>
+        <a href="/servicos/engenheiro-eletricista-canoas/">Canoas</a> <span>|</span>
+        <a href="/servicos/engenheiro-eletricista-cachoeirinha/">Cachoeirinha</a> <span>|</span>
+        <a href="/servicos/engenheiro-eletricista-gravatai/">Gravataí</a>
+      </li>
+    </ul>
+    <!-- [PREENCHER] Guaporé ainda não tem página. Ao criar, transforme em link. -->
+  </div>
+</section>
+<!-- ===== FIM ÁREA DE ATENDIMENTO ===== -->
+
+
+<!-- ===== FAQ ===== -->
+<section class="faq">
+
+  <div class="hero-text">
+
+    <h2>Dúvidas frequentes sobre <strong>projeto de subestação</strong></h2>
+
+    <details class="spda-faq-item">
+      <summary>Quando preciso de subestação própria?</summary>
+      <p>
+        Quando a carga instalada ultrapassa o limite que a concessionária atende em
+        baixa tensão. Acima desse patamar, definido na norma técnica da
+        distribuidora, o fornecimento passa a ser em média tensão e a unidade
+        precisa de subestação própria para rebaixar a tensão. Também é o caso de
+        quem busca confiabilidade maior, tem cargas com partida pesada ou pretende
+        migrar para o mercado livre de energia.
+      </p>
+    </details>
+
+    <details class="spda-faq-item">
+      <summary>Qual a diferença entre subestação abrigada, ao tempo e em poste?</summary>
+      <p>
+        A em poste é a mais simples e econômica, adequada a potências menores. A ao
+        tempo fica ao ar livre, em área cercada com acesso restrito, e comporta
+        potências maiores com custo civil menor. A abrigada fica em alvenaria,
+        protege os equipamentos, facilita manutenção e é a opção usual em indústria
+        de médio e grande porte. A escolha depende de potência, área, ambiente e da
+        norma da distribuidora.
+      </p>
+    </details>
+
+    <details class="spda-faq-item">
+      <summary>Transformador a óleo ou a seco?</summary>
+      <p>
+        O a óleo tem custo menor e melhor dissipação térmica, mas exige contenção de
+        vazamento e cuidados de proteção contra incêndio. O a seco dispensa óleo,
+        tem risco de incêndio menor e é indicado para instalação dentro de
+        edificações ou em locais com restrição ambiental, com custo de aquisição
+        maior. A definição entra no projeto junto com o arranjo físico.
+      </p>
+    </details>
+
+    <details class="spda-faq-item">
+      <summary>Como sei se meu transformador contém ascarel?</summary>
+      <p>
+        A placa de identificação e a data de fabricação dão o primeiro indício —
+        equipamentos das décadas de 1930 a 1980 são os de maior risco. A confirmação
+        só vem por análise laboratorial do óleo isolante. A Lei nº 14.250/2021
+        determinou a retirada de operação dos equipamentos contaminados até dezembro
+        de 2025 e a eliminação definitiva até 2028, além de inventário junto ao
+        órgão ambiental. Quem mantém equipamento contaminado energizado está sujeito
+        a autuação.
+      </p>
+    </details>
+
+    <details class="spda-faq-item">
+      <summary>Preciso refazer a malha de terra?</summary>
+      <p>
+        Depende do que existe hoje e do que foi calculado à época. A malha de
+        subestação não é dimensionada por um valor de resistência isolado: ela é
+        verificada pelas tensões de passo e de toque durante um defeito, calculadas
+        a partir da resistividade do solo estratificada e da corrente de falta.
+        Malha subdimensionada é risco de vida, não questão documental. Em subestação
+        sem memorial de malha, a verificação é a primeira coisa a fazer.
+      </p>
+    </details>
+
+    <details class="spda-faq-item">
+      <summary>Quem aprova o projeto de subestação?</summary>
+      <p>
+        A concessionária que atende o endereço — no Rio Grande do Sul, CEEE
+        Equatorial ou RGE, conforme o município. Cada uma tem norma técnica própria
+        de fornecimento em média tensão, com exigências de arranjo, proteção,
+        medição e acesso. O projeto é protocolado, analisado e, atendidas as
+        exigências, recebe a aprovação que libera execução e energização.
+      </p>
+    </details>
+
+    <details class="spda-faq-item">
+      <summary>Como se define a demanda contratada?</summary>
+      <p>
+        A partir do levantamento de cargas, do regime de operação e do fator de
+        simultaneidade real. Demanda acima do necessário gera pagamento por
+        capacidade ociosa todo mês; abaixo do necessário gera cobrança por
+        ultrapassagem. É uma definição de projeto com efeito direto e permanente na
+        fatura, e vale revisá-la sempre que o perfil de consumo mudar.
+      </p>
+    </details>
+
+    <details class="spda-faq-item">
+      <summary>O que faz o preço do projeto variar?</summary>
+      <p>
+        Potência e tensão de fornecimento, tipo de subestação, número de
+        transformadores, complexidade da proteção, estudos incluídos, medição de
+        resistividade em campo, se a instalação é nova ou existente e se o
+        acompanhamento junto à concessionária está no escopo.
+      </p>
+    </details>
+
+    <details class="spda-faq-item">
+      <summary>Quanto tempo leva o projeto e a aprovação?</summary>
+      <p>
+        <!-- [PREENCHER] Prazo real, separando elaboração de análise da concessionária. -->
+        O prazo de elaboração depende do porte e é fechado na proposta. O prazo de
+        análise da concessionária não depende de nós, mas acompanhamos o protocolo e
+        respondemos às exigências para que ele não se estenda além do necessário.
+      </p>
+    </details>
+
+  </div>
+
+</section>
+<!-- ===== FIM FAQ ===== -->
+
+
+<!-- ===== CHAMADA FINAL ===== -->
+<section class="hero">
+  <div class="hero-text">
+    <h2>Comece pela conta que define tudo</h2>
+    <p>
+      Antes do arranjo, do transformador e da obra civil, vem o levantamento de
+      carga e a definição de demanda. É ele que determina o porte da subestação e
+      o que você vai pagar todo mês pelos próximos vinte anos. Envie a relação de
+      cargas e o endereço.
+    </p>
+    <div class="spda-cta">
+      <a href="https://wa.me/5551999613451" target="_blank" rel="noopener">Solicitar proposta</a>
+      <a href="mailto:contato@ciniengenharia.com.br">Avaliar subestação existente</a>
+    </div>
+  </div>
+</section>
+<!-- ===== FIM CHAMADA FINAL ===== -->
+
+</body>
+</html>

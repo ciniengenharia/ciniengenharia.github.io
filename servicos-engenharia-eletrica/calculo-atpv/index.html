@@ -1,0 +1,1456 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!--
+=========================================================================
+  ANTES DE PUBLICAR — CHECKLIST
+=========================================================================
+  1. NORMAS CITADAS — confira todas contra os textos que você tem:
+     - ABNT NBR 17227 — Arco elétrico: gerenciamento de risco de energia
+       incidente, precauções e métodos de cálculo (metodologia nacional,
+       incorpora a IEEE 1584). CONFIRME o ano da edição vigente.
+     - ABNT NBR 16384:2020 — Segurança em eletricidade. Anexo E orienta a
+       aplicação de vestimentas e classifica a proteção em AE-1 a AE-4.
+     - IEEE 1584:2018 e IEEE Std 1584.1-2022
+     - ABNT NBR IEC 61482-1-1 (open arc, determina ATPV/EBT),
+       61482-1-2 (box test, classes 1 e 2) e 61482-2 (requisitos)
+     - NFPA 70E (referência internacional)
+  2. NR-10: há informação circulando sobre revisão publicada em 2026.
+     VERIFIQUE se saiu e qual a redação antes de citar. A página hoje
+     fala apenas em "NR-10" sem edição — mantenha assim se não confirmar.
+  3. LIMIAR DE 1,2 cal/cm²: valor usado como limite de aproximação segura
+     para arco (energia que causa queimadura de 2º grau). Confirme.
+  4. AE-1 a AE-4: NÃO publiquei as faixas em cal/cm² de cada classe
+     porque não as confirmei. Se for publicar a tabela, copie do Anexo E.
+  5. SOFTWARE: se você usa ETAP, EasyPower, PowerTools etc., cite. Nesta
+     página específica, a ferramenta é argumento de credibilidade.
+  6. PRAZOS, PREÇO, ENDEREÇO e IMAGENS: pendentes.
+=========================================================================
+-->
+
+<meta name="description" content="Cálculo de ATPV e estudo de energia incidente de arco elétrico conforme ABNT NBR 17227 e IEEE 1584, com etiquetagem de painéis, plano de mitigação e ART no CREA. Dario Cini — CREA-RS 211.450.">
+
+<link rel="canonical" href="https://www.ciniengenharia.com.br/servicos-engenharia-eletrica/calculo-atpv/">
+
+<link rel="icon" type="image/png" href="../../assets/images/favicon.png">
+
+<link rel="stylesheet" href="../../assets/css/menu.css">
+<link rel="stylesheet" href="../../assets/css/engenharia.css">
+
+<title>Cálculo de ATPV e energia incidente de arco elétrico | Cini Engenharia</title>
+
+<!-- ===== Open Graph ===== -->
+<meta property="og:title" content="Cálculo de ATPV e energia incidente de arco elétrico | Cini Engenharia">
+<meta property="og:description" content="Estudo de energia incidente conforme NBR 17227 e IEEE 1584: ATPV por painel, etiquetagem, plano de mitigação e ART no CREA.">
+<meta property="og:image" content="https://www.ciniengenharia.com.br/assets/images/calculo-atpv.jpg">
+<meta property="og:url" content="https://www.ciniengenharia.com.br/servicos-engenharia-eletrica/calculo-atpv/">
+<meta property="og:type" content="website">
+
+<!-- ===== JSON-LD ===== -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://www.ciniengenharia.com.br/#website",
+      "url": "https://www.ciniengenharia.com.br/",
+      "name": "Cini Engenharia",
+      "inLanguage": "pt-BR"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.ciniengenharia.com.br/servicos-engenharia-eletrica/calculo-atpv/#webpage",
+      "url": "https://www.ciniengenharia.com.br/servicos-engenharia-eletrica/calculo-atpv/",
+      "name": "Cálculo de ATPV e estudo de energia incidente",
+      "isPartOf": {
+        "@id": "https://www.ciniengenharia.com.br/#website"
+      },
+      "about": {
+        "@id": "https://www.ciniengenharia.com.br/servicos-engenharia-eletrica/calculo-atpv/#service"
+      },
+      "inLanguage": "pt-BR"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://www.ciniengenharia.com.br/servicos-engenharia-eletrica/calculo-atpv/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Início",
+          "item": "https://www.ciniengenharia.com.br/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Engenheiro eletricista",
+          "item": "https://www.ciniengenharia.com.br/servicos/engenheiro-eletricista/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Cálculo de ATPV"
+        }
+      ]
+    },
+    {
+      "@type": "Service",
+      "@id": "https://www.ciniengenharia.com.br/servicos-engenharia-eletrica/calculo-atpv/#service",
+      "name": "Cálculo de ATPV e estudo de energia incidente",
+      "alternateName": [
+        "Estudo de arco elétrico",
+        "Arc flash study",
+        "Análise de energia incidente"
+      ],
+      "serviceType": "Estudo de energia incidente de arco elétrico e definição de ATPV",
+      "description": "Estudo de energia incidente de arco elétrico conforme ABNT NBR 17227 e IEEE 1584, com determinação da energia incidente por ponto, limite de aproximação segura, ATPV mínimo das vestimentas, etiquetagem dos painéis e plano de mitigação, com ART registrada no CREA.",
+      "provider": {
+        "@id": "https://www.ciniengenharia.com.br/#localbusiness"
+      },
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Caxias do Sul",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Serra Gaúcha"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Bento Gonçalves",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Serra Gaúcha"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Farroupilha",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Serra Gaúcha"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Garibaldi",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Serra Gaúcha"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Carlos Barbosa",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Serra Gaúcha"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Guaporé",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Serra Gaúcha"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Lajeado",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Vale do Taquari"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Montenegro",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Vale do Caí"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Novo Hamburgo",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Vale dos Sinos"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "São Leopoldo",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Vale dos Sinos"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Porto Alegre",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Grande Porto Alegre"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Canoas",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Grande Porto Alegre"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Cachoeirinha",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Grande Porto Alegre"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Gravataí",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Grande Porto Alegre"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        }
+      ]
+    },
+    {
+      "@type": [
+        "ProfessionalService",
+        "Electrician"
+      ],
+      "@id": "https://www.ciniengenharia.com.br/#localbusiness",
+      "name": "Cini Engenharia",
+      "legalName": "Cini Engenharia",
+      "taxID": "25.268.313/0001-56",
+      "url": "https://www.ciniengenharia.com.br/",
+      "image": "https://www.ciniengenharia.com.br/assets/images/calculo-atpv.jpg",
+      "email": "contato@ciniengenharia.com.br",
+      "telephone": "+55-51-99961-3451",
+      "priceRange": "$$",
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "telephone": "+55-54-99947-5010",
+          "contactType": "customer service",
+          "areaServed": [
+            "Serra Gaúcha"
+          ],
+          "availableLanguage": "Portuguese"
+        },
+        {
+          "@type": "ContactPoint",
+          "telephone": "+55-51-99961-3451",
+          "contactType": "customer service",
+          "areaServed": [
+            "Vale do Taquari",
+            "Vale do Caí",
+            "Vale dos Sinos",
+            "Grande Porto Alegre"
+          ],
+          "availableLanguage": "Portuguese"
+        }
+      ],
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Caxias do Sul",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Serra Gaúcha"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Bento Gonçalves",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Serra Gaúcha"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Farroupilha",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Serra Gaúcha"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Garibaldi",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Serra Gaúcha"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Carlos Barbosa",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Serra Gaúcha"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Guaporé",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Serra Gaúcha"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Lajeado",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Vale do Taquari"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Montenegro",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Vale do Caí"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Novo Hamburgo",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Vale dos Sinos"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "São Leopoldo",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Vale dos Sinos"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Porto Alegre",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Grande Porto Alegre"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Canoas",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Grande Porto Alegre"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Cachoeirinha",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Grande Porto Alegre"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Gravataí",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Grande Porto Alegre"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        }
+      ],
+      "founder": {
+        "@type": "Person",
+        "name": "Dario Cini",
+        "jobTitle": "Engenheiro Eletricista",
+        "sameAs": [
+          "https://www.linkedin.com/in/dario-cini-38a3303a1/"
+        ]
+      },
+      "sameAs": [
+        "https://www.linkedin.com/in/dario-cini-38a3303a1/"
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.ciniengenharia.com.br/servicos-engenharia-eletrica/calculo-atpv/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "O que é ATPV?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ATPV, de Arc Thermal Performance Value, é o valor de proteção térmica da vestimenta contra os efeitos de um arco elétrico, expresso em cal/cm². Ele indica a energia incidente que o tecido suporta antes de haver probabilidade de queimadura de segundo grau em quem o veste. É uma característica ensaiada do tecido, não um nível de risco da instalação — por isso ele só faz sentido comparado à energia incidente calculada no ponto onde a pessoa vai trabalhar."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Posso escolher a vestimenta pelo catálogo do fabricante?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Não com segurança. O catálogo informa o ATPV do tecido, mas não informa a energia incidente do seu painel — que depende da corrente de curto-circuito no ponto, do tempo de atuação da proteção, da distância de trabalho, da configuração do equipamento e da tensão. Sem o cálculo, a escolha da vestimenta é aposta: pode estar sobrando, e aí você pagou caro por conforto perdido, ou faltando, e aí o EPI não protege no evento para o qual foi comprado."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Qual a diferença entre ATPV e EBT?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "São dois resultados possíveis do mesmo ensaio de arco aberto. O ATPV é atingido quando o tecido transmite calor suficiente para causar queimadura de segundo grau. O EBT, de Energy Breakopen Threshold, é atingido quando o tecido se rompe e abre passagem antes disso. O valor declarado da vestimenta, chamado de arc rating, é o menor dos dois — porque o que ocorrer primeiro é o que limita a proteção."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Dá para reduzir a energia incidente sem comprar vestimenta mais cara?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Em muitos casos, sim, e é o primeiro caminho a tentar. A energia incidente depende diretamente do tempo que a proteção leva para atuar. Revisão de ajustes de relé, melhoria da seletividade, uso de função de proteção de manutenção e alterações de arranjo podem reduzir o valor calculado a ponto de mudar a categoria da vestimenta necessária. Reduzir o risco na origem é preferível a apenas vestir melhor a pessoa exposta a ele."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "O que preciso fornecer para o estudo?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Diagrama unifilar atualizado, dados do ponto de entrega e da corrente de curto-circuito informada pela concessionária, dados de placa do transformador, relação e ajustes atuais dos dispositivos de proteção, comprimentos e bitolas dos alimentadores e a relação de painéis a analisar. Quando o unifilar não corresponde ao que está instalado — o caso mais comum — o levantamento em campo entra no escopo."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Preciso do estudo de curto-circuito antes?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sim, ele é a base. A energia incidente é calculada a partir da corrente de arco, que deriva da corrente de curto-circuito no ponto, combinada com o tempo de atuação da proteção obtido do estudo de seletividade. Sem esses dois, não há cálculo de arco elétrico — há estimativa. Quando a empresa não tem os estudos, eles são executados junto."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "De quanto em quanto tempo o estudo deve ser revisado?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sempre que a instalação mudar de forma relevante: nova subestação ou troca de transformador, alteração de ajustes de proteção, ampliação de carga, mudança do ponto de entrega ou da corrente de curto-circuito informada pela concessionária. Cada uma dessas altera a energia incidente calculada e, portanto, o ATPV necessário. Estudo antigo sobre instalação modificada não protege ninguém."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "O estudo é feito em software ou em planilha?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Em ferramenta de cálculo dedicada, desenvolvida internamente e baseada na metodologia da ABNT NBR 17227 e da IEEE 1584. A instalação é modelada por completo, o que permite avaliar mais de um cenário e simular medidas de mitigação antes de qualquer investimento. O relatório traz a memória de cálculo aberta, de modo que outro engenheiro possa refazer as contas sem depender da ferramenta. O modelo fica registrado, o que torna revisões futuras mais baratas que um estudo novo."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quem pode assinar o estudo de arco elétrico?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Engenheiro eletricista habilitado, com ART registrada no CREA. O estudo embasa a especificação de EPI, a delimitação de zonas e os procedimentos de trabalho da equipe — é documento de responsabilidade técnica, não planilha de compras."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+<!-- ===== Estilos apenas dos componentes novos desta página ===== -->
+<style>
+  .spda-destaque{ border-left:4px solid currentColor; padding:1rem 1.25rem; margin:1.5rem 0; opacity:.95; }
+  .spda-etapas{ list-style:none; padding:0; margin:1.5rem 0; counter-reset:spda; }
+  .spda-etapas li{ counter-increment:spda; padding:.75rem 0 .75rem 3rem; position:relative; border-bottom:1px solid rgba(128,128,128,.25); }
+  .spda-etapas li:last-child{ border-bottom:none; }
+  .spda-etapas li::before{ content:counter(spda); position:absolute; left:0; top:.75rem; width:2rem; height:2rem; line-height:2rem; text-align:center; border-radius:50%; border:1px solid currentColor; font-size:.9rem; font-weight:700; }
+  .spda-cta{ margin:2rem 0; display:flex; flex-wrap:wrap; gap:.75rem; }
+  .spda-cta a{ display:inline-block; padding:.85rem 1.5rem; border:2px solid currentColor; border-radius:4px; text-decoration:none; font-weight:700; }
+  .spda-faq-item{ border-bottom:1px solid rgba(128,128,128,.25); padding:.5rem 0; }
+  .spda-faq-item summary{ cursor:pointer; font-weight:700; padding:.75rem 0; }
+  .spda-faq-item summary:focus-visible{ outline:2px solid currentColor; outline-offset:2px; }
+  .spda-faq-item p{ margin:0 0 1rem 0; }
+  .spda-cidades a{ display:inline-block; margin:.25rem .5rem .25rem 0; }
+  .spda-tabela{ width:100%; border-collapse:collapse; margin:1.5rem 0; }
+  .spda-tabela th, .spda-tabela td{ text-align:left; padding:.75rem .5rem; border-bottom:1px solid rgba(128,128,128,.3); vertical-align:top; }
+  .spda-tabela th{ font-weight:700; }
+  .spda-regioes{ list-style:none; padding:0; margin:1.25rem 0; }
+  .spda-regioes li{ padding:.75rem 0; border-bottom:1px solid rgba(128,128,128,.2); }
+  .spda-regioes li:last-child{ border-bottom:none; }
+  .spda-regioes small{ opacity:.7; font-weight:400; }
+  .spda-fones{ margin:1rem 0; }
+  .spda-fones div{ padding:.35rem 0; }
+  @media (prefers-reduced-motion: reduce){ *{ animation:none !important; transition:none !important; } }
+</style>
+
+</head>
+<body class="engenharia">
+
+<!-- ===== MENU DINÂMICO ===== -->
+<div id="menu"></div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  fetch("/menu.html")
+    .then(response => {
+      if (!response.ok) { throw new Error("Erro ao carregar menu.html"); }
+      return response.text();
+    })
+    .then(data => {
+      document.getElementById("menu").innerHTML = data;
+      const toggle = document.querySelector(".menu-toggle");
+      const links = document.querySelector(".menu-links");
+      if (toggle && links) {
+        toggle.addEventListener("click", function() {
+          links.classList.toggle("open");
+          toggle.classList.toggle("open");
+        });
+      }
+    })
+    .catch(error => { console.error("Erro no menu:", error); });
+});
+</script>
+<!-- ===== FIM MENU DINÂMICO ===== -->
+
+
+<!-- ===== ABERTURA ===== -->
+<section class="hero">
+
+  <div class="hero-text">
+
+    <h1>
+      <span class="linha1">Cálculo de</span>
+      <span class="cidade">ATPV</span>
+    </h1>
+
+    <p>
+      <strong>Estudo de energia incidente de arco elétrico conforme ABNT NBR 17227
+      e IEEE 1584, com ART registrada no CREA.</strong>
+    </p>
+
+    <p>
+      O ATPV da vestimenta é um número do catálogo do fabricante. A energia
+      incidente do seu painel é outro número, que só existe depois de calculado.
+      A segurança da sua equipe está na comparação entre os dois — e é essa
+      comparação que a maioria das empresas nunca fez.
+    </p>
+
+    <p>
+      Engenheiro eletricista <strong>Dario Cini — CREA-RS 211.450</strong><br>
+      Telefones:<br>
+      <strong>(54) 99947-5010</strong> — Serra Gaúcha<br>
+      <strong>(51) 99961-3451</strong> — Vales do Taquari, Caí e Sinos, Grande Porto Alegre<br>
+      E-mail: contato@ciniengenharia.com.br
+    </p>
+
+    <div class="spda-cta">
+      <a href="https://wa.me/5551999613451" target="_blank" rel="noopener">Solicitar estudo</a>
+      <a href="#mitigacao">Como reduzir o risco na origem</a>
+    </div>
+
+  </div>
+
+  <div class="hero-image">
+    <!-- [PREENCHER] Foto real: painel etiquetado, equipe com vestimenta -->
+    <img src="../../assets/images/calculo-atpv.jpg"
+         alt="Cálculo de ATPV e estudo de energia incidente de arco elétrico — Cini Engenharia"
+         title="Cálculo de ATPV">
+  </div>
+
+</section>
+<!-- ===== FIM ABERTURA ===== -->
+
+
+<!-- ===== O QUE É ===== -->
+<section class="hero">
+
+  <div class="hero-text">
+
+    <h2>O que é ATPV, e por que ele não se escolhe por catálogo</h2>
+
+    <p>
+      <strong>ATPV</strong> — de <em>Arc Thermal Performance Value</em> — é o valor
+      de proteção térmica de um tecido contra os efeitos de um arco elétrico,
+      expresso em <strong>cal/cm²</strong>. Ele indica quanta energia o tecido
+      suporta antes de haver probabilidade de queimadura de segundo grau em quem o
+      veste. É uma característica ensaiada do tecido, não uma medida do risco da
+      sua instalação.
+    </p>
+
+    <p>
+      O risco da instalação se chama <strong>energia incidente</strong>, é medida
+      na mesma unidade e depende de coisas que nenhum catálogo conhece: a corrente
+      de curto-circuito naquele ponto, o tempo que a proteção leva para atuar, a
+      distância de trabalho, a configuração do equipamento e a tensão.
+    </p>
+
+    <div class="spda-destaque">
+      <p>
+        <strong>A regra é simples e é o motivo do estudo existir:</strong> o ATPV da
+        vestimenta precisa ser maior que a energia incidente calculada no ponto onde
+        a pessoa vai trabalhar. Sem o cálculo, não há como afirmar que o EPI
+        comprado protege — nem para a equipe, nem para a fiscalização, nem em juízo.
+      </p>
+    </div>
+
+    <h3>ATPV e EBT</h3>
+    <p>
+      O mesmo ensaio de arco aberto pode terminar de duas formas: o tecido
+      transmitir calor suficiente para causar queimadura de segundo grau, e aí o
+      valor é o ATPV; ou o tecido se romper e abrir passagem antes disso, e aí o
+      valor é o <strong>EBT</strong>, de <em>Energy Breakopen Threshold</em>. O
+      valor declarado da vestimenta, o <em>arc rating</em>, é o <strong>menor dos
+      dois</strong> — porque o que acontecer primeiro é o que limita a proteção.
+    </p>
+
+  </div>
+
+  <div class="hero-image">
+    <img src="../../assets/images/calculo-atpv-o-que-e.jpg"
+         alt="ATPV, EBT e energia incidente">
+  </div>
+
+</section>
+<!-- ===== FIM O QUE É ===== -->
+
+
+<!-- ===== O QUE O ESTUDO DETERMINA ===== -->
+<section class="hero">
+
+  <div class="hero-text">
+
+    <h2>O que o estudo determina</h2>
+
+    <h3>Energia incidente por ponto</h3>
+    <p>
+      O valor calculado, em cal/cm², para cada painel e cada ponto de intervenção
+      da instalação. Não é um número único para a fábrica inteira: dois quadros na
+      mesma planta podem ter valores muito diferentes, e é comum o quadro mais
+      perigoso não ser o que a equipe imagina.
+    </p>
+
+    <h3>Limite de aproximação segura para arco</h3>
+    <p>
+      A distância a partir da qual a energia incidente cai abaixo do limiar
+      associado à queimadura de segundo grau. Delimita quem pode se aproximar, com
+      qual proteção e sob quais condições.
+    </p>
+
+    <h3>ATPV mínimo da vestimenta</h3>
+    <p>
+      Por ponto de trabalho, não por empresa. A partir daí é possível especificar o
+      conjunto adequado — vestimenta, capuz, viseira, luvas — com o nível de
+      proteção correspondente, seguindo a classificação do Anexo E da ABNT NBR
+      16384, que organiza a proteção em níveis de AE-1 a AE-4.
+    </p>
+
+    <h3>Etiquetagem dos painéis</h3>
+    <p>
+      Placa fixada em cada equipamento analisado, com a energia incidente, o limite
+      de aproximação e a proteção exigida. É o que transforma o estudo em algo que
+      a equipe usa de fato, em vez de um PDF arquivado.
+    </p>
+
+    <h3>Plano de mitigação</h3>
+    <p>
+      A parte que separa um estudo de engenharia de uma planilha de compras.
+      Ver seção abaixo.
+    </p>
+
+  </div>
+
+  <div class="hero-image">
+    <img src="../../assets/images/calculo-atpv-entregaveis.jpg"
+         alt="Entregáveis do estudo de energia incidente">
+  </div>
+
+</section>
+<!-- ===== FIM O QUE O ESTUDO DETERMINA ===== -->
+
+
+<!-- ===== MITIGAÇÃO ===== -->
+<section class="hero" id="mitigacao">
+
+  <div class="hero-text">
+
+    <h2>Reduzir o risco vem antes de vestir melhor</h2>
+
+    <p>
+      Existe um caminho fácil e um caminho certo. O fácil é calcular a energia
+      incidente e comprar a vestimenta que cobre aquele valor. O certo é perguntar
+      antes por que o valor está alto.
+    </p>
+
+    <p>
+      A energia incidente é diretamente proporcional ao <strong>tempo que a
+      proteção leva para atuar</strong>. Um relé mal ajustado pode significar
+      centenas de milissegundos a mais de arco — e, na conta, a diferença entre uma
+      vestimenta leve e um conjunto pesado, caro e desconfortável que a equipe vai
+      evitar usar no calor de janeiro.
+    </p>
+
+    <p>Caminhos de mitigação que avaliamos no estudo:</p>
+
+    <ul>
+      <li><strong>Revisão dos ajustes de proteção</strong> — muitas vezes o ganho maior, com custo próximo de zero</li>
+      <li><strong>Melhoria da seletividade</strong>, sem sacrificar a coordenação</li>
+      <li><strong>Função de proteção para manutenção</strong>, que reduz temporariamente o tempo de atuação durante a intervenção</li>
+      <li><strong>Alterações de arranjo</strong> e de ponto de manobra</li>
+      <li><strong>Operação remota</strong>, que tira a pessoa da zona de risco em vez de protegê-la dentro dela</li>
+      <li><strong>Relés e detectores dedicados a arco</strong>, quando justificados</li>
+    </ul>
+
+    <div class="spda-destaque">
+      <p>
+        A hierarquia é essa: primeiro eliminar, depois reduzir, e só então proteger
+        quem permanece exposto. Um estudo que entrega apenas a lista de EPI a
+        comprar pulou as duas primeiras etapas — e costuma sair mais caro, porque
+        vestimenta de categoria alta não é despesa única: é reposição periódica,
+        para cada pessoa da equipe, para sempre.
+      </p>
+    </div>
+
+  </div>
+
+  <div class="hero-image">
+    <img src="../../assets/images/calculo-atpv-mitigacao.jpg"
+         alt="Mitigação de risco de arco elétrico">
+  </div>
+
+</section>
+<!-- ===== FIM MITIGAÇÃO ===== -->
+
+
+<!-- ===== DE ONDE VÊM OS DADOS ===== -->
+<section class="hero">
+
+  <div class="hero-text">
+
+    <h2>De onde vêm os números</h2>
+
+    <p>
+      O cálculo de energia incidente não é um estudo isolado: ele se apoia em dois
+      anteriores. É por isso que estudo barato feito sobre dados presumidos não
+      significa nada.
+    </p>
+
+    <table class="spda-tabela">
+      <thead>
+        <tr><th scope="col">Insumo</th><th scope="col">De onde vem</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Corrente de curto-circuito</strong></td>
+          <td>Do estudo de curto-circuito, alimentado pela impedância informada pela concessionária no ponto de entrega e pelos dados de transformador e alimentadores.</td>
+        </tr>
+        <tr>
+          <td><strong>Tempo de atuação</strong></td>
+          <td>Dos ajustes reais dos dispositivos de proteção e do estudo de seletividade. Ajuste real, não o de projeto — que frequentemente divergem.</td>
+        </tr>
+        <tr>
+          <td><strong>Configuração e distância</strong></td>
+          <td>Do levantamento em campo: tipo de invólucro, espaçamento entre condutores e distância de trabalho efetiva do operador.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>
+      Quando a empresa não tem os estudos de curto-circuito e seletividade, ou tem
+      unifilar que não corresponde ao que está instalado, essas etapas entram no
+      escopo. É o cenário mais comum na indústria da região.
+      <br>
+      <a href="/servicos-engenharia-eletrica/projeto-eletrico-industrial/">Ver estudos elétricos complementares</a>
+    </p>
+
+  </div>
+
+  <div class="hero-image">
+    <img src="../../assets/images/calculo-atpv-dados.jpg"
+         alt="Insumos do cálculo de energia incidente">
+  </div>
+
+</section>
+<!-- ===== FIM DE ONDE VÊM OS DADOS ===== -->
+
+
+<!-- ===== SOFTWARE ===== -->
+<!--
+  [PREENCHER — LEIA COM ATENÇÃO]
+  Esta seção trata de ferramenta PRÓPRIA. Ferramenta própria só funciona
+  como credencial se vier acompanhada de VALIDAÇÃO DECLARADA.
+  Sem isso, ela levanta a dúvida em vez de responder.
+
+  Preencha apenas o que for VERDADE. Se ainda não fez a validação,
+  faça antes de publicar — é rápido e resolve a objeção para sempre:
+   - Rodar os casos-exemplo da IEEE 1584 e comparar os resultados
+   - Comparar os resultados com um software comercial em 2 ou 3 casos
+   - Guardar esse comparativo como anexo do relatório
+
+  Se preferir não expor a ferramenta, DELETE esta seção inteira e mantenha
+  apenas a metodologia (NBR 17227 / IEEE 1584). Não é obrigatório citar.
+-->
+<section class="hero">
+
+  <div class="hero-text">
+
+    <h2>Cálculo em ferramenta própria, com memória de cálculo aberta</h2>
+
+    <p>
+      Os estudos são executados no <strong>Cini Electrical</strong>, ferramenta de
+      cálculo desenvolvida internamente para análise de sistemas elétricos de
+      potência, implementando a metodologia da <strong>ABNT NBR 17227</strong> e da
+      <strong>IEEE 1584</strong>.
+    </p>
+
+    <h3>Por que isso importa para você</h3>
+    <p>
+      Software de prateleira entrega um número. Ferramenta própria entrega o
+      número <em>e</em> o caminho até ele. No relatório, cada etapa aparece
+      explícita: dados de entrada de cada elemento, impedâncias adotadas, corrente
+      de curto-circuito por barra, corrente de arco, tempo de atuação considerado e
+      a energia incidente resultante. Nada fica dentro de uma caixa fechada.
+    </p>
+
+    <div class="spda-destaque">
+      <p>
+        Na prática, isso quer dizer que <strong>outro engenheiro consegue refazer
+        as contas</strong> a partir do próprio relatório, sem precisar do software.
+        Um estudo que só pode ser conferido por quem tem a mesma licença não é
+        auditável — é confiança cega.
+      </p>
+    </div>
+
+    <h3>Validação</h3>
+    <p>
+      <!--
+        [PREENCHER] Escreva aqui, com precisão, o que você de fato fez.
+        Modelo sugerido, ajuste à realidade:
+        "Os algoritmos são verificados contra os casos-exemplo publicados na
+        IEEE 1584 e conferidos por comparação com [software comercial] em
+        casos de referência. O comparativo acompanha o relatório quando
+        solicitado."
+        NÃO publique este parágrafo sem ter feito a verificação.
+      -->
+      [PREENCHER: como a ferramenta é verificada]
+    </p>
+
+    <h3>A responsabilidade é do engenheiro, não do software</h3>
+    <p>
+      Nenhuma ferramenta assume responsabilidade técnica. O estudo é analisado,
+      interpretado e assinado por engenheiro eletricista habilitado, com ART
+      registrada no CREA. O software organiza o cálculo; o critério de engenharia,
+      as premissas adotadas e as conclusões são de quem assina.
+    </p>
+
+    <h3>Cenários, não um número único</h3>
+    <p>
+      A metodologia exige avaliar mais de uma condição, incluindo a corrente de
+      arco reduzida — porque nem sempre o pior resultado vem da maior corrente de
+      curto-circuito: uma corrente menor pode fazer a proteção demorar mais a atuar
+      e produzir energia incidente maior. As duas condições são calculadas e adota-se
+      a mais desfavorável.
+    </p>
+
+    <h3>Mitigação simulada antes de gastar</h3>
+    <p>
+      Antes de comprar qualquer coisa, é possível responder no modelo:
+      <em>se eu alterar este ajuste, quanto cai a energia incidente naquele painel?
+      Muda a categoria da vestimenta? A seletividade se mantém?</em> Você decide por
+      comparação entre alternativas calculadas, não por suposição.
+    </p>
+
+    <h3>O modelo da sua instalação fica registrado</h3>
+    <p>
+      Terminado o estudo, o modelo continua disponível. Quando você trocar o
+      transformador, ampliar a carga ou revisar ajustes, a atualização custa uma
+      fração de um estudo novo — e o mesmo modelo alimenta curto-circuito,
+      seletividade e demais estudos.
+    </p>
+
+    <div class="spda-destaque">
+      <p>
+        <strong>Sendo honesto sobre o limite disso:</strong> ferramenta nenhuma
+        substitui levantamento em campo. Um modelo alimentado com unifilar antigo,
+        ou com ajustes de projeto que ninguém conferiu no relé, produz números
+        precisos e errados. O cálculo melhora o resultado; ele não conserta dado
+        ruim. Por isso o levantamento vem antes da modelagem — sempre.
+      </p>
+    </div>
+
+  </div>
+
+  <div class="hero-image">
+    <img src="../../assets/images/calculo-atpv-software.jpg"
+         alt="Modelagem da instalação para cálculo de energia incidente">
+  </div>
+
+</section>
+<!-- ===== FIM SOFTWARE ===== -->
+
+
+<!-- ===== PARA QUEM ===== -->
+<section class="servicos">
+
+  <h2>Para quem é</h2>
+
+  <div class="servicos-grid">
+
+    <div class="servico">
+      <img src="../../assets/images/calculo-atpv-industria.jpg" alt="Estudo de arco elétrico para indústrias">
+      <p>Indústrias com equipe própria de manutenção elétrica</p>
+    </div>
+
+    <div class="servico">
+      <img src="../../assets/images/calculo-atpv-subestacao.jpg" alt="Estudo de arco elétrico em subestação">
+      <p>Empresas com subestação própria e intervenção em média tensão</p>
+    </div>
+
+    <div class="servico">
+      <img src="../../assets/images/calculo-atpv-nr10.jpg" alt="Adequação à NR-10">
+      <p>Quem está estruturando ou revisando o prontuário da NR-10</p>
+    </div>
+
+    <div class="servico">
+      <img src="../../assets/images/calculo-atpv-epi.jpg" alt="Especificação de vestimenta com ATPV">
+      <p>Quem vai comprar vestimenta e não sabe qual ATPV especificar</p>
+    </div>
+
+    <div class="servico">
+      <img src="../../assets/images/calculo-atpv-auditoria.jpg" alt="Auditoria de segurança elétrica">
+      <p>Empresas em auditoria, certificação ou exigência de cliente</p>
+    </div>
+
+    <div class="servico">
+      <img src="../../assets/images/calculo-atpv-ampliacao.jpg" alt="Revisão de estudo após ampliação">
+      <p>Instalações que ampliaram carga ou trocaram transformador desde o último estudo</p>
+    </div>
+
+  </div>
+
+</section>
+<!-- ===== FIM PARA QUEM ===== -->
+
+
+<!-- ===== COMO FUNCIONA ===== -->
+<section class="hero">
+
+  <div class="hero-text">
+
+    <h2>Como funciona</h2>
+
+    <ol class="spda-etapas">
+      <li>
+        <strong>Análise da documentação existente</strong><br>
+        Unifilar, estudos anteriores, ajustes de proteção e relação de painéis.
+        Aqui já se vê se os dados se sustentam ou se o levantamento é necessário.
+      </li>
+      <li>
+        <strong>Proposta com escopo, prazo e valor</strong><br>
+        Deixando claro quais estudos-base estão incluídos.
+        <!-- [PREENCHER] prazo para envio da proposta -->
+      </li>
+      <li>
+        <strong>Levantamento em campo</strong><br>
+        Conferência do que está instalado, ajustes reais dos dispositivos,
+        configuração dos painéis e distâncias de trabalho efetivas.
+      </li>
+      <li>
+        <strong>Modelagem da instalação</strong><br>
+        Ponto de entrega, transformadores, alimentadores, barramentos e proteções,
+        com a impedância informada pela concessionária e as curvas reais dos
+        fabricantes.
+      </li>
+      <li>
+        <strong>Curto-circuito e seletividade</strong><br>
+        Rodados sobre o mesmo modelo. Base direta do cálculo seguinte.
+      </li>
+      <li>
+        <strong>Cálculo da energia incidente</strong><br>
+        Conforme a metodologia da ABNT NBR 17227 e da IEEE 1584, ponto a ponto e em
+        mais de um cenário, adotando sempre a condição mais desfavorável.
+      </li>
+      <li>
+        <strong>Simulação das medidas de mitigação</strong><br>
+        Cada alternativa é testada no modelo antes de ser recomendada, com o novo
+        valor de energia incidente e a verificação de que a seletividade se mantém.
+      </li>
+      <li>
+        <strong>Relatório, etiquetas e ART</strong><br>
+        Com tabela por painel, ATPV mínimo, limites de aproximação e etiquetas
+        prontas para fixação.
+        <!-- [PREENCHER] Informe se a impressão/fixação das etiquetas está inclusa -->
+      </li>
+    </ol>
+
+  </div>
+
+  <div class="hero-image">
+    <img src="../../assets/images/calculo-atpv-processo.jpg"
+         alt="Etapas do estudo de energia incidente">
+  </div>
+
+</section>
+<!-- ===== FIM COMO FUNCIONA ===== -->
+
+
+<!-- ===== PREÇO ===== -->
+<section class="hero">
+
+  <div class="hero-text">
+
+    <h2>O que faz o preço variar</h2>
+
+    <ul>
+      <li><strong>Número de painéis e pontos de análise</strong> — o principal fator</li>
+      <li><strong>Existência dos estudos-base</strong> — curto-circuito e seletividade já prontos reduzem bastante o escopo</li>
+      <li><strong>Qualidade da documentação</strong> — unifilar desatualizado significa levantamento em campo</li>
+      <li><strong>Níveis de tensão envolvidos</strong> — só baixa tensão ou também média</li>
+      <li><strong>Número de subestações e de transformadores</strong></li>
+      <li><strong>Etiquetagem</strong> — fornecimento e fixação das placas, se incluso</li>
+      <li><strong>Deslocamento</strong>, conforme a cidade</li>
+    </ul>
+
+    <p>
+      Com o unifilar e a relação de painéis, é possível fechar escopo e valor sem
+      visita inicial.
+      <!-- [PREENCHER] Faixa de honorários ou critério por ponto analisado. -->
+    </p>
+
+  </div>
+
+  <div class="hero-image">
+    <img src="../../assets/images/calculo-atpv-orcamento.jpg"
+         alt="Orçamento de estudo de energia incidente">
+  </div>
+
+</section>
+<!-- ===== FIM PREÇO ===== -->
+
+
+<!-- ===== QUEM ASSINA ===== -->
+<section class="hero">
+
+  <div class="hero-text">
+
+    <h2>Quem assina o estudo</h2>
+
+    <p>
+      <strong>Dario Cini</strong>, engenheiro eletricista formado pela Universidade
+      de Caxias do Sul, com mais de 10 anos de atuação em engenharia elétrica no eixo entre a
+      Serra Gaúcha e a Grande Porto Alegre.
+    </p>
+
+    <p>
+      <strong>CREA:</strong> RS 211.450 —
+      <a href="https://www.crea-rs.org.br/site/" target="_blank" rel="noopener noreferrer nofollow">
+        consulta pública no CREA-RS
+      </a>
+    </p>
+
+    <p>
+      <strong>Cini Engenharia</strong> — CNPJ 25.268.313/0001-56 —
+      <a href="https://solucoes.receita.fazenda.gov.br/servicos/cnpjreva/cnpjreva_solicitacao.asp"
+         target="_blank" rel="noopener noreferrer">Consultar CNPJ</a>
+    </p>
+
+    <p>
+      <strong>LinkedIn:</strong>
+      <a href="https://www.linkedin.com/in/dario-cini-38a3303a1/"
+         target="_blank" rel="noopener noreferrer">Dario Cini — Ver perfil</a>
+    </p>
+
+    <p>
+      Este estudo embasa a especificação do EPI que a sua equipe vai vestir na
+      frente de um painel energizado. Sai com memorial, premissas declaradas e ART
+      — de forma que outro engenheiro possa auditar cada número.
+    </p>
+
+    <p>
+      Os cálculos são executados no <strong>Cini Electrical</strong>, ferramenta
+      própria que implementa a metodologia da NBR 17227 e da IEEE 1584, com memória
+      de cálculo aberta no relatório. O modelo da sua instalação permanece
+      disponível para atualização a cada alteração da planta.
+    </p>
+
+  </div>
+
+  <div class="hero-image">
+    <img src="../../assets/images/engenheiro-eletricista-crea.jpg"
+         alt="Dario Cini — engenheiro eletricista CREA-RS 211.450">
+  </div>
+
+</section>
+<!-- ===== FIM QUEM ASSINA ===== -->
+
+
+<!-- ===== SERVIÇOS RELACIONADOS ===== -->
+<section class="secao-full">
+  <div class="hero-text">
+    <h2>Serviços relacionados</h2>
+    <p>
+      Todos os serviços e áreas de atendimento estão reunidos na página do
+      <a href="/servicos/engenheiro-eletricista/">engenheiro eletricista</a>.
+    </p>
+    <a href="/servicos-engenharia-eletrica/projeto-eletrico-industrial/">Projeto elétrico industrial</a>
+    <span>|</span>
+    <a href="/servicos-engenharia-eletrica/projeto-subestacao/">Projeto de subestação</a>
+    <span>|</span>
+    <a href="/servicos-engenharia-eletrica/laudo-instalacoes-eletricas/">Laudo das instalações elétricas</a>
+    <span>|</span>
+    <a href="/servicos-engenharia-eletrica/termografia/">Termografia</a>
+    <span>|</span>
+    <a href="/servicos-engenharia-eletrica/laudo-aterramento/">Laudo de aterramento</a>
+    <span>|</span>
+    <a href="/servicos-engenharia-eletrica/consultoria/">Consultoria</a>
+    <span>|</span>
+    <a href="/servicos-engenharia-eletrica/laudo-spda/">Laudo de SPDA</a>
+    <span>|</span>
+    <a href="/servicos-engenharia-eletrica/projeto-spda/">Projeto de SPDA</a>
+  </div>
+</section>
+<!-- ===== FIM SERVIÇOS RELACIONADOS ===== -->
+
+
+<!-- ===== ÁREA DE ATENDIMENTO ===== -->
+<section class="secao-full">
+  <div class="hero-text spda-cidades">
+    <h2>Onde atendemos</h2>
+    <p>
+      Atendimento presencial no eixo entre a Serra Gaúcha e a Grande Porto
+      Alegre, acompanhando os vales do Taquari, do Caí e do Sinos.
+    </p>
+    <ul class="spda-regioes">
+      <li><strong>Serra Gaúcha</strong> <small>(DDD 54)</small><br>
+        <a href="/servicos/engenheiro-eletricista-caxias-do-sul/">Caxias do Sul</a> <span>|</span>
+        <a href="/servicos/engenheiro-eletricista-bento-goncalves/">Bento Gonçalves</a> <span>|</span>
+        <a href="/servicos/engenheiro-eletricista-farroupilha/">Farroupilha</a> <span>|</span>
+        <a href="/servicos/engenheiro-eletricista-garibaldi/">Garibaldi</a> <span>|</span>
+        <a href="/servicos/engenheiro-eletricista-carlos-barbosa/">Carlos Barbosa</a> <span>|</span>
+        Guaporé
+      </li>
+      <li><strong>Vale do Taquari</strong> <small>(DDD 51)</small><br>
+        <a href="/servicos/engenheiro-eletricista-lajeado/">Lajeado</a>
+      </li>
+      <li><strong>Vale do Caí</strong> <small>(DDD 51)</small><br>
+        <a href="/servicos/engenheiro-eletricista-montenegro/">Montenegro</a>
+      </li>
+      <li><strong>Vale dos Sinos</strong> <small>(DDD 51)</small><br>
+        <a href="/servicos/engenheiro-eletricista-novo-hamburgo/">Novo Hamburgo</a> <span>|</span>
+        <a href="/servicos/engenheiro-eletricista-sao-leopoldo/">São Leopoldo</a>
+      </li>
+      <li><strong>Grande Porto Alegre</strong> <small>(DDD 51)</small><br>
+        <a href="/servicos/engenheiro-eletricista-porto-alegre/">Porto Alegre</a> <span>|</span>
+        <a href="/servicos/engenheiro-eletricista-canoas/">Canoas</a> <span>|</span>
+        <a href="/servicos/engenheiro-eletricista-cachoeirinha/">Cachoeirinha</a> <span>|</span>
+        <a href="/servicos/engenheiro-eletricista-gravatai/">Gravataí</a>
+      </li>
+    </ul>
+    <!-- [PREENCHER] Guaporé ainda não tem página. Ao criar, transforme em link. -->
+  </div>
+</section>
+<!-- ===== FIM ÁREA DE ATENDIMENTO ===== -->
+
+
+<!-- ===== FAQ ===== -->
+<section class="faq">
+
+  <div class="hero-text">
+
+    <h2>Dúvidas frequentes sobre <strong>cálculo de ATPV</strong></h2>
+
+    <details class="spda-faq-item">
+      <summary>O que é ATPV?</summary>
+      <p>
+        ATPV, de <em>Arc Thermal Performance Value</em>, é o valor de proteção
+        térmica da vestimenta contra os efeitos de um arco elétrico, expresso em
+        cal/cm². Indica a energia que o tecido suporta antes de haver probabilidade
+        de queimadura de segundo grau em quem o veste. É característica ensaiada do
+        tecido, não nível de risco da instalação — por isso só faz sentido comparado
+        à energia incidente calculada no ponto de trabalho.
+      </p>
+    </details>
+
+    <details class="spda-faq-item">
+      <summary>Posso escolher a vestimenta pelo catálogo do fabricante?</summary>
+      <p>
+        Não com segurança. O catálogo informa o ATPV do tecido, mas não a energia
+        incidente do seu painel — que depende da corrente de curto-circuito no
+        ponto, do tempo de atuação da proteção, da distância de trabalho, da
+        configuração do equipamento e da tensão. Sem cálculo, a escolha é aposta:
+        pode estar sobrando, e você pagou caro por conforto perdido, ou faltando, e
+        o EPI não protege no evento para o qual foi comprado.
+      </p>
+    </details>
+
+    <details class="spda-faq-item">
+      <summary>Qual a diferença entre ATPV e EBT?</summary>
+      <p>
+        São dois resultados possíveis do mesmo ensaio de arco aberto. O ATPV é
+        atingido quando o tecido transmite calor suficiente para causar queimadura
+        de segundo grau. O EBT, de <em>Energy Breakopen Threshold</em>, é atingido
+        quando o tecido se rompe e abre passagem antes disso. O valor declarado da
+        vestimenta, o <em>arc rating</em>, é o menor dos dois — o que ocorrer
+        primeiro é o que limita a proteção.
+      </p>
+    </details>
+
+    <details class="spda-faq-item">
+      <summary>Dá para reduzir a energia incidente sem comprar vestimenta mais cara?</summary>
+      <p>
+        Em muitos casos, sim — e é o primeiro caminho a tentar. A energia incidente
+        depende diretamente do tempo que a proteção leva para atuar. Revisão de
+        ajustes de relé, melhoria da seletividade, função de proteção de manutenção
+        e alterações de arranjo podem reduzir o valor calculado a ponto de mudar a
+        categoria da vestimenta necessária. Reduzir o risco na origem é preferível a
+        apenas vestir melhor quem está exposto a ele.
+      </p>
+    </details>
+
+    <details class="spda-faq-item">
+      <summary>O que preciso fornecer para o estudo?</summary>
+      <p>
+        Diagrama unifilar atualizado, dados do ponto de entrega e da corrente de
+        curto-circuito informada pela concessionária, dados de placa do
+        transformador, relação e ajustes atuais dos dispositivos de proteção,
+        comprimentos e bitolas dos alimentadores e a relação de painéis a analisar.
+        Quando o unifilar não corresponde ao que está instalado — o caso mais comum
+        — o levantamento em campo entra no escopo.
+      </p>
+    </details>
+
+    <details class="spda-faq-item">
+      <summary>Preciso do estudo de curto-circuito antes?</summary>
+      <p>
+        Sim, ele é a base. A energia incidente é calculada a partir da corrente de
+        arco, que deriva da corrente de curto-circuito no ponto, combinada com o
+        tempo de atuação da proteção obtido do estudo de seletividade. Sem esses
+        dois, não há cálculo de arco elétrico — há estimativa. Quando a empresa não
+        tem os estudos, eles são executados junto.
+      </p>
+    </details>
+
+    <details class="spda-faq-item">
+      <summary>De quanto em quanto tempo o estudo deve ser revisado?</summary>
+      <p>
+        Sempre que a instalação mudar de forma relevante: nova subestação ou troca
+        de transformador, alteração de ajustes de proteção, ampliação de carga,
+        mudança do ponto de entrega ou da corrente de curto-circuito informada pela
+        concessionária. Cada uma dessas altera a energia incidente e, portanto, o
+        ATPV necessário. Estudo antigo sobre instalação modificada não protege
+        ninguém.
+      </p>
+    </details>
+
+    <details class="spda-faq-item">
+      <summary>Quem pode assinar o estudo de arco elétrico?</summary>
+      <p>
+        Engenheiro eletricista habilitado, com ART registrada no CREA. O estudo
+        embasa a especificação de EPI, a delimitação de zonas e os procedimentos de
+        trabalho da equipe — é documento de responsabilidade técnica, não planilha
+        de compras.
+      </p>
+    </details>
+
+    <details class="spda-faq-item">
+      <summary>O estudo é feito em software ou em planilha?</summary>
+      <p>
+        Em ferramenta de cálculo dedicada, o <strong>Cini Electrical</strong>,
+        desenvolvida internamente e baseada na metodologia da ABNT NBR 17227 e da
+        IEEE 1584. A instalação é modelada por completo, o que permite avaliar mais
+        de um cenário e simular medidas de mitigação antes de qualquer
+        investimento. O relatório traz a memória de cálculo aberta — dados de
+        entrada, correntes por barra, tempos de atuação e energia incidente — de
+        modo que outro engenheiro possa refazer as contas sem depender da
+        ferramenta. O modelo fica registrado, o que torna revisões futuras muito
+        mais baratas que um estudo novo.
+      </p>
+    </details>
+
+    <details class="spda-faq-item">
+      <summary>Quanto tempo leva o estudo?</summary>
+      <p>
+        <!-- [PREENCHER] Prazo real, conforme número de painéis. -->
+        Depende do número de pontos de análise e de quanto da documentação-base já
+        existe. A proposta traz o prazo fechado para o seu caso.
+      </p>
+    </details>
+
+  </div>
+
+</section>
+<!-- ===== FIM FAQ ===== -->
+
+
+<!-- ===== CHAMADA FINAL ===== -->
+<section class="hero">
+  <div class="hero-text">
+    <h2>Você sabe qual é a energia incidente dos seus painéis?</h2>
+    <p>
+      Se a resposta for "compramos vestimenta de categoria alta para garantir", o
+      número nunca foi calculado — e garantia sem cálculo não é garantia. Envie o
+      unifilar e a relação de painéis para uma avaliação inicial de escopo.
+    </p>
+    <div class="spda-cta">
+      <a href="https://wa.me/5551999613451" target="_blank" rel="noopener">Solicitar estudo</a>
+      <a href="mailto:contato@ciniengenharia.com.br">Enviar unifilar para análise</a>
+    </div>
+  </div>
+</section>
+<!-- ===== FIM CHAMADA FINAL ===== -->
+
+</body>
+</html>

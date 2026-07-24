@@ -1,0 +1,1356 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!--
+=========================================================================
+  ANTES DE PUBLICAR — CHECKLIST
+=========================================================================
+  1. PPCI / CBMRS: a seção "Norma x exigência do órgão" fala em PPCI e
+     Alvará. CONFIRME a terminologia e a exigência atual do Corpo de
+     Bombeiros do RS antes de publicar. Não use "AVCB" — é de São Paulo.
+  2. PRAZOS: "Como funciona" e FAQ 9. Coloque prazo real.
+  3. ENDEREÇO: PostalAddress no JSON-LD está com placeholder.
+  4. IMAGENS: arquivos ainda não existem em /assets/images/.
+  5. NORMA: confira 5419-3 7.3.2 (periodicidade) e 7.1.4 (continuidade)
+     contra o texto da norma. Sai com o seu CREA.
+  6. PREÇO: publique uma faixa se puder. É a maior alavanca de conversão
+     desta página.
+=========================================================================
+-->
+
+<meta name="description" content="Laudo de SPDA com inspeção conforme ABNT NBR 5419-3, medições, registro fotográfico, plano de ação e ART no CREA. Engenheiro eletricista Dario Cini — CREA-RS 211.450.">
+
+<link rel="canonical" href="https://www.ciniengenharia.com.br/servicos-engenharia-eletrica/laudo-spda/">
+
+<link rel="icon" type="image/png" href="../../assets/images/favicon.png">
+
+<link rel="stylesheet" href="../../assets/css/menu.css">
+<link rel="stylesheet" href="../../assets/css/engenharia.css">
+
+<title>Laudo de SPDA — validade, inspeção e ART | Cini Engenharia</title>
+
+<!-- ===== Open Graph ===== -->
+<meta property="og:title" content="Laudo de SPDA — validade, inspeção e ART | Cini Engenharia">
+<meta property="og:description" content="Inspeção de SPDA conforme NBR 5419-3, com medições, plano de ação e ART registrada no CREA.">
+<meta property="og:image" content="https://www.ciniengenharia.com.br/assets/images/laudo-spda.jpg">
+<meta property="og:url" content="https://www.ciniengenharia.com.br/servicos-engenharia-eletrica/laudo-spda/">
+<meta property="og:type" content="website">
+
+<!-- ===== JSON-LD ===== -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://www.ciniengenharia.com.br/#website",
+      "url": "https://www.ciniengenharia.com.br/",
+      "name": "Cini Engenharia",
+      "inLanguage": "pt-BR"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.ciniengenharia.com.br/servicos-engenharia-eletrica/laudo-spda/#webpage",
+      "url": "https://www.ciniengenharia.com.br/servicos-engenharia-eletrica/laudo-spda/",
+      "name": "Laudo de SPDA — validade, inspeção e ART",
+      "isPartOf": {
+        "@id": "https://www.ciniengenharia.com.br/#website"
+      },
+      "about": {
+        "@id": "https://www.ciniengenharia.com.br/servicos-engenharia-eletrica/laudo-spda/#service"
+      },
+      "inLanguage": "pt-BR"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://www.ciniengenharia.com.br/servicos-engenharia-eletrica/laudo-spda/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Início",
+          "item": "https://www.ciniengenharia.com.br/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Engenheiro eletricista",
+          "item": "https://www.ciniengenharia.com.br/servicos/engenheiro-eletricista/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Laudo de SPDA"
+        }
+      ]
+    },
+    {
+      "@type": "Service",
+      "@id": "https://www.ciniengenharia.com.br/servicos-engenharia-eletrica/laudo-spda/#service",
+      "name": "Laudo de SPDA",
+      "alternateName": [
+        "Laudo de para-raios",
+        "Inspeção de SPDA",
+        "Laudo técnico de SPDA"
+      ],
+      "serviceType": "Inspeção e laudo de sistema de proteção contra descargas atmosféricas",
+      "description": "Inspeção de SPDA conforme ABNT NBR 5419-3, com verificação de captação, descidas, aterramento e equipotencialização, medições, registro fotográfico, relação de não conformidades, plano de ação e ART registrada no CREA.",
+      "provider": {
+        "@id": "https://www.ciniengenharia.com.br/#localbusiness"
+      },
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Caxias do Sul",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Serra Gaúcha"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Bento Gonçalves",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Serra Gaúcha"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Farroupilha",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Serra Gaúcha"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Garibaldi",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Serra Gaúcha"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Carlos Barbosa",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Serra Gaúcha"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Guaporé",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Serra Gaúcha"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Lajeado",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Vale do Taquari"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Montenegro",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Vale do Caí"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Novo Hamburgo",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Vale dos Sinos"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "São Leopoldo",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Vale dos Sinos"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Porto Alegre",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Grande Porto Alegre"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Canoas",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Grande Porto Alegre"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Cachoeirinha",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Grande Porto Alegre"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Gravataí",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Grande Porto Alegre"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        }
+      ]
+    },
+    {
+      "@type": [
+        "ProfessionalService",
+        "Electrician"
+      ],
+      "@id": "https://www.ciniengenharia.com.br/#localbusiness",
+      "name": "Cini Engenharia",
+      "legalName": "Cini Engenharia",
+      "taxID": "25.268.313/0001-56",
+      "url": "https://www.ciniengenharia.com.br/",
+      "image": "https://www.ciniengenharia.com.br/assets/images/laudo-spda.jpg",
+      "email": "contato@ciniengenharia.com.br",
+      "telephone": "+55-51-99961-3451",
+      "priceRange": "$$",
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "telephone": "+55-54-99947-5010",
+          "contactType": "customer service",
+          "areaServed": [
+            "Serra Gaúcha"
+          ],
+          "availableLanguage": "Portuguese"
+        },
+        {
+          "@type": "ContactPoint",
+          "telephone": "+55-51-99961-3451",
+          "contactType": "customer service",
+          "areaServed": [
+            "Vale do Taquari",
+            "Vale do Caí",
+            "Vale dos Sinos",
+            "Grande Porto Alegre"
+          ],
+          "availableLanguage": "Portuguese"
+        }
+      ],
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Caxias do Sul",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Serra Gaúcha"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Bento Gonçalves",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Serra Gaúcha"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Farroupilha",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Serra Gaúcha"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Garibaldi",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Serra Gaúcha"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Carlos Barbosa",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Serra Gaúcha"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Guaporé",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Serra Gaúcha"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Lajeado",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Vale do Taquari"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Montenegro",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Vale do Caí"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Novo Hamburgo",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Vale dos Sinos"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "São Leopoldo",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Vale dos Sinos"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Porto Alegre",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Grande Porto Alegre"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Canoas",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Grande Porto Alegre"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Cachoeirinha",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Grande Porto Alegre"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Gravataí",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Grande Porto Alegre"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        }
+      ],
+      "founder": {
+        "@type": "Person",
+        "name": "Dario Cini",
+        "jobTitle": "Engenheiro Eletricista",
+        "sameAs": [
+          "https://www.linkedin.com/in/dario-cini-38a3303a1/"
+        ]
+      },
+      "sameAs": [
+        "https://www.linkedin.com/in/dario-cini-38a3303a1/"
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.ciniengenharia.com.br/servicos-engenharia-eletrica/laudo-spda/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Qual é a validade do laudo de SPDA?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A norma não carimba uma data de validade no documento. Ela define a periodicidade da inspeção que gera o laudo: 1 ano para estruturas de risco elevado e 3 anos para as demais. Na prática, o laudo vale até a próxima inspeção exigida. Na edição vigente da NBR 5419-3, esse intervalo passou a ser definido pelo risco da estrutura, e não mais pelo nível de proteção."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "É verdade que o laudo de SPDA vale 5 anos?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Não. O prazo de 5 anos não vem da NBR 5419. Ele costuma aparecer em modelos genéricos de laudo, em exigências antigas ou em interpretações locais. A norma trabalha com 1 ou 3 anos conforme o risco da estrutura. Um laudo que declara validade de 5 anos é um sinal de que foi feito sem base na norma."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quem pode emitir laudo de SPDA?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A inspeção periódica deve ser realizada por profissional habilitado, com competência e experiência comprovadas em inspeções de SPDA. Na prática, engenheiro eletricista com registro ativo no CREA, e o laudo precisa sair acompanhado de ART. Sem ART, o documento não tem valor perante bombeiros, seguradora ou auditoria."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Meu laudo aprova o aterramento por 10 ohms. Isso ainda vale?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A edição vigente da NBR 5419-3 verifica a eficácia do aterramento por continuidade elétrica e dispensa a medição de resistência como critério de eficácia. A medição continua tendo utilidade técnica, mas deixou de ser o que aprova ou reprova o sistema. Um laudo que aprova ou reprova por valor de resistência está usando um critério que a norma vigente não usa mais."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "E se o sistema reprovar na inspeção?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "O laudo aponta as não conformidades encontradas e entrega um plano de ação com o que precisa ser corrigido e em que ordem de prioridade. Feita a correção, é emitido o laudo de conformidade. Reprovar não é um problema: é exatamente para isso que a inspeção existe. O problema é descobrir a não conformidade quando o bombeiro ou a seguradora já está exigindo o documento."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Preciso interromper a operação durante a inspeção?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Na maioria dos casos, não. A inspeção é predominantemente visual e de medição, feita com a instalação em operação. Desligamentos pontuais podem ser necessários em verificações específicas, e são sempre combinados antes com a equipe de manutenção."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Qual a diferença entre laudo, projeto e ART?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "O projeto define como o sistema deve ser construído. O laudo avalia um sistema já instalado e atesta se ele atende ao que a norma exige hoje. A ART é o registro no CREA que vincula um profissional habilitado à responsabilidade técnica por aquele documento. ART não é laudo: é o que dá validade legal ao laudo."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quais eventos obrigam a refazer o laudo antes do prazo?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Suspeita de que a estrutura foi atingida por descarga atmosférica, atuação de dispositivos de proteção contra surtos, reformas ou ampliações, alteração de cobertura, instalação de novos equipamentos sobre o telhado e qualquer reparo no próprio SPDA. Nesses casos a periodicidade regular é interrompida e uma nova inspeção é necessária."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+<!-- ===== Estilos apenas dos componentes novos desta página ===== -->
+<style>
+  .spda-destaque{ border-left:4px solid currentColor; padding:1rem 1.25rem; margin:1.5rem 0; opacity:.95; }
+  .spda-etapas{ list-style:none; padding:0; margin:1.5rem 0; counter-reset:spda; }
+  .spda-etapas li{ counter-increment:spda; padding:.75rem 0 .75rem 3rem; position:relative; border-bottom:1px solid rgba(128,128,128,.25); }
+  .spda-etapas li:last-child{ border-bottom:none; }
+  .spda-etapas li::before{ content:counter(spda); position:absolute; left:0; top:.75rem; width:2rem; height:2rem; line-height:2rem; text-align:center; border-radius:50%; border:1px solid currentColor; font-size:.9rem; font-weight:700; }
+  .spda-cta{ margin:2rem 0; display:flex; flex-wrap:wrap; gap:.75rem; }
+  .spda-cta a{ display:inline-block; padding:.85rem 1.5rem; border:2px solid currentColor; border-radius:4px; text-decoration:none; font-weight:700; }
+  .spda-faq-item{ border-bottom:1px solid rgba(128,128,128,.25); padding:.5rem 0; }
+  .spda-faq-item summary{ cursor:pointer; font-weight:700; padding:.75rem 0; }
+  .spda-faq-item summary:focus-visible{ outline:2px solid currentColor; outline-offset:2px; }
+  .spda-faq-item p{ margin:0 0 1rem 0; }
+  .spda-cidades a{ display:inline-block; margin:.25rem .5rem .25rem 0; }
+  .spda-tabela{ width:100%; border-collapse:collapse; margin:1.5rem 0; }
+  .spda-tabela th, .spda-tabela td{ text-align:left; padding:.75rem .5rem; border-bottom:1px solid rgba(128,128,128,.3); vertical-align:top; }
+  .spda-tabela th{ font-weight:700; }
+  .spda-regioes{ list-style:none; padding:0; margin:1.25rem 0; }
+  .spda-regioes li{ padding:.75rem 0; border-bottom:1px solid rgba(128,128,128,.2); }
+  .spda-regioes li:last-child{ border-bottom:none; }
+  .spda-regioes small{ opacity:.7; font-weight:400; }
+  .spda-fones{ margin:1rem 0; }
+  .spda-fones div{ padding:.35rem 0; }
+  @media (prefers-reduced-motion: reduce){ *{ animation:none !important; transition:none !important; } }
+</style>
+
+</head>
+<body class="engenharia">
+
+<!-- ===== MENU DINÂMICO ===== -->
+<div id="menu"></div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  fetch("/menu.html")
+    .then(response => {
+      if (!response.ok) { throw new Error("Erro ao carregar menu.html"); }
+      return response.text();
+    })
+    .then(data => {
+      document.getElementById("menu").innerHTML = data;
+      const toggle = document.querySelector(".menu-toggle");
+      const links = document.querySelector(".menu-links");
+      if (toggle && links) {
+        toggle.addEventListener("click", function() {
+          links.classList.toggle("open");
+          toggle.classList.toggle("open");
+        });
+      }
+    })
+    .catch(error => { console.error("Erro no menu:", error); });
+});
+</script>
+<!-- ===== FIM MENU DINÂMICO ===== -->
+
+
+<!-- ===== ABERTURA ===== -->
+<section class="hero">
+
+  <div class="hero-text">
+
+    <h1>
+      <span class="linha1">Laudo de</span>
+      <span class="cidade">SPDA</span>
+    </h1>
+
+    <p>
+      <strong>Inspeção conforme a ABNT NBR 5419-3, com medições, registro
+      fotográfico, plano de ação e ART registrada no CREA.</strong>
+    </p>
+
+    <p>
+      Se o Corpo de Bombeiros pediu, a seguradora exigiu na renovação da apólice
+      ou o prazo da última inspeção venceu, é este o documento. Ele atesta se o
+      SPDA instalado ainda atende ao que a norma exige — e, quando não atende,
+      diz exatamente o que precisa ser corrigido.
+    </p>
+
+    <p>
+      Engenheiro eletricista <strong>Dario Cini — CREA-RS 211.450</strong><br>
+      Telefones:<br>
+      <strong>(54) 99947-5010</strong> — Serra Gaúcha<br>
+      <strong>(51) 99961-3451</strong> — Vales do Taquari, Caí e Sinos, Grande Porto Alegre<br>
+      E-mail: contato@ciniengenharia.com.br
+    </p>
+
+    <div class="spda-cta">
+      <a href="https://wa.me/5551999613451" target="_blank" rel="noopener">Solicitar inspeção</a>
+      <a href="#diagnostico">Meu laudo atual ainda vale?</a>
+    </div>
+
+  </div>
+
+  <div class="hero-image">
+    <!-- [PREENCHER] Foto real: inspeção em telhado, medição, captor -->
+    <img src="../../assets/images/laudo-spda.jpg"
+         alt="Inspeção de SPDA conforme NBR 5419-3 — Cini Engenharia"
+         title="Laudo de SPDA">
+  </div>
+
+</section>
+<!-- ===== FIM ABERTURA ===== -->
+
+
+<!-- ===== VALIDADE ===== -->
+<section class="hero">
+
+  <div class="hero-text">
+
+    <h2>Qual é a validade do laudo de SPDA</h2>
+
+    <p>
+      A norma não carimba uma data de validade no documento. Ela define a
+      <strong>periodicidade da inspeção</strong> que gera o laudo — e é isso que,
+      na prática, determina até quando ele se sustenta.
+    </p>
+
+    <p>
+      Na edição vigente da NBR 5419-3, esse intervalo passou a ser definido pelo
+      <strong>risco da estrutura</strong>, e não mais pelo nível de proteção, como
+      fazia a edição de 2015.
+    </p>
+
+    <table class="spda-tabela">
+      <caption class="visually-hidden">Periodicidade de inspeção conforme o risco da estrutura</caption>
+      <thead>
+        <tr><th scope="col">Intervalo</th><th scope="col">Tipo de estrutura</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>1 ano</strong></td>
+          <td>
+            Estruturas com áreas classificadas ou atmosferas explosivas;
+            que armazenem munição, explosivos ou produtos tóxicos;
+            expostas a corrosão atmosférica severa, como regiões litorâneas e
+            ambientes industriais agressivos;
+            e fornecedores de serviços essenciais — energia, água,
+            telecomunicações e apoio à vida.
+          </td>
+        </tr>
+        <tr>
+          <td><strong>3 anos</strong></td>
+          <td>Demais estruturas, incluindo a maior parte dos condomínios, comércios e galpões em área urbana comum.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="spda-destaque">
+      <p>
+        <strong>Não existe "laudo com validade de 5 anos".</strong> Esse prazo não
+        vem da NBR 5419 — ele aparece em modelos genéricos, exigências antigas e
+        interpretações locais. Se o seu laudo declara 5 anos, isso já é indício de
+        que foi elaborado sem base na norma.
+      </p>
+    </div>
+
+  </div>
+
+  <div class="hero-image">
+    <img src="../../assets/images/laudo-spda-validade.jpg"
+         alt="Periodicidade de inspeção de SPDA">
+  </div>
+
+</section>
+<!-- ===== FIM VALIDADE ===== -->
+
+
+<!-- ===== GATILHOS ===== -->
+<section class="hero">
+
+  <div class="hero-text">
+
+    <h2>Quando refazer antes do prazo</h2>
+
+    <p>
+      A periodicidade regular é interrompida quando acontece algo que possa ter
+      comprometido o sistema. Nesses casos, uma nova inspeção é necessária
+      independentemente de quanto tempo falta para a próxima:
+    </p>
+
+    <ul>
+      <li>suspeita de que a estrutura foi atingida por descarga atmosférica</li>
+      <li>atuação de dispositivos de proteção contra surtos (DPS)</li>
+      <li>reforma, ampliação ou construção de novo galpão anexo</li>
+      <li>troca ou alteração da cobertura</li>
+      <li>instalação de equipamentos novos sobre o telhado — que podem ter ficado fora do volume de proteção</li>
+      <li>qualquer reparo executado no próprio SPDA</li>
+    </ul>
+
+    <p>
+      O último item da lista é o mais frequente e o menos lembrado: equipamento
+      instalado no telhado depois do sistema original costuma passar despercebido
+      até a próxima inspeção.
+    </p>
+
+  </div>
+
+  <div class="hero-image">
+    <img src="../../assets/images/laudo-spda-gatilhos.jpg"
+         alt="Eventos que exigem nova inspeção de SPDA">
+  </div>
+
+</section>
+<!-- ===== FIM GATILHOS ===== -->
+
+
+<!-- ===== O QUE É VERIFICADO ===== -->
+<section class="hero">
+
+  <div class="hero-text">
+
+    <h2>O que é verificado na inspeção</h2>
+
+    <h3>Subsistema de captação</h3>
+    <p>
+      Integridade, fixação e posicionamento dos captores; verificação do volume de
+      proteção pelo método adotado em projeto; identificação de equipamentos ou
+      estruturas que tenham ficado desprotegidos após alterações no telhado.
+    </p>
+
+    <h3>Condutores de descida</h3>
+    <p>
+      Continuidade, quantidade, espaçamento e trajeto; estado das fixações;
+      condutores rompidos ou seccionados — um dos defeitos mais comuns e um dos
+      mais fáceis de passar despercebido em vistoria superficial.
+    </p>
+
+    <h3>Aterramento e equipotencialização</h3>
+    <p>
+      Verificação por continuidade elétrica, que é o critério de eficácia adotado
+      pela edição vigente da norma. Inspeção de conexões, caixas de inspeção,
+      estado de corrosão e ligação das massas metálicas ao sistema.
+    </p>
+
+    <h3>Proteção contra surtos</h3>
+    <p>
+      Presença, coordenação e estado dos DPS; indicação de fim de vida;
+      compatibilidade com a instalação atual.
+    </p>
+
+    <h3>Documentação existente</h3>
+    <p>
+      Confronto entre o que está instalado e o que consta no projeto e nos laudos
+      anteriores. Divergência entre projeto e instalação é uma não conformidade em
+      si — e é o que costuma aparecer quando ninguém acompanhou as reformas.
+    </p>
+
+  </div>
+
+  <div class="hero-image">
+    <img src="../../assets/images/laudo-spda-inspecao.jpg"
+         alt="Itens verificados na inspeção de SPDA">
+  </div>
+
+</section>
+<!-- ===== FIM O QUE É VERIFICADO ===== -->
+
+
+<!-- ===== O QUE VOCÊ RECEBE ===== -->
+<section class="hero">
+
+  <div class="hero-text">
+
+    <h2>O que você recebe</h2>
+
+    <ul>
+      <li><strong>Relatório técnico completo</strong>, com a descrição do sistema e a metodologia adotada</li>
+      <li><strong>Registro fotográfico</strong> de cada ponto verificado e de cada não conformidade</li>
+      <li><strong>Medições realizadas</strong>, com os valores obtidos e a interpretação técnica de cada um</li>
+      <li><strong>Relação de não conformidades</strong>, com a cláusula da norma correspondente a cada apontamento</li>
+      <li><strong>Plano de ação</strong>, com o que corrigir e em que ordem de prioridade</li>
+      <li><strong>Parecer conclusivo</strong> sobre a conformidade do sistema</li>
+      <li><strong>Data da próxima inspeção</strong>, conforme o risco da sua estrutura</li>
+      <li><strong>ART registrada no CREA</strong></li>
+    </ul>
+
+    <div class="spda-destaque">
+      <p>
+        Cada apontamento vem com a cláusula normativa que o embasa. Isso não é
+        formalidade: é o que permite ao seu eletricista ou à sua manutenção
+        executar a correção sem adivinhar, e o que sustenta o documento se ele for
+        questionado.
+      </p>
+    </div>
+
+  </div>
+
+  <div class="hero-image">
+    <img src="../../assets/images/laudo-spda-entrega.jpg"
+         alt="Conteúdo do laudo de SPDA">
+  </div>
+
+</section>
+<!-- ===== FIM O QUE VOCÊ RECEBE ===== -->
+
+
+<!-- ===== DIAGNÓSTICO ===== -->
+<section class="hero" id="diagnostico">
+
+  <div class="hero-text">
+
+    <h2>Seu laudo atual ainda se sustenta?</h2>
+
+    <p>
+      Ter laudo não é o mesmo que estar em conformidade. Boa parte dos documentos
+      que chegam até nós foi emitida sob critérios que a edição vigente da norma
+      não usa mais.
+    </p>
+
+    <p>Sinais de que vale uma segunda leitura:</p>
+
+    <ul>
+      <li><strong>Aprova o aterramento por valor de resistência medida</strong> — hoje o critério de eficácia é a continuidade elétrica</li>
+      <li><strong>Declara validade de 5 anos</strong> — prazo que não existe na norma</li>
+      <li><strong>Não traz memorial de análise de risco</strong>, apenas a descrição do sistema</li>
+      <li><strong>Não indica a data da próxima inspeção</strong> nem o critério que a definiu</li>
+      <li><strong>Não tem ART vinculada</strong> ou a ART está em nome de profissional sem habilitação para a atividade</li>
+      <li><strong>É posterior a uma reforma</strong> que não aparece descrita no documento</li>
+    </ul>
+
+    <div class="spda-destaque">
+      <p>
+        <strong>Envie o laudo que você tem</strong> e receba um parecer objetivo
+        sobre o que está aderente à norma vigente, o que precisa de revisão e se é
+        caso de nova inspeção. É a forma mais barata de descobrir se você tem um
+        problema — antes de alguém exigir o documento.
+      </p>
+    </div>
+
+    <div class="spda-cta">
+      <a href="https://wa.me/5551999613451" target="_blank" rel="noopener">Enviar laudo pelo WhatsApp</a>
+      <a href="mailto:contato@ciniengenharia.com.br">Enviar por e-mail</a>
+    </div>
+
+  </div>
+
+  <div class="hero-image">
+    <img src="../../assets/images/laudo-spda-diagnostico.jpg"
+         alt="Revisão de laudo de SPDA existente">
+  </div>
+
+</section>
+<!-- ===== FIM DIAGNÓSTICO ===== -->
+
+
+<!-- ===== NORMA X ÓRGÃO ===== -->
+<section class="hero">
+
+  <div class="hero-text">
+
+    <h2>Norma técnica e exigência do órgão nem sempre coincidem</h2>
+
+    <p>
+      A NBR 5419-3 define a periodicidade técnica da inspeção. Mas o órgão que
+      fiscaliza pode ter exigência própria, geralmente mais rígida — é comum
+      corpos de bombeiros solicitarem laudo com ART e apresentação anual,
+      independentemente do intervalo previsto na norma.
+    </p>
+
+    <p>
+      Quando as duas exigências divergem, vale a mais restritiva. Na prática, quem
+      está renovando licenciamento precisa atender ao que o órgão pede, mesmo que
+      a norma admita prazo maior.
+    </p>
+
+    <!--
+      [PREENCHER] Confirme a exigência atual do CBMRS antes de publicar e
+      escreva aqui, de forma específica, o que é pedido no RS.
+      Terminologia do RS: PPCI e Alvará de Prevenção e Proteção Contra Incêndios.
+      NÃO use "AVCB", que é de São Paulo — usar termo de outro estado
+      derruba a credibilidade com o seu público local.
+      Este parágrafo específico é o que a concorrência nacional não tem.
+    -->
+
+  </div>
+
+  <div class="hero-image">
+    <img src="../../assets/images/laudo-spda-bombeiros.jpg"
+         alt="Exigência de laudo de SPDA no licenciamento">
+  </div>
+
+</section>
+<!-- ===== FIM NORMA X ÓRGÃO ===== -->
+
+
+<!-- ===== PARA QUEM ===== -->
+<section class="servicos">
+
+  <h2>Para quem é</h2>
+
+  <div class="servicos-grid">
+
+    <div class="servico">
+      <img src="../../assets/images/laudo-spda-industria.jpg" alt="Laudo de SPDA para indústrias">
+      <p>Indústrias e galpões com prazo de inspeção vencido ou próximo do vencimento</p>
+    </div>
+
+    <div class="servico">
+      <img src="../../assets/images/laudo-spda-condominio.jpg" alt="Laudo de SPDA para condomínios">
+      <p>Condomínios e edifícios comerciais em renovação de licenciamento</p>
+    </div>
+
+    <div class="servico">
+      <img src="../../assets/images/laudo-spda-seguradora.jpg" alt="Laudo de SPDA para seguradora">
+      <p>Quem teve o laudo exigido pela seguradora na contratação ou renovação da apólice</p>
+    </div>
+
+    <div class="servico">
+      <img src="../../assets/images/laudo-spda-auditoria.jpg" alt="Laudo de SPDA para auditoria">
+      <p>Empresas em auditoria de conformidade, certificação ou exigência de cliente</p>
+    </div>
+
+    <div class="servico">
+      <img src="../../assets/images/laudo-spda-reforma.jpg" alt="Laudo de SPDA após reforma">
+      <p>Estruturas que passaram por reforma, ampliação ou troca de cobertura</p>
+    </div>
+
+    <div class="servico">
+      <img src="../../assets/images/laudo-spda-descarga.jpg" alt="Laudo de SPDA após descarga atmosférica">
+      <p>Quem teve suspeita de descarga direta ou atuação de DPS na instalação</p>
+    </div>
+
+  </div>
+
+</section>
+<!-- ===== FIM PARA QUEM ===== -->
+
+
+<!-- ===== COMO FUNCIONA ===== -->
+<section class="hero">
+
+  <div class="hero-text">
+
+    <h2>Como funciona</h2>
+
+    <ol class="spda-etapas">
+      <li>
+        <strong>Você envia as informações da estrutura</strong><br>
+        Endereço, área de cobertura, altura, tipo de estrutura, atividade do local
+        e a documentação existente — projeto, laudo anterior e ART, se houver.
+      </li>
+      <li>
+        <strong>Proposta com escopo, prazo e valor</strong><br>
+        Por escrito, antes de qualquer deslocamento.
+        <!-- [PREENCHER] prazo para envio da proposta -->
+      </li>
+      <li>
+        <strong>Inspeção em campo</strong><br>
+        Verificação de captação, descidas, aterramento, equipotencialização e DPS,
+        com medições e registro fotográfico. A instalação segue em operação.
+      </li>
+      <li>
+        <strong>Análise técnica e confronto com a documentação</strong><br>
+        O que está instalado é comparado com o que consta no projeto e nos laudos
+        anteriores.
+      </li>
+      <li>
+        <strong>Emissão do laudo com ART</strong><br>
+        Com parecer conclusivo, plano de ação e data da próxima inspeção.
+        <!-- [PREENCHER] prazo de entrega após a visita -->
+      </li>
+      <li>
+        <strong>Reinspeção, se houver não conformidade</strong><br>
+        Corrigidos os apontamentos, o sistema é reavaliado e o laudo de
+        conformidade é emitido.
+      </li>
+    </ol>
+
+  </div>
+
+  <div class="hero-image">
+    <img src="../../assets/images/laudo-spda-processo.jpg"
+         alt="Etapas da inspeção e emissão do laudo de SPDA">
+  </div>
+
+</section>
+<!-- ===== FIM COMO FUNCIONA ===== -->
+
+
+<!-- ===== PREÇO ===== -->
+<section class="hero">
+
+  <div class="hero-text">
+
+    <h2>O que faz o preço variar</h2>
+
+    <p>
+      O custo do laudo acompanha o tempo de inspeção em campo e o volume de pontos
+      a verificar. Os fatores que pesam:
+    </p>
+
+    <ul>
+      <li><strong>Área de cobertura e número de descidas</strong> — definem o tempo de inspeção</li>
+      <li><strong>Altura e acessibilidade do telhado</strong> — necessidade de equipamento de acesso ou trabalho em altura</li>
+      <li><strong>Tipo de cobertura</strong> — metálica, fibrocimento, laje, telha cerâmica</li>
+      <li><strong>Número de edificações</strong> no mesmo endereço</li>
+      <li><strong>Existência de documentação anterior</strong> — sem projeto, o levantamento é maior</li>
+      <li><strong>Deslocamento</strong>, conforme a cidade</li>
+    </ul>
+
+    <p>
+      Com o endereço, a área de cobertura e uma foto do telhado, na maioria dos
+      casos é possível fechar um valor sem visita prévia.
+      <!-- [PREENCHER] Faixa de preço. Esta é a maior alavanca de conversão da página. -->
+    </p>
+
+  </div>
+
+  <div class="hero-image">
+    <img src="../../assets/images/laudo-spda-orcamento.jpg"
+         alt="Orçamento de laudo de SPDA">
+  </div>
+
+</section>
+<!-- ===== FIM PREÇO ===== -->
+
+
+<!-- ===== QUEM ASSINA ===== -->
+<section class="hero">
+
+  <div class="hero-text">
+
+    <h2>Quem assina o laudo</h2>
+
+    <p>
+      <strong>Dario Cini</strong>, engenheiro eletricista formado pela Universidade
+      de Caxias do Sul, com mais de 10 anos de atuação em engenharia elétrica no eixo entre a
+      Serra Gaúcha e a Grande Porto Alegre.
+    </p>
+
+    <p>
+      <strong>CREA:</strong> RS 211.450 —
+      <a href="https://www.crea-rs.org.br/site/" target="_blank" rel="noopener noreferrer nofollow">
+        consulta pública no CREA-RS
+      </a>
+    </p>
+
+    <p>
+      <strong>Cini Engenharia</strong> — CNPJ 25.268.313/0001-56 —
+      <a href="https://solucoes.receita.fazenda.gov.br/servicos/cnpjreva/cnpjreva_solicitacao.asp"
+         target="_blank" rel="noopener noreferrer">Consultar CNPJ</a>
+    </p>
+
+    <p>
+      <strong>LinkedIn:</strong>
+      <a href="https://www.linkedin.com/in/dario-cini-38a3303a1/"
+         target="_blank" rel="noopener noreferrer">Dario Cini — Ver perfil</a>
+    </p>
+
+    <p>
+      Não vendemos vistoria com checklist. A entrega é documento de engenharia,
+      com medição, cláusula normativa e parecer conclusivo, que se sustenta diante
+      de quem fiscaliza.
+    </p>
+
+  </div>
+
+  <div class="hero-image">
+    <img src="../../assets/images/engenheiro-eletricista-crea.jpg"
+         alt="Dario Cini — engenheiro eletricista CREA-RS 211.450">
+  </div>
+
+</section>
+<!-- ===== FIM QUEM ASSINA ===== -->
+
+
+<!-- ===== SERVIÇOS RELACIONADOS ===== -->
+<section class="secao-full">
+  <div class="hero-text">
+    <h2>Serviços relacionados</h2>
+    <p>
+      Todos os serviços e áreas de atendimento estão reunidos na página do
+      <a href="/servicos/engenheiro-eletricista/">engenheiro eletricista</a>.
+    </p>
+    <a href="/servicos-engenharia-eletrica/projeto-spda/">Projeto de SPDA</a>
+    <span>|</span>
+    <a href="/servicos-engenharia-eletrica/laudo-aterramento/">Laudo de aterramento</a>
+    <span>|</span>
+    <a href="/servicos-engenharia-eletrica/laudo-instalacoes-eletricas/">Laudo das instalações elétricas</a>
+    <span>|</span>
+    <a href="/servicos-engenharia-eletrica/termografia/">Termografia</a>
+    <span>|</span>
+    <a href="/servicos-engenharia-eletrica/calculo-atpv/">Cálculo de ATPV</a>
+    <span>|</span>
+    <a href="/servicos-engenharia-eletrica/consultoria/">Consultoria</a>
+    <span>|</span>
+    <a href="/servicos-engenharia-eletrica/projeto-eletrico-industrial/">Projeto elétrico industrial</a>
+    <span>|</span>
+    <a href="/servicos-engenharia-eletrica/projeto-subestacao/">Projeto de subestação</a>
+  </div>
+</section>
+<!-- ===== FIM SERVIÇOS RELACIONADOS ===== -->
+
+
+<!-- ===== ÁREA DE ATENDIMENTO ===== -->
+<section class="secao-full">
+  <div class="hero-text spda-cidades">
+    <h2>Onde atendemos</h2>
+    <p>
+      Atendimento presencial no eixo entre a Serra Gaúcha e a Grande Porto
+      Alegre, acompanhando os vales do Taquari, do Caí e do Sinos.
+    </p>
+    <ul class="spda-regioes">
+      <li><strong>Serra Gaúcha</strong> <small>(DDD 54)</small><br>
+        <a href="/servicos/engenheiro-eletricista-caxias-do-sul/">Caxias do Sul</a> <span>|</span>
+        <a href="/servicos/engenheiro-eletricista-bento-goncalves/">Bento Gonçalves</a> <span>|</span>
+        <a href="/servicos/engenheiro-eletricista-farroupilha/">Farroupilha</a> <span>|</span>
+        <a href="/servicos/engenheiro-eletricista-garibaldi/">Garibaldi</a> <span>|</span>
+        <a href="/servicos/engenheiro-eletricista-carlos-barbosa/">Carlos Barbosa</a> <span>|</span>
+        Guaporé
+      </li>
+      <li><strong>Vale do Taquari</strong> <small>(DDD 51)</small><br>
+        <a href="/servicos/engenheiro-eletricista-lajeado/">Lajeado</a>
+      </li>
+      <li><strong>Vale do Caí</strong> <small>(DDD 51)</small><br>
+        <a href="/servicos/engenheiro-eletricista-montenegro/">Montenegro</a>
+      </li>
+      <li><strong>Vale dos Sinos</strong> <small>(DDD 51)</small><br>
+        <a href="/servicos/engenheiro-eletricista-novo-hamburgo/">Novo Hamburgo</a> <span>|</span>
+        <a href="/servicos/engenheiro-eletricista-sao-leopoldo/">São Leopoldo</a>
+      </li>
+      <li><strong>Grande Porto Alegre</strong> <small>(DDD 51)</small><br>
+        <a href="/servicos/engenheiro-eletricista-porto-alegre/">Porto Alegre</a> <span>|</span>
+        <a href="/servicos/engenheiro-eletricista-canoas/">Canoas</a> <span>|</span>
+        <a href="/servicos/engenheiro-eletricista-cachoeirinha/">Cachoeirinha</a> <span>|</span>
+        <a href="/servicos/engenheiro-eletricista-gravatai/">Gravataí</a>
+      </li>
+    </ul>
+    <!-- [PREENCHER] Guaporé ainda não tem página. Ao criar, transforme em link. -->
+  </div>
+</section>
+<!-- ===== FIM ÁREA DE ATENDIMENTO ===== -->
+
+
+<!-- ===== FAQ ===== -->
+<section class="faq">
+
+  <div class="hero-text">
+
+    <h2>Dúvidas frequentes sobre <strong>laudo de SPDA</strong></h2>
+
+    <details class="spda-faq-item">
+      <summary>Qual é a validade do laudo de SPDA?</summary>
+      <p>
+        A norma não carimba uma data de validade no documento — ela define a
+        periodicidade da inspeção que o gera: 1 ano para estruturas de risco
+        elevado e 3 anos para as demais. Na prática, o laudo vale até a próxima
+        inspeção exigida. Na edição vigente da NBR 5419-3, esse intervalo passou a
+        ser definido pelo risco da estrutura, e não mais pelo nível de proteção.
+      </p>
+    </details>
+
+    <details class="spda-faq-item">
+      <summary>É verdade que o laudo vale 5 anos?</summary>
+      <p>
+        Não. Esse prazo não vem da NBR 5419. Ele costuma aparecer em modelos
+        genéricos de laudo, em exigências antigas ou em interpretações locais. Se o
+        seu documento declara validade de 5 anos, isso já indica que foi elaborado
+        sem base na norma.
+      </p>
+    </details>
+
+    <details class="spda-faq-item">
+      <summary>Quem pode emitir laudo de SPDA?</summary>
+      <p>
+        A inspeção deve ser realizada por profissional habilitado, com competência e
+        experiência comprovadas nesse tipo de verificação — na prática, engenheiro
+        eletricista com registro ativo no CREA. E o laudo precisa sair acompanhado
+        de ART. Sem ART, o documento não tem valor perante bombeiros, seguradora ou
+        auditoria.
+      </p>
+    </details>
+
+    <details class="spda-faq-item">
+      <summary>Meu laudo aprova o aterramento por 10 ohms. Isso ainda vale?</summary>
+      <p>
+        A edição vigente da NBR 5419-3 verifica a eficácia do aterramento por
+        continuidade elétrica e dispensa a medição de resistência como critério de
+        eficácia. A medição continua tendo utilidade técnica — inclusive para
+        dimensionamento —, mas deixou de ser o que aprova ou reprova o sistema. Um
+        laudo que aprova ou reprova por valor de resistência está usando um critério
+        que a norma vigente não usa mais.
+      </p>
+    </details>
+
+    <details class="spda-faq-item">
+      <summary>E se o sistema reprovar na inspeção?</summary>
+      <p>
+        O laudo aponta as não conformidades e entrega um plano de ação com o que
+        corrigir e em que ordem de prioridade. Feita a correção, é emitido o laudo
+        de conformidade. Reprovar não é um problema — é exatamente para isso que a
+        inspeção existe. O problema é descobrir a não conformidade quando o bombeiro
+        ou a seguradora já está com a mão estendida pedindo o documento.
+      </p>
+    </details>
+
+    <details class="spda-faq-item">
+      <summary>Preciso interromper a operação durante a inspeção?</summary>
+      <p>
+        Na maioria dos casos, não. A inspeção é predominantemente visual e de
+        medição, feita com a instalação em operação. Desligamentos pontuais podem
+        ser necessários em verificações específicas, e são sempre combinados antes
+        com a equipe de manutenção.
+      </p>
+    </details>
+
+    <details class="spda-faq-item">
+      <summary>Qual a diferença entre laudo, projeto e ART?</summary>
+      <p>
+        O projeto define como o sistema deve ser construído. O laudo avalia um
+        sistema já instalado e atesta se ele atende ao que a norma exige hoje. A ART
+        é o registro no CREA que vincula um profissional habilitado à
+        responsabilidade técnica pelo documento. ART não é laudo: é o que dá
+        validade legal ao laudo.
+      </p>
+    </details>
+
+    <details class="spda-faq-item">
+      <summary>Quais eventos obrigam a refazer o laudo antes do prazo?</summary>
+      <p>
+        Suspeita de descarga atmosférica na estrutura, atuação de DPS, reformas ou
+        ampliações, troca de cobertura, instalação de equipamentos novos sobre o
+        telhado e qualquer reparo no próprio SPDA. Nesses casos a periodicidade
+        regular é interrompida e uma nova inspeção é necessária.
+      </p>
+    </details>
+
+    <details class="spda-faq-item">
+      <summary>Quanto tempo leva para receber o laudo?</summary>
+      <p>
+        <!-- [PREENCHER] Prazo real. Não deixe genérico. -->
+        O prazo depende da complexidade e da área da estrutura. A proposta enviada
+        já traz o prazo fechado para o seu caso.
+      </p>
+    </details>
+
+  </div>
+
+</section>
+<!-- ===== FIM FAQ ===== -->
+
+
+<!-- ===== CHAMADA FINAL ===== -->
+<section class="hero">
+  <div class="hero-text">
+    <h2>Descubra antes que alguém pergunte</h2>
+    <p>
+      Se o prazo da última inspeção venceu, ou se você nem sabe qual é o prazo da
+      sua estrutura, envie o que você tem. O parecer inicial sobre a documentação
+      é rápido e não custa nada.
+    </p>
+    <div class="spda-cta">
+      <a href="https://wa.me/5551999613451" target="_blank" rel="noopener">Solicitar inspeção</a>
+      <a href="mailto:contato@ciniengenharia.com.br">Enviar meu laudo para análise</a>
+    </div>
+  </div>
+</section>
+<!-- ===== FIM CHAMADA FINAL ===== -->
+
+</body>
+</html>

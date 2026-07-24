@@ -233,3 +233,291 @@ body.engenharia .cidades-atendidas span {
   font-size: 13px;
   color: #ccc;
 }
+
+
+/* =========================================================
+   ACRÉSCIMOS — adicionado em 24/07/2026
+   NADA ACIMA DESTA LINHA FOI ALTERADO.
+   Se algo ficar estranho, basta apagar deste ponto para baixo
+   e o arquivo volta a ser exatamente o que era.
+   ========================================================= */
+
+
+/* ---------------------------------------------------------
+   1. CARDS DE SERVIÇO CLICÁVEIS
+   Necessário porque os cards agora são links, o nome do
+   serviço virou <h3> e o <p> passou a ser a descrição.
+   --------------------------------------------------------- */
+
+body.engenharia .servico a{
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+body.engenharia .servico h3{
+  margin: 14px 0 6px 0;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* redefine o .servico p original: agora é descrição, não título */
+body.engenharia .servico p{
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  color: #555;
+  text-align: center;
+  line-height: 1.5;
+}
+
+body.engenharia .servico a:hover h3{
+  text-decoration: underline;
+}
+
+body.engenharia .servico a:focus-visible{
+  outline: 2px solid #111;
+  outline-offset: 3px;
+  border-radius: 12px;
+}
+
+
+/* ---------------------------------------------------------
+   2. SUBTÍTULOS H3 NO CORPO DO TEXTO
+   --------------------------------------------------------- */
+
+body.engenharia .hero-text h3{
+  font-size: 20px;
+  margin: 28px 0 8px 0;
+  line-height: 1.3;
+}
+
+
+/* ---------------------------------------------------------
+   3. COMPONENTES DAS PÁGINAS DE SERVIÇO
+   Mesmas regras que hoje estão no <style> de cada página.
+   Com isto aqui, você pode remover aqueles blocos <style>
+   quando quiser — o resultado visual é o mesmo.
+   --------------------------------------------------------- */
+
+body.engenharia .spda-destaque{
+  border-left: 4px solid #111;
+  background: #fafafa;
+  padding: 20px 24px;
+  margin: 24px 0;
+  border-radius: 0 12px 12px 0;
+}
+
+body.engenharia .spda-destaque p{
+  margin: 0;
+}
+
+body.engenharia .spda-etapas{
+  list-style: none;
+  padding: 0;
+  margin: 24px 0;
+  counter-reset: spda;
+}
+
+body.engenharia .spda-etapas li{
+  counter-increment: spda;
+  padding: 14px 0 14px 48px;
+  position: relative;
+  border-bottom: 1px solid #e6e6e6;
+  font-size: 17px;
+  color: #555;
+  margin-bottom: 0;
+}
+
+body.engenharia .spda-etapas li:last-child{
+  border-bottom: none;
+}
+
+body.engenharia .spda-etapas li::before{
+  content: counter(spda);
+  position: absolute;
+  left: 0;
+  top: 14px;
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid #111;
+  color: #111;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+body.engenharia .spda-cta{
+  margin: 32px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+body.engenharia .spda-cta a{
+  display: inline-block;
+  padding: 14px 24px;
+  border: 2px solid #111;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 700;
+  color: #111;
+  margin: 0;
+}
+
+body.engenharia .spda-cta a:hover{
+  background: #111;
+  color: #fff;
+}
+
+body.engenharia .spda-faq-item{
+  border-bottom: 1px solid #e6e6e6;
+  padding: 4px 0;
+}
+
+body.engenharia .spda-faq-item summary{
+  cursor: pointer;
+  font-weight: 700;
+  padding: 14px 0;
+  font-size: 18px;
+}
+
+body.engenharia .spda-faq-item summary:focus-visible{
+  outline: 2px solid #111;
+  outline-offset: 2px;
+}
+
+body.engenharia .spda-faq-item p{
+  margin: 0 0 18px 0;
+}
+
+body.engenharia .spda-tabela{
+  width: 100%;
+  border-collapse: collapse;
+  margin: 24px 0;
+}
+
+body.engenharia .spda-tabela th,
+body.engenharia .spda-tabela td{
+  text-align: left;
+  padding: 14px 10px;
+  border-bottom: 1px solid #e0e0e0;
+  vertical-align: top;
+  font-size: 16px;
+  color: #555;
+}
+
+body.engenharia .spda-tabela th{
+  font-weight: 700;
+  color: #111;
+}
+
+body.engenharia .spda-regioes{
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+body.engenharia .spda-regioes li{
+  padding: 14px 0;
+  border-bottom: 1px solid #ececec;
+  font-size: 16px;
+  margin-bottom: 0;
+}
+
+body.engenharia .spda-regioes li:last-child{
+  border-bottom: none;
+}
+
+body.engenharia .spda-regioes small{
+  color: #999;
+  font-weight: 400;
+}
+
+body.engenharia .spda-indice{
+  list-style: none;
+  padding: 0;
+  margin: 24px 0;
+}
+
+body.engenharia .spda-indice li{
+  padding: 12px 0;
+  border-bottom: 1px solid #ececec;
+  font-size: 17px;
+  margin-bottom: 0;
+}
+
+body.engenharia .spda-indice li:last-child{
+  border-bottom: none;
+}
+
+
+/* ---------------------------------------------------------
+   4. CELULAR — o padding de 60px sobrava só no .hero.
+   Aqui ele passa a valer para as demais seções também.
+   --------------------------------------------------------- */
+
+@media (max-width: 768px){
+
+  body.engenharia .servicos,
+  body.engenharia .faq,
+  body.engenharia .secao-full{
+    padding: 30px 20px;
+    margin: 20px auto;
+  }
+
+  body.engenharia .servicos h2{
+    font-size: 26px;
+    margin-bottom: 24px;
+  }
+
+  body.engenharia .servicos-grid{
+    gap: 20px;
+  }
+
+  body.engenharia .hero-text h2{
+    font-size: 26px;
+  }
+
+  body.engenharia .hero-text h3{
+    font-size: 18px;
+  }
+
+  body.engenharia .hero-text p,
+  body.engenharia .hero-text li{
+    font-size: 16px;
+  }
+
+  body.engenharia .spda-cta a{
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+  body.engenharia .spda-tabela th,
+  body.engenharia .spda-tabela td{
+    font-size: 15px;
+    padding: 10px 6px;
+  }
+
+  body.engenharia .cidades-atendidas{
+    padding: 0 20px;
+  }
+}
+
+
+/* ---------------------------------------------------------
+   5. ACESSIBILIDADE — respeita quem desativou animações
+   --------------------------------------------------------- */
+
+@media (prefers-reduced-motion: reduce){
+  body.engenharia .servico{
+    transition: none;
+  }
+  body.engenharia .servico:hover{
+    transform: none;
+  }
+}

@@ -129,19 +129,19 @@
   </url>
 
   <url>
-    <loc>https://www.ciniengenharia.com.br/informacoes/caxias-do-sul/corrente-de-curto-circuito-presumida-em-baixa-tensao/</loc>
+    <loc>https://www.ciniengenharia.com.br/informacoes/caxias-do-sul/corrente-curto-circuito-presumida-baixa-tensao/</loc>
   </url>
 
   <url>
-    <loc>https://www.ciniengenharia.com.br/informacoes/caxias-do-sul/influencia-da-impedancia-da-concessionaria-nos-estudos-eletricos/</loc>
+    <loc>https://www.ciniengenharia.com.br/informacoes/caxias-do-sul/influencia-impedancia-concessionaria-estudos-eletricos/</loc>
   </url>
 
   <url>
-    <loc>https://www.ciniengenharia.com.br/informacoes/caxias-do-sul/coordenacao-de-protecao-em-sistemas-industriais/</loc>
+    <loc>https://www.ciniengenharia.com.br/informacoes/caxias-do-sul/coordenacao-protecao-sistemas-industriais/</loc>
   </url>
 
   <url>
-    <loc>https://www.ciniengenharia.com.br/informacoes/caxias-do-sul/seletividade-entre-disjuntores-de-baixa-tensao/</loc>
+    <loc>https://www.ciniengenharia.com.br/informacoes/caxias-do-sul/seletividade-disjuntores-baixa-tensao/</loc>
   </url>
 
 <!-- ARTIGOS — BENTO GONÇALVES -->
@@ -366,28 +366,6 @@
     <loc>https://www.ciniengenharia.com.br/informacoes/sao-leopoldo/projeto-eletrico/criterios-para-identificacao-de-cabos/</loc>
   </url>
 
-<!-- ARTIGOS — BENTO GONÇALVES -->
-  <url>
-    <loc>https://www.ciniengenharia.com.br/informacoes/bento-goncalves/nr-10-atualizada-2026-guia-completo/</loc>
-  </url>
-  <url>
-    <loc>https://www.ciniengenharia.com.br/informacoes/bento-goncalves/o-que-e-a-nr-10-e-para-que-serve/</loc>
-  </url>
-  <url>
-    <loc>https://www.ciniengenharia.com.br/informacoes/bento-goncalves/portaria-mte-737-2026-o-que-ela-determina/</loc>
-  </url>
-  <url>
-    <loc>https://www.ciniengenharia.com.br/informacoes/bento-goncalves/quando-a-nova-nr-10-entra-em-vigor/</loc>
-  </url>
-  <url>
-    <loc>https://www.ciniengenharia.com.br/informacoes/bento-goncalves/a-quais-empresas-a-nr-10-se-aplica/</loc>
-  </url>
-  <url>
-    <loc>https://www.ciniengenharia.com.br/informacoes/bento-goncalves/o-que-muda-na-nr-10-em-2026/</loc>
-  </url>
-  <url>
-    <loc>https://www.ciniengenharia.com.br/informacoes/bento-goncalves/nr-10-e-nr-1-como-as-duas-normas-se-integram-no-gro/</loc>
-  </url>
 
 <!-- ARTIGOS — BENTO GONÇALVES (ENGENHEIRO DE SEGURANÇA DO TRABALHO) -->
   <url>
@@ -626,6 +604,35 @@
   </url>
   <url>
     <loc>https://www.ciniengenharia.com.br/informacoes/montenegro/nr10/permissao-de-trabalho-na-nr-10-quando-e-obrigatoria-e-como-emitir/</loc>
+  </url>
+
+<!-- SERVIÇOS — ENGENHARIA ELÉTRICA -->
+  <url>
+    <loc>https://www.ciniengenharia.com.br/servicos-engenharia-eletrica/laudo-instalacoes-eletricas/</loc>
+  </url>
+  <url>
+    <loc>https://www.ciniengenharia.com.br/servicos-engenharia-eletrica/laudo-spda/</loc>
+  </url>
+  <url>
+    <loc>https://www.ciniengenharia.com.br/servicos-engenharia-eletrica/termografia/</loc>
+  </url>
+  <url>
+    <loc>https://www.ciniengenharia.com.br/servicos-engenharia-eletrica/laudo-aterramento/</loc>
+  </url>
+  <url>
+    <loc>https://www.ciniengenharia.com.br/servicos-engenharia-eletrica/calculo-atpv/</loc>
+  </url>
+  <url>
+    <loc>https://www.ciniengenharia.com.br/servicos-engenharia-eletrica/projeto-eletrico-industrial/</loc>
+  </url>
+  <url>
+    <loc>https://www.ciniengenharia.com.br/servicos-engenharia-eletrica/projeto-subestacao/</loc>
+  </url>
+  <url>
+    <loc>https://www.ciniengenharia.com.br/servicos-engenharia-eletrica/projeto-spda/</loc>
+  </url>
+  <url>
+    <loc>https://www.ciniengenharia.com.br/servicos-engenharia-eletrica/consultoria/</loc>
   </url>
 
 </urlset>

@@ -1,0 +1,1354 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!--
+=========================================================================
+  ANTES DE PUBLICAR — CHECKLIST
+=========================================================================
+  1. CONCESSIONÁRIA: a seção "Aprovação na concessionária" fala em
+     CEEE Equatorial e RGE. CONFIRME qual atende cada cidade sua.
+     A CEEE Equatorial atende 72 municípios, incluindo Porto Alegre e a
+     região metropolitana; a RGE (grupo CPFL) atende a maior parte do
+     restante do estado. ATENÇÃO: sua página de Cachoeirinha linka para
+     agências da RGE — verifique se está correto.
+  2. LIMITE DE 75 kW: o patamar de carga instalada que leva ao atendimento
+     em média tensão está citado na seção "Baixa ou média tensão".
+     CONFIRME o valor vigente na norma da SUA distribuidora antes de
+     publicar. Regra da distribuidora prevalece.
+  3. PRAZOS: "Como funciona" e FAQ. Coloque prazo real, inclusive o prazo
+     médio de análise da concessionária que VOCÊ observa na prática —
+     esse dado é ouro e ninguém publica.
+  4. ENDEREÇO: PostalAddress no JSON-LD com placeholder.
+  5. IMAGENS: arquivos ainda não existem em /assets/images/.
+  6. PREÇO: publique faixa ou critério de honorário se puder.
+=========================================================================
+-->
+
+<meta name="description" content="Projeto elétrico industrial conforme NBR 5410 e NBR 14039, com entrada de energia, subestação, estudos de curto-circuito e seletividade, aprovação na concessionária e ART no CREA. Dario Cini — CREA-RS 211.450.">
+
+<link rel="canonical" href="https://www.ciniengenharia.com.br/servicos-engenharia-eletrica/projeto-eletrico-industrial/">
+
+<link rel="icon" type="image/png" href="../../assets/images/favicon.png">
+
+<link rel="stylesheet" href="../../assets/css/menu.css">
+<link rel="stylesheet" href="../../assets/css/engenharia.css">
+
+<title>Projeto Elétrico Industrial — NBR 5410 e 14039 | Cini Engenharia</title>
+
+<!-- ===== Open Graph ===== -->
+<meta property="og:title" content="Projeto Elétrico Industrial — NBR 5410 e 14039 | Cini Engenharia">
+<meta property="og:description" content="Projeto elétrico industrial com entrada de energia, subestação, estudos elétricos, aprovação na concessionária e ART registrada no CREA.">
+<meta property="og:image" content="https://www.ciniengenharia.com.br/assets/images/projeto-eletrico-industrial.jpg">
+<meta property="og:url" content="https://www.ciniengenharia.com.br/servicos-engenharia-eletrica/projeto-eletrico-industrial/">
+<meta property="og:type" content="website">
+
+<!-- ===== JSON-LD ===== -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://www.ciniengenharia.com.br/#website",
+      "url": "https://www.ciniengenharia.com.br/",
+      "name": "Cini Engenharia",
+      "inLanguage": "pt-BR"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.ciniengenharia.com.br/servicos-engenharia-eletrica/projeto-eletrico-industrial/#webpage",
+      "url": "https://www.ciniengenharia.com.br/servicos-engenharia-eletrica/projeto-eletrico-industrial/",
+      "name": "Projeto Elétrico Industrial",
+      "isPartOf": {
+        "@id": "https://www.ciniengenharia.com.br/#website"
+      },
+      "about": {
+        "@id": "https://www.ciniengenharia.com.br/servicos-engenharia-eletrica/projeto-eletrico-industrial/#service"
+      },
+      "inLanguage": "pt-BR"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://www.ciniengenharia.com.br/servicos-engenharia-eletrica/projeto-eletrico-industrial/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Início",
+          "item": "https://www.ciniengenharia.com.br/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Engenheiro eletricista",
+          "item": "https://www.ciniengenharia.com.br/servicos/engenheiro-eletricista/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Projeto elétrico industrial"
+        }
+      ]
+    },
+    {
+      "@type": "Service",
+      "@id": "https://www.ciniengenharia.com.br/servicos-engenharia-eletrica/projeto-eletrico-industrial/#service",
+      "name": "Projeto elétrico industrial",
+      "alternateName": [
+        "Projeto elétrico de galpão",
+        "Projeto de entrada de energia",
+        "Projeto elétrico de baixa e média tensão"
+      ],
+      "serviceType": "Projeto de instalações elétricas industriais em baixa e média tensão",
+      "description": "Projeto elétrico industrial conforme ABNT NBR 5410 e NBR 14039, com entrada de energia, subestação, distribuição, estudos de curto-circuito e seletividade, aprovação junto à concessionária e ART registrada no CREA.",
+      "provider": {
+        "@id": "https://www.ciniengenharia.com.br/#localbusiness"
+      },
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Caxias do Sul",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Serra Gaúcha"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Bento Gonçalves",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Serra Gaúcha"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Farroupilha",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Serra Gaúcha"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Garibaldi",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Serra Gaúcha"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Carlos Barbosa",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Serra Gaúcha"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Guaporé",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Serra Gaúcha"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Lajeado",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Vale do Taquari"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Montenegro",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Vale do Caí"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Novo Hamburgo",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Vale dos Sinos"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "São Leopoldo",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Vale dos Sinos"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Porto Alegre",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Grande Porto Alegre"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Canoas",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Grande Porto Alegre"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Cachoeirinha",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Grande Porto Alegre"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Gravataí",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Grande Porto Alegre"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        }
+      ]
+    },
+    {
+      "@type": [
+        "ProfessionalService",
+        "Electrician"
+      ],
+      "@id": "https://www.ciniengenharia.com.br/#localbusiness",
+      "name": "Cini Engenharia",
+      "legalName": "Cini Engenharia",
+      "taxID": "25.268.313/0001-56",
+      "url": "https://www.ciniengenharia.com.br/",
+      "image": "https://www.ciniengenharia.com.br/assets/images/projeto-eletrico-industrial.jpg",
+      "email": "contato@ciniengenharia.com.br",
+      "telephone": "+55-51-99961-3451",
+      "priceRange": "$$",
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "telephone": "+55-54-99947-5010",
+          "contactType": "customer service",
+          "areaServed": [
+            "Serra Gaúcha"
+          ],
+          "availableLanguage": "Portuguese"
+        },
+        {
+          "@type": "ContactPoint",
+          "telephone": "+55-51-99961-3451",
+          "contactType": "customer service",
+          "areaServed": [
+            "Vale do Taquari",
+            "Vale do Caí",
+            "Vale dos Sinos",
+            "Grande Porto Alegre"
+          ],
+          "availableLanguage": "Portuguese"
+        }
+      ],
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Caxias do Sul",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Serra Gaúcha"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Bento Gonçalves",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Serra Gaúcha"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Farroupilha",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Serra Gaúcha"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Garibaldi",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Serra Gaúcha"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Carlos Barbosa",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Serra Gaúcha"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Guaporé",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Serra Gaúcha"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Lajeado",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Vale do Taquari"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Montenegro",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Vale do Caí"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Novo Hamburgo",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Vale dos Sinos"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "São Leopoldo",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Vale dos Sinos"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Porto Alegre",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Grande Porto Alegre"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Canoas",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Grande Porto Alegre"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Cachoeirinha",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Grande Porto Alegre"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Gravataí",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Grande Porto Alegre"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        }
+      ],
+      "founder": {
+        "@type": "Person",
+        "name": "Dario Cini",
+        "jobTitle": "Engenheiro Eletricista",
+        "sameAs": [
+          "https://www.linkedin.com/in/dario-cini-38a3303a1/"
+        ]
+      },
+      "sameAs": [
+        "https://www.linkedin.com/in/dario-cini-38a3303a1/"
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.ciniengenharia.com.br/servicos-engenharia-eletrica/projeto-eletrico-industrial/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Preciso de projeto elétrico para aumentar a carga da minha indústria?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sim. Aumento de carga é solicitação formal junto à concessionária e exige projeto assinado por profissional habilitado, com ART. A distribuidora precisa avaliar se a rede existente suporta a nova demanda e se a entrada de energia atual comporta o acréscimo. Comprar máquina antes de verificar a viabilidade de carga é o erro mais caro que se vê em ampliação industrial."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quem aprova o projeto elétrico industrial?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A parte de entrada de energia é aprovada pela concessionária de distribuição — no Rio Grande do Sul, CEEE Equatorial ou RGE, conforme o município. A instalação interna não é aprovada pela distribuidora: ela é de responsabilidade técnica do engenheiro que assina a ART, e pode ser exigida em licenciamento, auditoria, fiscalização do trabalho ou por seguradora."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "A partir de quanto preciso de subestação e média tensão?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Acima de um determinado patamar de carga instalada, a concessionária deixa de atender em baixa tensão e passa a exigir entrada em média tensão com subestação própria. O limite é definido pela norma técnica da distribuidora e deve ser confirmado caso a caso. Esse ponto muda completamente o custo e o prazo do empreendimento, e é a primeira coisa a verificar em qualquer projeto de ampliação."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Qual a diferença entre projeto elétrico e projeto de entrada de energia?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "O projeto de entrada de energia trata do ponto de conexão com a rede da concessionária: padrão de entrada, medição, proteção geral e, quando for o caso, subestação. É o que vai para aprovação da distribuidora. O projeto elétrico industrial é mais amplo: cobre toda a instalação interna, da distribuição principal aos circuitos terminais. Quem constrói ou amplia precisa dos dois."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Preciso de estudo de curto-circuito e seletividade?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sempre que houver subestação própria ou quadros com vários níveis de proteção. Sem o estudo, não há como garantir que a proteção mais próxima do defeito atue primeiro — o resultado é a instalação inteira desligando por uma falha localizada. O estudo também define a capacidade de interrupção mínima dos disjuntores e é a base para o cálculo de energia incidente de arco elétrico."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "O projeto elétrico serve para o prontuário da NR-10?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ele é parte do prontuário, não o prontuário inteiro. A NR-10 exige, entre outros itens, diagramas unifilares atualizados com as especificações do sistema de aterramento e demais equipamentos de proteção. Um projeto atualizado e um as built confiável resolvem boa parte dessa exigência — mas o prontuário reúne também procedimentos, documentação de treinamentos e registros de inspeção."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "O que costuma fazer a concessionária reprovar um projeto?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Na prática, quase sempre a mesma lista: divergência entre carga declarada e memorial, padrão de entrada fora da norma técnica da distribuidora, ausência ou inadequação do aterramento, dimensionamento de proteção incompatível com o ponto de entrega e documentação incompleta. Reprovação custa prazo, não dinheiro — mas prazo, em obra industrial, costuma custar mais caro."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "O projeto sai com ART?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sim. Todo projeto sai com Anotação de Responsabilidade Técnica registrada no CREA, assinada por engenheiro eletricista habilitado. A concessionária não protocola solicitação sem ART, e a instalação não se sustenta em auditoria ou fiscalização sem responsável técnico identificado."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+<!-- ===== Estilos apenas dos componentes novos desta página ===== -->
+<style>
+  .spda-destaque{ border-left:4px solid currentColor; padding:1rem 1.25rem; margin:1.5rem 0; opacity:.95; }
+  .spda-etapas{ list-style:none; padding:0; margin:1.5rem 0; counter-reset:spda; }
+  .spda-etapas li{ counter-increment:spda; padding:.75rem 0 .75rem 3rem; position:relative; border-bottom:1px solid rgba(128,128,128,.25); }
+  .spda-etapas li:last-child{ border-bottom:none; }
+  .spda-etapas li::before{ content:counter(spda); position:absolute; left:0; top:.75rem; width:2rem; height:2rem; line-height:2rem; text-align:center; border-radius:50%; border:1px solid currentColor; font-size:.9rem; font-weight:700; }
+  .spda-cta{ margin:2rem 0; display:flex; flex-wrap:wrap; gap:.75rem; }
+  .spda-cta a{ display:inline-block; padding:.85rem 1.5rem; border:2px solid currentColor; border-radius:4px; text-decoration:none; font-weight:700; }
+  .spda-faq-item{ border-bottom:1px solid rgba(128,128,128,.25); padding:.5rem 0; }
+  .spda-faq-item summary{ cursor:pointer; font-weight:700; padding:.75rem 0; }
+  .spda-faq-item summary:focus-visible{ outline:2px solid currentColor; outline-offset:2px; }
+  .spda-faq-item p{ margin:0 0 1rem 0; }
+  .spda-cidades a{ display:inline-block; margin:.25rem .5rem .25rem 0; }
+  .spda-tabela{ width:100%; border-collapse:collapse; margin:1.5rem 0; }
+  .spda-tabela th, .spda-tabela td{ text-align:left; padding:.75rem .5rem; border-bottom:1px solid rgba(128,128,128,.3); vertical-align:top; }
+  .spda-tabela th{ font-weight:700; }
+  .spda-regioes{ list-style:none; padding:0; margin:1.25rem 0; }
+  .spda-regioes li{ padding:.75rem 0; border-bottom:1px solid rgba(128,128,128,.2); }
+  .spda-regioes li:last-child{ border-bottom:none; }
+  .spda-regioes small{ opacity:.7; font-weight:400; }
+  .spda-fones{ margin:1rem 0; }
+  .spda-fones div{ padding:.35rem 0; }
+  @media (prefers-reduced-motion: reduce){ *{ animation:none !important; transition:none !important; } }
+</style>
+
+</head>
+<body class="engenharia">
+
+<!-- ===== MENU DINÂMICO ===== -->
+<div id="menu"></div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  fetch("/menu.html")
+    .then(response => {
+      if (!response.ok) { throw new Error("Erro ao carregar menu.html"); }
+      return response.text();
+    })
+    .then(data => {
+      document.getElementById("menu").innerHTML = data;
+      const toggle = document.querySelector(".menu-toggle");
+      const links = document.querySelector(".menu-links");
+      if (toggle && links) {
+        toggle.addEventListener("click", function() {
+          links.classList.toggle("open");
+          toggle.classList.toggle("open");
+        });
+      }
+    })
+    .catch(error => { console.error("Erro no menu:", error); });
+});
+</script>
+<!-- ===== FIM MENU DINÂMICO ===== -->
+
+
+<!-- ===== ABERTURA ===== -->
+<section class="hero">
+
+  <div class="hero-text">
+
+    <h1>
+      <span class="linha1">Projeto Elétrico</span>
+      <span class="cidade">Industrial</span>
+    </h1>
+
+    <p>
+      <strong>Da entrada de energia ao último circuito terminal, conforme
+      ABNT NBR 5410 e NBR 14039, com ART registrada no CREA.</strong>
+    </p>
+
+    <p>
+      Projeto elétrico industrial não é planta de tomadas. É o documento que
+      define se a sua instalação vai suportar a carga que você pretende instalar,
+      se a proteção vai atuar onde deve atuar e se a concessionária vai liberar o
+      fornecimento no prazo da sua obra.
+    </p>
+
+    <p>
+      Engenheiro eletricista <strong>Dario Cini — CREA-RS 211.450</strong><br>
+      Telefones:<br>
+      <strong>(54) 99947-5010</strong> — Serra Gaúcha<br>
+      <strong>(51) 99961-3451</strong> — Vales do Taquari, Caí e Sinos, Grande Porto Alegre<br>
+      E-mail: contato@ciniengenharia.com.br
+    </p>
+
+    <div class="spda-cta">
+      <a href="https://wa.me/5551999613451" target="_blank" rel="noopener">Solicitar proposta</a>
+      <a href="#viabilidade">Verificar viabilidade de carga</a>
+    </div>
+
+  </div>
+
+  <div class="hero-image">
+    <!-- [PREENCHER] Foto real: painel, subestação, obra sua -->
+    <img src="../../assets/images/projeto-eletrico-industrial.jpg"
+         alt="Projeto elétrico industrial conforme NBR 5410 e NBR 14039 — Cini Engenharia"
+         title="Projeto elétrico industrial">
+  </div>
+
+</section>
+<!-- ===== FIM ABERTURA ===== -->
+
+
+<!-- ===== QUANDO PRECISA ===== -->
+<section class="hero">
+
+  <div class="hero-text">
+
+    <h2>Quando o projeto é necessário</h2>
+
+    <ul>
+      <li><strong>Nova unidade industrial ou galpão</strong> — do padrão de entrada à distribuição interna</li>
+      <li><strong>Aumento de carga</strong> — solicitação formal à concessionária, que exige projeto e ART</li>
+      <li><strong>Instalação de máquina nova</strong> que não cabe na infraestrutura existente</li>
+      <li><strong>Mudança de endereço ou ocupação de galpão locado</strong>, onde a instalação existente foi feita para outra atividade</li>
+      <li><strong>Regularização</strong> de instalação executada sem projeto ou modificada ao longo dos anos</li>
+      <li><strong>Adequação à NR-10</strong>, quando os diagramas do prontuário não correspondem mais ao que está instalado</li>
+      <li><strong>Exigência de seguradora, auditoria ou cliente</strong> em due diligence</li>
+    </ul>
+
+    <div class="spda-destaque" id="viabilidade">
+      <p>
+        <strong>Antes de comprar a máquina, verifique a carga.</strong> A pergunta
+        que evita o prejuízo mais caro de uma ampliação é simples: a entrada de
+        energia atual suporta o que você pretende instalar, e a rede da
+        concessionária no seu ponto de entrega comporta o acréscimo? Responder isso
+        leva pouco tempo — descobrir depois, com o equipamento no pátio, custa meses.
+      </p>
+    </div>
+
+  </div>
+
+  <div class="hero-image">
+    <img src="../../assets/images/projeto-eletrico-industrial-quando.jpg"
+         alt="Quando o projeto elétrico industrial é necessário">
+  </div>
+
+</section>
+<!-- ===== FIM QUANDO PRECISA ===== -->
+
+
+<!-- ===== O QUE CONTEMPLA ===== -->
+<section class="hero">
+
+  <div class="hero-text">
+
+    <h2>O que o projeto contempla</h2>
+
+    <h3>Entrada de energia e medição</h3>
+    <p>
+      Padrão de entrada conforme a norma técnica da distribuidora, dimensionamento
+      do ramal, medição e proteção geral. É a parte que vai para aprovação da
+      concessionária e a que define o prazo de liberação do fornecimento.
+    </p>
+
+    <h3>Subestação, quando aplicável</h3>
+    <p>
+      Transformador, cubículos de média tensão, proteção primária, malha de terra e
+      arranjo físico conforme a NBR 14039. Inclui a definição do tipo de subestação
+      — abrigada, ao tempo ou em poste — conforme a carga e o espaço disponível.
+    </p>
+
+    <h3>Distribuição de baixa tensão</h3>
+    <p>
+      Quadro geral, quadros de distribuição, barramentos, circuitos de força e de
+      iluminação, dimensionamento de condutores e de dispositivos de proteção
+      conforme a NBR 5410. Com critério de queda de tensão verificado do ponto de
+      entrega até o circuito mais distante.
+    </p>
+
+    <h3>Aterramento e equipotencialização</h3>
+    <p>
+      Malha, barramento de equipotencialização principal, ligação das massas e
+      interface com o SPDA da edificação. Aterramento mal resolvido em projeto vira
+      não conformidade em laudo e problema de operação em equipamento sensível.
+    </p>
+
+    <h3>Documentação técnica</h3>
+    <p>
+      Diagramas unifilares, plantas de eletrodutos e eletrocalhas, detalhes
+      construtivos, memorial descritivo, memorial de cálculo e lista de materiais.
+      A lista de materiais é o que permite ao seu comprador cotar sem adivinhar.
+    </p>
+
+  </div>
+
+  <div class="hero-image">
+    <img src="../../assets/images/projeto-eletrico-industrial-escopo.jpg"
+         alt="Escopo do projeto elétrico industrial">
+  </div>
+
+</section>
+<!-- ===== FIM O QUE CONTEMPLA ===== -->
+
+
+<!-- ===== ESTUDOS ===== -->
+<section class="hero">
+
+  <div class="hero-text">
+
+    <h2>Estudos elétricos complementares</h2>
+
+    <p>
+      É aqui que um projeto industrial se separa de um projeto predial ampliado.
+      Instalação com subestação própria e vários níveis de proteção exige cálculo,
+      não catálogo.
+    </p>
+
+    <h3>Curto-circuito</h3>
+    <p>
+      Determina as correntes de defeito em cada ponto da instalação. Define a
+      capacidade de interrupção mínima dos disjuntores e a suportabilidade térmica
+      dos condutores. Sem esse cálculo, especificar proteção é chute.
+    </p>
+
+    <h3>Seletividade e coordenação</h3>
+    <p>
+      Garante que a proteção mais próxima do defeito atue primeiro. É o que impede
+      que uma falha em um circuito derrube a fábrica inteira — e é justamente o que
+      falta na maioria das instalações que cresceram por puxadinho.
+    </p>
+
+    <h3>Correção de fator de potência</h3>
+    <p>
+      Dimensionamento de banco de capacitores, com atenção a harmônicos e ao risco
+      de ressonância. Elimina a cobrança de reativo excedente na fatura e libera
+      capacidade da instalação existente.
+    </p>
+
+    <h3>Energia incidente de arco elétrico</h3>
+    <p>
+      Base para a definição do ATPV da vestimenta e da delimitação das zonas de
+      risco exigidas pela NR-10. Depende diretamente do estudo de curto-circuito e
+      dos tempos de atuação da proteção.
+      <br>
+      <a href="/servicos-engenharia-eletrica/calculo-atpv/">Saiba mais sobre o cálculo de ATPV</a>
+    </p>
+
+  </div>
+
+  <div class="hero-image">
+    <img src="../../assets/images/projeto-eletrico-industrial-estudos.jpg"
+         alt="Estudos de curto-circuito e seletividade">
+  </div>
+
+</section>
+<!-- ===== FIM ESTUDOS ===== -->
+
+
+<!-- ===== CONCESSIONÁRIA ===== -->
+<section class="hero">
+
+  <div class="hero-text">
+
+    <h2>Aprovação na concessionária</h2>
+
+    <p>
+      Entregar o projeto é metade do trabalho. A outra metade é ele passar na
+      análise da distribuidora sem voltar três vezes.
+    </p>
+
+    <p>
+      No Rio Grande do Sul, a distribuidora varia conforme o município: a
+      <strong>CEEE Equatorial</strong> atende 72 municípios, incluindo Porto Alegre
+      e a região metropolitana, e a <strong>RGE</strong>, do grupo CPFL, atende a
+      maior parte do restante do estado. Cada uma tem sua própria norma técnica de
+      fornecimento, seu formulário e seu fluxo de protocolo.
+      <!--
+        [PREENCHER] CONFIRME qual distribuidora atende cada cidade que você
+        atende. Sua página de Cachoeirinha aponta para agências da RGE —
+        verifique se procede. Errar a distribuidora nesta página destrói a
+        credibilidade justamente com o leitor que mais entende do assunto.
+      -->
+    </p>
+
+    <p>Acompanhamos o processo do protocolo à liberação:</p>
+
+    <ul>
+      <li>enquadramento conforme a norma técnica da distribuidora que atende o seu endereço</li>
+      <li>montagem e protocolo da documentação</li>
+      <li>resposta a exigências e reapresentação, quando houver</li>
+      <li>acompanhamento até a carta de aprovação e a liberação do fornecimento</li>
+    </ul>
+
+    <h3>O que costuma reprovar</h3>
+    <p>
+      Na prática, quase sempre a mesma lista: divergência entre a carga declarada e
+      o memorial de cálculo, padrão de entrada fora da norma da distribuidora,
+      aterramento ausente ou subdimensionado, proteção incompatível com o ponto de
+      entrega e documentação incompleta. Nenhuma dessas custa dinheiro para
+      corrigir — custa prazo. E prazo, em obra industrial, é o item mais caro da
+      planilha.
+      <!-- [PREENCHER] Se você tiver um prazo médio de análise observado na prática, publique. Ninguém publica esse dado e ele vale muito para quem está planejando obra. -->
+    </p>
+
+  </div>
+
+  <div class="hero-image">
+    <img src="../../assets/images/projeto-eletrico-industrial-concessionaria.jpg"
+         alt="Aprovação de projeto na concessionária de energia">
+  </div>
+
+</section>
+<!-- ===== FIM CONCESSIONÁRIA ===== -->
+
+
+<!-- ===== BT x MT ===== -->
+<section class="hero">
+
+  <div class="hero-text">
+
+    <h2>Baixa ou média tensão?</h2>
+
+    <p>
+      Essa é a primeira definição de qualquer projeto industrial, porque ela muda o
+      custo, o prazo e a complexidade de tudo o que vem depois.
+    </p>
+
+    <table class="spda-tabela">
+      <thead>
+        <tr><th scope="col">Atendimento</th><th scope="col">O que implica</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Baixa tensão</strong></td>
+          <td>
+            Padrão de entrada convencional, sem subestação própria. Projeto conforme
+            NBR 5410. Prazo de aprovação e custo de implantação menores.
+          </td>
+        </tr>
+        <tr>
+          <td><strong>Média tensão</strong></td>
+          <td>
+            Subestação própria, com transformador, cubículos e proteção primária.
+            Projeto conforme NBR 14039 além da NBR 5410. Exige área específica,
+            malha de terra dedicada e, geralmente, contrato de demanda com a
+            distribuidora.
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>
+      O que define em qual faixa você cai é a carga instalada, e o limite consta na
+      norma técnica da sua distribuidora. Vale confirmar caso a caso antes de
+      qualquer decisão de investimento.
+      <!--
+        [PREENCHER] O patamar usualmente aplicado é 75 kW de carga instalada,
+        acima do qual o atendimento passa a ser em média tensão. CONFIRME o
+        valor vigente na norma da distribuidora que atende você e, se
+        confirmar, escreva o número aqui — número concreto converte muito
+        mais que texto genérico, e essa é uma busca de alta intenção.
+      -->
+    </p>
+
+  </div>
+
+  <div class="hero-image">
+    <img src="../../assets/images/projeto-eletrico-industrial-subestacao.jpg"
+         alt="Subestação e atendimento em média tensão">
+  </div>
+
+</section>
+<!-- ===== FIM BT x MT ===== -->
+
+
+<!-- ===== PARA QUEM ===== -->
+<section class="servicos">
+
+  <h2>Para quem é</h2>
+
+  <div class="servicos-grid">
+
+    <div class="servico">
+      <img src="../../assets/images/projeto-eletrico-industrial-nova-planta.jpg" alt="Projeto elétrico para nova planta industrial">
+      <p>Indústrias construindo nova planta ou galpão</p>
+    </div>
+
+    <div class="servico">
+      <img src="../../assets/images/projeto-eletrico-industrial-ampliacao.jpg" alt="Projeto elétrico para ampliação">
+      <p>Quem vai ampliar produção e precisa de aumento de carga</p>
+    </div>
+
+    <div class="servico">
+      <img src="../../assets/images/projeto-eletrico-industrial-maquina.jpg" alt="Projeto elétrico para nova máquina">
+      <p>Quem comprou máquina nova e precisa saber se a instalação suporta</p>
+    </div>
+
+    <div class="servico">
+      <img src="../../assets/images/projeto-eletrico-industrial-locacao.jpg" alt="Projeto elétrico para galpão locado">
+      <p>Quem vai ocupar galpão locado com instalação feita para outra atividade</p>
+    </div>
+
+    <div class="servico">
+      <img src="../../assets/images/projeto-eletrico-industrial-regularizacao.jpg" alt="Regularização de instalação elétrica">
+      <p>Instalações que cresceram sem projeto e precisam ser regularizadas</p>
+    </div>
+
+    <div class="servico">
+      <img src="../../assets/images/projeto-eletrico-industrial-nr10.jpg" alt="Atualização de prontuário NR-10">
+      <p>Empresas com prontuário de NR-10 desatualizado em relação ao que está instalado</p>
+    </div>
+
+  </div>
+
+</section>
+<!-- ===== FIM PARA QUEM ===== -->
+
+
+<!-- ===== COMO FUNCIONA ===== -->
+<section class="hero">
+
+  <div class="hero-text">
+
+    <h2>Como funciona</h2>
+
+    <ol class="spda-etapas">
+      <li>
+        <strong>Levantamento de carga e da situação atual</strong><br>
+        Relação de equipamentos, potências, regime de operação e o que existe hoje
+        de entrada de energia e distribuição.
+      </li>
+      <li>
+        <strong>Verificação de viabilidade</strong><br>
+        Se a entrada atual suporta a carga pretendida e se o atendimento será em
+        baixa ou média tensão. É aqui que se descobre, cedo, se o projeto muda de
+        porte.
+      </li>
+      <li>
+        <strong>Proposta com escopo, prazo e valor</strong><br>
+        Por escrito, com o que está e o que não está incluído.
+        <!-- [PREENCHER] prazo para envio da proposta -->
+      </li>
+      <li>
+        <strong>Anteprojeto e validação</strong><br>
+        Concepção, arranjo e definições principais validadas com você antes do
+        detalhamento — quando ainda é barato mudar de ideia.
+      </li>
+      <li>
+        <strong>Projeto executivo e estudos</strong><br>
+        Diagramas, plantas, memoriais, lista de materiais e os estudos elétricos
+        aplicáveis.
+      </li>
+      <li>
+        <strong>Protocolo e acompanhamento na concessionária</strong><br>
+        Até a carta de aprovação, respondendo às exigências que surgirem.
+      </li>
+      <li>
+        <strong>Suporte durante a execução e as built</strong><br>
+        Esclarecimento técnico ao instalador e atualização do projeto conforme o
+        que foi efetivamente construído.
+        <!-- [PREENCHER] Deixe claro se as built está incluso ou é escopo à parte -->
+      </li>
+    </ol>
+
+  </div>
+
+  <div class="hero-image">
+    <img src="../../assets/images/projeto-eletrico-industrial-processo.jpg"
+         alt="Etapas do projeto elétrico industrial">
+  </div>
+
+</section>
+<!-- ===== FIM COMO FUNCIONA ===== -->
+
+
+<!-- ===== PREÇO ===== -->
+<section class="hero">
+
+  <div class="hero-text">
+
+    <h2>O que faz o preço variar</h2>
+
+    <ul>
+      <li><strong>Carga instalada e demanda</strong> — o principal fator</li>
+      <li><strong>Baixa ou média tensão</strong> — subestação muda o porte do projeto</li>
+      <li><strong>Área construída e número de quadros</strong></li>
+      <li><strong>Instalação nova ou existente</strong> — a existente exige levantamento em campo</li>
+      <li><strong>Estudos incluídos</strong> — curto-circuito, seletividade, fator de potência, arco elétrico</li>
+      <li><strong>Presença de área classificada</strong>, que exige critério específico</li>
+      <li><strong>Acompanhamento na concessionária</strong>, se incluso no escopo</li>
+      <li><strong>Nível de detalhamento</strong> — anteprojeto, executivo ou as built</li>
+    </ul>
+
+    <p>
+      Com a relação de cargas, a planta baixa e o endereço, é possível fechar
+      escopo e valor sem visita inicial.
+      <!-- [PREENCHER] Faixa de honorários ou critério (por kW, por m², por hora técnica). -->
+    </p>
+
+  </div>
+
+  <div class="hero-image">
+    <img src="../../assets/images/projeto-eletrico-industrial-orcamento.jpg"
+         alt="Orçamento de projeto elétrico industrial">
+  </div>
+
+</section>
+<!-- ===== FIM PREÇO ===== -->
+
+
+<!-- ===== QUEM ASSINA ===== -->
+<section class="hero">
+
+  <div class="hero-text">
+
+    <h2>Quem assina o projeto</h2>
+
+    <p>
+      <strong>Dario Cini</strong>, engenheiro eletricista formado pela Universidade
+      de Caxias do Sul, com mais de 10 anos de atuação em engenharia elétrica no eixo entre a
+      Serra Gaúcha e a Grande Porto Alegre.
+    </p>
+
+    <p>
+      <strong>CREA:</strong> RS 211.450 —
+      <a href="https://www.crea-rs.org.br/site/" target="_blank" rel="noopener noreferrer nofollow">
+        consulta pública no CREA-RS
+      </a>
+    </p>
+
+    <p>
+      <strong>Cini Engenharia</strong> — CNPJ 25.268.313/0001-56 —
+      <a href="https://solucoes.receita.fazenda.gov.br/servicos/cnpjreva/cnpjreva_solicitacao.asp"
+         target="_blank" rel="noopener noreferrer">Consultar CNPJ</a>
+    </p>
+
+    <p>
+      <strong>LinkedIn:</strong>
+      <a href="https://www.linkedin.com/in/dario-cini-38a3303a1/"
+         target="_blank" rel="noopener noreferrer">Dario Cini — Ver perfil</a>
+    </p>
+
+    <p>
+      Projeto de engenharia com memorial de cálculo, não desenho decorativo.
+      Cada dimensionamento tem o critério normativo que o embasa, de forma que
+      outro engenheiro possa auditar o trabalho.
+    </p>
+
+  </div>
+
+  <div class="hero-image">
+    <img src="../../assets/images/engenheiro-eletricista-crea.jpg"
+         alt="Dario Cini — engenheiro eletricista CREA-RS 211.450">
+  </div>
+
+</section>
+<!-- ===== FIM QUEM ASSINA ===== -->
+
+
+<!-- ===== SERVIÇOS RELACIONADOS ===== -->
+<section class="secao-full">
+  <div class="hero-text">
+    <h2>Serviços relacionados</h2>
+    <p>
+      Todos os serviços e áreas de atendimento estão reunidos na página do
+      <a href="/servicos/engenheiro-eletricista/">engenheiro eletricista</a>.
+    </p>
+    <a href="/servicos-engenharia-eletrica/projeto-subestacao/">Projeto de subestação</a>
+    <span>|</span>
+    <a href="/servicos-engenharia-eletrica/calculo-atpv/">Cálculo de ATPV</a>
+    <span>|</span>
+    <a href="/servicos-engenharia-eletrica/laudo-instalacoes-eletricas/">Laudo das instalações elétricas</a>
+    <span>|</span>
+    <a href="/servicos-engenharia-eletrica/projeto-spda/">Projeto de SPDA</a>
+    <span>|</span>
+    <a href="/servicos-engenharia-eletrica/termografia/">Termografia</a>
+    <span>|</span>
+    <a href="/servicos-engenharia-eletrica/consultoria/">Consultoria</a>
+    <span>|</span>
+    <a href="/servicos-engenharia-eletrica/laudo-aterramento/">Laudo de aterramento</a>
+    <span>|</span>
+    <a href="/servicos-engenharia-eletrica/laudo-spda/">Laudo de SPDA</a>
+  </div>
+</section>
+<!-- ===== FIM SERVIÇOS RELACIONADOS ===== -->
+
+
+<!-- ===== ÁREA DE ATENDIMENTO ===== -->
+<section class="secao-full">
+  <div class="hero-text spda-cidades">
+    <h2>Onde atendemos</h2>
+    <p>
+      Atendimento presencial no eixo entre a Serra Gaúcha e a Grande Porto
+      Alegre, acompanhando os vales do Taquari, do Caí e do Sinos.
+    </p>
+    <ul class="spda-regioes">
+      <li><strong>Serra Gaúcha</strong> <small>(DDD 54)</small><br>
+        <a href="/servicos/engenheiro-eletricista-caxias-do-sul/">Caxias do Sul</a> <span>|</span>
+        <a href="/servicos/engenheiro-eletricista-bento-goncalves/">Bento Gonçalves</a> <span>|</span>
+        <a href="/servicos/engenheiro-eletricista-farroupilha/">Farroupilha</a> <span>|</span>
+        <a href="/servicos/engenheiro-eletricista-garibaldi/">Garibaldi</a> <span>|</span>
+        <a href="/servicos/engenheiro-eletricista-carlos-barbosa/">Carlos Barbosa</a> <span>|</span>
+        Guaporé
+      </li>
+      <li><strong>Vale do Taquari</strong> <small>(DDD 51)</small><br>
+        <a href="/servicos/engenheiro-eletricista-lajeado/">Lajeado</a>
+      </li>
+      <li><strong>Vale do Caí</strong> <small>(DDD 51)</small><br>
+        <a href="/servicos/engenheiro-eletricista-montenegro/">Montenegro</a>
+      </li>
+      <li><strong>Vale dos Sinos</strong> <small>(DDD 51)</small><br>
+        <a href="/servicos/engenheiro-eletricista-novo-hamburgo/">Novo Hamburgo</a> <span>|</span>
+        <a href="/servicos/engenheiro-eletricista-sao-leopoldo/">São Leopoldo</a>
+      </li>
+      <li><strong>Grande Porto Alegre</strong> <small>(DDD 51)</small><br>
+        <a href="/servicos/engenheiro-eletricista-porto-alegre/">Porto Alegre</a> <span>|</span>
+        <a href="/servicos/engenheiro-eletricista-canoas/">Canoas</a> <span>|</span>
+        <a href="/servicos/engenheiro-eletricista-cachoeirinha/">Cachoeirinha</a> <span>|</span>
+        <a href="/servicos/engenheiro-eletricista-gravatai/">Gravataí</a>
+      </li>
+    </ul>
+    <!-- [PREENCHER] Guaporé ainda não tem página. Ao criar, transforme em link. -->
+  </div>
+</section>
+<!-- ===== FIM ÁREA DE ATENDIMENTO ===== -->
+
+
+<!-- ===== FAQ ===== -->
+<section class="faq">
+
+  <div class="hero-text">
+
+    <h2>Dúvidas frequentes sobre <strong>projeto elétrico industrial</strong></h2>
+
+    <details class="spda-faq-item">
+      <summary>Preciso de projeto elétrico para aumentar a carga da minha indústria?</summary>
+      <p>
+        Sim. Aumento de carga é solicitação formal junto à concessionária e exige
+        projeto assinado por profissional habilitado, com ART. A distribuidora
+        precisa avaliar se a rede existente suporta a nova demanda e se a entrada de
+        energia atual comporta o acréscimo. Comprar máquina antes de verificar a
+        viabilidade de carga é o erro mais caro que se vê em ampliação industrial.
+      </p>
+    </details>
+
+    <details class="spda-faq-item">
+      <summary>Quem aprova o projeto elétrico industrial?</summary>
+      <p>
+        A parte de entrada de energia é aprovada pela concessionária de distribuição
+        — no Rio Grande do Sul, CEEE Equatorial ou RGE, conforme o município. Já a
+        instalação interna não é aprovada pela distribuidora: ela é de
+        responsabilidade técnica do engenheiro que assina a ART, e pode ser exigida
+        em licenciamento, auditoria, fiscalização do trabalho ou por seguradora.
+      </p>
+    </details>
+
+    <details class="spda-faq-item">
+      <summary>A partir de quanto preciso de subestação e média tensão?</summary>
+      <p>
+        Acima de um determinado patamar de carga instalada, a concessionária deixa
+        de atender em baixa tensão e passa a exigir entrada em média tensão com
+        subestação própria. O limite é definido pela norma técnica da distribuidora
+        e deve ser confirmado caso a caso. Esse ponto muda completamente o custo e o
+        prazo do empreendimento, e é a primeira coisa a verificar em qualquer
+        projeto de ampliação.
+      </p>
+    </details>
+
+    <details class="spda-faq-item">
+      <summary>Qual a diferença entre projeto elétrico e projeto de entrada de energia?</summary>
+      <p>
+        O projeto de entrada de energia trata do ponto de conexão com a rede da
+        concessionária: padrão de entrada, medição, proteção geral e, quando for o
+        caso, subestação. É o que vai para aprovação da distribuidora. O projeto
+        elétrico industrial é mais amplo — cobre toda a instalação interna, da
+        distribuição principal aos circuitos terminais. Quem constrói ou amplia
+        precisa dos dois.
+      </p>
+    </details>
+
+    <details class="spda-faq-item">
+      <summary>Preciso de estudo de curto-circuito e seletividade?</summary>
+      <p>
+        Sempre que houver subestação própria ou quadros com vários níveis de
+        proteção. Sem o estudo, não há como garantir que a proteção mais próxima do
+        defeito atue primeiro — o resultado é a instalação inteira desligando por
+        uma falha localizada. O estudo também define a capacidade de interrupção
+        mínima dos disjuntores e é a base para o cálculo de energia incidente de
+        arco elétrico.
+      </p>
+    </details>
+
+    <details class="spda-faq-item">
+      <summary>O projeto elétrico serve para o prontuário da NR-10?</summary>
+      <p>
+        Ele é parte do prontuário, não o prontuário inteiro. A NR-10 exige, entre
+        outros itens, diagramas unifilares atualizados com as especificações do
+        sistema de aterramento e dos equipamentos de proteção. Um projeto atualizado
+        e um as built confiável resolvem boa parte dessa exigência — mas o
+        prontuário reúne também procedimentos, documentação de treinamentos e
+        registros de inspeção.
+      </p>
+    </details>
+
+    <details class="spda-faq-item">
+      <summary>O que costuma fazer a concessionária reprovar um projeto?</summary>
+      <p>
+        Quase sempre a mesma lista: divergência entre carga declarada e memorial,
+        padrão de entrada fora da norma técnica da distribuidora, ausência ou
+        inadequação do aterramento, dimensionamento de proteção incompatível com o
+        ponto de entrega e documentação incompleta. Reprovação custa prazo, não
+        dinheiro — mas prazo, em obra industrial, costuma custar mais caro.
+      </p>
+    </details>
+
+    <details class="spda-faq-item">
+      <summary>O projeto sai com ART?</summary>
+      <p>
+        Sim. Todo projeto sai com Anotação de Responsabilidade Técnica registrada no
+        CREA, assinada por engenheiro eletricista habilitado. A concessionária não
+        protocola solicitação sem ART, e a instalação não se sustenta em auditoria
+        ou fiscalização sem responsável técnico identificado.
+      </p>
+    </details>
+
+    <details class="spda-faq-item">
+      <summary>Quanto tempo leva o projeto e a aprovação?</summary>
+      <p>
+        <!-- [PREENCHER] Prazo real, separando o que depende de você do que depende da concessionária. -->
+        O prazo de elaboração depende do porte da instalação e é fechado na
+        proposta. Já o prazo de análise da concessionária não depende de nós, mas
+        acompanhamos o protocolo e respondemos às exigências para que ele não se
+        estenda mais que o necessário.
+      </p>
+    </details>
+
+  </div>
+
+</section>
+<!-- ===== FIM FAQ ===== -->
+
+
+<!-- ===== CHAMADA FINAL ===== -->
+<section class="hero">
+  <div class="hero-text">
+    <h2>Comece pela viabilidade de carga</h2>
+    <p>
+      Antes do projeto, a pergunta que define o investimento: a sua entrada de
+      energia suporta o que você pretende instalar? Envie a relação de cargas e o
+      endereço e receba essa resposta primeiro.
+    </p>
+    <div class="spda-cta">
+      <a href="https://wa.me/5551999613451" target="_blank" rel="noopener">Verificar viabilidade de carga</a>
+      <a href="mailto:contato@ciniengenharia.com.br">Solicitar proposta</a>
+    </div>
+  </div>
+</section>
+<!-- ===== FIM CHAMADA FINAL ===== -->
+
+</body>
+</html>

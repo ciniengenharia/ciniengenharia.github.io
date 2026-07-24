@@ -1,0 +1,1325 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!--
+=========================================================================
+  ANTES DE PUBLICAR — CHECKLIST
+=========================================================================
+  1. ATENÇÃO — ABNT NBR 15749:2009 (Medição de resistência de aterramento
+     e de potenciais na superfície do solo): há indicação em base de normas
+     de que esta edição foi CANCELADA. VERIFIQUE a situação atual e qual
+     norma a substituiu ANTES de publicar. Onde ela é citada, o texto usa
+     formulação neutra ("norma brasileira de medição") — confirme e ajuste.
+  2. Demais normas citadas, confirme edição vigente:
+     - ABNT NBR 7117:2020 — Medição de resistividade e estratificação do
+       solo (método dos quatro pontos / Wenner). Estabelece modelo básico
+       de solo em TRÊS camadas.
+     - ABNT NBR 15751 — Sistemas de aterramento de subestações. Estava em
+       revisão; confirme a edição vigente.
+     - ABNT NBR 5410 — instalações elétricas de baixa tensão
+     - ABNT NBR 5419-3 — SPDA (continuidade elétrica)
+     - ABNT NBR 16527 (aterramento para distribuição) e NBR 16254
+       (materiais para aterramento), se aplicável ao seu escopo.
+  3. INSTRUMENTOS: se você usa terrômetro de alta frequência, cite o
+     modelo/faixa. Nesta página, instrumento é argumento de credibilidade.
+  4. PRAZOS, PREÇO, ENDEREÇO e IMAGENS: pendentes.
+=========================================================================
+-->
+
+<meta name="description" content="Laudo de aterramento com medição em campo, análise conforme a finalidade do sistema e ART no CREA. Resistência, resistividade, continuidade e equipotencialização. Dario Cini — CREA-RS 211.450.">
+
+<link rel="canonical" href="https://www.ciniengenharia.com.br/servicos-engenharia-eletrica/laudo-aterramento/">
+
+<link rel="icon" type="image/png" href="../../assets/images/favicon.png">
+
+<link rel="stylesheet" href="../../assets/css/menu.css">
+<link rel="stylesheet" href="../../assets/css/engenharia.css">
+
+<title>Laudo de Aterramento — medição, critério e ART | Cini Engenharia</title>
+
+<!-- ===== Open Graph ===== -->
+<meta property="og:title" content="Laudo de Aterramento — medição, critério e ART | Cini Engenharia">
+<meta property="og:description" content="Laudo de aterramento com medição em campo e critério de aprovação conforme a finalidade do sistema, com ART registrada no CREA.">
+<meta property="og:image" content="https://www.ciniengenharia.com.br/assets/images/laudo-aterramento-eletrico.jpg">
+<meta property="og:url" content="https://www.ciniengenharia.com.br/servicos-engenharia-eletrica/laudo-aterramento/">
+<meta property="og:type" content="website">
+
+<!-- ===== JSON-LD ===== -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://www.ciniengenharia.com.br/#website",
+      "url": "https://www.ciniengenharia.com.br/",
+      "name": "Cini Engenharia",
+      "inLanguage": "pt-BR"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.ciniengenharia.com.br/servicos-engenharia-eletrica/laudo-aterramento/#webpage",
+      "url": "https://www.ciniengenharia.com.br/servicos-engenharia-eletrica/laudo-aterramento/",
+      "name": "Laudo de Aterramento",
+      "isPartOf": {
+        "@id": "https://www.ciniengenharia.com.br/#website"
+      },
+      "about": {
+        "@id": "https://www.ciniengenharia.com.br/servicos-engenharia-eletrica/laudo-aterramento/#service"
+      },
+      "inLanguage": "pt-BR"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://www.ciniengenharia.com.br/servicos-engenharia-eletrica/laudo-aterramento/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Início",
+          "item": "https://www.ciniengenharia.com.br/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Engenheiro eletricista",
+          "item": "https://www.ciniengenharia.com.br/servicos/engenheiro-eletricista/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Laudo de aterramento"
+        }
+      ]
+    },
+    {
+      "@type": "Service",
+      "@id": "https://www.ciniengenharia.com.br/servicos-engenharia-eletrica/laudo-aterramento/#service",
+      "name": "Laudo de aterramento",
+      "alternateName": [
+        "Medição de aterramento",
+        "Laudo de malha de terra",
+        "Medição de resistência de aterramento"
+      ],
+      "serviceType": "Medição, avaliação e laudo de sistemas de aterramento",
+      "description": "Laudo de aterramento com medição em campo de resistência, resistividade e continuidade, verificação da equipotencialização e avaliação segundo o critério aplicável à finalidade do sistema, com ART registrada no CREA.",
+      "provider": {
+        "@id": "https://www.ciniengenharia.com.br/#localbusiness"
+      },
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Caxias do Sul",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Serra Gaúcha"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Bento Gonçalves",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Serra Gaúcha"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Farroupilha",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Serra Gaúcha"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Garibaldi",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Serra Gaúcha"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Carlos Barbosa",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Serra Gaúcha"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Guaporé",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Serra Gaúcha"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Lajeado",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Vale do Taquari"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Montenegro",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Vale do Caí"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Novo Hamburgo",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Vale dos Sinos"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "São Leopoldo",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Vale dos Sinos"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Porto Alegre",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Grande Porto Alegre"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Canoas",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Grande Porto Alegre"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Cachoeirinha",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Grande Porto Alegre"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Gravataí",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Grande Porto Alegre"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        }
+      ]
+    },
+    {
+      "@type": [
+        "ProfessionalService",
+        "Electrician"
+      ],
+      "@id": "https://www.ciniengenharia.com.br/#localbusiness",
+      "name": "Cini Engenharia",
+      "legalName": "Cini Engenharia",
+      "taxID": "25.268.313/0001-56",
+      "url": "https://www.ciniengenharia.com.br/",
+      "image": "https://www.ciniengenharia.com.br/assets/images/laudo-aterramento-eletrico.jpg",
+      "email": "contato@ciniengenharia.com.br",
+      "telephone": "+55-51-99961-3451",
+      "priceRange": "$$",
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "telephone": "+55-54-99947-5010",
+          "contactType": "customer service",
+          "areaServed": [
+            "Serra Gaúcha"
+          ],
+          "availableLanguage": "Portuguese"
+        },
+        {
+          "@type": "ContactPoint",
+          "telephone": "+55-51-99961-3451",
+          "contactType": "customer service",
+          "areaServed": [
+            "Vale do Taquari",
+            "Vale do Caí",
+            "Vale dos Sinos",
+            "Grande Porto Alegre"
+          ],
+          "availableLanguage": "Portuguese"
+        }
+      ],
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Caxias do Sul",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Serra Gaúcha"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Bento Gonçalves",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Serra Gaúcha"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Farroupilha",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Serra Gaúcha"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Garibaldi",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Serra Gaúcha"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Carlos Barbosa",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Serra Gaúcha"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Guaporé",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Serra Gaúcha"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Lajeado",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Vale do Taquari"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Montenegro",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Vale do Caí"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Novo Hamburgo",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Vale dos Sinos"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "São Leopoldo",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Vale dos Sinos"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Porto Alegre",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Grande Porto Alegre"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Canoas",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Grande Porto Alegre"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Cachoeirinha",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Grande Porto Alegre"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Gravataí",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Grande Porto Alegre"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        }
+      ],
+      "founder": {
+        "@type": "Person",
+        "name": "Dario Cini",
+        "jobTitle": "Engenheiro Eletricista",
+        "sameAs": [
+          "https://www.linkedin.com/in/dario-cini-38a3303a1/"
+        ]
+      },
+      "sameAs": [
+        "https://www.linkedin.com/in/dario-cini-38a3303a1/"
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.ciniengenharia.com.br/servicos-engenharia-eletrica/laudo-aterramento/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Qual valor de resistência de aterramento é aceitável?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Não existe um valor universal. O critério depende da finalidade do sistema: aterramento de instalação elétrica de baixa tensão, de SPDA, de subestação e de equipamento sensível são avaliados por parâmetros diferentes. Em subestação, por exemplo, o que aprova não é a resistência e sim a verificação das tensões de passo e de toque. No SPDA, a edição vigente da NBR 5419-3 verifica a eficácia por continuidade elétrica. Um laudo que aprova qualquer sistema por um número único está aplicando um critério que não existe."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "É verdade que o aterramento precisa ter menos de 10 ohms?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Esse número virou regra de bolso, mas não é critério normativo universal. Ele aparece em normas técnicas específicas de distribuidoras e em recomendações antigas, e foi generalizado para tudo. Há sistemas seguros com resistência acima disso e sistemas perigosos abaixo disso — uma malha de subestação pode medir poucos ohms e ainda assim apresentar tensão de toque acima do limite suportável pelo corpo humano. O valor medido é um dado, não um veredito."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Qual a diferença entre laudo de aterramento e laudo de SPDA?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "O laudo de SPDA avalia o sistema de proteção contra descargas atmosféricas como um todo — captação, descidas, aterramento e equipotencialização — segundo a NBR 5419. O laudo de aterramento se concentra no sistema de aterramento e pode ter outras finalidades além do SPDA: proteção contra choque na instalação de baixa tensão, segurança em subestação, referência para equipamentos sensíveis. Frequentemente uma edificação precisa dos dois, com critérios de avaliação diferentes."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "A época do ano influencia a medição?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Bastante. A resistividade do solo varia com a umidade, e uma medição feita logo após chuva forte produz resultado otimista que não representa a condição crítica da instalação. Por isso o laudo precisa registrar as condições do solo no momento da medição. Medição sem esse registro é dado sem contexto — e é o motivo de tantos sistemas aparecerem conformes no papel e falharem na estiagem."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Posso medir com terrômetro tipo alicate?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Só em situações específicas. O terrômetro alicate tem aplicação definida em norma e serve, essencialmente, para sistemas com múltiplos eletrodos interligados, onde existe caminho de retorno. Usado em eletrodo isolado ou fora da condição prevista, ele fornece leitura que não corresponde à resistência real do sistema. É a origem de boa parte dos laudos que apresentam valores excelentes e não se sustentam em conferência."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Preciso desligar a instalação para a medição?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Depende do método aplicado e do tipo de sistema. Boa parte das verificações é feita com a instalação em operação. Algumas medições exigem desconexão temporária de partes do sistema de aterramento, sempre combinada previamente com a equipe de manutenção e executada com os procedimentos de segurança da NR-10."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "E se o aterramento reprovar?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "O laudo aponta a não conformidade, a cláusula normativa correspondente e o que precisa ser feito — que raramente é simplesmente cravar mais hastes. Dependendo do diagnóstico, a solução passa por revisão da equipotencialização, correção de conexões corroídas, redimensionamento do eletrodo com base na resistividade medida ou tratamento do solo. Cravar haste sem entender a causa costuma não resolver e sempre custa dinheiro."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "O laudo sai com ART?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sim. O laudo é emitido por engenheiro eletricista habilitado, com Anotação de Responsabilidade Técnica registrada no CREA. Relatório de medição sem responsável técnico não tem valor perante seguradora, auditoria ou fiscalização."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+<!-- ===== Estilos apenas dos componentes novos desta página ===== -->
+<style>
+  .spda-destaque{ border-left:4px solid currentColor; padding:1rem 1.25rem; margin:1.5rem 0; opacity:.95; }
+  .spda-etapas{ list-style:none; padding:0; margin:1.5rem 0; counter-reset:spda; }
+  .spda-etapas li{ counter-increment:spda; padding:.75rem 0 .75rem 3rem; position:relative; border-bottom:1px solid rgba(128,128,128,.25); }
+  .spda-etapas li:last-child{ border-bottom:none; }
+  .spda-etapas li::before{ content:counter(spda); position:absolute; left:0; top:.75rem; width:2rem; height:2rem; line-height:2rem; text-align:center; border-radius:50%; border:1px solid currentColor; font-size:.9rem; font-weight:700; }
+  .spda-cta{ margin:2rem 0; display:flex; flex-wrap:wrap; gap:.75rem; }
+  .spda-cta a{ display:inline-block; padding:.85rem 1.5rem; border:2px solid currentColor; border-radius:4px; text-decoration:none; font-weight:700; }
+  .spda-faq-item{ border-bottom:1px solid rgba(128,128,128,.25); padding:.5rem 0; }
+  .spda-faq-item summary{ cursor:pointer; font-weight:700; padding:.75rem 0; }
+  .spda-faq-item summary:focus-visible{ outline:2px solid currentColor; outline-offset:2px; }
+  .spda-faq-item p{ margin:0 0 1rem 0; }
+  .spda-cidades a{ display:inline-block; margin:.25rem .5rem .25rem 0; }
+  .spda-tabela{ width:100%; border-collapse:collapse; margin:1.5rem 0; }
+  .spda-tabela th, .spda-tabela td{ text-align:left; padding:.75rem .5rem; border-bottom:1px solid rgba(128,128,128,.3); vertical-align:top; }
+  .spda-tabela th{ font-weight:700; }
+  .spda-regioes{ list-style:none; padding:0; margin:1.25rem 0; }
+  .spda-regioes li{ padding:.75rem 0; border-bottom:1px solid rgba(128,128,128,.2); }
+  .spda-regioes li:last-child{ border-bottom:none; }
+  .spda-regioes small{ opacity:.7; font-weight:400; }
+  .spda-fones{ margin:1rem 0; }
+  .spda-fones div{ padding:.35rem 0; }
+  @media (prefers-reduced-motion: reduce){ *{ animation:none !important; transition:none !important; } }
+</style>
+
+</head>
+<body class="engenharia">
+
+<!-- ===== MENU DINÂMICO ===== -->
+<div id="menu"></div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  fetch("/menu.html")
+    .then(response => {
+      if (!response.ok) { throw new Error("Erro ao carregar menu.html"); }
+      return response.text();
+    })
+    .then(data => {
+      document.getElementById("menu").innerHTML = data;
+      const toggle = document.querySelector(".menu-toggle");
+      const links = document.querySelector(".menu-links");
+      if (toggle && links) {
+        toggle.addEventListener("click", function() {
+          links.classList.toggle("open");
+          toggle.classList.toggle("open");
+        });
+      }
+    })
+    .catch(error => { console.error("Erro no menu:", error); });
+});
+</script>
+<!-- ===== FIM MENU DINÂMICO ===== -->
+
+
+<!-- ===== ABERTURA ===== -->
+<section class="hero">
+
+  <div class="hero-text">
+
+    <h1>
+      <span class="linha1">Laudo de</span>
+      <span class="cidade">Aterramento</span>
+    </h1>
+
+    <p>
+      <strong>Medição em campo, avaliação segundo o critério aplicável à
+      finalidade do sistema e ART registrada no CREA.</strong>
+    </p>
+
+    <p>
+      A pergunta que quase todo mundo faz é "deu quantos ohms?". A pergunta certa
+      é outra: <strong>aterramento para quê?</strong> O mesmo eletrodo pode estar
+      adequado para uma finalidade e reprovado para outra — e é essa distinção que
+      separa um laudo de engenharia de um relatório de medição.
+    </p>
+
+    <p>
+      Engenheiro eletricista <strong>Dario Cini — CREA-RS 211.450</strong><br>
+      Telefones:<br>
+      <strong>(54) 99947-5010</strong> — Serra Gaúcha<br>
+      <strong>(51) 99961-3451</strong> — Vales do Taquari, Caí e Sinos, Grande Porto Alegre<br>
+      E-mail: contato@ciniengenharia.com.br
+    </p>
+
+    <div class="spda-cta">
+      <a href="https://wa.me/5551999613451" target="_blank" rel="noopener">Solicitar medição</a>
+      <a href="#criterio">Qual critério se aplica ao meu caso?</a>
+    </div>
+
+  </div>
+
+  <div class="hero-image">
+    <!-- [PREENCHER] Foto real: medição em campo, terrômetro, hastes -->
+    <img src="../../assets/images/laudo-aterramento-eletrico.jpg"
+         alt="Laudo de aterramento com medição em campo — Cini Engenharia"
+         title="Laudo de aterramento">
+  </div>
+
+</section>
+<!-- ===== FIM ABERTURA ===== -->
+
+
+<!-- ===== CRITÉRIO ===== -->
+<section class="hero" id="criterio">
+
+  <div class="hero-text">
+
+    <h2>Não existe um critério único de aprovação</h2>
+
+    <p>
+      "Aterramento" é uma palavra só para funções bastante diferentes. Cada uma
+      tem sua norma e seu parâmetro de avaliação:
+    </p>
+
+    <table class="spda-tabela">
+      <thead>
+        <tr>
+          <th scope="col">Finalidade</th>
+          <th scope="col">O que realmente aprova</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Instalação elétrica de baixa tensão</strong><br><small>NBR 5410</small></td>
+          <td>Esquema de aterramento adotado, continuidade do condutor de proteção, integridade da equipotencialização principal e atuação da proteção contra choque no tempo previsto.</td>
+        </tr>
+        <tr>
+          <td><strong>SPDA</strong><br><small>NBR 5419-3</small></td>
+          <td>Continuidade elétrica do sistema. A edição vigente dispensa a medição de resistência como verificação de eficácia.</td>
+        </tr>
+        <tr>
+          <td><strong>Subestação</strong><br><small>NBR 15751</small></td>
+          <td>Tensões de passo e de toque durante um defeito, calculadas a partir da resistividade estratificada e da corrente de falta — não o valor de resistência isolado.</td>
+        </tr>
+        <tr>
+          <td><strong>Equipamentos sensíveis</strong></td>
+          <td>Qualidade da referência de potencial e ausência de laços de terra, além dos requisitos de segurança que continuam valendo.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="spda-destaque">
+      <p>
+        Na prática, é comum uma edificação ter <strong>um único sistema de
+        aterramento atendendo a várias dessas finalidades ao mesmo tempo</strong>.
+        Isso não é problema — é o recomendado. Mas significa que ele precisa ser
+        avaliado sob todos os critérios aplicáveis, não sob o mais conveniente.
+      </p>
+    </div>
+
+  </div>
+
+  <div class="hero-image">
+    <img src="../../assets/images/laudo-aterramento-criterios.jpg"
+         alt="Critérios de avaliação conforme a finalidade do aterramento">
+  </div>
+
+</section>
+<!-- ===== FIM CRITÉRIO ===== -->
+
+
+<!-- ===== MITO DOS 10 OHMS ===== -->
+<section class="hero">
+
+  <div class="hero-text">
+
+    <h2>O mito dos 10 ohms</h2>
+
+    <p>
+      Esse número virou regra de bolso no Brasil inteiro. Ele existe — aparece em
+      normas técnicas específicas de distribuidoras e em recomendações antigas —
+      mas foi generalizado para tudo, e é aí que o erro começa.
+    </p>
+
+    <p>
+      Existem sistemas seguros com resistência acima de 10 ohms e sistemas
+      perigosos bem abaixo disso. O caso mais didático é a malha de subestação:
+      ela pode medir poucos ohms e ainda assim apresentar tensão de toque acima do
+      limite suportável pelo corpo humano, porque o que determina o risco é a
+      distribuição de potencial na superfície do solo, não a resistência total.
+    </p>
+
+    <div class="spda-destaque">
+      <p>
+        <strong>O valor medido é um dado, não um veredito.</strong> Ele entra na
+        avaliação junto com a resistividade do solo, o esquema de aterramento, a
+        corrente de falta, o tempo de atuação da proteção e a finalidade do
+        sistema. Laudo que se resume a uma tabela de ohms com a palavra "aprovado"
+        ao lado não avaliou nada — apenas mediu.
+      </p>
+    </div>
+
+  </div>
+
+  <div class="hero-image">
+    <img src="../../assets/images/laudo-aterramento-10-ohms.jpg"
+         alt="Por que 10 ohms não é critério universal">
+  </div>
+
+</section>
+<!-- ===== FIM MITO DOS 10 OHMS ===== -->
+
+
+<!-- ===== COMO SE MEDE ===== -->
+<section class="hero">
+
+  <div class="hero-text">
+
+    <h2>Como a medição é feita — e onde ela costuma dar errado</h2>
+
+    <h3>Resistência do sistema de aterramento</h3>
+    <p>
+      Método da queda de potencial, com afastamento adequado dos eletrodos
+      auxiliares e verificação do patamar da curva. Afastamento insuficiente é o
+      erro mais comum e produz valor menor que o real — ou seja, otimista na
+      direção errada.
+    </p>
+
+    <h3>Resistividade do solo</h3>
+    <p>
+      Método dos quatro pontos, conforme a NBR 7117, em mais de uma direção e com
+      espaçamentos variados. Um dado importante e pouco observado: a norma
+      estabelece que o <strong>modelo básico de solo tem três camadas</strong>.
+      Adotar solo uniforme simplifica a conta e distorce o resultado, especialmente
+      no cálculo de potenciais na superfície.
+    </p>
+
+    <h3>Continuidade e equipotencialização</h3>
+    <p>
+      Verificação da continuidade dos condutores de proteção, das ligações ao
+      barramento de equipotencialização principal e da conexão das massas
+      metálicas. É aqui que aparecem os defeitos mais frequentes: conexão
+      corroída, condutor rompido dentro de eletroduto, ligação desfeita em reforma
+      e nunca refeita.
+    </p>
+
+    <h3>Inspeção física</h3>
+    <p>
+      Caixas de inspeção, conexões, estado de corrosão, tipo de conexão empregada
+      e compatibilidade entre materiais — conexão de materiais dissimilares é
+      causa clássica de corrosão acelerada e de aterramento que degrada em poucos
+      anos.
+    </p>
+
+    <h3>Terrômetro tipo alicate: cuidado</h3>
+    <p>
+      O instrumento é útil e rápido, mas tem aplicação delimitada: essencialmente
+      sistemas com múltiplos eletrodos interligados, onde existe caminho de
+      retorno. Usado em eletrodo isolado ou fora da condição prevista, entrega uma
+      leitura que não corresponde à resistência real. É a origem de boa parte dos
+      laudos com valores excelentes que não se sustentam em conferência.
+    </p>
+
+    <h3>A estação do ano importa</h3>
+    <p>
+      A resistividade varia com a umidade do solo. Medição feita logo após chuva
+      forte produz resultado otimista, que não representa a condição crítica da
+      instalação. Por isso registramos as condições do solo no momento da medição —
+      sem esse registro, o número é dado sem contexto.
+    </p>
+
+  </div>
+
+  <div class="hero-image">
+    <img src="../../assets/images/laudo-aterramento-medicao.jpg"
+         alt="Métodos de medição de aterramento">
+  </div>
+
+</section>
+<!-- ===== FIM COMO SE MEDE ===== -->
+
+
+<!-- ===== O QUE VOCÊ RECEBE ===== -->
+<section class="hero">
+
+  <div class="hero-text">
+
+    <h2>O que você recebe</h2>
+
+    <ul>
+      <li><strong>Identificação da finalidade</strong> de cada sistema avaliado e do critério normativo aplicável a ela</li>
+      <li><strong>Valores medidos</strong>, com método empregado, instrumento utilizado e condições do solo registradas</li>
+      <li><strong>Interpretação técnica</strong> de cada valor à luz do critério correspondente — não apenas a tabela</li>
+      <li><strong>Registro fotográfico</strong> dos pontos de medição e das não conformidades</li>
+      <li><strong>Relação de não conformidades</strong>, com a cláusula normativa de cada apontamento</li>
+      <li><strong>Plano de ação</strong>, com o que corrigir e em que ordem</li>
+      <li><strong>Parecer conclusivo</strong> e recomendação de periodicidade</li>
+      <li><strong>ART registrada no CREA</strong></li>
+    </ul>
+
+    <div class="spda-destaque">
+      <p>
+        A diferença aparece no plano de ação. Quando um sistema reprova, a
+        recomendação raramente é "cravar mais hastes" — dependendo do diagnóstico,
+        a solução passa por revisar a equipotencialização, refazer conexões
+        corroídas, redimensionar o eletrodo com base na resistividade medida ou
+        tratar o solo. Cravar haste sem entender a causa costuma não resolver e
+        sempre custa dinheiro.
+      </p>
+    </div>
+
+  </div>
+
+  <div class="hero-image">
+    <img src="../../assets/images/laudo-aterramento-entrega.jpg"
+         alt="Conteúdo do laudo de aterramento">
+  </div>
+
+</section>
+<!-- ===== FIM O QUE VOCÊ RECEBE ===== -->
+
+
+<!-- ===== QUANDO FAZER ===== -->
+<section class="hero">
+
+  <div class="hero-text">
+
+    <h2>Quando fazer</h2>
+
+    <ul>
+      <li><strong>Exigência de seguradora</strong> na contratação ou renovação de apólice</li>
+      <li><strong>Auditoria de conformidade</strong>, certificação ou exigência de cliente</li>
+      <li><strong>Licenciamento</strong> e renovação junto a órgãos fiscalizadores</li>
+      <li><strong>Estruturação do prontuário da NR-10</strong>, que precisa da documentação do sistema de aterramento</li>
+      <li><strong>Após reforma ou ampliação</strong> — ligações desfeitas em obra e nunca refeitas são o achado mais comum</li>
+      <li><strong>Problemas recorrentes</strong> de queima de equipamento, atuação indevida de DR ou ruído em eletrônica sensível</li>
+      <li><strong>Instalação antiga</strong> sem documentação do sistema de aterramento</li>
+      <li><strong>Suspeita de descarga atmosférica</strong> na estrutura</li>
+    </ul>
+
+  </div>
+
+  <div class="hero-image">
+    <img src="../../assets/images/laudo-aterramento-quando.jpg"
+         alt="Quando fazer o laudo de aterramento">
+  </div>
+
+</section>
+<!-- ===== FIM QUANDO FAZER ===== -->
+
+
+<!-- ===== PARA QUEM ===== -->
+<section class="servicos">
+
+  <h2>Para quem é</h2>
+
+  <div class="servicos-grid">
+
+    <div class="servico">
+      <img src="../../assets/images/laudo-aterramento-industria.jpg" alt="Laudo de aterramento para indústrias">
+      <p>Indústrias e galpões com exigência de seguradora ou auditoria</p>
+    </div>
+
+    <div class="servico">
+      <img src="../../assets/images/laudo-aterramento-subestacao.jpg" alt="Laudo de malha de subestação">
+      <p>Empresas com subestação própria e malha sem memorial de cálculo</p>
+    </div>
+
+    <div class="servico">
+      <img src="../../assets/images/laudo-aterramento-condominio.jpg" alt="Laudo de aterramento para condomínios">
+      <p>Condomínios e edifícios comerciais em licenciamento</p>
+    </div>
+
+    <div class="servico">
+      <img src="../../assets/images/laudo-aterramento-nr10.jpg" alt="Aterramento no prontuário NR-10">
+      <p>Quem está montando ou revisando o prontuário da NR-10</p>
+    </div>
+
+    <div class="servico">
+      <img src="../../assets/images/laudo-aterramento-equipamentos.jpg" alt="Aterramento e equipamentos sensíveis">
+      <p>Quem tem queima recorrente de equipamento ou ruído em eletrônica sensível</p>
+    </div>
+
+    <div class="servico">
+      <img src="../../assets/images/laudo-aterramento-reforma.jpg" alt="Aterramento após reforma">
+      <p>Instalações que passaram por reforma e nunca tiveram o aterramento reconferido</p>
+    </div>
+
+  </div>
+
+</section>
+<!-- ===== FIM PARA QUEM ===== -->
+
+
+<!-- ===== COMO FUNCIONA ===== -->
+<section class="hero">
+
+  <div class="hero-text">
+
+    <h2>Como funciona</h2>
+
+    <ol class="spda-etapas">
+      <li>
+        <strong>Definição da finalidade</strong><br>
+        Antes de medir qualquer coisa: para que serve esse aterramento e quais
+        critérios normativos se aplicam a ele. É essa definição que determina o
+        que será medido e como.
+      </li>
+      <li>
+        <strong>Proposta com escopo, prazo e valor</strong><br>
+        <!-- [PREENCHER] prazo para envio da proposta -->
+      </li>
+      <li>
+        <strong>Medições em campo</strong><br>
+        Resistência, resistividade quando aplicável, continuidade e
+        equipotencialização, com registro das condições do solo.
+      </li>
+      <li>
+        <strong>Inspeção física do sistema</strong><br>
+        Caixas de inspeção, conexões, corrosão e compatibilidade de materiais.
+      </li>
+      <li>
+        <strong>Análise e confronto com a documentação</strong><br>
+        O que foi medido comparado ao projeto, quando ele existe.
+      </li>
+      <li>
+        <strong>Emissão do laudo com ART</strong><br>
+        Com parecer conclusivo, plano de ação e recomendação de periodicidade.
+        <!-- [PREENCHER] prazo de entrega após a visita -->
+      </li>
+    </ol>
+
+  </div>
+
+  <div class="hero-image">
+    <img src="../../assets/images/laudo-aterramento-processo.jpg"
+         alt="Etapas do laudo de aterramento">
+  </div>
+
+</section>
+<!-- ===== FIM COMO FUNCIONA ===== -->
+
+
+<!-- ===== PREÇO ===== -->
+<section class="hero">
+
+  <div class="hero-text">
+
+    <h2>O que faz o preço variar</h2>
+
+    <ul>
+      <li><strong>Número de pontos de medição</strong> e de sistemas independentes</li>
+      <li><strong>Finalidades a avaliar</strong> — instalação, SPDA, subestação ou todas</li>
+      <li><strong>Necessidade de medição de resistividade</strong>, que exige área livre e mais tempo em campo</li>
+      <li><strong>Área e complexidade</strong> da instalação</li>
+      <li><strong>Acessibilidade</strong> das caixas de inspeção e dos pontos de conexão</li>
+      <li><strong>Existência de documentação</strong> anterior</li>
+      <li><strong>Deslocamento</strong>, conforme a cidade</li>
+    </ul>
+
+    <p>
+      Com o endereço, o tipo de instalação e a finalidade pretendida, é possível
+      fechar um valor sem visita prévia.
+      <!-- [PREENCHER] Faixa de preço. -->
+    </p>
+
+  </div>
+
+  <div class="hero-image">
+    <img src="../../assets/images/laudo-aterramento-orcamento.jpg"
+         alt="Orçamento de laudo de aterramento">
+  </div>
+
+</section>
+<!-- ===== FIM PREÇO ===== -->
+
+
+<!-- ===== QUEM ASSINA ===== -->
+<section class="hero">
+
+  <div class="hero-text">
+
+    <h2>Quem assina o laudo</h2>
+
+    <p>
+      <strong>Dario Cini</strong>, engenheiro eletricista formado pela Universidade
+      de Caxias do Sul, com mais de 10 anos de atuação em engenharia elétrica no eixo entre a
+      Serra Gaúcha e a Grande Porto Alegre.
+    </p>
+
+    <p>
+      <strong>CREA:</strong> RS 211.450 —
+      <a href="https://www.crea-rs.org.br/site/" target="_blank" rel="noopener noreferrer nofollow">
+        consulta pública no CREA-RS
+      </a>
+    </p>
+
+    <p>
+      <strong>Cini Engenharia</strong> — CNPJ 25.268.313/0001-56 —
+      <a href="https://solucoes.receita.fazenda.gov.br/servicos/cnpjreva/cnpjreva_solicitacao.asp"
+         target="_blank" rel="noopener noreferrer">Consultar CNPJ</a>
+    </p>
+
+    <p>
+      <strong>LinkedIn:</strong>
+      <a href="https://www.linkedin.com/in/dario-cini-38a3303a1/"
+         target="_blank" rel="noopener noreferrer">Dario Cini — Ver perfil</a>
+    </p>
+
+    <p>
+      Medir aterramento é rápido. Interpretar o que o número significa para a
+      finalidade daquele sistema é o trabalho de engenharia — e é isso que o laudo
+      entrega, com memorial e cláusula normativa.
+      <!-- [PREENCHER] Se usa terrômetro de alta frequência ou instrumento específico, cite aqui. -->
+    </p>
+
+  </div>
+
+  <div class="hero-image">
+    <img src="../../assets/images/engenheiro-eletricista-crea.jpg"
+         alt="Dario Cini — engenheiro eletricista CREA-RS 211.450">
+  </div>
+
+</section>
+<!-- ===== FIM QUEM ASSINA ===== -->
+
+
+<!-- ===== SERVIÇOS RELACIONADOS ===== -->
+<section class="secao-full">
+  <div class="hero-text">
+    <h2>Serviços relacionados</h2>
+    <p>
+      Todos os serviços e áreas de atendimento estão reunidos na página do
+      <a href="/servicos/engenheiro-eletricista/">engenheiro eletricista</a>.
+    </p>
+    <a href="/servicos-engenharia-eletrica/laudo-spda/">Laudo de SPDA</a>
+    <span>|</span>
+    <a href="/servicos-engenharia-eletrica/projeto-subestacao/">Projeto de subestação</a>
+    <span>|</span>
+    <a href="/servicos-engenharia-eletrica/laudo-instalacoes-eletricas/">Laudo das instalações elétricas</a>
+    <span>|</span>
+    <a href="/servicos-engenharia-eletrica/projeto-spda/">Projeto de SPDA</a>
+    <span>|</span>
+    <a href="/servicos-engenharia-eletrica/calculo-atpv/">Cálculo de ATPV</a>
+    <span>|</span>
+    <a href="/servicos-engenharia-eletrica/consultoria/">Consultoria</a>
+    <span>|</span>
+    <a href="/servicos-engenharia-eletrica/projeto-eletrico-industrial/">Projeto elétrico industrial</a>
+    <span>|</span>
+    <a href="/servicos-engenharia-eletrica/termografia/">Termografia</a>
+  </div>
+</section>
+<!-- ===== FIM SERVIÇOS RELACIONADOS ===== -->
+
+
+<!-- ===== ÁREA DE ATENDIMENTO ===== -->
+<section class="secao-full">
+  <div class="hero-text spda-cidades">
+    <h2>Onde atendemos</h2>
+    <p>
+      Atendimento presencial no eixo entre a Serra Gaúcha e a Grande Porto
+      Alegre, acompanhando os vales do Taquari, do Caí e do Sinos.
+    </p>
+    <ul class="spda-regioes">
+      <li><strong>Serra Gaúcha</strong> <small>(DDD 54)</small><br>
+        <a href="/servicos/engenheiro-eletricista-caxias-do-sul/">Caxias do Sul</a> <span>|</span>
+        <a href="/servicos/engenheiro-eletricista-bento-goncalves/">Bento Gonçalves</a> <span>|</span>
+        <a href="/servicos/engenheiro-eletricista-farroupilha/">Farroupilha</a> <span>|</span>
+        <a href="/servicos/engenheiro-eletricista-garibaldi/">Garibaldi</a> <span>|</span>
+        <a href="/servicos/engenheiro-eletricista-carlos-barbosa/">Carlos Barbosa</a> <span>|</span>
+        Guaporé
+      </li>
+      <li><strong>Vale do Taquari</strong> <small>(DDD 51)</small><br>
+        <a href="/servicos/engenheiro-eletricista-lajeado/">Lajeado</a>
+      </li>
+      <li><strong>Vale do Caí</strong> <small>(DDD 51)</small><br>
+        <a href="/servicos/engenheiro-eletricista-montenegro/">Montenegro</a>
+      </li>
+      <li><strong>Vale dos Sinos</strong> <small>(DDD 51)</small><br>
+        <a href="/servicos/engenheiro-eletricista-novo-hamburgo/">Novo Hamburgo</a> <span>|</span>
+        <a href="/servicos/engenheiro-eletricista-sao-leopoldo/">São Leopoldo</a>
+      </li>
+      <li><strong>Grande Porto Alegre</strong> <small>(DDD 51)</small><br>
+        <a href="/servicos/engenheiro-eletricista-porto-alegre/">Porto Alegre</a> <span>|</span>
+        <a href="/servicos/engenheiro-eletricista-canoas/">Canoas</a> <span>|</span>
+        <a href="/servicos/engenheiro-eletricista-cachoeirinha/">Cachoeirinha</a> <span>|</span>
+        <a href="/servicos/engenheiro-eletricista-gravatai/">Gravataí</a>
+      </li>
+    </ul>
+    <!-- [PREENCHER] Guaporé ainda não tem página. Ao criar, transforme em link. -->
+  </div>
+</section>
+<!-- ===== FIM ÁREA DE ATENDIMENTO ===== -->
+
+
+<!-- ===== FAQ ===== -->
+<section class="faq">
+
+  <div class="hero-text">
+
+    <h2>Dúvidas frequentes sobre <strong>laudo de aterramento</strong></h2>
+
+    <details class="spda-faq-item">
+      <summary>Qual valor de resistência de aterramento é aceitável?</summary>
+      <p>
+        Não existe um valor universal. O critério depende da finalidade: instalação
+        elétrica de baixa tensão, SPDA, subestação e equipamento sensível são
+        avaliados por parâmetros diferentes. Em subestação, o que aprova não é a
+        resistência e sim a verificação das tensões de passo e de toque. No SPDA, a
+        edição vigente da NBR 5419-3 verifica a eficácia por continuidade elétrica.
+        Um laudo que aprova qualquer sistema por um número único está aplicando um
+        critério que não existe.
+      </p>
+    </details>
+
+    <details class="spda-faq-item">
+      <summary>É verdade que o aterramento precisa ter menos de 10 ohms?</summary>
+      <p>
+        Esse número virou regra de bolso, mas não é critério normativo universal.
+        Ele aparece em normas técnicas específicas de distribuidoras e em
+        recomendações antigas, e foi generalizado para tudo. Há sistemas seguros
+        acima disso e sistemas perigosos abaixo — uma malha de subestação pode medir
+        poucos ohms e ainda assim apresentar tensão de toque acima do limite
+        suportável. O valor medido é um dado, não um veredito.
+      </p>
+    </details>
+
+    <details class="spda-faq-item">
+      <summary>Qual a diferença entre laudo de aterramento e laudo de SPDA?</summary>
+      <p>
+        O laudo de SPDA avalia o sistema de proteção contra descargas atmosféricas
+        como um todo — captação, descidas, aterramento e equipotencialização —
+        segundo a NBR 5419. O laudo de aterramento se concentra no sistema de
+        aterramento e pode ter outras finalidades: proteção contra choque na
+        instalação de baixa tensão, segurança em subestação, referência para
+        equipamentos sensíveis. Com frequência a edificação precisa dos dois, com
+        critérios diferentes.
+      </p>
+    </details>
+
+    <details class="spda-faq-item">
+      <summary>A época do ano influencia a medição?</summary>
+      <p>
+        Bastante. A resistividade do solo varia com a umidade, e medição feita logo
+        após chuva forte produz resultado otimista que não representa a condição
+        crítica da instalação. Por isso o laudo registra as condições do solo no
+        momento da medição. Sem esse registro, o número é dado sem contexto — e é o
+        motivo de tantos sistemas aparecerem conformes no papel e falharem na
+        estiagem.
+      </p>
+    </details>
+
+    <details class="spda-faq-item">
+      <summary>Posso medir com terrômetro tipo alicate?</summary>
+      <p>
+        Só em situações específicas. O instrumento tem aplicação delimitada e serve,
+        essencialmente, a sistemas com múltiplos eletrodos interligados, onde existe
+        caminho de retorno. Usado em eletrodo isolado ou fora da condição prevista,
+        fornece leitura que não corresponde à resistência real do sistema. É a
+        origem de boa parte dos laudos com valores excelentes que não se sustentam
+        em conferência.
+      </p>
+    </details>
+
+    <details class="spda-faq-item">
+      <summary>Preciso desligar a instalação para a medição?</summary>
+      <p>
+        Depende do método e do tipo de sistema. Boa parte das verificações é feita
+        com a instalação em operação. Algumas medições exigem desconexão temporária
+        de partes do sistema de aterramento, sempre combinada previamente com a
+        equipe de manutenção e executada com os procedimentos de segurança da NR-10.
+      </p>
+    </details>
+
+    <details class="spda-faq-item">
+      <summary>E se o aterramento reprovar?</summary>
+      <p>
+        O laudo aponta a não conformidade, a cláusula normativa correspondente e o
+        que precisa ser feito — que raramente é simplesmente cravar mais hastes.
+        Dependendo do diagnóstico, a solução passa por revisão da
+        equipotencialização, correção de conexões corroídas, redimensionamento do
+        eletrodo com base na resistividade medida ou tratamento do solo. Cravar
+        haste sem entender a causa costuma não resolver e sempre custa dinheiro.
+      </p>
+    </details>
+
+    <details class="spda-faq-item">
+      <summary>O laudo sai com ART?</summary>
+      <p>
+        Sim. É emitido por engenheiro eletricista habilitado, com Anotação de
+        Responsabilidade Técnica registrada no CREA. Relatório de medição sem
+        responsável técnico não tem valor perante seguradora, auditoria ou
+        fiscalização.
+      </p>
+    </details>
+
+    <details class="spda-faq-item">
+      <summary>Quanto tempo leva?</summary>
+      <p>
+        <!-- [PREENCHER] Prazo real. -->
+        Depende do número de pontos e das finalidades a avaliar. A proposta traz o
+        prazo fechado para o seu caso.
+      </p>
+    </details>
+
+  </div>
+
+</section>
+<!-- ===== FIM FAQ ===== -->
+
+
+<!-- ===== CHAMADA FINAL ===== -->
+<section class="hero">
+  <div class="hero-text">
+    <h2>Antes de perguntar quantos ohms deu</h2>
+    <p>
+      Comece pela pergunta que define tudo: aterramento para quê? Nos diga o tipo
+      de instalação e o que está sendo exigido de você — seguradora, auditoria,
+      NR-10, licenciamento — e nós definimos o escopo de medição adequado.
+    </p>
+    <div class="spda-cta">
+      <a href="https://wa.me/5551999613451" target="_blank" rel="noopener">Solicitar medição</a>
+      <a href="mailto:contato@ciniengenharia.com.br">Enviar laudo anterior para análise</a>
+    </div>
+  </div>
+</section>
+<!-- ===== FIM CHAMADA FINAL ===== -->
+
+</body>
+</html>
