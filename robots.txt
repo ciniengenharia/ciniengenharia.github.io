@@ -1,2 +1,4 @@
 User-agent: *
 Allow: /
+
+Sitemap: https://www.ciniengenharia.com.br/sitemap.xml
