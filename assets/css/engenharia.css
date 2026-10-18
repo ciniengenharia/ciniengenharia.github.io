@@ -521,3 +521,63 @@ body.engenharia .spda-indice li:last-child{
     transform: none;
   }
 }
+
+/* ===== SEÇÕES SEM FOTO ===== */
+/* Título à esquerda, texto à direita, para a seção não ficar com meia página vazia */
+
+body.engenharia .hero.sem-foto .hero-text{
+  width: 100%;
+  display: grid;
+  grid-template-columns: minmax(220px, 1fr) 2fr;
+  column-gap: 70px;
+  align-items: start;
+}
+
+body.engenharia .hero.sem-foto .hero-text > *{
+  grid-column: 2;
+}
+
+body.engenharia .hero.sem-foto .hero-text > h2{
+  grid-column: 1;
+  grid-row: 1 / span 40;
+  position: sticky;
+  top: 100px;
+  font-size: 30px;
+  line-height: 1.2;
+  padding-top: 18px;
+  border-top: 4px solid #d7141e;
+}
+
+body.engenharia .hero.sem-foto .hero-text > :nth-child(2){
+  margin-top: 0;
+}
+
+/* cartões sem foto */
+
+body.engenharia .servicos-grid.sem-foto .servico{
+  padding: 30px 28px;
+  border-top: 4px solid #d7141e;
+}
+
+body.engenharia .servicos-grid.sem-foto .servico p{
+  margin: 0;
+  text-align: left;
+  font-size: 18px;
+  line-height: 1.45;
+  color: #1d2b38;
+}
+
+@media (max-width: 900px){
+
+  body.engenharia .hero.sem-foto .hero-text{
+    display: block;
+  }
+
+  body.engenharia .hero.sem-foto .hero-text > h2{
+    position: static;
+    font-size: 26px;
+    padding-top: 14px;
+    margin-bottom: 22px;
+  }
+
+}
