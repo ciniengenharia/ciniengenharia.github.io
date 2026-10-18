@@ -1,0 +1,6 @@
+Corrige a aparencia dos artigos tecnicos (148 paginas em /informacoes/).
+Muda so 1 arquivo: assets\css\artigos.css. Nenhum texto foi alterado.
+
+1. Extraia e coloque a pasta estilo-artigos dentro da pasta do site.
+2. De dois cliques em aplicar.bat.
+3. GitHub Desktop: Discard changes na pasta estilo-artigos, depois Commit e Push.

@@ -227,3 +227,61 @@ body.artigos .regiao-card p{
 
 }
 
+
+/* ===== ARTIGO TÉCNICO ===== */
+
+body.artigos .artigo-tecnico{
+  max-width: 1400px;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 20px;
+  padding: 60px;
+  box-sizing: border-box;
+}
+
+body.artigos .artigo-tecnico > *{
+  max-width: 860px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body.artigos .artigo-tecnico h1{
+  font-size: clamp(28px, 3vw, 42px);
+  line-height: 1.2;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+body.artigos .artigo-tecnico h2{
+  font-size: 24px;
+  line-height: 1.3;
+  margin-top: 40px;
+  margin-bottom: 12px;
+  color: #111;
+}
+
+body.artigos .artigo-tecnico p{
+  font-size: 18px;
+  line-height: 1.7;
+  color: #444;
+  margin-top: 0;
+  margin-bottom: 18px;
+}
+
+@media (max-width: 768px){
+
+  body.artigos .artigo-tecnico{
+    margin: 20px 10px;
+    padding: 30px 20px;
+  }
+
+  body.artigos .artigo-tecnico h2{
+    font-size: 21px;
+    margin-top: 30px;
+  }
+
+  body.artigos .artigo-tecnico p{
+    font-size: 17px;
+  }
+
+}
