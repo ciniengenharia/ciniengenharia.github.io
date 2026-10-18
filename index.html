@@ -4,33 +4,26 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Cini Engenharia - Engenharia Elétrica - Engenharia de Segurança do Trabalho - Treinamentos</title>
-
-  <meta name="description" content="Empresa especializada em Engenharia Elétrica, Engenharia de Segurança do Trabalho e Treinamentos de Capacitações. Soluções completas para empresas com emissão de ART.">
-
+  <title>Cini Engenharia | Engenharia elétrica e segurança do trabalho</title>
+  <meta name="description" content="Projetos e laudos elétricos, segurança do trabalho e treinamentos com ART. Softwares de gestão NR 10 e NR 12 para empresas de todo o Brasil.">
   <link rel="canonical" href="https://www.ciniengenharia.com.br/">
+  <link rel="icon" type="image/png" href="/assets/images/favicon.png">
 
-  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..100,400..700&display=swap">
 
-  <!-- CSS DO MENU -->
-  <link rel="stylesheet" href="assets/css/menu.css">
+  <link rel="stylesheet" href="/assets/css/menu.css">
+  <link rel="stylesheet" href="/assets/css/home.css">
 
-  <!-- CSS GLOBAL -->
-  <link rel="stylesheet" href="assets/css/style.css">
-
-  <!-- CSS EXCLUSIVO DA HOME -->
-  <link rel="stylesheet" href="assets/css/home.css">
-
-  <!-- ===== Open Graph para redes sociais ===== -->
-  <meta property="og:title" content="Cini Engenharia - Engenharia Elétrica - Engenharia de Segurança do Trabalho - Treinamentos">
-  <meta property="og:description" content="Empresa especializada em Engenharia Elétrica, Engenharia de Segurança do Trabalho e Treinamentos de Capacitações. Soluções completas para empresas com emissão de ART.">
+  <meta property="og:title" content="Cini Engenharia | Engenharia elétrica e segurança do trabalho">
+  <meta property="og:description" content="Projetos e laudos elétricos, segurança do trabalho e treinamentos com ART. Softwares de gestão NR 10 e NR 12 para empresas de todo o Brasil.">
   <meta property="og:image" content="https://www.ciniengenharia.com.br/assets/images/cini-engenharia-home.jpg">
   <meta property="og:url" content="https://www.ciniengenharia.com.br/">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="pt_BR">
   <meta property="og:site_name" content="Cini Engenharia">
 
-  <!-- ===== JSON-LD ===== -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -92,8 +85,20 @@
           "Cálculo de ATPV",
           "Termografia elétrica",
           "Consultoria em engenharia elétrica",
-          "NR-10",
-          "NR-12"
+          "Laudo de continuidade elétrica",
+          "Laudo de NR 10",
+          "Prontuário das instalações elétricas (NR 10)",
+          "Laudo de conformidade NR 12",
+          "Inventário de máquinas NR 12",
+          "Análise de riscos NR 12",
+          "Consultoria em segurança do trabalho",
+          "Consultoria online",
+          "Consultoria presencial",
+          "Treinamento NR 12 presencial na empresa",
+          "NR 10",
+          "NR 12",
+          "Software de gestão NR 12 (Cini NR 12)",
+          "Software de gestão NR 10 (Cini NR 10)"
         ],
         "sameAs": [
           "https://www.linkedin.com/in/dario-cini-38a3303a1/",
@@ -103,26 +108,18 @@
     ]
   }
   </script>
-
 </head>
 
 <body class="home">
+  <script>document.documentElement.classList.add("js");</script>
 
-  <!-- ===== MENU DINAMICO ===== -->
   <div id="menu"></div>
-
   <script>
   document.addEventListener("DOMContentLoaded", function() {
     fetch("/menu.html")
-      .then(response => {
-        if (!response.ok) {
-          throw new Error("Erro ao carregar menu.html");
-        }
-        return response.text();
-      })
+      .then(r => { if (!r.ok) throw new Error("Erro ao carregar menu.html"); return r.text(); })
       .then(data => {
         document.getElementById("menu").innerHTML = data;
-
         const toggle = document.querySelector(".menu-toggle");
         const links = document.querySelector(".menu-links");
         if (toggle && links) {
@@ -132,75 +129,428 @@
           });
         }
       })
-      .catch(error => {
-        console.error("Erro no menu:", error);
-      });
+      .catch(e => console.error("Erro no menu:", e));
   });
   </script>
-  <!-- ===== FIM MENU DINAMICO ===== -->
 
+  <main>
 
-  <!-- BANNER -->
-  <section class="home-hero">
-    <div class="banner">
-      <img src="assets/images/cini-engenharia-home.jpg" alt="Cini Engenharia">
+  <!-- HERO -->
+  <section class="hero">
+    <svg class="hero-diagrama" viewBox="0 0 1440 640" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+      <path class="fio barra" pathLength="1" d="M0 56 H1440"/>
+      <path class="fio d2" pathLength="1" d="M60 56 V250 M60 282 V590"/>
+      <rect class="fio d2" pathLength="1" x="44" y="250" width="32" height="32"/>
+      <path class="fio d3" pathLength="1" d="M1390 56 V180 M1390 212 V275 M1390 357 V585"/>
+      <rect class="fio d3" pathLength="1" x="1374" y="180" width="32" height="32"/>
+      <circle class="fio d3" pathLength="1" cx="1390" cy="297" r="22"/>
+      <circle class="fio d3" pathLength="1" cx="1390" cy="335" r="22"/>
+      <path class="fio d4" pathLength="1" d="M40 590 H80 M48 602 H72 M56 614 H64 M1370 585 H1410 M1378 597 H1402 M1386 609 H1394"/>
+      <path class="fio d2" pathLength="1" d="M720 56 V120"/>
+      <circle class="fio d4" pathLength="1" cx="720" cy="130" r="10"/>
+      <circle class="corrente" r="4">
+        <animateMotion dur="7s" begin="2s" repeatCount="indefinite" path="M0 56 H1440"/>
+      </circle>
+      <circle class="corrente" r="4">
+        <animateMotion dur="7s" begin="5.5s" repeatCount="indefinite" path="M0 56 H1440"/>
+      </circle>
+      <circle class="corrente corrente-v" r="3.5">
+        <animateMotion dur="4s" begin="3s" repeatCount="indefinite" path="M1390 56 V585"/>
+      </circle>
+      <circle class="corrente corrente-v" r="3.5">
+        <animateMotion dur="4s" begin="4s" repeatCount="indefinite" path="M60 56 V590"/>
+      </circle>
+      <g class="diagrama-destaque">
+        <path class="fio vivo d2" pathLength="1" d="M60 56 V250"/>
+      </g>
+    </svg>
+    <div class="wrap hero-grid">
+      <div class="hero-texto">
+        <h1>Engenharia elétrica e segurança do trabalho para a sua empresa</h1>
+        <p class="hero-sub">Projetos, laudos e treinamentos com ART do engenheiro responsável. E softwares de gestão para manter sua empresa ou condomínio em dia com as normas.</p>
+        <div class="hero-acoes">
+          <a class="btn btn-zap btn-faisca" href="https://wa.me/5551999613451?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20Cini%20Engenharia." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2.1-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 21.8c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4C2.7 15.6 2.2 13.8 2.2 12 2.2 6.6 6.6 2.2 12 2.2c2.6 0 5.1 1 6.9 2.9 1.8 1.8 2.9 4.3 2.9 6.9 0 5.4-4.4 9.8-9.8 9.8zm8.4-18.2C18.2 1.3 15.2 0 12 0 5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12 0-3.2-1.3-6.2-3.5-8.4z"/></svg>Pedir orçamento no WhatsApp</a>
+          <a class="btn btn-linha" href="#servicos">Ver serviços</a>
+        </div>
+        <ul class="hero-fatos">
+          <li><strong>ART</strong>em todos os serviços</li>
+          <li><strong>Indústrias, empresas e condomínios</strong>do projeto ao treinamento</li>
+          <li><strong>Softwares para todo o Brasil</strong>gestão de NR 10 e NR 12</li>
+        </ul>
+      </div>
+      <figure class="hero-mapa">
+        <svg class="mapa-linhas" viewBox="0 0 100 96" aria-hidden="true">
+          <path class="fio" pathLength="1" d="M50 48 H17.5 V34.8"/>
+          <path class="fio" pathLength="1" d="M50 48 V34.8"/>
+          <path class="fio" pathLength="1" d="M50 48 H82.5 V34.8"/>
+          <path class="fio" pathLength="1" d="M50 48 H17.5 V61.2"/>
+          <path class="fio" pathLength="1" d="M50 48 V61.2"/>
+          <path class="fio" pathLength="1" d="M50 48 H82.5 V61.2"/>
+          <circle class="mapa-pulso" r="1.1" opacity="0"><set attributeName="opacity" to="1" begin="1.8s"/><animateMotion dur="2.2s" begin="1.8s" repeatCount="indefinite" path="M50 48 H17.5 V34.8"/></circle>
+          <circle class="mapa-pulso" r="1.1" opacity="0"><set attributeName="opacity" to="1" begin="2.2s"/><animateMotion dur="1.4s" begin="2.2s" repeatCount="indefinite" path="M50 48 V34.8"/></circle>
+          <circle class="mapa-pulso" r="1.1" opacity="0"><set attributeName="opacity" to="1" begin="2.6s"/><animateMotion dur="2.2s" begin="2.6s" repeatCount="indefinite" path="M50 48 H82.5 V34.8"/></circle>
+          <circle class="mapa-pulso" r="1.1" opacity="0"><set attributeName="opacity" to="1" begin="3.0s"/><animateMotion dur="2.2s" begin="3.0s" repeatCount="indefinite" path="M50 48 H17.5 V61.2"/></circle>
+          <circle class="mapa-pulso" r="1.1" opacity="0"><set attributeName="opacity" to="1" begin="3.4s"/><animateMotion dur="1.4s" begin="3.4s" repeatCount="indefinite" path="M50 48 V61.2"/></circle>
+          <circle class="mapa-pulso" r="1.1" opacity="0"><set attributeName="opacity" to="1" begin="3.8s"/><animateMotion dur="2.2s" begin="3.8s" repeatCount="indefinite" path="M50 48 H82.5 V61.2"/></circle>
+        </svg>
+          <a class="mapa-tile mp-1" href="#servicos" style="--i:0">
+            <svg class="mapa-icone" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true"><path d="M27 4 10 27h12l-3 17 19-25H25z"/></svg>
+            <strong>Engenharia elétrica</strong>
+            <span>Projetos, laudos e inspeções</span>
+          </a>
+          <a class="mapa-tile mp-2" href="#seguranca" style="--i:1">
+            <svg class="mapa-icone" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true"><path d="M24 4 7 10v12c0 11 7 19 17 22 10-3 17-11 17-22V10z"/><path d="m16 24 6 6 11-12"/></svg>
+            <strong>Engenharia de segurança do trabalho</strong>
+            <span><span class="nb">NR 10</span> e <span class="nb">NR 12</span></span>
+          </a>
+          <a class="mapa-tile mp-3" href="#treinamentos" style="--i:2">
+            <svg class="mapa-icone" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true"><path d="M4 18 24 8l20 10-20 10z"/><path d="M12 22v10c4 4 20 4 24 0V22M44 18v12"/></svg>
+            <strong>Treinamentos de segurança</strong>
+            <span>Presenciais, na sua empresa</span>
+          </a>
+          <a class="mapa-tile mp-4" href="/servicos-engenharia-eletrica/consultoria/" style="--i:3">
+            <svg class="mapa-icone" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true"><path d="M5 12h26v20H5z"/><path d="m31 19 12-7v20l-12-7"/></svg>
+            <strong>Consultoria online</strong>
+            <span>À distância, de onde você estiver</span>
+          </a>
+          <a class="mapa-tile mp-5" href="/servicos-engenharia-eletrica/consultoria/" style="--i:4">
+            <svg class="mapa-icone" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true"><path d="M24 44s14-12 14-24a14 14 0 0 0-28 0c0 12 14 24 14 24z"/><circle cx="24" cy="20" r="5"/></svg>
+            <strong>Consultoria presencial</strong>
+            <span>Na sua empresa</span>
+          </a>
+          <a class="mapa-tile mp-6" href="#softwares" style="--i:5">
+            <svg class="mapa-icone" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true"><path d="M6 9h36v24H6z"/><path d="M18 41h12M24 33v8"/><path d="m15 22 5 5 12-11"/></svg>
+            <strong>Softwares de gestão</strong>
+            <span><span class="nb">NR 12</span> e <span class="nb">NR 10</span>, para todo o Brasil</span>
+          </a>
+          <div class="mapa-centro"><strong>Cini</strong><span>Engenharia</span></div>
+      </figure>
     </div>
   </section>
 
+  <!-- ENGENHARIA ELÉTRICA -->
+  <section class="area-sec area-cinza" id="servicos">
+    <div class="wrap">
+      <h2 class="secao-titulo revelar">Engenharia elétrica para indústrias, empresas e condomínios</h2>
+      <p class="secao-intro revelar">Projetos, laudos e inspeções conforme as normas técnicas da ABNT, entregues com ART registrada no CREA.</p>
 
-  <!-- INTRO -->
-  <section class="intro">
+        <article class="sw-produto revelar">
+          <ul class="sw-selos">
+            <li><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 10.5 3.2 3.2L15 7"/></svg><span>ART no CREA em todos os serviços</span></li>
+            <li><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 10.5 3.2 3.2L15 7"/></svg><span>Conforme as normas ABNT</span></li>
+            <li><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 10.5 3.2 3.2L15 7"/></svg><span>Medições e registro em campo</span></li>
+          </ul>
 
-    <h1>
-      Engenharia Elétrica<br>
-      Engenharia de Segurança do Trabalho<br>
-      Treinamentos de Capacitações
-    </h1>
+          <div class="sw-colunas">
+            <div>
+              <h4>Projetos</h4>
+              <ul class="sv-itens">
+                <li><a href="/servicos-engenharia-eletrica/projeto-eletrico-industrial/"><strong>Projeto elétrico industrial</strong><span>NBR 5410 e NBR 14039, com aprovação na concessionária</span></a></li>
+                <li><a href="/servicos-engenharia-eletrica/projeto-subestacao/"><strong>Projeto de subestação</strong><span>Transformador, proteção primária e malha de terra</span></a></li>
+                <li><a href="/servicos-engenharia-eletrica/projeto-spda/"><strong>Projeto de SPDA (para-raios)</strong><span>Análise de risco e memorial de cálculo, NBR 5419</span></a></li>
+              </ul>
+            </div>
+            <div>
+              <h4>Laudos</h4>
+              <ul class="sv-itens">
+                <li><a href="/servicos-engenharia-eletrica/laudo-spda/"><strong>Laudo de SPDA</strong><span>Inspeção conforme a NBR 5419-3, medições e plano de ação</span></a></li>
+                <li><a href="/servicos-engenharia-eletrica/laudo-aterramento/"><strong>Laudo de aterramento</strong><span>Resistência, resistividade e equipotencialização</span></a></li>
+                <li><a href="/servicos-engenharia-eletrica/laudo-continuidade-eletrica/"><strong>Laudo de continuidade elétrica</strong><span>Condutores de proteção e descidas do SPDA</span></a></li>
+                <li><a href="/servicos-engenharia-eletrica/laudo-instalacoes-eletricas/"><strong>Laudo das instalações elétricas</strong><span>Adequação à nova <span class="nb">NR 10</span>, com prontuário</span></a></li>
+              </ul>
+            </div>
+            <div>
+              <h4>Inspeções e estudos</h4>
+              <ul class="sv-itens">
+                <li><a href="/servicos-engenharia-eletrica/termografia/"><strong>Inspeção por termografia</strong><span>Painéis elétricos, análise de severidade e plano de ação</span></a></li>
+                <li><a href="/servicos-engenharia-eletrica/calculo-atpv/"><strong>Cálculo de ATPV</strong><span>Energia incidente de arco elétrico e etiquetagem de painéis</span></a></li>
+                <li><a href="/servicos-engenharia-eletrica/consultoria/"><strong>Consultoria</strong><span>Parecer técnico, segunda opinião e análise de falhas</span></a></li>
+              </ul>
+            </div>
+          </div>
 
-    <div class="divider"></div>
-
-    <p>
-      Empresa especializada em Engenharia Elétrica, Engenharia de Segurança do Trabalho e Treinamentos de Capacitações,
-      oferecendo soluções completas para empresas.
-      <br><br>
-      Nossos serviços garantem segurança, eficiência e conformidade com as normas técnicas.
-      <br><br>
-      Atendemos clientes que buscam excelência em engenharia, segurança no trabalho e treinamentos especializados.
-    </p>
-
-  </section>
-
-
-  <!-- SERVIÇOS -->
-  <section class="services">
-
-    <h2 class="title">Nossos Serviços</h2>
-
-    <div class="cards">
-
-      <article class="card">
-        <h3>Engenharia<br>Elétrica</h3>
-        <p>Serviços oferecidos de Engenharia Elétrica.</p>
-      </article>
-
-      <article class="card">
-        <h3>Engenharia de<br>Segurança do Trabalho</h3>
-        <p>Serviços oferecidos de Engenharia de Segurança do Trabalho.</p>
-      </article>
-
-      <article class="card">
-        <h3>Treinamentos<br>de Capacitações</h3>
-        <p>Serviços oferecidos de Treinamentos de Capacitações.</p>
-      </article>
-
+          <div class="sw-rodape">
+            <p>Fale direto com o engenheiro responsável.</p>
+            <div class="sv-acoes">
+              <a class="area-link" href="/servicos/engenheiro-eletricista/">Ver engenharia elétrica</a>
+              <a class="btn btn-zap" href="https://wa.me/5551999613451?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20quero%20um%20or%C3%A7amento%20de%20engenharia%20el%C3%A9trica." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2.1-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 21.8c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4C2.7 15.6 2.2 13.8 2.2 12 2.2 6.6 6.6 2.2 12 2.2c2.6 0 5.1 1 6.9 2.9 1.8 1.8 2.9 4.3 2.9 6.9 0 5.4-4.4 9.8-9.8 9.8zm8.4-18.2C18.2 1.3 15.2 0 12 0 5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12 0-3.2-1.3-6.2-3.5-8.4z"/></svg>Pedir orçamento</a>
+            </div>
+          </div>
+        </article>
     </div>
-
   </section>
 
+  <!-- ENGENHARIA DE SEGURANÇA DO TRABALHO -->
+  <section class="area-sec area-branca" id="seguranca">
+    <div class="wrap">
+      <h2 class="secao-titulo revelar">Engenharia de segurança do trabalho para a sua empresa</h2>
+      <p class="secao-intro revelar">Análises de risco, laudos técnicos e programas de segurança com ART, para a sua empresa ficar em dia com a NR 10 e a NR 12.</p>
 
-  <footer>
-    https://www.ciniengenharia.com.br
+        <article class="sw-produto revelar">
+          <ul class="sw-selos">
+            <li><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 10.5 3.2 3.2L15 7"/></svg><span>ART no CREA</span></li>
+            <li><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 10.5 3.2 3.2L15 7"/></svg><span>Mais de 10 anos em engenharia de segurança</span></li>
+            <li><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 10.5 3.2 3.2L15 7"/></svg><span>Diagnóstico para a nova <span class="nb">NR 10</span></span></li>
+          </ul>
+
+          <div class="sw-colunas sw-colunas-2">
+            <div>
+              <h4>Eletricidade (<span class="nb">NR 10</span>)</h4>
+              <ul class="sv-itens">
+                <li><a href="/servicos-engenharia-eletrica/laudo-instalacoes-eletricas/"><strong>Laudo de <span class="nb">NR 10</span></strong><span>Avaliação das instalações e dos serviços em eletricidade</span></a></li>
+                <li><div><strong>Prontuário das instalações elétricas</strong><span>Organização dos documentos exigidos pela <span class="nb">NR 10</span></span></div></li>
+                <li><a href="/servicos-engenharia-eletrica/laudo-instalacoes-eletricas/"><strong>Diagnóstico da nova <span class="nb">NR 10</span></strong><span>O que muda com a Portaria MTE 737/2026 e o que falta na sua empresa</span></a></li>
+              </ul>
+            </div>
+            <div>
+              <h4>Máquinas (<span class="nb">NR 12</span>)</h4>
+              <ul class="sv-itens">
+                <li><div><strong>Laudo de conformidade <span class="nb">NR 12</span></strong><span>Verificação das máquinas e equipamentos conforme a <span class="nb">NR 12</span></span></div></li>
+                <li><div><strong>Inventário de máquinas <span class="nb">NR 12</span></strong><span>Levantamento e identificação das máquinas da empresa</span></div></li>
+                <li><div><strong>Análise de riscos <span class="nb">NR 12</span></strong><span>Perigos, grau de risco e medidas de proteção por máquina</span></div></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="sw-rodape">
+            <p>Também fazemos consultoria em segurança do trabalho.</p>
+            <div class="sv-acoes">
+              <a class="area-link" href="/servicos/engenheiro-de-seguranca-do-trabalho/">Ver segurança do trabalho</a>
+              <a class="btn btn-zap" href="https://wa.me/5551999613451?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20quero%20um%20or%C3%A7amento%20de%20seguran%C3%A7a%20do%20trabalho." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2.1-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 21.8c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4C2.7 15.6 2.2 13.8 2.2 12 2.2 6.6 6.6 2.2 12 2.2c2.6 0 5.1 1 6.9 2.9 1.8 1.8 2.9 4.3 2.9 6.9 0 5.4-4.4 9.8-9.8 9.8zm8.4-18.2C18.2 1.3 15.2 0 12 0 5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12 0-3.2-1.3-6.2-3.5-8.4z"/></svg>Pedir orçamento</a>
+            </div>
+          </div>
+        </article>
+    </div>
+  </section>
+
+  <!-- TREINAMENTOS -->
+  <section class="area-sec area-cinza" id="treinamentos">
+    <div class="wrap">
+      <h2 class="secao-titulo revelar">Treinamentos NR 12 presenciais, na sua empresa</h2>
+      <p class="secao-intro revelar">Capacitação por função, montada a partir da análise de riscos das suas máquinas, com carga horária conforme a função de cada trabalhador.</p>
+
+        <article class="sw-produto revelar">
+          <ul class="sw-selos">
+            <li><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 10.5 3.2 3.2L15 7"/></svg><span>Presencial, na própria empresa</span></li>
+            <li><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 10.5 3.2 3.2L15 7"/></svg><span>Treinamento nas próprias máquinas</span></li>
+            <li><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 10.5 3.2 3.2L15 7"/></svg><span>Certificado conforme a <span class="nb">NR 12</span></span></li>
+          </ul>
+
+          <div class="sw-colunas sw-colunas-2">
+            <div>
+              <h4>O que o curso aborda</h4>
+              <ul class="sv-itens">
+                <li><div><strong>Procedimentos seguros de operação</strong><span>Para operação, manutenção, limpeza e ajuste</span></div></li>
+                <li><div><strong>Bloqueio e liberação de máquinas</strong><span>Como intervir com a máquina em segurança</span></div></li>
+                <li><div><strong>Dispositivos de proteção</strong><span>Uso correto dos sistemas de segurança</span></div></li>
+                <li><div><strong>Ações em emergência</strong><span>O que fazer quando algo dá errado</span></div></li>
+              </ul>
+            </div>
+            <div>
+              <h4>Quando fazer</h4>
+              <ul class="sv-itens">
+                <li><div><strong>Antes do início das atividades</strong><span>Todo trabalhador deve ser capacitado antes de operar</span></div></li>
+                <li><div><strong>Na mudança de função, máquina ou método</strong><span>A capacitação acompanha cada mudança</span></div></li>
+                <li><div><strong>Em máquinas novas, adequações e auditorias</strong><span>Treinamento direcionado ao equipamento e aos riscos</span></div></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="sw-rodape">
+            <p>Conteúdo direcionado à realidade do seu processo produtivo.</p>
+            <div class="sv-acoes">
+              <a class="area-link" href="/servicos/curso-nr12/">Ver curso NR 12</a>
+              <a class="btn btn-zap" href="https://wa.me/5551999613451?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20quero%20um%20or%C3%A7amento%20do%20curso%20NR%2012." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2.1-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 21.8c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4C2.7 15.6 2.2 13.8 2.2 12 2.2 6.6 6.6 2.2 12 2.2c2.6 0 5.1 1 6.9 2.9 1.8 1.8 2.9 4.3 2.9 6.9 0 5.4-4.4 9.8-9.8 9.8zm8.4-18.2C18.2 1.3 15.2 0 12 0 5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12 0-3.2-1.3-6.2-3.5-8.4z"/></svg>Pedir orçamento do curso</a>
+            </div>
+          </div>
+        </article>
+    </div>
+  </section>
+
+  <!-- SOFTWARES -->
+  <section class="softwares" id="softwares">
+    <div class="wrap">
+      <h2 class="secao-titulo revelar">Softwares de gestão <span class="nb">NR 12</span> e <span class="nb">NR 10</span> para empresas de todo o Brasil</h2>
+      <p class="secao-intro revelar">Desenvolvidos pela Cini Engenharia, que faz laudos e análises de risco no dia a dia. Feitos para quem precisa organizar a segurança em máquinas e em eletricidade, em qualquer lugar do país.</p>
+
+      <div class="sw-grid">
+
+        <article class="sw-produto sw-nr12 revelar">
+          <div class="sw-cab">
+            <span class="sw-marca">Cini NR 12</span>
+            <h3>Gestão de <span class="nb">NR 12</span>: segurança no trabalho em máquinas e equipamentos</h3>
+          </div>
+
+          <p class="nr-fluxo-intro">O técnico faz a análise de riscos no celular, direto na máquina, mesmo sem internet. Depois envia para o servidor, onde a equipe revisa, completa e gera os documentos.</p>
+
+          <ul class="sw-selos">
+            <li><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 10.5 3.2 3.2L15 7"/></svg><span>Aplicativo Android que funciona sem internet</span></li>
+            <li><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 10.5 3.2 3.2L15 7"/></svg><span>Servidor na nuvem, no Brasil</span></li>
+            <li><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 10.5 3.2 3.2L15 7"/></svg><span>Acesso pelo navegador, de qualquer computador</span></li>
+            <li><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 10.5 3.2 3.2L15 7"/></svg><span>Cada empresa só vê os próprios dados</span></li>
+          </ul>
+
+          <div class="nr-fluxo">
+            <div class="nr-etapa">
+              <div class="nr-etapa-cab"><span class="nr-num">1</span><div><h4>Em campo</h4><p>Aplicativo Android</p></div></div>
+              <ul>
+                <li>Funciona sem sinal de internet</li>
+                <li>Baixa do servidor a máquina com perguntas, pontos e fotos</li>
+                <li>Responde as perguntas de cada risco, com automações rodando na hora</li>
+                <li>Fotos da máquina, da plaqueta, dos riscos e dos pontos</li>
+                <li>Ditado por voz para a situação encontrada, a recomendação e os pontos</li>
+                <li>Grau de risco (HRN) antes e depois, com confirmação</li>
+                <li>Inventário no aparelho, com busca por número e por plaqueta</li>
+                <li>Lixeira e cópia das versões substituídas: nada se perde</li>
+              </ul>
+            </div>
+            <div class="nr-etapa">
+              <div class="nr-etapa-cab"><span class="nr-num">2</span><div><h4>No servidor</h4><p>Pelo navegador, no computador</p></div></div>
+              <ul>
+                <li>Recebe as análises enviadas do campo, só quando o técnico decide subir</li>
+                <li>Cadastro de clientes, filiais e usuários, com permissões</li>
+                <li>Cadastro de máquinas por planilha, com conferência antes de gravar</li>
+                <li>Catálogo de riscos e escala de HRN por cliente</li>
+                <li>Perguntas de campo e automações que preenchem situação, recomendação e HRN</li>
+                <li>Edição da análise a qualquer momento, com fotos por risco e por ponto</li>
+                <li>Pendências, tarefas e avisos de cada análise</li>
+              </ul>
+            </div>
+            <div class="nr-etapa">
+              <div class="nr-etapa-cab"><span class="nr-num">3</span><div><h4>Documentos gerados</h4><p>Prontos para entregar</p></div></div>
+              <ul>
+                <li>Laudo <span class="nb">NR 12</span></li>
+                <li>Análise de riscos</li>
+                <li>Plano de ação</li>
+                <li>Manual de instruções <span class="nb">NR 12</span>, em 16 seções</li>
+                <li>HRN antes e depois em todos os documentos</li>
+                <li>Embasamento normativo em cada risco</li>
+                <li>Documentos guardados para baixar de novo</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="sw-rodape">
+            <p>Período de teste disponível.</p>
+            <a class="btn btn-zap" href="https://wa.me/5551999613451?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20quero%20conhecer%20o%20software%20Cini%20NR%2012%20e%20o%20per%C3%ADodo%20de%20teste." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2.1-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 21.8c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4C2.7 15.6 2.2 13.8 2.2 12 2.2 6.6 6.6 2.2 12 2.2c2.6 0 5.1 1 6.9 2.9 1.8 1.8 2.9 4.3 2.9 6.9 0 5.4-4.4 9.8-9.8 9.8zm8.4-18.2C18.2 1.3 15.2 0 12 0 5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12 0-3.2-1.3-6.2-3.5-8.4z"/></svg>Pedir período de teste</a>
+          </div>
+        </article>
+
+        <article class="sw-produto sw-nr10 revelar">
+          <div class="sw-cab">
+            <span class="sw-marca">Cini NR 10</span>
+            <h3>Gestão de <span class="nb">NR 10</span>: segurança em instalações elétricas e serviços em eletricidade</h3>
+            <p class="sw-texto">Saiba, num só painel, quem da sua equipe pode trabalhar com eletricidade hoje e o que está para vencer.</p>
+          </div>
+
+          <ul class="sw-selos">
+            <li><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 10.5 3.2 3.2L15 7"/></svg><span>Na nuvem, pelo navegador</span></li>
+            <li><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 10.5 3.2 3.2L15 7"/></svg><span>Mesmo acesso do Cini NR 12</span></li>
+          </ul>
+
+          <div class="sw-colunas sw-colunas-2">
+            <div>
+              <h4>Equipe e treinamentos</h4>
+              <ul>
+                <li>Painel que mostra quem pode e quem não pode trabalhar, e o motivo</li>
+                <li>Vencimentos de treinamentos e equipamentos: vencidos e em até 30, 60 e 90 dias</li>
+                <li>Treinamentos exigidos definidos pela função de cada pessoa</li>
+              </ul>
+            </div>
+            <div>
+              <h4>Documentos e equipamentos</h4>
+              <ul>
+                <li>Ficha do funcionário com cursos, capacitação, exame de saúde e equipamentos</li>
+                <li>Autorização de trabalho com revisões e termo para imprimir e assinar</li>
+                <li>Equipamentos isolantes com CA, validade e prazo de ensaio</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="sw-rodape">
+            <p>Período de teste disponível.</p>
+            <a class="btn btn-contorno" href="https://wa.me/5551999613451?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20quero%20conhecer%20o%20software%20Cini%20NR%2010%20e%20o%20per%C3%ADodo%20de%20teste." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2.1-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 21.8c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4C2.7 15.6 2.2 13.8 2.2 12 2.2 6.6 6.6 2.2 12 2.2c2.6 0 5.1 1 6.9 2.9 1.8 1.8 2.9 4.3 2.9 6.9 0 5.4-4.4 9.8-9.8 9.8zm8.4-18.2C18.2 1.3 15.2 0 12 0 5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12 0-3.2-1.3-6.2-3.5-8.4z"/></svg>Conhecer o Cini NR 10</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- RESPONSÁVEL -->
+  <section class="responsavel">
+    <div class="wrap responsavel-grid revelar">
+      <h2 class="secao-titulo">Quem assina é quem faz</h2>
+      <div>
+        <p>Cada laudo e projeto é elaborado e assinado pelo engenheiro responsável, com ART registrada no CREA-RS. Você fala direto com quem vai até a sua empresa.</p>
+        <div class="assinatura">
+          <strong>Dario Cini</strong>
+          <span>Engenheiro eletricista, responsável técnico da Cini Engenharia</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CHAMADA -->
+  <section class="chamada">
+    <div class="wrap">
+      <div class="chamada-caixa revelar">
+      <div>
+        <h2>Precisa de um laudo, projeto ou treinamento?</h2>
+        <p>Conte o que sua empresa precisa e receba o orçamento pelo WhatsApp.</p>
+      </div>
+      <div class="chamada-botoes">
+          <a class="btn btn-zap" href="https://wa.me/5551999613451?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20Cini%20Engenharia." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2.1-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 21.8c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4C2.7 15.6 2.2 13.8 2.2 12 2.2 6.6 6.6 2.2 12 2.2c2.6 0 5.1 1 6.9 2.9 1.8 1.8 2.9 4.3 2.9 6.9 0 5.4-4.4 9.8-9.8 9.8zm8.4-18.2C18.2 1.3 15.2 0 12 0 5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12 0-3.2-1.3-6.2-3.5-8.4z"/></svg>(51) 99961-3451</a>
+          <a class="btn btn-zap" href="https://wa.me/5554999475010?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20Cini%20Engenharia." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2.1-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 21.8c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4C2.7 15.6 2.2 13.8 2.2 12 2.2 6.6 6.6 2.2 12 2.2c2.6 0 5.1 1 6.9 2.9 1.8 1.8 2.9 4.3 2.9 6.9 0 5.4-4.4 9.8-9.8 9.8zm8.4-18.2C18.2 1.3 15.2 0 12 0 5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12 0-3.2-1.3-6.2-3.5-8.4z"/></svg>(54) 99947-5010</a>
+        </div>
+    </div>
+    </div>
+  </section>
+
+  </main>
+
+  <!-- RODAPÉ -->
+  <footer class="rodape">
+    <div class="wrap">
+      <div class="rodape-grid">
+        <div class="rodape-marca">
+          <strong>Cini Engenharia</strong>
+          Engenharia elétrica, segurança do trabalho, treinamentos e softwares de gestão.
+        </div>
+        <div>
+          <h3>Contato</h3>
+          <ul>
+            <li>WhatsApp e telefone: <a href="https://wa.me/5551999613451?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20Cini%20Engenharia." target="_blank" rel="noopener">(51) 99961-3451</a></li>
+            <li>WhatsApp e telefone: <a href="https://wa.me/5554999475010?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20Cini%20Engenharia." target="_blank" rel="noopener">(54) 99947-5010</a></li>
+            <li>E-mail: <a href="mailto:contato@ciniengenharia.com.br">contato@ciniengenharia.com.br</a></li>
+            <li>LinkedIn: <a href="https://www.linkedin.com/in/dario-cini-38a3303a1/" target="_blank" rel="noopener">Dario Cini</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="rodape-base">© 2026 Cini Engenharia</div>
+    </div>
   </footer>
 
+  <a class="zap-fixo" href="https://wa.me/5551999613451?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20Cini%20Engenharia." target="_blank" rel="noopener" aria-label="Conversar no WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2.1-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 21.8c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4C2.7 15.6 2.2 13.8 2.2 12 2.2 6.6 6.6 2.2 12 2.2c2.6 0 5.1 1 6.9 2.9 1.8 1.8 2.9 4.3 2.9 6.9 0 5.4-4.4 9.8-9.8 9.8zm8.4-18.2C18.2 1.3 15.2 0 12 0 5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12 0-3.2-1.3-6.2-3.5-8.4z"/></svg></a>
+
+  <script>
+  (function () {
+    var itens = document.querySelectorAll(".revelar");
+    if (!("IntersectionObserver" in window)) { itens.forEach(function (el) { el.classList.add("visivel"); }); return; }
+    var io = new IntersectionObserver(function (entradas) {
+      entradas.forEach(function (e) {
+        if (e.isIntersecting) { e.target.classList.add("visivel"); io.unobserve(e.target); }
+      });
+    }, { threshold: 0.15 });
+    var n = 0;
+    itens.forEach(function (el) {
+      if (el.classList.contains("area")) {
+        el.style.transitionDelay = (n++ * 0.12) + "s";
+        el.addEventListener("transitionend", function () { el.style.transitionDelay = ""; }, { once: true });
+      }
+      io.observe(el);
+    });
+  })();
+  </script>
 </body>
 </html>
