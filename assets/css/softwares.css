@@ -1,0 +1,134 @@
+/* =========================================================
+   SOFTWARES — páginas dos softwares de gestão
+   Usa as cores, fontes e componentes do home.css
+   ========================================================= */
+
+.swp-topo {
+  margin-top: 95px;               /* altura do menu fixo */
+  padding: 56px 0 72px;
+  background:
+    linear-gradient(90deg, var(--linha) 1px, transparent 1px) 0 0 / 48px 48px,
+    linear-gradient(180deg, var(--linha) 1px, transparent 1px) 0 0 / 48px 48px,
+    #fff;
+  background-blend-mode: normal;
+  border-bottom: 1px solid var(--linha);
+  position: relative;
+}
+
+.swp-topo::before {               /* suaviza a grade para o texto ficar limpo */
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, #fff 35%, rgba(255,255,255,.75) 100%);
+  pointer-events: none;
+}
+
+.swp-topo .wrap { position: relative; }
+
+.swp-trilha {
+  font-size: 14px;
+  color: var(--suave);
+  margin-bottom: 28px;
+}
+.swp-trilha a { text-decoration: none; }
+.swp-trilha a:hover { color: var(--vermelho); }
+
+.swp-topo h1 {
+  margin: 14px 0 18px;
+  font-size: clamp(34px, 4.6vw, 58px);
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  font-stretch: 90%;
+  max-width: 15em;
+  text-wrap: balance;
+}
+
+.swp-sub {
+  margin: 0 0 30px;
+  font-size: 19px;
+  color: var(--suave);
+  max-width: 40em;
+}
+
+.swp-acoes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+.swp-secao { padding-top: 88px; }
+
+/* ---------- DÚVIDAS ---------- */
+
+.swp-faq { padding: 0 0 96px; }
+
+.swp-faq .secao-titulo { margin-bottom: 28px; }
+
+.swp-faq-item {
+  max-width: 860px;
+  border-bottom: 1px solid var(--linha);
+}
+
+.swp-faq-item summary {
+  cursor: pointer;
+  list-style: none;
+  padding: 20px 40px 20px 0;
+  font-size: 18px;
+  font-weight: 600;
+  position: relative;
+}
+.swp-faq-item summary::-webkit-details-marker { display: none; }
+.swp-faq-item summary::after {
+  content: "+";
+  position: absolute;
+  right: 6px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 26px;
+  font-weight: 400;
+  color: var(--vermelho);
+}
+.swp-faq-item[open] summary::after { content: "−"; }
+
+.swp-faq-item p {
+  margin: 0 0 22px;
+  font-size: 17px;
+  color: var(--suave);
+  max-width: 46em;
+}
+
+@media (max-width: 760px) {
+  .swp-topo { padding: 36px 0 52px; }
+  .swp-sub { font-size: 17px; }
+  .swp-secao { padding-top: 64px; }
+  .swp-faq { padding-bottom: 64px; }
+}
+
+/* ---------- LINK PARA O OUTRO SOFTWARE ---------- */
+
+.swp-outro { margin: 28px 0 0; font-size: 17px; color: var(--suave); }
+.swp-outro a { color: var(--vermelho); font-weight: 600; }
+
+/* ---------- CARTÕES DA PÁGINA GERAL ---------- */
+
+.swp-cartoes {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 28px;
+}
+
+.swp-cartao {
+  text-decoration: none;
+  border-top: 4px solid var(--vermelho);
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+.swp-cartao:hover { transform: translateY(-4px); box-shadow: 0 18px 40px rgba(29,43,56,.10); }
+.swp-cartao .sw-marca { align-self: flex-start; }
+.swp-cartao h2 { margin: 0; font-size: 22px; line-height: 1.25; font-weight: 500; }
+.swp-cartao p { margin: 0; color: var(--suave); font-size: 17px; }
+.swp-mais { margin-top: auto; font-weight: 700; color: var(--vermelho); }
+
+@media (max-width: 860px) {
+  .swp-cartoes { grid-template-columns: 1fr; }
+}
