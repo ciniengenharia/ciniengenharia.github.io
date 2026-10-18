@@ -1,0 +1,13 @@
+ENGENHARIA DE SEGURANCA DO TRABALHO - 14 paginas
+
+1. Extraia o zip e coloque a pasta seguranca-do-trabalho DENTRO da pasta do site
+   (onde ficam o index.html e o CNAME).
+2. De dois cliques em aplicar.bat.
+3. No GitHub Desktop: Discard changes na pasta seguranca-do-trabalho,
+   depois Commit to main e Push origin.
+
+Este pacote ja inclui a correcao das paginas de engenharia eletrica e o estilo
+dos artigos. Se voce ja aplicou esses, nao tem problema: aplicar de novo nao estraga nada.
+
+Depois de publicar, abra:
+  https://www.ciniengenharia.com.br/servicos/engenharia-de-seguranca-do-trabalho-caxias-do-sul/
