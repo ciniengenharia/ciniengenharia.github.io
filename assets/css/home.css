@@ -498,12 +498,6 @@ body.home .menu-logo { margin-right: 16px; }
 }
 .sw-rodape p { margin: 0; font-weight: 600; }
 
-.btn-contorno {
-  border: 1.5px solid var(--vermelho);
-  color: var(--vermelho) !important;
-  background: #fff;
-}
-.btn-contorno:hover { background: var(--vermelho); color: #fff !important; }
 
 /* Cini NR 12: caminho campo → servidor → documentos */
 .nr-fluxo-intro { margin: -8px 0 0; color: var(--suave); font-size: 17px; max-width: 52em; }
