@@ -523,7 +523,7 @@ body.engenharia .spda-indice li:last-child{
 }
 
 /* ===== SEÇÕES SEM FOTO ===== */
-/* Título à esquerda, texto à direita, para a seção não ficar com meia página vazia */
+/* Título à esquerda, texto à direita, para a seção não ficar com meia página vazia (o título não acompanha a rolagem) */
 
 body.engenharia .hero.sem-foto .hero-text{
   width: 100%;
@@ -540,8 +540,6 @@ body.engenharia .hero.sem-foto .hero-text > *{
 body.engenharia .hero.sem-foto .hero-text > h2{
   grid-column: 1;
   grid-row: 1 / span 40;
-  position: sticky;
-  top: 100px;
   font-size: 30px;
   line-height: 1.2;
   padding-top: 18px;
@@ -574,7 +572,6 @@ body.engenharia .servicos-grid.sem-foto .servico p{
   }
 
   body.engenharia .hero.sem-foto .hero-text > h2{
-    position: static;
     font-size: 26px;
     padding-top: 14px;
     margin-bottom: 22px;
