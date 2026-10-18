@@ -13,19 +13,19 @@
 }
 
 .menu-container {
-  max-width: 1100px;
+  max-width: 1240px;
   margin: 0 auto;
   padding: 12px 24px;
 
   display: flex;
   align-items: center;
-  gap: 40px;
+  gap: 24px;
 }
 
 /* LOGO */
 
 .menu-logo {
-  margin-right: 40px;
+  margin-right: 16px;
 }
 
 .menu-logo img {
@@ -39,23 +39,24 @@
 .menu-links {
   display: flex;
   align-items: center;
-  gap: 28px;
+  gap: 14px;
 }
 
 /* SEPARADOR ENTRE LINKS */
 
 .menu-links a + a {
   border-left: 1px solid #ccc;
-  padding-left: 28px;
+  padding-left: 14px;
 }
 
 /* LINK PADRÃO */
 
 .menu-links a {
-  font-size: 18px;
+  font-size: 16px;
   color: #111;
   text-decoration: none;
-  padding: 10px 16px;
+  white-space: nowrap;
+  padding: 10px 10px;
   transition: all 0.2s ease;
 }
 
@@ -110,7 +111,7 @@
 
 /* ===== RESPONSIVO ===== */
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
 
   .menu-container {
     flex-wrap: wrap;

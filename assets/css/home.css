@@ -41,10 +41,6 @@ body.home :focus-visible {
 /* ---------- MENU (ajuste para a fonte nova) ---------- */
 
 body.home .menu { background: rgba(255,255,255,.92); backdrop-filter: blur(8px); }
-body.home .menu-links a { white-space: nowrap; font-size: 16px; padding: 10px 12px; }
-body.home .menu-links { gap: 18px; }
-body.home .menu-links a + a { padding-left: 18px; }
-body.home .menu-logo { margin-right: 16px; }
 
 /* ---------- BOTÕES ---------- */
 
