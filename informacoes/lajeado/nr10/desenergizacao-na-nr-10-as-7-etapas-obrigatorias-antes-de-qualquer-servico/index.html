@@ -156,46 +156,46 @@ document.addEventListener("DOMContentLoaded", function() {
 A desenergização é a medida de proteção prioritária da nova NR-10, aprovada pela Portaria MTE nº 737/2026 — é ela que elimina o perigo elétrico antes que o trabalhador intervenha na instalação. No entanto, uma desenergização realizada de forma incompleta ou incorreta pode criar uma falsa sensação de segurança que é mais perigosa do que a ausência de qualquer protocolo. A norma estabelece sete etapas obrigatórias que precisam ser cumpridas em sequência para que a instalação seja considerada segura para intervenção. Para as equipes de manutenção das empresas de Lajeado, conhecer e cumprir essas sete etapas na ordem correta é a diferença entre um trabalho efetivamente seguro e um acidente que poderia ter sido evitado.
 </p>
 
-<h2>Etapa 1: desligar</h2>
+<h2>Etapa 1: seccionar (desligar)</h2>
 
 <p>
 A primeira etapa é o desligamento da instalação — a abertura dos dispositivos de manobra que interrompem o fornecimento de energia para a parte da instalação onde o serviço será realizado. Essa etapa pode envolver a abertura de disjuntores, chaves seccionadoras, contactores ou qualquer outro dispositivo de manobra adequado. O desligamento deve ser feito na sequência correta definida pelo procedimento de trabalho, considerando a topologia da instalação para garantir que todas as fontes de energia — incluindo fontes alternativas como geradores ou fontes de alimentação redundantes — sejam efetivamente abertas.
 </p>
 
-<h2>Etapa 2: prevenir o religamento</h2>
+<h2>Etapa 2: constatar a ausência de tensão</h2>
 
 <p>
-Desligar não é suficiente se o religamento acidental for possível. A segunda etapa é impedir que o circuito seja religado durante o serviço — seja por erro humano, seja por ação de dispositivos automáticos de religamento. A nova NR-10 exige o bloqueio físico dos dispositivos de manobra — o travamento mecânico que impede a operação do disjuntor ou da chave seccionadora — combinado com a etiquetagem de segurança que identifica o circuito como fora de serviço e informa quem realizou o bloqueio e quando. Para as empresas de Lajeado que ainda não possuem um sistema formal de bloqueio e etiquetagem, a implementação do LOTO — Lockout/Tagout — é uma ação prioritária de adequação à nova norma.
+Após o seccionamento, a segunda etapa exige a constatação da ausência de tensão na parte da instalação onde o serviço será realizado. Essa verificação deve ser feita com um detector de tensão adequado à tensão da instalação — previamente testado para confirmar seu funcionamento — e deve cobrir todos os condutores que possam estar energizados no ponto de trabalho, incluindo o neutro. A verificação visual do estado do disjuntor não substitui a verificação instrumental: um disjuntor aparentemente aberto pode ter contatos soldados internamente que mantêm a continuidade elétrica mesmo com o atuador em posição de aberto.
 </p>
 
-<h2>Etapa 3: verificar a ausência de tensão</h2>
+<h2>Etapa 3: impedir a reenergização</h2>
 
 <p>
-Mesmo após o desligamento e o bloqueio, a terceira etapa exige a verificação instrumental da ausência de tensão na parte da instalação onde o serviço será realizado. Essa verificação deve ser feita com um detector de tensão adequado à tensão da instalação — previamente testado para confirmar seu funcionamento — e deve cobrir todos os condutores que possam estar energizados no ponto de trabalho, incluindo o neutro. A verificação visual do estado do disjuntor não substitui a verificação instrumental: um disjuntor aparentemente aberto pode ter contatos soldados internamente que mantêm a continuidade elétrica mesmo com o atuador em posição de aberto.
+Desligar não é suficiente se o religamento acidental for possível. A terceira etapa é impedir que o circuito seja reenergizado durante o serviço — seja por erro humano, seja por ação de dispositivos automáticos de religamento. Na prática, isso é feito com o travamento mecânico dos dispositivos de manobra — que impede a operação do disjuntor ou da chave seccionadora —, recurso que o próprio projeto deve prever (subitem 10.4.1). Para as empresas de Lajeado que ainda não possuem um sistema formal de bloqueio e etiquetagem, a implementação do LOTO — Lockout/Tagout — é uma ação prioritária de adequação à nova norma.
 </p>
 
-<h2>Etapa 4: instalar aterramento temporário e curto-circuito</h2>
+<h2>Etapa 4: instalar aterramento temporário com equipotencialização</h2>
 
 <p>
-Para instalações de média e alta tensão, a quarta etapa é obrigatória: a instalação de aterramento temporário e colocação em curto-circuito dos condutores da instalação onde o serviço será realizado. Essa etapa garante que, mesmo em caso de reenergização acidental — por falha nos bloqueios ou por erro humano —, todos os condutores permaneçam no potencial do terra e nenhuma tensão perigosa apareça nas partes acessíveis ao trabalhador. Para instalações de baixa tensão, essa etapa pode ser adaptada conforme os procedimentos específicos da organização, mas a lógica de eliminar qualquer tensão residual permanece.
+A quarta etapa é a instalação de aterramento temporário com equipotencialização dos condutores da instalação onde o serviço será realizado (subitem 10.13.1, alínea "d"). Essa etapa garante que, mesmo em caso de reenergização acidental — por falha nos bloqueios ou por erro humano —, todos os condutores permaneçam no mesmo potencial e nenhuma tensão perigosa apareça nas partes acessíveis ao trabalhador. A sequência vale para qualquer nível de tensão; eventuais alterações dessas medidas só podem ser feitas por PLH autorizado, com justificativa técnica formal (subitem 10.13.4).
 </p>
 
-<h2>Etapa 5: instalar proteção coletiva para delimitar a área de trabalho</h2>
+<h2>Etapa 5: proteger os elementos energizados e contra o arco elétrico</h2>
 
 <p>
-Com a instalação desenergizada, aterrada e em curto-circuito, a quinta etapa é delimitar fisicamente a área de trabalho e instalar as proteções coletivas necessárias — barreiras, sinalização e isolamentos temporários que impeçam o acesso acidental de outras pessoas à zona de trabalho e que protejam o trabalhador de partes adjacentes que possam permanecer energizadas. Em instalações onde o serviço é realizado em apenas parte do sistema — mantendo outras partes energizadas —, essa delimitação é especialmente crítica.
+Com a instalação desenergizada e aterrada, a quinta etapa é a proteção dos elementos energizados existentes nas proximidades e a proteção contra arco elétrico (subitem 10.13.1, alínea "e") — barreiras e isolamentos temporários que protejam o trabalhador de partes adjacentes que possam permanecer energizadas. Em instalações onde o serviço é realizado em apenas parte do sistema — mantendo outras partes energizadas —, essa proteção é especialmente crítica.
 </p>
 
-<h2>Etapa 6: emitir a permissão de trabalho</h2>
+<h2>Etapa 6: instalar a sinalização de impedimento de reenergização</h2>
 
 <p>
-Para serviços não rotineiros em instalações elétricas, a sexta etapa é a emissão da permissão de trabalho — o documento que formaliza a autorização para o início do serviço após a conclusão de todas as etapas anteriores. A nova NR-10 exige que a permissão de trabalho contenha, entre outros elementos, a identificação do serviço, o local, a equipe envolvida e suas autorizações, a relação dos EPIs necessários, as condições impeditivas e o período de validade. A permissão de trabalho é emitida pelo responsável pela instalação e entregue ao responsável pela execução do serviço — garantindo que ambas as partes têm conhecimento e concordância sobre as condições em que o trabalho será realizado.
+A sexta etapa é a instalação da sinalização de impedimento de reenergização (subitem 10.13.1, alínea "f") — etiquetas e placas junto aos dispositivos de manobra bloqueados, que identificam o circuito como fora de serviço e alertam que ele não pode ser religado. Essa sinalização complementa o bloqueio físico da terceira etapa. A permissão de trabalho, exigida para serviços não rotineiros (subitem 10.7.2), é uma medida administrativa à parte, precedida de análise de risco e aprovada por trabalhador autorizado — e não uma das etapas da sequência de desenergização.
 </p>
 
-<h2>Etapa 7: realizar avaliação prévia no local</h2>
+<h2>Etapa 7: delimitar e sinalizar a área de trabalho</h2>
 
 <p>
-A sétima e última etapa antes do início efetivo do serviço é a avaliação prévia no local de trabalho. A nova norma determina que a execução de serviço em eletricidade deve ser precedida de avaliação prévia no local de trabalho, verificando situações não previstas no procedimento ou na permissão de trabalho, a adequação das medidas de prevenção adotadas e as condições impeditivas. Essa avaliação é realizada pelo trabalhador responsável pela execução do serviço — ou pelo supervisor da equipe — imediatamente antes do início do trabalho, como uma última verificação de que as condições no campo correspondem ao que foi planejado.
+A sétima e última etapa é a delimitação e a sinalização da área de trabalho (subitem 10.13.1, alínea "g") — barreiras, fitas e placas que impeçam o acesso acidental de outras pessoas à zona de trabalho. Concluída a sequência, a nova norma ainda exige avaliação prévia no local antes do início do serviço (subitem 10.7.4), e, se for constatada qualquer anormalidade, o serviço não deve ser iniciado (subitem 10.7.4.2) — uma última verificação de que as condições no campo correspondem ao que foi planejado.
 </p>
 
 <h2>A sequência importa: nenhuma etapa pode ser pulada</h2>
@@ -207,7 +207,7 @@ As sete etapas precisam ser cumpridas em sequência. Pular qualquer uma delas �
 <h2>Conclusão</h2>
 
 <p>
-As sete etapas de desenergização da nova NR-10 — desligar, prevenir o religamento, verificar a ausência de tensão, instalar aterramento temporário, instalar proteção coletiva, emitir a permissão de trabalho e realizar avaliação prévia no local — formam um protocolo completo que elimina o perigo elétrico de forma sistemática e verificável. Para as empresas de Lajeado, incorporar essas sete etapas aos procedimentos de trabalho elétrico e garantir que sejam cumpridas na ordem correta em cada intervenção é a implementação mais concreta da prioridade que a nova norma dá à desenergização como primeira e principal medida de proteção antes de qualquer serviço elétrico.
+As sete etapas de desenergização da nova NR-10 (subitem 10.13.1) — seccionar, constatar a ausência de tensão, impedir a reenergização, instalar aterramento temporário com equipotencialização, proteger os elementos energizados e contra arco, sinalizar o impedimento de reenergização e delimitar e sinalizar a área de trabalho — formam um protocolo completo que elimina o perigo elétrico de forma sistemática e verificável. Para as empresas de Lajeado, incorporar essas sete etapas aos procedimentos de trabalho elétrico e garantir que sejam cumpridas na ordem correta em cada intervenção é a implementação mais concreta da prioridade que a nova norma dá à desenergização como primeira e principal medida de proteção antes de qualquer serviço elétrico.
 </p>
 
 </section>
