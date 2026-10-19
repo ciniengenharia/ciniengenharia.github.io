@@ -117,7 +117,7 @@
 
   <!-- CURSO NR12 -->
   <url>
-    <loc>https://www.ciniengenharia.com.br/servicos/curso-nr12/</loc>
+    <loc>https://www.ciniengenharia.com.br/servicos-engenharia-de-seguranca-do-trabalho/curso-nr-12/</loc>
   </url>
 
 <!-- ARTIGOS — PORTO ALEGRE (ENGENHEIRO ELETRICISTA) -->
@@ -666,6 +666,32 @@
   <url>
     <loc>https://www.ciniengenharia.com.br/softwares/software-de-gestao-nr-10/</loc>
     <lastmod>2026-10-18</lastmod>
+  </url>
+
+  <!-- SERVIÇOS DE ENGENHARIA DE SEGURANÇA DO TRABALHO -->
+  <url>
+    <loc>https://www.ciniengenharia.com.br/servicos-engenharia-de-seguranca-do-trabalho/laudo-nr-10/</loc>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>https://www.ciniengenharia.com.br/servicos-engenharia-de-seguranca-do-trabalho/prontuario-nr-10/</loc>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>https://www.ciniengenharia.com.br/servicos-engenharia-de-seguranca-do-trabalho/analise-de-riscos-nr-12/</loc>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>https://www.ciniengenharia.com.br/servicos-engenharia-de-seguranca-do-trabalho/inventario-de-maquinas-nr-12/</loc>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>https://www.ciniengenharia.com.br/servicos-engenharia-de-seguranca-do-trabalho/laudo-nr-12/</loc>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>https://www.ciniengenharia.com.br/servicos-engenharia-de-seguranca-do-trabalho/consultoria/</loc>
+    <lastmod>2026-10-19</lastmod>
   </url>
 
 </urlset>
