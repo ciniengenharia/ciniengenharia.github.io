@@ -759,3 +759,8 @@ body.home .menu { background: rgba(255,255,255,.92); backdrop-filter: blur(8px);
   .hero-diagrama .corrente { display: none; }
   .btn-faisca::after { display: none; }
 }
+
+/* cidades atendidas no rodapé */
+.rodape-cidades { margin: 14px 0 0; font-size: 13px; line-height: 1.7; color: var(--suave); }
+.rodape-cidades a { text-decoration: none; }
+.rodape-cidades a:hover { color: var(--vermelho); }

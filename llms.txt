@@ -1,0 +1,43 @@
+# Cini Engenharia
+
+> Engenharia elétrica e engenharia de segurança do trabalho para empresas, indústrias e condomínios, com ART. Responsável técnico: Dario Cini, engenheiro eletricista e engenheiro de segurança do trabalho, CREA-RS 211.450. CNPJ 25.268.313/0001-56.
+
+Atendimento presencial no Rio Grande do Sul, com deslocamento até o cliente: Caxias do Sul, Bento Gonçalves, Farroupilha, Garibaldi, Carlos Barbosa (Serra Gaúcha), Lajeado (Vale do Taquari), Montenegro (Vale do Caí), Novo Hamburgo, São Leopoldo (Vale dos Sinos), Porto Alegre, Canoas, Cachoeirinha e Gravataí (Região Metropolitana de Porto Alegre). Consultoria online para qualquer lugar. Softwares de gestão NR 10 e NR 12 para empresas de todo o Brasil.
+
+Contato: WhatsApp e telefone (51) 99961-3451 e (54) 99947-5010; e-mail contato@ciniengenharia.com.br.
+
+## Engenharia elétrica
+- [Engenharia elétrica](https://www.ciniengenharia.com.br/servicos/engenharia-eletrica/): página geral
+- [Projeto elétrico industrial](https://www.ciniengenharia.com.br/servicos-engenharia-eletrica/projeto-eletrico-industrial/)
+- [Projeto de subestação](https://www.ciniengenharia.com.br/servicos-engenharia-eletrica/projeto-subestacao/)
+- [Projeto de SPDA](https://www.ciniengenharia.com.br/servicos-engenharia-eletrica/projeto-spda/)
+- [Laudo de SPDA](https://www.ciniengenharia.com.br/servicos-engenharia-eletrica/laudo-spda/)
+- [Laudo de aterramento](https://www.ciniengenharia.com.br/servicos-engenharia-eletrica/laudo-aterramento/)
+- [Laudo de continuidade elétrica](https://www.ciniengenharia.com.br/servicos-engenharia-eletrica/laudo-continuidade-eletrica/)
+- [Laudo das instalações elétricas](https://www.ciniengenharia.com.br/servicos-engenharia-eletrica/laudo-instalacoes-eletricas/)
+- [Termografia](https://www.ciniengenharia.com.br/servicos-engenharia-eletrica/termografia/)
+- [Cálculo de ATPV](https://www.ciniengenharia.com.br/servicos-engenharia-eletrica/calculo-atpv/)
+- [Consultoria em engenharia elétrica](https://www.ciniengenharia.com.br/servicos-engenharia-eletrica/consultoria/)
+
+## Engenharia de segurança do trabalho
+- [Engenharia de segurança do trabalho](https://www.ciniengenharia.com.br/servicos/engenharia-de-seguranca-do-trabalho/): página geral
+- [Laudo de NR 10](https://www.ciniengenharia.com.br/servicos-engenharia-de-seguranca-do-trabalho/laudo-nr-10/)
+- [Prontuário das instalações elétricas NR 10](https://www.ciniengenharia.com.br/servicos-engenharia-de-seguranca-do-trabalho/prontuario-nr-10/)
+- [Análise de riscos NR 12](https://www.ciniengenharia.com.br/servicos-engenharia-de-seguranca-do-trabalho/analise-de-riscos-nr-12/)
+- [Inventário de máquinas NR 12](https://www.ciniengenharia.com.br/servicos-engenharia-de-seguranca-do-trabalho/inventario-de-maquinas-nr-12/)
+- [Laudo de conformidade NR 12](https://www.ciniengenharia.com.br/servicos-engenharia-de-seguranca-do-trabalho/laudo-nr-12/)
+- [Curso NR 12](https://www.ciniengenharia.com.br/servicos-engenharia-de-seguranca-do-trabalho/curso-nr-12/): presencial, na empresa
+- [Consultoria em segurança do trabalho](https://www.ciniengenharia.com.br/servicos-engenharia-de-seguranca-do-trabalho/consultoria/): online ou presencial
+
+## Páginas por cidade
+- Engenharia elétrica: https://www.ciniengenharia.com.br/servicos/engenharia-eletrica-[cidade]/ (ex.: [Caxias do Sul](https://www.ciniengenharia.com.br/servicos/engenharia-eletrica-caxias-do-sul/), [Porto Alegre](https://www.ciniengenharia.com.br/servicos/engenharia-eletrica-porto-alegre/))
+- Engenharia de segurança do trabalho: https://www.ciniengenharia.com.br/servicos/engenharia-de-seguranca-do-trabalho-[cidade]/ (ex.: [Caxias do Sul](https://www.ciniengenharia.com.br/servicos/engenharia-de-seguranca-do-trabalho-caxias-do-sul/), [Porto Alegre](https://www.ciniengenharia.com.br/servicos/engenharia-de-seguranca-do-trabalho-porto-alegre/))
+
+## Softwares de gestão
+- [Softwares de gestão NR 12 e NR 10](https://www.ciniengenharia.com.br/softwares/)
+- [Cini NR 12](https://www.ciniengenharia.com.br/softwares/software-de-gestao-nr-12/): análise de riscos de máquinas no celular, mesmo sem internet; laudo, análise de riscos, plano de ação e manual de instruções gerados no servidor
+- [Cini NR 10](https://www.ciniengenharia.com.br/softwares/software-de-gestao-nr-10/): painel de quem pode trabalhar com eletricidade, vencimentos de treinamentos e equipamentos, autorização de trabalho
+
+## Outras
+- [Lista de serviços](https://www.ciniengenharia.com.br/lista-servicos/)
+- [Contato](https://www.ciniengenharia.com.br/contato/)

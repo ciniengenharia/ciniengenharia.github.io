@@ -35,7 +35,6 @@
 {
   "@context": "https://schema.org",
   "@graph": [
-
     {
       "@type": "WebSite",
       "@id": "https://www.ciniengenharia.com.br/#website",
@@ -43,7 +42,6 @@
       "name": "Cini Engenharia",
       "inLanguage": "pt-BR"
     },
-
     {
       "@type": "WebPage",
       "@id": "https://www.ciniengenharia.com.br/informacoes/cachoeirinha/projeto-eletrico/criterios-para-especificacao-de-contatores/#webpage",
@@ -57,18 +55,228 @@
       },
       "inLanguage": "pt-BR"
     },
-
     {
-      "@type": ["LocalBusiness", "ProfessionalService", "Electrician"],
+      "@type": "ProfessionalService",
       "@id": "https://www.ciniengenharia.com.br/#localbusiness",
       "name": "Cini Engenharia",
       "legalName": "Cini Engenharia",
       "taxID": "25.268.313/0001-56",
       "url": "https://www.ciniengenharia.com.br/",
+      "description": "Engenharia elétrica e engenharia de segurança do trabalho para empresas, indústrias e condomínios, com ART: projetos, laudos, NR 10, NR 12 e treinamentos. Atendimento presencial na Serra Gaúcha, Vale do Taquari, Vale do Caí, Vale dos Sinos e Região Metropolitana de Porto Alegre. Softwares de gestão NR 10 e NR 12 para todo o Brasil.",
+      "logo": "https://www.ciniengenharia.com.br/assets/images/cini-engenharia.png",
+      "image": "https://www.ciniengenharia.com.br/assets/images/cini-engenharia-home.jpg",
       "email": "contato@ciniengenharia.com.br",
       "telephone": "+55-51-99961-3451",
-      "priceRange": "$$",
-
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "contactType": "comercial",
+          "telephone": "+55-51-99961-3451",
+          "email": "contato@ciniengenharia.com.br",
+          "areaServed": "Vale do Taquari, Vale do Caí, Vale dos Sinos e Região Metropolitana de Porto Alegre",
+          "availableLanguage": [
+            "pt-BR"
+          ]
+        },
+        {
+          "@type": "ContactPoint",
+          "contactType": "comercial",
+          "telephone": "+55-54-99947-5010",
+          "email": "contato@ciniengenharia.com.br",
+          "areaServed": "Serra Gaúcha",
+          "availableLanguage": [
+            "pt-BR"
+          ]
+        }
+      ],
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Caxias do Sul",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Serra Gaúcha"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Caxias do Sul",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Bento Gonçalves",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Serra Gaúcha"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Bento Gonçalves",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Farroupilha",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Serra Gaúcha"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Farroupilha",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Garibaldi",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Serra Gaúcha"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Garibaldi",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Carlos Barbosa",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Serra Gaúcha"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Carlos Barbosa",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Lajeado",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Vale do Taquari"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Lajeado",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Montenegro",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Vale do Caí"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Montenegro",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Novo Hamburgo",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Vale dos Sinos"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Novo Hamburgo",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "São Leopoldo",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Vale dos Sinos"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "São Leopoldo",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Porto Alegre",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Região Metropolitana de Porto Alegre"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Porto Alegre",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Canoas",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Região Metropolitana de Porto Alegre"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Canoas",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Cachoeirinha",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Região Metropolitana de Porto Alegre"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Cachoeirinha",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Gravataí",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Região Metropolitana de Porto Alegre"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Gravataí",
+            "addressRegion": "RS",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "State",
+          "name": "Rio Grande do Sul"
+        }
+      ],
       "founder": {
         "@type": "Person",
         "name": "Dario Cini",
@@ -77,29 +285,35 @@
           "https://www.linkedin.com/in/dario-cini-38a3303a1/"
         ]
       },
-
-      "contactPoint": [
-        {
-          "@type": "ContactPoint",
-          "contactType": "comercial",
-          "telephone": "+55-51-99961-3451",
-          "email": "contato@ciniengenharia.com.br",
-          "availableLanguage": ["pt-BR"]
-        }
-      ],
-
       "serviceType": [
         "Projeto elétrico industrial",
         "Projeto de subestação",
+        "Projeto de SPDA",
+        "Laudo de SPDA",
         "Laudo de aterramento",
         "Laudo das instalações elétricas",
+        "Cálculo de ATPV",
         "Termografia elétrica",
         "Consultoria em engenharia elétrica",
-        "NR-10",
-        "NR-12"
+        "Laudo de continuidade elétrica",
+        "Laudo de NR 10",
+        "Prontuário das instalações elétricas (NR 10)",
+        "Laudo de conformidade NR 12",
+        "Inventário de máquinas NR 12",
+        "Análise de riscos NR 12",
+        "Consultoria em segurança do trabalho",
+        "Consultoria online",
+        "Consultoria presencial",
+        "Treinamento NR 12 presencial na empresa",
+        "NR 10",
+        "NR 12",
+        "Software de gestão NR 12 (Cini NR 12)",
+        "Software de gestão NR 10 (Cini NR 10)"
+      ],
+      "sameAs": [
+        "https://www.linkedin.com/in/dario-cini-38a3303a1/"
       ]
     }
-
   ]
 }
 </script>
