@@ -13,7 +13,7 @@
 }
 
 .menu-container {
-  max-width: 1240px;
+  max-width: 1440px;
   margin: 0 auto;
   padding: 12px 24px;
 
@@ -39,24 +39,25 @@
 .menu-links {
   display: flex;
   align-items: center;
-  gap: 14px;
+  gap: 8px;
+  margin-left: auto;
 }
 
 /* SEPARADOR ENTRE LINKS */
 
 .menu-links a + a {
   border-left: 1px solid #ccc;
-  padding-left: 14px;
+  padding-left: 8px;
 }
 
 /* LINK PADRÃO */
 
 .menu-links a {
-  font-size: 16px;
+  font-size: 15px;
   color: #111;
   text-decoration: none;
   white-space: nowrap;
-  padding: 10px 10px;
+  padding: 10px 6px;
   transition: all 0.2s ease;
 }
 
@@ -111,7 +112,7 @@
 
 /* ===== RESPONSIVO ===== */
 
-@media (max-width: 1200px) {
+@media (max-width: 1279px) {
 
   .menu-container {
     flex-wrap: wrap;
