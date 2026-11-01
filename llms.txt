@@ -2,7 +2,7 @@
 
 > Engenharia elétrica e engenharia de segurança do trabalho para empresas, indústrias e condomínios, com ART. Responsável técnico: Dario Cini, engenheiro eletricista e engenheiro de segurança do trabalho, CREA-RS 211.450. CNPJ 25.268.313/0001-56.
 
-Atendimento presencial no Rio Grande do Sul, com deslocamento até o cliente: Caxias do Sul, Bento Gonçalves, Farroupilha, Garibaldi, Carlos Barbosa (Serra Gaúcha), Lajeado (Vale do Taquari), Montenegro (Vale do Caí), Novo Hamburgo, São Leopoldo (Vale dos Sinos), Porto Alegre, Canoas, Cachoeirinha e Gravataí (Região Metropolitana de Porto Alegre). Consultoria online para qualquer lugar. Softwares de gestão NR 10 e NR 12 para empresas de todo o Brasil.
+Atendimento presencial no Rio Grande do Sul, com deslocamento até o cliente: Caxias do Sul, Bento Gonçalves, Farroupilha, Garibaldi, Carlos Barbosa (Serra Gaúcha), Lajeado (Vale do Taquari), Montenegro (Vale do Caí), Novo Hamburgo, São Leopoldo (Vale dos Sinos), Porto Alegre, Canoas, Cachoeirinha e Gravataí (Região Metropolitana de Porto Alegre). Consultoria online para qualquer lugar. Treinamentos NR 10 e NR 12 na empresa do cliente. Softwares de gestão NR 10 e NR 12 para empresas de todo o Brasil.
 
 Contato: WhatsApp e telefone (51) 99961-3451 e (54) 99947-5010; e-mail contato@ciniengenharia.com.br.
 
@@ -32,6 +32,12 @@ Contato: WhatsApp e telefone (51) 99961-3451 e (54) 99947-5010; e-mail contato@c
 ## Páginas por cidade
 - Engenharia elétrica: https://www.ciniengenharia.com.br/servicos/engenharia-eletrica-[cidade]/ (ex.: [Caxias do Sul](https://www.ciniengenharia.com.br/servicos/engenharia-eletrica-caxias-do-sul/), [Porto Alegre](https://www.ciniengenharia.com.br/servicos/engenharia-eletrica-porto-alegre/))
 - Engenharia de segurança do trabalho: https://www.ciniengenharia.com.br/servicos/engenharia-de-seguranca-do-trabalho-[cidade]/ (ex.: [Caxias do Sul](https://www.ciniengenharia.com.br/servicos/engenharia-de-seguranca-do-trabalho-caxias-do-sul/), [Porto Alegre](https://www.ciniengenharia.com.br/servicos/engenharia-de-seguranca-do-trabalho-porto-alegre/))
+
+## Treinamentos (na empresa do cliente, turma fechada)
+- [Treinamentos NR 10 e NR 12 para empresas](https://www.ciniengenharia.com.br/treinamentos/)
+- Treinamento NR 10 nova: o que muda com a Portaria MTE nº 737/2026, em vigor a partir de 1º de junho de 2027; para gestores, segurança do trabalho e manutenção
+- Treinamento NR 10 básico (40 horas), NR 10 SEP (40 horas) e reciclagem NR 10 (a cada 2 anos)
+- [Treinamento NR 12 para operadores e manutenção](https://www.ciniengenharia.com.br/servicos-engenharia-de-seguranca-do-trabalho/curso-nr-12/)
 
 ## Softwares de gestão
 - [Softwares de gestão NR 12 e NR 10](https://www.ciniengenharia.com.br/softwares/)
