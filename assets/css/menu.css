@@ -13,7 +13,7 @@
 }
 
 .menu-container {
-  max-width: 1440px;
+  max-width: 1480px;
   margin: 0 auto;
   padding: 12px 24px;
 
@@ -40,7 +40,6 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  margin-left: auto;
 }
 
 /* SEPARADOR ENTRE LINKS */
@@ -75,6 +74,14 @@
   color: #e50914;
 }
 
+
+/* TELAS GRANDES: LETRA E ESPAÇO NORMAIS */
+
+@media (min-width: 1700px) {
+  .menu-links { gap: 14px; }
+  .menu-links a { font-size: 16px; padding: 10px 10px; }
+  .menu-links a + a { padding-left: 14px; }
+}
 
 /* ===== HAMBURGUER ===== */
 
