@@ -1,0 +1,110 @@
+/* ===== SITO INTERNAZIONALE CINI ENGENHARIA ===== */
+:root{
+  --rosso:#d7141e; --rosso-scuro:#b00f17; --testo:#1f2937; --grigio:#4a5563;
+  --linea:#e3e6ea; --sfondo:#f6f7f9; --bianco:#fff;
+}
+*{ box-sizing:border-box; }
+body.intl{ margin:0; font-family:"Archivo","Segoe UI",Roboto,Arial,sans-serif; color:var(--testo); background:var(--bianco); line-height:1.6; }
+.intl a{ color:var(--testo); }
+.intl .wrap{ max-width:1180px; margin:0 auto; padding:0 24px; }
+.intl .stretto{ max-width:860px; }
+
+/* testata */
+.it-testata{ position:sticky; top:0; z-index:100; background:rgba(255,255,255,.96); backdrop-filter:blur(8px); border-bottom:1px solid var(--linea); }
+.it-barra{ display:flex; align-items:center; gap:18px; min-height:76px; }
+.it-logo img{ height:50px; display:block; }
+.it-nav{ display:flex; flex-wrap:nowrap; gap:0; margin-left:auto; }
+.it-nav a{ text-decoration:none; font-size:14.5px; font-weight:600; padding:8px 7px; border-radius:6px; white-space:nowrap; }
+.it-nav a:hover{ background:var(--sfondo); }
+.it-nav a[aria-current="page"]{ color:var(--rosso); }
+.it-topbar{ background:var(--testo); color:#e5e7eb; font-size:13px; }
+.it-topbar .wrap{ display:flex; align-items:center; gap:18px; min-height:34px; }
+.it-topbar a{ color:#e5e7eb; text-decoration:none; }
+.it-topbar a:hover{ color:#fff; text-decoration:underline; }
+.it-lingue{ margin-left:auto; display:flex; gap:2px; font-size:13px; }
+.it-lingue a, .it-lingue span{ padding:6px 6px; text-decoration:none; font-weight:700; }
+.it-lingue span{ color:#fff; background:var(--rosso); border-radius:4px; }
+.it-menu-check, .it-menu-btn{ display:none; }
+
+/* pulsanti */
+.it-btn{ display:inline-block; background:var(--rosso); color:#fff !important; text-decoration:none; font-weight:700; padding:13px 22px; border-radius:999px; box-shadow:0 8px 20px rgba(215,20,30,.22); }
+.it-btn:hover{ background:var(--rosso-scuro); }
+.it-btn-2{ display:inline-block; font-weight:700; text-decoration:none; padding:12px 20px; border:2px solid var(--testo); border-radius:999px; }
+.it-azioni{ display:flex; flex-wrap:wrap; gap:12px; align-items:center; margin-top:22px; }
+
+/* apertura */
+.it-apertura{ padding:56px 0 46px; border-bottom:1px solid var(--linea); background:linear-gradient(180deg,#fff, #fbfbfc); }
+.it-briciole{ font-size:14px; color:var(--grigio); margin-bottom:14px; }
+.it-briciole a{ color:var(--grigio); }
+.it-apertura h1{ font-size:clamp(32px,4.6vw,52px); line-height:1.08; margin:0 0 16px; letter-spacing:-.02em; max-width:900px; }
+.it-apertura .it-sub{ font-size:19px; color:var(--grigio); max-width:780px; margin:0; }
+.it-fiducia{ display:flex; flex-wrap:wrap; gap:8px 22px; margin-top:26px; font-size:14px; color:var(--grigio); }
+.it-fiducia strong{ color:var(--testo); }
+
+/* sezioni */
+.it-sez{ padding:52px 0; border-bottom:1px solid var(--linea); }
+.it-sez.grigia{ background:var(--sfondo); }
+.it-sez h2{ font-size:28px; line-height:1.2; margin:0 0 16px; letter-spacing:-.01em; }
+.it-sez h3{ font-size:19px; margin:26px 0 8px; }
+.it-sez p, .it-sez li{ font-size:17px; }
+.it-sez ul, .it-sez ol{ padding-left:22px; }
+.it-sez li{ margin-bottom:8px; }
+.it-legge{ border-left:4px solid var(--rosso); background:#fff; padding:16px 20px; margin:22px 0; border-radius:0 8px 8px 0; }
+.it-legge p{ margin:0; font-size:16px; }
+.it-legge strong{ display:block; font-size:13px; text-transform:uppercase; letter-spacing:.06em; color:var(--rosso); margin-bottom:6px; }
+
+/* schede */
+.it-schede{ display:grid; grid-template-columns:repeat(3,1fr); gap:16px; margin-top:24px; }
+.it-scheda{ display:block; background:#fff; border:1px solid var(--linea); border-top:3px solid var(--rosso); border-radius:12px; padding:22px; text-decoration:none; transition:box-shadow .2s, transform .2s; }
+a.it-scheda:hover{ box-shadow:0 12px 28px rgba(17,24,39,.10); transform:translateY(-2px); }
+.it-scheda h3{ margin:0 0 8px; font-size:19px; }
+.it-scheda p{ margin:0; font-size:15px; color:var(--grigio); line-height:1.55; }
+.it-scheda .it-piu{ display:inline-block; margin-top:12px; font-weight:700; font-size:15px; color:var(--rosso); }
+
+/* passi */
+.it-passi{ list-style:none; padding:0 !important; counter-reset:p; }
+.it-passi li{ counter-increment:p; position:relative; padding:4px 0 14px 52px; }
+.it-passi li::before{ content:counter(p); position:absolute; left:0; top:0; width:36px; height:36px; border-radius:50%; background:var(--rosso); color:#fff; font-weight:700; display:flex; align-items:center; justify-content:center; }
+
+/* chi firma */
+.it-firma{ display:grid; grid-template-columns:auto 1fr; gap:22px; align-items:start; background:#fff; border:1px solid var(--linea); border-radius:12px; padding:24px; }
+.it-firma img{ width:112px; height:112px; object-fit:cover; border-radius:10px; }
+.it-firma p{ margin:0 0 8px; font-size:16px; }
+
+/* chiamata finale */
+.it-finale{ background:var(--testo); color:#fff; padding:56px 0; }
+.it-finale h2{ color:#fff; font-size:30px; margin:0 0 10px; }
+.it-finale p{ color:#d1d5db; font-size:18px; margin:0; max-width:760px; }
+.it-finale a{ color:#fff; }
+.it-finale .it-btn-2{ border-color:#fff; }
+
+/* piè di pagina */
+.it-piede{ background:#111827; color:#9ca3af; padding:40px 0 28px; font-size:14px; }
+.it-piede a{ color:#e5e7eb; }
+.it-piede-griglia{ display:grid; grid-template-columns:1.3fr 1fr 1fr; gap:28px; }
+.it-piede h4{ color:#fff; margin:0 0 10px; font-size:15px; }
+.it-piede ul{ list-style:none; padding:0; margin:0; }
+.it-piede li{ margin-bottom:6px; }
+.it-piede-base{ border-top:1px solid #374151; margin-top:26px; padding-top:16px; }
+
+/* responsive */
+@media (max-width:1240px){
+  .it-menu-btn{ display:block; margin-left:auto; cursor:pointer; font-weight:700; font-size:15px; border:2px solid var(--testo); border-radius:8px; padding:7px 12px; }
+  .it-nav{ display:none; position:absolute; left:0; right:0; top:100%; background:#fff; border-bottom:1px solid var(--linea); flex-direction:column; padding:10px 16px 16px; margin:0; }
+  .it-nav a{ padding:12px 8px; font-size:17px; }
+  .it-menu-check:checked ~ .it-nav{ display:flex; }
+  .it-barra{ position:relative; flex-wrap:wrap; }
+}
+@media (max-width:900px){
+  .it-schede{ grid-template-columns:1fr; }
+  .it-piede-griglia{ grid-template-columns:1fr; }
+  .it-firma{ grid-template-columns:1fr; }
+  .it-sez{ padding:40px 0; }
+}
+.it-testata .wrap{ max-width:1320px; }
+@media (max-width:700px){
+  .it-topbar .wrap{ gap:10px; padding:0 12px; }
+  .it-topbar a[href^="mailto"]{ display:none; }
+  .it-topbar{ font-size:12px; }
+  .it-lingue a, .it-lingue span{ padding:5px 5px; }
+}
