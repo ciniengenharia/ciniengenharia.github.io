@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-TN2TWSD6');</script>
-  <!-- End Google Tag Manager -->
-  <!-- Cliques de contato: WhatsApp, telefone e e-mail -->
+  <!-- Google tag (gtag.js): Google Analytics + Google Ads -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-45S18P7C96"></script>
   <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-45S18P7C96');
+    gtag('config', 'AW-18573956496');
+    // Cliques de contato: WhatsApp, telefone e e-mail
     document.addEventListener('click', function (e) {
       var a = e.target.closest && e.target.closest('a[href]');
       if (!a) return;
@@ -17,7 +17,9 @@
       if (/wa\.me|whatsapp\.com/.test(h)) tipo = 'whatsapp';
       else if (/^tel:/.test(h)) tipo = 'telefone';
       else if (/^mailto:/.test(h)) tipo = 'email';
-      if (tipo) window.dataLayer.push({event: 'clique_contato', tipo_contato: tipo, link_url: h});
+      if (!tipo) return;
+      gtag('event', 'clique_contato', {'tipo_contato': tipo, 'link_url': h, 'transport_type': 'beacon'});
+      if (tipo === 'whatsapp') gtag('event', 'conversion', {'send_to': 'AW-18573956496/IR68CJOmnrgdEJCr4JhF', 'transport_type': 'beacon'});
     });
   </script>
 <meta charset="UTF-8">
@@ -413,10 +415,6 @@
 </head>
 
 <body class="engenharia">
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TN2TWSD6"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
 
 <!-- ===== MENU DINÂMICO ===== -->
 <div id="menu"></div>
