@@ -1,16 +1,23 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <!-- Google tag (Google Ads) -->
-  <script async src="https://www.googletagmanager.com/gtm.js?id=GTM-TN2TWSD6"></script>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-TN2TWSD6');</script>
+  <!-- End Google Tag Manager -->
+  <!-- Cliques de contato: WhatsApp, telefone e e-mail -->
   <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    // Conversão do Google Ads: clique no WhatsApp
     document.addEventListener('click', function (e) {
-      var a = e.target.closest && e.target.closest('a[href*="wa.me"], a[href*="whatsapp.com"]');
-      if (a) gtag('event', 'conversion', {'send_to': 'AW-18573956496/IR68CJOmnrgdEJCr4JhF', 'transport_type': 'beacon'});
+      var a = e.target.closest && e.target.closest('a[href]');
+      if (!a) return;
+      var h = a.getAttribute('href'), tipo = null;
+      if (/wa\.me|whatsapp\.com/.test(h)) tipo = 'whatsapp';
+      else if (/^tel:/.test(h)) tipo = 'telefone';
+      else if (/^mailto:/.test(h)) tipo = 'email';
+      if (tipo) window.dataLayer.push({event: 'clique_contato', tipo_contato: tipo, link_url: h});
     });
   </script>
 <meta charset="UTF-8">
@@ -389,6 +396,10 @@
 </head>
 
 <body class="engenharia">
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TN2TWSD6"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
 
 <!-- ===== MENU DINÂMICO ===== -->
 <div id="menu"></div>
